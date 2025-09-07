@@ -1,18 +1,18 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/remarkablegames/renpy-template/master/game/gui/window_icon.png" alt="Ren'Py Template">
+  <img src="https://raw.githubusercontent.com/remarkablegames/knitbone/master/game/gui/window_icon.png" alt="KnitBone">
 </p>
 
-# Ren'Py Template
+# KnitBone
 
-![release](https://img.shields.io/github/v/release/remarkablegames/renpy-template)
-[![build](https://github.com/remarkablegames/renpy-template/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablegames/renpy-template/actions/workflows/build.yml)
-[![lint](https://github.com/remarkablegames/renpy-template/actions/workflows/lint.yml/badge.svg)](https://github.com/remarkablegames/renpy-template/actions/workflows/lint.yml)
+![release](https://img.shields.io/github/v/release/remarkablegames/knitbone)
+[![build](https://github.com/remarkablegames/knitbone/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablegames/knitbone/actions/workflows/build.yml)
+[![lint](https://github.com/remarkablegames/knitbone/actions/workflows/lint.yml/badge.svg)](https://github.com/remarkablegames/knitbone/actions/workflows/lint.yml)
 
-📖 Write visual novels with Ren'Py Template.
+🦴 KnitBone
 
 Play the game on:
 
-- [remarkablegames](https://remarkablegames.org/renpy-template)
+- [remarkablegames](https://remarkablegames.org/knitbone)
 
 ## Credits
 
@@ -49,18 +49,18 @@ renpy --version
 Clone the repository to the `Projects Directory`:
 
 ```sh
-git clone https://github.com/remarkablegames/renpy-template.git
-cd renpy-template
+git clone https://github.com/remarkablegames/knitbone.git
+cd knitbone
 ```
 
 Rename the project:
 
 ```sh
-git grep -l "Ren'Py Template" | xargs sed -i '' -e "s/Ren'Py Template/My Novel/g"
+git grep -l "KnitBone" | xargs sed -i '' -e "s/KnitBone/My Novel/g"
 ```
 
 ```sh
-git grep -l 'renpy-template' | xargs sed -i '' -e 's/renpy-template/my-novel/g'
+git grep -l 'knitbone' | xargs sed -i '' -e 's/knitbone/my-novel/g'
 ```
 
 Replace the assets:
