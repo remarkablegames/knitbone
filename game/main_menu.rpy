@@ -1,14 +1,12 @@
 init python:
-
     class TrackCursor(renpy.Displayable):
-
         def __init__(self, child, move_range=50, invert=False):
             super(TrackCursor, self).__init__()
             self.child = renpy.displayable(child)
             self.x = None
             self.y = None
             self.move_range = move_range
-            self.invert = invert  # 
+            self.invert = invert
 
         def render(self, width, height, st, at):
             rv = renpy.Render(width, height)
@@ -25,20 +23,16 @@ init python:
             x = self.x if self.x is not None else width / 2
             y = self.y if self.y is not None else height / 2
 
-            # 
             offset_x = ((x - width / 2) / (width / 2)) * self.move_range
             offset_y = ((y - height / 2) / (height / 2)) * self.move_range
 
-            #
             if self.invert:
                 offset_x *= -2
                 offset_y *= -2
 
-            #
             offset_x = max(-self.move_range, min(self.move_range, offset_x))
             offset_y = max(-self.move_range, min(self.move_range, offset_y))
 
-            #
             pos_x = -(cw - width) / 2 + offset_x
             pos_y = -(ch - height) / 2 + offset_y
 
@@ -53,17 +47,16 @@ init python:
 
 screen main_menu():
 
-    ## 
     tag menu
 
     on "show" action Play(0.05, "music", "audio/theme1.ogg", loop=True)
     on "hide" action Stop("music", fadeout=1.0)
 
     add gui.main_menu_background
-    add TrackCursor("target1.png",move_range=50, invert=True)
+    add TrackCursor("images/menu/main_menu.png", move_range=50, invert=True)
     add TrackCursor(Transform("gui/vignette.png", zoom=1.1), move_range=20)
 
-    #title 
+    # Title
     text "KNITBONE":
         xalign 0.5
         yalign 0.45
@@ -99,7 +92,7 @@ screen main_menu():
 style menu_button is default:
     size 30
     color "#FFFFFF"
-    hover_color "#000000" 
+    hover_color "#000000"
     xpadding 20
     ypadding 10
-    background None  # transparent ????
+    background None
