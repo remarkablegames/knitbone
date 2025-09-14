@@ -27,7 +27,6 @@ style gui_text:
 
 style button:
     properties gui.button_properties("button")
-    activate_sound "ui/click_003.ogg"
 
 style button_text is gui_text:
     properties gui.text_properties("button")
@@ -97,32 +96,44 @@ style frame:
 ## https://www.renpy.org/doc/html/screen_special.html#say
 
 screen say(who, what):
-    style_prefix "say"
+
+    # Speaker name positioned above textbox
+    if who:
+        text who id "who":
+            xalign 0.27
+            yalign 0.67
+            style "say_label"
 
     window:
         id "window"
+        style "say_window"
+        background Frame("gui/dialogue_box.png", 20, 20)
+        xalign 0.5
+        yalign 0.88
 
-        if who is not None:
+        has vbox:
+            spacing 5
+            xalign 0.5
+            yalign 0.5
 
-            window:
-                id "namebox"
-                style "namebox"
-                text who id "who"
-
-        text what id "what"
-
-
-    ## If there's a side image, display it above the text. Do not display on the
-    ## phone variant - there's no room.
-    if not renpy.variant("small"):
-        add SideImage() xalign 0.0 yalign 1.0
+            text what id "what":
+                style "say_dialogue"
+                xalign 0.5
+                yalign 0.5
 
 
 ## Make the namebox available for styling through the Character object.
 init python:
     config.character_id_prefixes.append('namebox')
 
-style window is default
+style say_window is default:
+    xsize 1125
+    ysize 233
+    xalign 0.5
+    yalign 0.88
+    background Frame("gui/dialogue_box.png", 20, 20)
+    padding (70, 30)
+
 style say_label is default
 style say_dialogue is default
 style say_thought is say_dialogue
@@ -130,14 +141,6 @@ style say_thought is say_dialogue
 style namebox is default
 style namebox_label is say_label
 
-
-style window:
-    xalign 0.5
-    xfill True
-    yalign gui.textbox_yalign
-    ysize gui.textbox_height
-
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
 
 style namebox:
     xpos gui.name_xpos
@@ -155,7 +158,8 @@ style say_label:
     yalign 0.5
 
 style say_dialogue:
-    properties gui.text_properties("dialogue")
+    font "gui/font/chonkybitsbold.otf"
+    color "#232323"
 
     xpos gui.dialogue_xpos
     xsize gui.dialogue_width
@@ -227,9 +231,12 @@ style choice_vbox:
 
 style choice_button is default:
     properties gui.button_properties("choice_button")
+    hover_sound "audio/hover.ogg"
 
 style choice_button_text is default:
     properties gui.text_properties("choice_button")
+    font "gui/font/chonkybitsbold.otf"
+    color "#3a3a3a"
 
 
 ## Quick Menu screen ###########################################################
@@ -349,60 +356,12 @@ style navigation_button_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
 
-screen main_menu():
 
-    ## This ensures that any other menu screen is replaced.
-    tag menu
 
-    add gui.main_menu_background
-
-    ## This empty frame darkens the main menu.
-    frame:
-        style "main_menu_frame"
 
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
-    use navigation
 
-    if gui.show_name:
-
-        vbox:
-            style "main_menu_vbox"
-
-            text "[config.name!t]":
-                style "main_menu_title"
-
-            text "[config.version]":
-                style "main_menu_version"
-
-
-style main_menu_frame is empty
-style main_menu_vbox is vbox
-style main_menu_text is gui_text
-style main_menu_title is main_menu_text
-style main_menu_version is main_menu_text
-
-style main_menu_frame:
-    xsize 420
-    yfill True
-
-    background "gui/overlay/main_menu.png"
-
-style main_menu_vbox:
-    xalign 1.0
-    xoffset -30
-    xmaximum 1200
-    yalign 1.0
-    yoffset -30
-
-style main_menu_text:
-    properties gui.text_properties("main_menu", accent=True)
-
-style main_menu_title:
-    properties gui.text_properties("title")
-
-style main_menu_version:
-    properties gui.text_properties("version")
 
 
 ## Game Menu screen ############################################################
@@ -663,6 +622,7 @@ screen file_slots(title):
                     spacing gui.page_spacing
 
                     textbutton _("<") action FilePagePrevious()
+                    key "save_page_prev" action FilePagePrevious()
 
                     if config.has_autosave:
                         textbutton _("{#auto_page}A") action FilePage("auto")
@@ -675,6 +635,7 @@ screen file_slots(title):
                         textbutton "[page]" action FilePage(page)
 
                     textbutton _(">") action FilePageNext()
+                    key "save_page_next" action FilePageNext()
 
                 if config.has_sync:
                     if CurrentScreenName() == "save":

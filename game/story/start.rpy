@@ -1,25 +1,27 @@
-# The game starts here.
+default trust = 0
+default karmic = 0
+default karmic_awareness = 0
 
-label start:
+screen prestart_screen:
+    timer 1.0 action Start()
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+label prestart_label:
+    scene menu_image_blur
+    $ renpy.call_screen("prestart_screen")
+    return
 
-    scene bg club
+label splashscreen:
+    #play music the_end
+    scene bg logo with Dissolve(1)
+    $ renpy.pause(1.0)
+    scene black with fade
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
+    stop music
+    window hide(None)
+    pause 1.0
+    show SplashInfo __("Content Warning") with Dissolve(1.0)
+    pause 6
+    hide SplashInfo with Dissolve(1.0)
+    pause 1.0
 
-    show eileen happy
-
-    # These display lines of dialogue.
-
-    e "You've created a new Ren'Py game."
-
-    e "Once you add a story, pictures, and music, you can release it to the world!"
-
-    # Jump to a label.
-
-    jump end
+    return

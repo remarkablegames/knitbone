@@ -63,7 +63,7 @@ define config.has_voice = True
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-# define config.main_menu_music = "main-menu-theme.ogg"
+define config.main_menu_music = "audio/theme1.ogg"
 
 
 ## Transitions #################################################################
@@ -107,7 +107,8 @@ define config.end_game_transition = None
 ## After the game has started, this can be changed with the "window show",
 ## "window hide", and "window auto" statements.
 
-define config.window = "auto"
+define config.window = "hide"
+define config.window_auto_hide = ["pause"]
 
 
 ## Transitions used to show and hide the dialogue window
@@ -121,7 +122,7 @@ define config.window_hide_transition = Dissolve(.2)
 ## Controls the default text speed. The default, 0, is infinite, while any other
 ## number is the number of characters per second to type out.
 
-default preferences.text_cps = 20
+default preferences.text_cps = 40
 
 
 ## The default auto-forward delay. Larger numbers lead to longer waits, with 0
@@ -144,7 +145,7 @@ default preferences.afm_time = 15
 ## This generally should not be changed, and if it is, should always be a
 ## literal string, not an expression.
 
-define config.save_directory = "knitbone-1717801209"
+define config.save_directory = "knitbone-1754456959"
 
 
 ## Icon ########################################################################
