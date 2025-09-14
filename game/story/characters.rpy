@@ -42,9 +42,9 @@ init python:
 
 
 define narrator = Character(None, callback=narrator_callback)
-define e = Character("Eden", callback=eden_callback, what_color="#293728")
-define ei = Character("Eden", callback=eden_callback, what_color="#293728", what_prefix="{i}", what_suffix="{/i}")
-define r = Character("Ryohei", callback=ryohei_callback, what_color="#272e3f")
+define eden = Character("Eden", callback=eden_callback, what_color="#293728", image="eden")
+define _eden_ = Character("Eden", callback=eden_callback, what_color="#293728", what_prefix="{i}", what_suffix="{/i}", image="eden")
+define ryohei = Character("Ryohei", callback=ryohei_callback, what_color="#272e3f", image="ryohei")
 define idk = Character("???", what_color="#FF3E96", what_italic=True)
 define unknown = Character("???")
 define m = Character("{i}[uname]{/i}")
