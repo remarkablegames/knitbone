@@ -77,13 +77,16 @@ label prologue:
     "{cps=35}Just me, and this pathetic quiet corner… in a dimly lit lounge...{/cps}"
     "...A place to vanish into my own thoughts without interruption."
     pause 1.5
-    scene cg0_1 at slow_zoom, cover_screen
+
+    scene cg prologue 1 at slow_zoom, cover_screen
     with fade
+
     "I didn't know it would turn out like this."
-    scene cg0_2 at cover_screen
+    scene cg prologue 2 at cover_screen
     with dissolve
     pause 0.2
-    scene cg0_3 at cover_screen
+
+    scene cg prologue 3 at cover_screen
     window hide(dissolve)
     pause 1.5
 
@@ -101,7 +104,6 @@ label prologue:
     "Seems like the ice in my glass had succumbed to the warmth--"
     "...it looks just like my life."
 
-    hide cg0_3
     show cg1 at cover_screen
     with dissolve
     pause 0.7
