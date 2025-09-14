@@ -53,7 +53,7 @@ screen main_menu():
     on "hide" action Stop("music", fadeout=1.0)
 
     add gui.main_menu_background
-    add TrackCursor("images/menu/main_menu.png", move_range=50, invert=True)
+    add TrackCursor("images/gui/main_menu.png", move_range=50, invert=True)
     add TrackCursor(Transform("gui/vignette.png", zoom=1.1), move_range=20)
 
     # Title

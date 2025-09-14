@@ -18,7 +18,7 @@ Play the game on:
 
 ### Art
 
-- [Uncle Mugen](https://lemmasoft.renai.us/forums/viewtopic.php?t=17302)
+- [aespipu](https://aespipu.itch.io/)
 
 ### Audio
 
@@ -52,22 +52,6 @@ Clone the repository to the `Projects Directory`:
 git clone https://github.com/remarkablegames/knitbone.git
 cd knitbone
 ```
-
-Rename the project:
-
-```sh
-git grep -l "KnitBone" | xargs sed -i '' -e "s/KnitBone/My Novel/g"
-```
-
-```sh
-git grep -l 'knitbone' | xargs sed -i '' -e 's/knitbone/my-novel/g'
-```
-
-Replace the assets:
-
-- [ ] `web-presplash.jpg`
-- [ ] `game/gui/main_menu.png`
-- [ ] `game/gui/window_icon.png`
 
 ## Run
 
