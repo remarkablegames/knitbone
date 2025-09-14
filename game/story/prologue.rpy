@@ -1,16 +1,4 @@
 label prologue:
-    stop music fadeout 1.0
-
-    # Content warning
-    pause(1)
-    show text "KnitBone" with dissolve
-
-    pause(2)
-    hide text with dissolve
-
-    scene black
-    pause 2.0
-
     jump prologue_cg0
 
 label prologue_cg0:
