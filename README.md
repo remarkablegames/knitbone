@@ -108,7 +108,3 @@ Lint the game:
 ```sh
 renpy game lint
 ```
-
-## License
-
-[MIT](LICENSE)
