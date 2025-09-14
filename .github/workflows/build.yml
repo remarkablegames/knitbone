@@ -21,7 +21,6 @@ jobs:
         run: >
           find .
           ! -name "progressive_download.txt"
-          ! -name "progressive_download.txt"
           ! -name "web-*"
           ! -path "*/.*"
           ! -path "*game*"
