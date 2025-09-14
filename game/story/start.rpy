@@ -25,3 +25,6 @@ label splashscreen:
     pause 1.0
 
     return
+
+label start:
+    jump prologue

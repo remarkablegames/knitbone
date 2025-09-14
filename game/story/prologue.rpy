@@ -1,67 +1,4 @@
-init:
-    image cg1:
-        "images/cg1/1.png"
-        pause 2.0
-        "images/cg1/2.png"
-        pause 0.1
-        "images/cg1/3.png"
-        pause 0.1
-        "images/cg1/4.png"
-        pause 0.1
-        "images/cg1/5.png"
-        pause 0.1
-        "images/cg1/6.png"
-        pause 0.1
-        "images/cg1/7.png"
-        pause 0.1
-        "images/cg1/8.png"
-        pause 0.1
-        "images/cg1/9.png"
-        pause 0.1
-        "images/cg1/10.png"
-        pause 0.1
-        "images/cg1/11.png"
-        pause 0.1
-        "images/cg1/12.png"
-        pause 0.1
-        "images/cg1/13.png"
-        pause 0.1
-        "images/cg1/14.png"
-        pause 0.1
-        "images/cg1/15.png"
-        pause 0.1
-        repeat
-        fit "contain"
-
 label prologue: 
-    
-    transform slow_zoom:
-        anchor (0.5, 0.5)
-        align (0.5, 0.5)
-        zoom 1.1
-        linear 3.0 zoom 1.0
-
-    transform shake:
-        linear 0.05 xoffset -12
-        linear 0.05 xoffset 12
-        linear 0.05 xoffset -6
-        linear 0.05 xoffset 6
-        linear 0.05 xoffset 0
-
-
-    transform slight_shake:
-        linear 0.05 xoffset -5
-        linear 0.05 xoffset 5
-        linear 0.05 xoffset -3
-        linear 0.05 xoffset 3
-        linear 0.05 xoffset 0
-
-    transform cover_screen:
-        size (1920, 1080)
-        fit "cover" 
-
-
-    label start:
     stop music fadeout 1.0
     # Content warning
     pause(1)
@@ -104,7 +41,7 @@ label prologue:
     "Seems like the ice in my glass had succumbed to the warmth--"
     "...it looks just like my life."
 
-    show cg1 at cover_screen
+    show cg cafe at cover_screen
     with dissolve
     pause 0.7
 
@@ -122,7 +59,7 @@ label prologue:
     ei "Every 'fresh start' only left me more tangled in doubt.{w=0.1} And yeah, I just ended up more lost."
     ei "I don't even recognize who I am anymore."
 
-    show cg1 at shake
+    show cg cafe at shake
     stop music
     "*chimes*"
     pause 0.5
@@ -130,7 +67,7 @@ label prologue:
 
     scene black with fade
     pause 0.7
-    hide cg1 with dissolve
+    hide cg cafe with dissolve
 
     "But it seems like the vibe shifted, it was as if someone just flipped a switch."
     "So I can't help but to look--"
