@@ -129,14 +129,16 @@ label prologue:
     scene black with fade
     pause 0.7
     hide cg1 with dissolve
+
     "But it seems like the vibe shifted, it was as if someone just flipped a switch."
     "So I can't help but to look--"
     pause 0.1
+
     $ renpy.music.set_volume(0.4, delay=0.5, channel='music')
     play music "audio/theme2.mp3" fadein 1.0
-    scene bg_lounge at slow_zoom
-    with fade
 
+    scene bg lounge at slow_zoom
+    with fade
     pause 0.5
 
     #scene lounge_door_open with fade
@@ -199,10 +201,12 @@ label prologue:
 
     show ryohei neutral with dissolve
     r "It's me, Ryohei Damien. Haha, sorry. You might not remember me."
+
     pause 0.5
     ei "Oh."
     pause 0.5
-    scene bg_lounge at slight_shake
+
+    scene bg lounge at slight_shake
     ei "It's you."
 
     pause 1
