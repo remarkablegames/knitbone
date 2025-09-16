@@ -2,7 +2,9 @@ default trust = 0
 default karmic = 0
 default karmic_awareness = 0
 
+
 label splashscreen:
+
     # TODO: logo
     scene bg logo with Dissolve(1)
     pause 1.0
@@ -19,7 +21,9 @@ label splashscreen:
 
     return
 
+
 label start:
+
     stop music fadeout 1.0
 
     pause(1)
