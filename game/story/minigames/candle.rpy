@@ -20,47 +20,12 @@ init python:
 
 screen candle_minigame():
     draggroup:
-        drag:
-            child "candle/candle1.png"
-            drag_name "1"
-            draggable True
-            dragged ondrag
-            droppable True
-            xpos .1
-            ypos .5
-
-        drag:
-            child "candle/candle2.png"
-            drag_name "2"
-            draggable True
-            dragged ondrag
-            droppable True
-            xpos .2
-            ypos .5
-
-        drag:
-            child "candle/candle3.png"
-            drag_name "3"
-            draggable True
-            dragged ondrag
-            droppable True
-            xpos .3
-            ypos .5
-
-        drag:
-            child "candle/candle4.png"
-            drag_name "4"
-            draggable True
-            dragged ondrag
-            droppable True
-            xpos .4
-            ypos .5
-
-        drag:
-            child "candle/candle5.png"
-            drag_name "5"
-            draggable True
-            dragged ondrag
-            droppable True
-            xpos .5
-            ypos .5
+        for index in range(1, 6):
+            drag:
+                child f"candle/candle{index}.png"
+                drag_name index
+                draggable True
+                dragged ondrag
+                droppable True
+                xpos (index / 10)
+                ypos .5
