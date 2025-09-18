@@ -1,6 +1,7 @@
 label prologue:
     jump prologue_cg0
 
+
 label prologue_cg0:
     $ quick_menu = True
     "{cps=35}It was supposed to be just another night.{/cps}"
@@ -35,6 +36,7 @@ label prologue_cg0:
     "...it looks just like my life."
 
     jump prologue_cg1
+
 
 label prologue_cg1:
     show cg cafe at cover_screen
@@ -77,6 +79,7 @@ label prologue_cg1:
     pause 0.5
 
     jump prologue_ryohei
+
 
 label prologue_ryohei:
     #scene lounge_door_open with fade
@@ -193,7 +196,7 @@ label prologue_ryohei:
     pause 0.3
     eden "Of course I remember you. You were basically famous, Ryohei."
 
-# Add some pause or animation if needed here to show warmth or irony.
+    # Add some pause or animation if needed here to show warmth or irony.
 
     "It made him laugh and he didn't even try to deny it."
 
@@ -209,6 +212,15 @@ label prologue_ryohei:
     pause 0.5
 
     "I just need a reminder that I hadn't vanished completely."
+
+    menu:
+        "Play the candle minigame?"
+
+        "Yes":
+            jump candle_minigame
+
+        "No":
+            pass
 
     scene black with fade
 
