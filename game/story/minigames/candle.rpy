@@ -15,7 +15,7 @@ label candle_minigame_lose:
 init python:
     class Candle:
         def __init__(self) -> None:
-            self.moves = 3
+            self.moves = 4
             self.values = [2, 3, 4, 5, 1]
 
         def ondrag(self, drags, drop) -> None:
