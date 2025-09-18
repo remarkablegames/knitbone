@@ -8,12 +8,14 @@ label candle_minigame_win:
 
 
 label candle_minigame_lose:
-    pass
+    eden "I wasn't able to solve the candle minigame..."
+    jump end
 
 
 init python:
     class Candle:
         def __init__(self) -> None:
+            self.moves = 3
             self.values = [2, 3, 4, 5, 1]
 
         def ondrag(self, drags, drop) -> None:
@@ -38,6 +40,12 @@ init python:
             if self.values == sorted(self.values):
                 renpy.jump("candle_minigame_win")
 
+            self.moves -= 1
+            if not self.moves:
+                renpy.jump("candle_minigame_lose")
+
+            renpy.sound.queue("ui/drop_003.ogg", relative_volume=0.5)
+            renpy.jump("candle_minigame")
 
         def get_snap(self, index: int) -> dict:
             return {
@@ -56,8 +64,15 @@ init python:
             return [int(index), int(value)]
 
 
-screen candle_minigame():
-    $ candle = Candle()
+    candle = Candle()
+
+
+screen candle_minigame:
+    frame:
+        background Solid((0, 0, 0, 100))
+        text "Remaining Moves: [candle.moves]"
+        xpos 30
+        ypos 30
 
     draggroup:
         for index, value in enumerate(candle.values, start=1):
@@ -71,3 +86,4 @@ screen candle_minigame():
                 droppable True
                 xpos candle.get_snap(index)["x"]
                 ypos candle.get_snap(index)["y"]
+                hovered [Queue("sound", "ui/mouserelease1.ogg")]
