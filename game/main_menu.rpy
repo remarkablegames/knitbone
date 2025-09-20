@@ -49,11 +49,11 @@ screen main_menu():
 
     tag menu
 
-    on "show" action Play(0.05, "music", "audio/theme1.ogg", loop=True)
+    on "show" action Play(0.05, "music", "music/theme1.ogg", loop=True)
     on "hide" action Stop("music", fadeout=1.0)
 
     add gui.main_menu_background
-    add TrackCursor("images/gui/main_menu.png", move_range=50, invert=True)
+    add TrackCursor("gui/main_menu.png", move_range=50, invert=True)
     add TrackCursor(Transform("gui/vignette.png", zoom=1.1), move_range=20)
 
     # Title
@@ -78,16 +78,17 @@ screen main_menu():
         textbutton "LOAD":
             action ShowMenu("load")
             style "menu_button"
+            activate_sound "audio/click.ogg"
 
-    # Settings button in corner
-    imagebutton:
-        idle "gui/settings.png"
-        hover "gui/settings_hover.png"
-        action ShowMenu('preferences')
-        xalign 0.98
-        yalign 0.95
-        xsize 80
-        ysize 80
+    # TODO: Settings button in corner
+    # imagebutton:
+    #     idle "gui/settings.png"
+    #     hover "gui/settings_hover.png"
+    #     action ShowMenu('preferences')
+    #     xalign 0.98
+    #     yalign 0.95
+    #     xsize 80
+    #     ysize 80
 
 style menu_button is default:
     size 30

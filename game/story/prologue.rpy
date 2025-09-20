@@ -71,8 +71,7 @@ label prologue_cg1:
     "So I can't help but to look--"
     pause 0.1
 
-    $ renpy.music.set_volume(0.4, delay=0.5, channel='music')
-    play music "audio/theme2.ogg" fadein 1.0
+    play music "music/theme2.ogg" fadein 1.0 volume 0.4
 
     scene bg lounge at slow_zoom
     with fade
