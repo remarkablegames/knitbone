@@ -17,7 +17,7 @@ label prologue_cg0:
     with dissolve
     pause 0.2
 
-    play sound "audio/sfx/glass.ogg"
+    play sound "sfx/glass.ogg"
     scene cg prologue 3 at cover_screen
     window hide(dissolve)
     pause 1.5
@@ -25,8 +25,7 @@ label prologue_cg0:
     "That night..."
 
     #clinkclanksfx
-    play music "audio/barambience.ogg" fadein 1.0
-    $ renpy.music.set_volume(0.55, delay=0.5, channel='music')
+    play music "music/bar.ogg" fadein 1.5 volume 0.8
     scene black at slow_zoom
     with fade
 
