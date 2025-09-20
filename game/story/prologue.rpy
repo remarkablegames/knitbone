@@ -59,8 +59,11 @@ label prologue_cg1:
 
     show cg cafe at shake
     stop music
+    play sound "sfx/chime.ogg"
     "*chimes*"
+
     pause 0.5
+    play sound "sfx/door.ogg"
     "The door opened, but at first, I barely registered it."
 
     scene black with fade
