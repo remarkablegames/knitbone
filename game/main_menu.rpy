@@ -74,11 +74,13 @@ screen main_menu():
             action Start()
             style "menu_button"
             activate_sound "ui/click.ogg"
+            hover_sound "ui/mouserelease1.ogg"
 
         textbutton "LOAD":
             action ShowMenu("load")
             style "menu_button"
             activate_sound "ui/click.ogg"
+            hover_sound "ui/mouserelease1.ogg"
 
     # TODO: Settings button in corner
     # imagebutton:
