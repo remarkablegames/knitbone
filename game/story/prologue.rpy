@@ -87,9 +87,9 @@ label prologue_ryohei:
     # scene lounge_door_open with fade
     # Ryohei’s entrance
 
+    play sound "sfx/footsteps.ogg"
     show ryohei look at slow_zoom, center
     with dissolve
-    play sound "sfx/footsteps.ogg"
 
     "A guy had walked in with an easy confidence, and everyone eyed on him."
     "He smiled at the bartender, waved at someone like they were old friends."
