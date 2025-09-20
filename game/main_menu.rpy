@@ -73,12 +73,12 @@ screen main_menu():
         textbutton "PLAY":
             action Start()
             style "menu_button"
-            activate_sound "audio/click.ogg"
+            activate_sound "ui/click.ogg"
 
         textbutton "LOAD":
             action ShowMenu("load")
             style "menu_button"
-            activate_sound "audio/click.ogg"
+            activate_sound "ui/click.ogg"
 
     # TODO: Settings button in corner
     # imagebutton:

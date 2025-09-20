@@ -1,41 +1,40 @@
 init python:
-    def narrator_callback(event, interact=True, **kwargs):
-        if event == "show":
-            renpy.music.play("narrator.ogg", channel="sound", loop=True)
-            renpy.music.set_volume(0.3, delay=0, channel="sound")
-        elif event == "slow_done" or event == "end":
-            renpy.music.stop(channel="sound", fadeout=0.2)
+    renpy.music.register_channel("character", "voice", loop=True)
 
-    def ryohei_callback(event, interact=True, **kwargs):
+    def narrator_callback(event, interact=True, **kwargs) -> None:
+        if event == "show_done":
+            renpy.music.play("narrator.ogg", channel="character", relative_volume=0.3)
+        elif event == "slow_done":
+            renpy.music.stop(channel="character", fadeout=0.2)
+
+    def ryohei_callback(event, interact=True, **kwargs) -> None:
         if event == "begin":
             apply_zoom("ryohei", speak_zoom)
         elif event == "end":
             apply_zoom("ryohei", idle_zoom)
-        if event == "show":
-            renpy.music.play("narrator.ogg", channel="sound", loop=True)
-            renpy.music.set_volume(0.3, delay=0, channel="sound")
-        elif event == "slow_done" or event == "end":
-            renpy.music.stop(channel="sound", fadeout=0.2)
+        if event == "show_done":
+            renpy.music.play("narrator.ogg", channel="character", relative_volume=0.3)
+        elif event == "slow_done":
+            renpy.music.stop(chanel="character", fadeout=0.2)
 
-    def eden_callback(event, interact=True, **kwargs):
+    def eden_callback(event, interact=True, **kwargs) -> None:
         if event == "begin":
             apply_zoom("eden", speak_zoom)
         elif event == "end":
             apply_zoom("eden", idle_zoom)
-        if event == "show":
-            renpy.music.play("narrator.ogg", channel="sound", loop=True)
-            renpy.music.set_volume(0.3, delay=0, channel="sound")
-        elif event == "slow_done" or event == "end":
-            renpy.music.stop(channel="sound", fadeout=0.2)
+        if event == "show_done":
+            renpy.music.play("narrator.ogg", channel="character", relative_volume=0.3)
+        elif event == "slow_done":
+            renpy.music.stop(channel="character", fadeout=0.2)
 
-    def nurse_callback(event, interact=True, **kwargs):
+    def nurse_callback(event, interact=True, **kwargs) -> None:
         if event == "begin":
             apply_zoom("nurse", speak_zoom)
         elif event == "end":
             apply_zoom("nurse", idle_zoom)
 
-    def dismiss_callback():
-        renpy.play("click.ogg")
+    def dismiss_callback() -> bool:
+        renpy.play("ui/click.ogg")
         return True
 
     config.say_allow_dismiss = dismiss_callback
