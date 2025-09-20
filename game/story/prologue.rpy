@@ -17,6 +17,7 @@ label prologue_cg0:
     with dissolve
     pause 0.2
 
+    play sound "audio/sfx/glass.ogg"
     scene cg prologue 3 at cover_screen
     window hide(dissolve)
     pause 1.5
