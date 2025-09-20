@@ -15,7 +15,7 @@ init python:
         if event == "show_done":
             renpy.music.play("narrator", channel="character", relative_volume=0.3)
         elif event == "slow_done":
-            renpy.music.stop(chanel="character", fadeout=0.2)
+            renpy.music.stop(channel="character", fadeout=0.2)
 
     def eden_callback(event, interact=True, **kwargs) -> None:
         if event == "begin":
