@@ -15,7 +15,7 @@ label prologue_cg0:
     play sound "sfx/tension.ogg"
     scene cg prologue 2 at cover_screen
     with dissolve
-    pause 0.3
+    pause 0.5
 
     play sfx "sfx/glass.ogg" volume 0.8
     scene cg prologue 3 at cover_screen
