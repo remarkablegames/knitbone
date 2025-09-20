@@ -27,6 +27,7 @@ Play the game on:
   - [Footsteps Male](https://pixabay.com/sound-effects/footsteps-male-362053/)
   - [Glass Breaking Sound Effect](https://pixabay.com/sound-effects/glass-breaking-sound-effect-240679/)
   - [Open and Close Door](https://pixabay.com/sound-effects/open-and-close-door-405453/)
+  - [Tension Stinger - Ambience](https://pixabay.com/sound-effects/tension-stinger-ambience-355381/)
   - [Wind chime small](https://pixabay.com/sound-effects/wind-chime-small-64660/)
 
 ## Prerequisites

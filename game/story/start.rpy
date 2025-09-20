@@ -3,6 +3,10 @@ default karmic = 0
 default karmic_awareness = 0
 
 
+init python:
+    renpy.music.register_channel("sfx", "sound", loop=False)
+
+
 label splashscreen:
 
     # TODO: logo

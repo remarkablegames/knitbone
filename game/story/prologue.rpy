@@ -3,7 +3,6 @@ label prologue:
 
 
 label prologue_cg0:
-    $ quick_menu = True
     "{cps=35}It was supposed to be just another night.{/cps}"
     "{cps=35}Just me, and this pathetic quiet corner… in a dimly lit lounge...{/cps}"
     "...A place to vanish into my own thoughts without interruption."
@@ -13,11 +12,12 @@ label prologue_cg0:
     with fade
 
     "I didn't know it would turn out like this."
+    play sound "sfx/tension.ogg"
     scene cg prologue 2 at cover_screen
     with dissolve
-    pause 0.2
+    pause 0.3
 
-    play sound "sfx/glass.ogg"
+    play sfx "sfx/glass.ogg" volume 0.8
     scene cg prologue 3 at cover_screen
     window hide(dissolve)
     pause 1.5
