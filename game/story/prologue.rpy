@@ -84,13 +84,16 @@ label prologue_cg1:
 
 
 label prologue_ryohei:
-    #scene lounge_door_open with fade
-
+    # scene lounge_door_open with fade
     # Ryohei’s entrance
+
     show ryohei look at slow_zoom, center
     with dissolve
+    play sound "sfx/footsteps.ogg"
+
     "A guy had walked in with an easy confidence, and everyone eyed on him."
     "He smiled at the bartender, waved at someone like they were old friends."
+
     show ryohei look2
     _eden_ "..."
     _eden_ "So, he's that kind of guy huh."

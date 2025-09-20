@@ -24,6 +24,7 @@ Play the game on:
 
 - [Kenney](https://kenney.nl/assets/interface-sounds)
 - Pixabay
+  - [Footsteps Male](https://pixabay.com/sound-effects/footsteps-male-362053/)
   - [Glass Breaking Sound Effect](https://pixabay.com/sound-effects/glass-breaking-sound-effect-240679/)
   - [Open and Close Door](https://pixabay.com/sound-effects/open-and-close-door-405453/)
   - [Wind chime small](https://pixabay.com/sound-effects/wind-chime-small-64660/)
