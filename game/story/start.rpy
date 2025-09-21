@@ -16,11 +16,10 @@ label splashscreen:
     scene black with fade
     pause 1
 
-    # TODO: content warning
-    show SplashInfo __("Content Warning") with Dissolve(1)
+    show text "{color=#ccc}⚠️ Content Warning\n\nThis game contains content such as cult, murder, emotional manipulation, body horror, blood, consuming non-edible objects (worms), and alcohol." with Dissolve(1)
     pause 5
 
-    hide SplashInfo with Dissolve(1)
+    scene black with Dissolve(1)
     pause 1
 
     return
