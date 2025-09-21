@@ -34,7 +34,7 @@ image cg cafe:
 
 #
 
-image cg cafe:
+image cg hypnosis:
     "images/cg/cafe/cg hypnosis 1.png"
     pause 0.3
     "images/cg/cafe/cg hypnosis 2.png"
@@ -49,7 +49,7 @@ image cg cafe:
     pause 0.3
     "images/cg/cafe/cg hypnosis 7.png"
     pause 0.3
-    "images/cg/cafe/cg cafe 8.png"
+    "images/cg/cafe/cg hypnosis 8.png"
     pause 0.3
     repeat
     fit "contain"
