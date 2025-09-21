@@ -31,3 +31,25 @@ image cg cafe:
     pause 0.1
     repeat
     fit "contain"
+
+#
+
+image cg cafe:
+    "images/cg/cafe/cg hypnosis 1.png"
+    pause 0.3
+    "images/cg/cafe/cg hypnosis 2.png"
+    pause 0.3
+    "images/cg/cafe/cg hypnosis 3.png"
+    pause 0.3
+    "images/cg/cafe/cg hypnosis 4.png"
+    pause 0.3
+    "images/cg/cafe/cg hypnosis 5.png"
+    pause 0.3
+    "images/cg/cafe/cg hypnosis 6.png"
+    pause 0.3
+    "images/cg/cafe/cg hypnosis 7.png"
+    pause 0.3
+    "images/cg/cafe/cg cafe 8.png"
+    pause 0.3
+    repeat
+    fit "contain"
