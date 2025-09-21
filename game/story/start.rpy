@@ -11,32 +11,30 @@ label splashscreen:
 
     # TODO: logo
     scene bg logo with Dissolve(1)
-    pause 1.0
+    pause 1
 
     scene black with fade
-    pause 1.0
+    pause 1
 
     # TODO: content warning
-    show SplashInfo __("Content Warning") with Dissolve(1.0)
-    pause 6
+    show SplashInfo __("Content Warning") with Dissolve(1)
+    pause 5
 
-    hide SplashInfo with Dissolve(1.0)
-    pause 1.0
+    hide SplashInfo with Dissolve(1)
+    pause 1
 
     return
 
 
 label start:
 
-    stop music fadeout 1.0
+    stop music fadeout 1.5
+    pause 1
 
-    pause(1)
-    show text "KnitBone" with dissolve
+    show text "{size=75}{color=#ccc}KnitBone" with dissolve
+    pause 2
 
-    pause(2)
-    hide text with dissolve
-
-    scene black
-    pause 2.0
+    scene black with dissolve
+    pause 2
 
     jump prologue
