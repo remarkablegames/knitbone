@@ -19,7 +19,6 @@ label prologue_cg0:
 
     play sfx "sfx/glass.ogg" volume 0.8
     scene cg prologue 3 at cover_screen
-    window hide(dissolve)
     pause 1.5
 
     "That night..."
@@ -45,17 +44,17 @@ label prologue_cg1:
 
     "Hi, I’m Eden."
     "I’m a psychology major."
-    " I got good grades{w=0.2} and was considered to have {i}so much potential.{i}"
-    _eden_ "......{cps=15}"
+    " I got good grades{w=0.2} and was considered to have {i}so much potential."
+    eden "...{cps=15}"
 
     pause 0.5
     
-    _eden_ "But that was years ago...{w=0.2} When I had directions in my life."
+    eden "{i}But that was years ago...{w=0.2} When I had directions in my life."
 
-    _eden_ "Now? I’m surviving on coffee and three hours of sleep."
-    _eden_ "I changed three jobs in just twelve months.{w=0.2} What a record."
-    _eden_ "Every “fresh start” only left me more tangled in doubt.{w=0.1} And yeah, I just ended up more lost."
-    _eden_ "I don’t even recognize who I am anymore."
+    eden "{i}Now? I’m surviving on coffee and three hours of sleep."
+    eden "{i}I changed three jobs in just twelve months.{w=0.2} What a record."
+    eden "{i}Every “fresh start” only left me more tangled in doubt.{w=0.1} And yeah, I just ended up more lost."
+    eden "{i}I don’t even recognize who I am anymore."
 
     show cg cafe at shake
     stop music
@@ -95,11 +94,11 @@ label prologue_ryohei:
     "He smiled at the bartender, waved at someone like they were old friends."
 
     show ryohei look2
-    _eden_ "..."
-    _eden_ "So, he’s that kind of guy huh."
-    _eden_ "He looked... so put together—assertive and relaxed."
-    _eden_ "And his shirt—that probably cost more than my rent, yet he wore it so casually."
-    _eden_ "Everything about him was the opposite of me..."
+    eden "..."
+    eden "{i}So, he’s that kind of guy huh."
+    eden "{i}He looked... so put together—assertive and relaxed."
+    eden "{i}And his shirt—that probably cost more than my rent, yet he wore it so casually."
+    eden "{i}Everything about him was the opposite of me..."
 
     show ryohei look
     "He paused at the entrance, scanning the lounge like he was deciding where to sit."
@@ -108,11 +107,11 @@ label prologue_ryohei:
 
     show ryohei serious with dissolve
 
-    eden "!!!"
+    eden "!!"
     "And then he saw me, surprised as his eyes locked onto mine."
     pause 0.3
-    show ryohei laugh with dissolve
-    ryohei "…"
+
+    ryohei laugh "…"
     "He smiled."
     pause 0.4
     hide ryohei
@@ -132,33 +131,26 @@ label prologue_ryohei:
     show ryohei neutral at left with dissolve
     show eden neutral at right with dissolve
 
-    _eden_ "Why is he standing right here?"
+    eden "{i}Why is he standing right here?"
     pause 0.2
 
-    show ryohei neutral with dissolve
     ryohei "Hey... Eden?"
-    show eden awkward
-    eden "!!!"
-
+    eden awkward "!!"
     pause 0.2
 
     eden "You know my name?"
     show ryohei smirk2 with dissolve
     "My confusion must’ve shown on my face because he chuckled."
 
-    show ryohei neutral with dissolve
-    ryohei "It’s me, Ryohei Damien. Haha, sorry. You might not remember me."
+    ryohei neutral "It’s me, Ryohei Damien. Haha, sorry. You might not remember me."
 
     pause 0.5
-    _eden_ "Oh."
+    eden "{i}Oh."
     pause 0.5
 
     scene bg lounge at slight_shake
-    _eden_ "It’s you."
-
+    eden "{i}It’s you."
     pause 1
-    hide eden
-    hide ryohei
 
     # Flashback voiceover
     scene black with fade
@@ -177,15 +169,14 @@ label prologue_ryohei:
     eden "I never expected to be on his radar."
     eden "We shared a few lectures, maybe a group project once, but I was always the quiet one. I was the guy people tend to forget."
 
-    _eden_ "But I remembered him."
-    _eden_ "Goddamn, I think I remembered him more than I should."
+    eden "{i}But I remembered him."
+    eden "{i}Goddamn, I think I remembered him more than I should."
 
     eden "People wouldn’t shut up about him."
     eden "The rumors that he got scouted by some research lab."
     eden "The times he stood in front of the class with that calm presence. He’s always sure of himself."
 
     pause 0.7
-    hide text
 
     scene cg talk at cover_screen
     with dissolve
@@ -207,6 +198,7 @@ label prologue_ryohei:
     ryohei "Hey, do you remember that time you made Professor Sam trip over his own lecture notes? Still one of the funniest moments ever."
     eden "You...{w=0.2} remembered that?"
     ryohei "Honestly, that’s one of my favorite memories from back in college."
+
     pause 0.3
     "And for the first time in a long while...{w=0.2} I didn’t feel like a total failure."
     "Maybe this is what I needed after all."
