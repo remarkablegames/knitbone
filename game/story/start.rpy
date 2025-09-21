@@ -9,9 +9,8 @@ init python:
 
 label splashscreen:
 
-    # TODO: logo
-    scene bg logo with Dissolve(1)
-    pause 1
+    scene bg splashscreen with Dissolve(1)
+    pause 2
 
     scene black with fade
     pause 1
