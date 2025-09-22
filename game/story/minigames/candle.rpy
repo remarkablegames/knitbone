@@ -14,9 +14,9 @@ label candle_minigame_lose:
 
 init python:
     class Candle:
-        def __init__(self, moves: int, values: list) -> None:
+        def __init__(self, moves: int, candles: int) -> None:
             self.moves = moves
-            self.values = values
+            self.values = renpy.random.sample(list(range(1, candles + 1)), candles)
 
         def ondrag(self, drags, drop) -> None:
             drag = drags[0]

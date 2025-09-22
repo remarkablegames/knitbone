@@ -211,11 +211,11 @@ label prologue_ryohei:
         "Play the candle minigame?"
 
         "5 candles":
-            $ candle = Candle(4, [2, 3, 4, 5, 1])
+            $ candle = Candle(moves=4, candles=5)
             jump candle_minigame
 
         "6 candles":
-            $ candle = Candle(5, [4, 3, 6, 1, 2, 5])
+            $ candle = Candle(moves=5, candles=6)
             jump candle_minigame
 
         "No":
