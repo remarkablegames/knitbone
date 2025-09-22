@@ -38,7 +38,7 @@ label prologue_cg0:
 
 
 label prologue_cg1:
-    show cg cafe at cover_screen
+    show cg bar at cover_screen
     with dissolve
     pause 0.7
 
@@ -56,7 +56,7 @@ label prologue_cg1:
     eden "{i}Every “fresh start” only left me more tangled in doubt.{w=0.1} And yeah, I just ended up more lost."
     eden "{i}I don’t even recognize who I am anymore."
 
-    show cg cafe at shake
+    show cg bar at shake
     stop music
     play sound "sfx/chime.ogg"
     "*chimes*"
@@ -67,7 +67,7 @@ label prologue_cg1:
 
     scene black with fade
     pause 0.7
-    hide cg cafe with dissolve
+    hide cg bar with dissolve
 
     "It seems like the vibe shifted, as if someone flipped a switch."
     "So I can’t help but to look..."
