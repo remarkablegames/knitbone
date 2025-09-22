@@ -14,9 +14,9 @@ label candle_minigame_lose:
 
 init python:
     class Candle:
-        def __init__(self) -> None:
-            self.moves = 4
-            self.values = [2, 3, 4, 5, 1]
+        def __init__(self, moves: int, values: list) -> None:
+            self.moves = moves
+            self.values = values
 
         def ondrag(self, drags, drop) -> None:
             drag = drags[0]
@@ -49,7 +49,7 @@ init python:
 
         def get_snap(self, index: int) -> dict:
             return {
-                "x": index / 10 * 1.5,
+                "x": (index - 1) / len(self.values),
                 "y": 0.5,
                 "delay": 0.2,
             }
@@ -62,9 +62,6 @@ init python:
         def parse_drag_name(self, name: str) -> dict:
             [index, value] = name.split(",")
             return [int(index), int(value)]
-
-
-    candle = Candle()
 
 
 screen candle_minigame:

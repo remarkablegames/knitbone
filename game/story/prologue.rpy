@@ -210,7 +210,12 @@ label prologue_ryohei:
     menu:
         "Play the candle minigame?"
 
-        "Yes":
+        "5 candles":
+            $ candle = Candle(4, [2, 3, 4, 5, 1])
+            jump candle_minigame
+
+        "6 candles":
+            $ candle = Candle(5, [4, 3, 6, 1, 2, 5])
             jump candle_minigame
 
         "No":
