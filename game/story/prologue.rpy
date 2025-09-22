@@ -207,20 +207,26 @@ label prologue_ryohei:
 
     "I just need a reminder that I hadn’t vanished completely."
 
+    jump timer_example
+
+
+label timer_example:
+    $ countdown.set(5, "end")
+    show screen countdown
+
     menu:
         "Play the candle minigame?"
 
         "5 candles":
+            hide screen countdown
             $ candle = Candle(moves=4, candles=5)
             jump candle_minigame
 
         "6 candles":
+            hide screen countdown
             $ candle = Candle(moves=5, candles=6)
             jump candle_minigame
 
         "No":
-            pass
-
-    scene black with fade
-
-    return
+            hide screen countdown
+            jump end
