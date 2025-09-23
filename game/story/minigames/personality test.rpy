@@ -140,7 +140,7 @@ label personality_test:
     pause 0.5
     show entity 1
     pause 2.0
-    play sound "sfx/bone_snap.mp3"
+    play sound "audio/sfx/bone_snap.ogg"
     show entity 2
     pause 3.0
     hide entity
@@ -309,4 +309,5 @@ label session1_end:
     "His tone stays gentle, though there’s a weight behind it."
     
     #jump session2
+
     jump end
