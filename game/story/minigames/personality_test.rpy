@@ -34,8 +34,7 @@ label personality_test1:
         "I grab a snack, or adjust my bed":
             $ physics_score += 1
 
-    show ryohei seated look
-    ryohei "Gotcha."
+    ryohei seated look "Gotcha."
     ryohei "Insomnia sounds exhausting. That must be rough."
     ryohei "Moving on...."
 
@@ -55,8 +54,7 @@ label personality_test2:
         "I shower, change into comfy clothes, then chill in a cozy spot":
             $ physics_score += 1
 
-    show ryohei seated neutral
-    ryohei "I see."
+    ryohei seated neutral "I see."
 
     jump personality_test3
 
@@ -81,7 +79,6 @@ label personality_test3:
 
 
 label personality_test4:
-    # QUESTION 4
     menu:
         "What motivates you the most?"
 
@@ -96,8 +93,8 @@ label personality_test4:
 
     ryohei "Noted."
     pause 0.5
-    show ryohei seated smile
-    ryohei "Alright, time for a little roleplay."
+
+    ryohei seated smile "Alright, time for a little roleplay."
     ryohei "Please imagine the following scenario..."
 
     jump personality_test5
@@ -173,7 +170,6 @@ label personality_test7:
     with dissolve
 
     show ryohei seated crazy
-    with dissolve
 
     "{cps=10}..."
     ryohei "{w=2.0}:)"
@@ -182,8 +178,7 @@ label personality_test7:
     ryohei "Well, would your reaction align with the choice you made earlier?"
     pause 2.0
 
-    show ryohei seated neutral with dissolve
-    ryohei "Let’s continue. {w=0.3}We won’t dwell on it."
+    ryohei seated neutral "Let’s continue.{w=0.3} We won’t dwell on it."
 
     play music "music/theme3.ogg" fadein 1.0 volume 0.4
 
@@ -295,21 +290,19 @@ label unreadable_result:
 label reveal_result:
     # Show the chosen type reveal. Ryohei reads it conversationally.
     if session1_result == "logic":
-        show ryohei seated neutral with dissolve
-        ryohei "It seems like you are {b}Logic-First"
+        ryohei seated neutral "It seems like you are {b}Logic-First"
         ryohei "{w=0.25}You’re good at cutting through confusion."
         ryohei "When things don’t make sense, you’re the one who figures it out and puts the pieces back together."
         ryohei "{w=0.4}But there’s a cost, isn’t there?"
-        ryohei "You wonder if people see you as too cold or distant-"
-        ryohei "like you care more about facts than feelings. And you worry what happens if your logic stops working one day."
+        ryohei "You wonder if people see you as too cold or distant—"
+        ryohei "Like you care more about facts than feelings. And you worry what happens if your logic stops working one day."
 
         $ persistent.session1_reading = "logic"
 
         jump session1_end
 
     elif session1_result == "ethics":
-        show ryohei seated neutral with dissolve
-        ryohei "It seems like you are {b}Ethics-First"
+        ryohei seated neutral "It seems like you are {b}Ethics-First"
         ryohei "{w=0.25}You feel people deeply. You can walk into a room and pick up on what others are holding back — the hurt, the hope, the need."
         ryohei "That sensitivity makes people feel seen in ways they rarely do. Being around you feels safe, because you don’t just notice, you care."
         ryohei "{w=0.4}But it’s heavy sometimes, isn’t it?"
@@ -320,21 +313,19 @@ label reveal_result:
         jump session1_end
 
     elif session1_result == "will":
-        show ryohei seated neutral with dissolve
-        ryohei "It seems like you are you are {b}Will-First."
+        ryohei seated neutral "It seems like you are you are {b}Will-First."
         ryohei "{w=0.25}You don’t wait, you act. When others stall, you move forward; when doors close, you push them open."
         ryohei " Your drive creates paths where none exist, and that force keeps not just you alive, but often others too."
         ryohei "{w=0.4}But there’s a cost, isn’t there?"
-        ryohei "force comes with risk. You fear people see you as reckless or intimidating, and worse... your own hands might one day destroy what you most wanted to protect."
+        ryohei "Force comes with risk. You fear people see you as reckless or intimidating, and worse... your own hands might one day destroy what you most wanted to protect."
 
         $ persistent.session1_reading = "will"
 
         jump session1_end
 
     elif session1_result == "physics":
-        show ryohei seated neutral with dissolve
-        ryohei "It seems like you are you are {b}Physics-First."
-        ryohei "{w=0.25}You trust what’s real. The solid things, such as routines, touch, breath."
+        ryohei seated neutral "It seems like you are you are {b}Physics-First."
+        ryohei "{w=0.25}You trust what’s real. The solid things, such as routines, touch, and breath."
         ryohei "You’re good at keeping yourself steady when the world tilts, and that steadiness spills over to the people around you."
         ryohei "{w=0.4}But there’s a cost, isn’t there?"
         ryohei "You wonder if it makes you small. That people will think you’re clinging to little comforts, too simple to handle the big picture."
@@ -346,8 +337,8 @@ label reveal_result:
 
 label session1_end:
     stop music fadeout 1.0
-    show ryohei seated smile
-    ryohei "{w=0.4}Thanks for that. I’ve learned a lot about you already. Shall we move on to the next session?"
+
+    ryohei seated smile "{w=0.4}Thanks for that. I’ve learned a lot about you already. Shall we move on to the next session?"
     ryohei "Remember, this is all just for fun. Don’t take the results too seriously."
     show ryohei seated look
     "His tone stays gentle, though there’s a weight behind it."
