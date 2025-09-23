@@ -12,6 +12,28 @@ label candle_minigame_lose:
     jump end
 
 
+screen candle_minigame:
+    frame:
+        background Solid((0, 0, 0, 100))
+        text "Remaining Moves: [candle.moves]"
+        xpos 30
+        ypos 30
+
+    draggroup:
+        for index, value in enumerate(candle.values, start=1):
+            drag:
+                child f"candle/candle {value}.png"
+                hover_child f"candle/candle {value} hover.png"
+                selected_child f"candle/candle {value} hover.png"
+                drag_name candle.stringify_drag_name(index, value)
+                draggable True
+                dragged candle.ondrag
+                droppable True
+                xpos candle.get_snap(index)["x"]
+                ypos candle.get_snap(index)["y"]
+                hovered [Queue("sound", "ui/mouserelease1.ogg")]
+
+
 init python:
     class Candle:
         def __init__(self, moves: int, candles: int) -> None:
@@ -62,25 +84,3 @@ init python:
         def parse_drag_name(self, name: str) -> dict:
             [index, value] = name.split(",")
             return [int(index), int(value)]
-
-
-screen candle_minigame:
-    frame:
-        background Solid((0, 0, 0, 100))
-        text "Remaining Moves: [candle.moves]"
-        xpos 30
-        ypos 30
-
-    draggroup:
-        for index, value in enumerate(candle.values, start=1):
-            drag:
-                child f"candle/candle {value}.png"
-                hover_child f"candle/candle {value} hover.png"
-                selected_child f"candle/candle {value} hover.png"
-                drag_name candle.stringify_drag_name(index, value)
-                draggable True
-                dragged candle.ondrag
-                droppable True
-                xpos candle.get_snap(index)["x"]
-                ypos candle.get_snap(index)["y"]
-                hovered [Queue("sound", "ui/mouserelease1.ogg")]
