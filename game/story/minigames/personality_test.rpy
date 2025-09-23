@@ -17,7 +17,10 @@ label personality_test:
     show ryoheic neutral with dissolve
     ryohei "Alright!{w=0.4} rules are simple: pick whatever feels most like you. Don’t overthink it, just go with your gut."
 
-    # QUESTION 1
+    jump personality_test1
+
+
+label personality_test1:
     ryohei "First question..."
 
     menu:
@@ -36,7 +39,10 @@ label personality_test:
     ryohei "Insomnia sounds exhausting. That must be rough."
     ryohei "Moving on...."
 
-    # QUESTION 2
+    jump personality_test2
+
+
+label personality_test2:
     menu:
         "How do you usually recharge after a long stressful day?"
 
@@ -52,7 +58,10 @@ label personality_test:
     show ryoheic neutral
     ryohei "I see."
 
-    # QUESTION 3
+    jump personality_test3
+
+
+label personality_test3:
     menu:
         "How do you usually tell when someone’s lying to you?"
 
@@ -68,6 +77,10 @@ label personality_test:
     ryohei "Hmm, interesting."
     ryohei "Okay, next one."
 
+    jump personality_test4
+
+
+label personality_test4:
     # QUESTION 4
     menu:
         "What motivates you the most?"
@@ -87,7 +100,10 @@ label personality_test:
     ryohei "Alright, time for a little roleplay."
     ryohei "Please imagine the following scenario..."
 
-    # QUESTION 5
+    jump personality_test5
+
+
+label personality_test5:
     menu:
         "You’re on a forest path and it splits three ways. What do you do?"
 
@@ -103,7 +119,10 @@ label personality_test:
     ryohei "Nice... That’s an interesting take."
     pause 0.5
 
-    # QUESTION  6
+    jump personality_test6
+
+
+label personality_test6:
     menu:
         "You hear a weird noise upstair in an empty house. What is the first thing you’ll do?"
 
@@ -120,7 +139,10 @@ label personality_test:
     ryohei "Let’s proceed."
     pause 0.5
 
-    # QUESTION 7
+    jump personality_test7
+
+
+label personality_test7:
     menu:
         "A strange creature suddenly appears and stares at you. How do you react?"
 
@@ -161,7 +183,10 @@ label personality_test:
 
     play music "music/theme3.ogg" fadein 1.0 volume 0.4
 
-    # QUESTIONS 8
+    jump personality_test8
+
+
+label personality_test8:
     ryohei "Okay, roleplay’s over! Let’s get back to you."
     pause 0.3
 
@@ -178,7 +203,10 @@ label personality_test:
 
     ryohei "We’re nearing the end...!"
 
-    # QUESTION 9
+    jump personality_test9
+
+
+label personality_test9:
     menu:
         "Which word resonates with you the most?"
         "Luminous":
@@ -192,7 +220,10 @@ label personality_test:
 
     ryohei "One final question."
 
-    # QUESTION 10
+    jump personality_test10
+
+
+label personality_test10:
     menu:
         "Which word resonates with you the most?"
         "Logic":
