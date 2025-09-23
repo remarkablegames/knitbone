@@ -92,26 +92,29 @@ label prologue_ryohei:
 
     "A guy had walked in with an easy confidence, and everyone eyed on him."
     "He smiled at the bartender, waved at someone like they were old friends."
+    show ryohei look2 at center
 
-    show ryohei look2
     eden "..."
     eden "{i}So, he’s that kind of guy huh."
     eden "{i}He looked... so put together—assertive and relaxed."
     eden "{i}And his shirt—that probably cost more than my rent, yet he wore it so casually."
     eden "{i}Everything about him was the opposite of me..."
 
-    show ryohei look
+    show ryohei look at flip, center
+    with dissolve
     "He paused at the entrance, scanning the lounge like he was deciding where to sit."
+
+    show ryohei look at unflip, center
+    with dissolve
     "I should have looked away, but I didn’t."
     pause 0.5
 
-    show ryohei serious with dissolve
-
+    show ryohei serious
     eden "!!"
     "And then he saw me, surprised as his eyes locked onto mine."
     pause 0.3
 
-    ryohei laugh "…"
+    ryohei laugh "..."
     "He smiled."
     pause 0.4
     hide ryohei
@@ -159,7 +162,7 @@ label prologue_ryohei:
     pause 1.0
     eden "That hit me."
 
-    eden "Ryohei...."
+    eden "Ryohei..."
     eden "The Ryohei Damien."
 
     eden "We were in the same department back in college."
