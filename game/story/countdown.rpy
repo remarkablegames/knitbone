@@ -10,16 +10,20 @@ init python:
         def decrement(self) -> None:
             self.current -= self.DECREMENT
 
+        def end(self) -> None:
+            renpy.hide_screen("countdown")
+            renpy.jump(self.jump)
+
     countdown = Countdown()
 
 
-screen countdown():
+screen countdown:
     timer countdown.DECREMENT:
         repeat True
         action If(
             countdown.current > 0,
             true=Function(countdown.decrement),
-            false=[Hide('countdown'), Jump(countdown.jump)]
+            false=Function(countdown.end),
         ) 
 
     bar value AnimatedValue(countdown.current, countdown.length):
