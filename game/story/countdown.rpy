@@ -13,6 +13,7 @@ init python:
         def end(self) -> None:
             renpy.hide_screen("countdown")
             renpy.jump(self.jump)
+            self.current = self.length
 
     countdown = Countdown()
 
