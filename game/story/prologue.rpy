@@ -8,7 +8,7 @@ label prologue_cg0:
     "A place to vanish into my own thoughts without interruption."
     pause 1.5
 
-    scene cg prologue 1 at slow_zoom, cover_screen
+    scene cg prologue 1 at slow_zoom
     with fade
 
     "I didn’t know it would turn out like this."
@@ -25,7 +25,7 @@ label prologue_cg0:
 
     #clinkclanksfx
     play music "music/bar.ogg" fadein 1.5 volume 0.8
-    scene black at slow_zoom
+    scene black
     with fade
 
     pause 1.0
@@ -215,7 +215,7 @@ label timer_example:
     show screen countdown
 
     menu:
-        "Play the candle minigame?"
+        "Play the minigame?"
 
         "5 candles":
             hide screen countdown

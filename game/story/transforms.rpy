@@ -1,6 +1,5 @@
 transform slow_zoom:
-    anchor (0.5, 0.5)
-    align (0.5, 0.5)
+    truecenter
     zoom 1.1
     linear 3.0 zoom 1.0
 
