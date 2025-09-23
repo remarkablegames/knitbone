@@ -1,19 +1,23 @@
 init python:
     class Countdown:
         DECREMENT = 0.01
+        SCREEN = "countdown"
 
-        def set(self, seconds: int, jump: str) -> None:
+        def start(self, seconds: int, jump: str) -> None:
             self.current = seconds
             self.length = seconds
             self.jump = jump
+            renpy.show_screen(self.SCREEN)
+
+        def cancel(self) -> None:
+            renpy.hide_screen(self.SCREEN)
 
         def decrement(self) -> None:
             self.current -= self.DECREMENT
 
         def end(self) -> None:
-            renpy.hide_screen("countdown")
+            self.cancel()
             renpy.jump(self.jump)
-            self.current = self.length
 
     countdown = Countdown()
 

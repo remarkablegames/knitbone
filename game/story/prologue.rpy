@@ -122,7 +122,7 @@ label prologue_ryohei:
     show eden awkward with dissolve
     "That got me holding my breath."
     "I quickly forced a polite smile even with my heart racing."
-    "There was something oddly familiar about him… but I couldn’t figure it out."
+    "There was something oddly familiar about him... but I couldn’t figure it out."
 
     pause 0.5
     hide eden with fade
@@ -214,27 +214,26 @@ label prologue_ryohei:
 
 
 label timer_example:
-    $ countdown.set(5, "end")
-    show screen countdown
+    $ countdown.start(seconds=5, jump="end")
 
     menu:
         "Play the minigame?"
 
         "5 candles":
-            hide screen countdown
+            $ countdown.cancel()
             $ candle = Candle(moves=4, candles=5)
             jump candle_minigame
 
         "6 candles":
-            hide screen countdown
+            $ countdown.cancel()
             $ candle = Candle(moves=5, candles=6)
             jump candle_minigame
 
         "Hypnosis":
-            hide screen countdown
+            $ countdown.cancel()
             $ slider = Slider(speed=5)
             jump hypnosis_minigame
 
         "Personality test":
-            hide screen countdown
+            $ countdown.cancel()
             jump personality_test
