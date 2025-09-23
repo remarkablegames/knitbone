@@ -14,7 +14,7 @@ label personality_test:
 
     "(Note: Your choices here won’t alter the endings... but they might reveal words you’d never hear otherwise.)"
     pause 0.5
-    show ryoheic neutral with dissolve
+    show ryohei seated neutral with dissolve
     ryohei "Alright!{w=0.4} rules are simple: pick whatever feels most like you. Don’t overthink it, just go with your gut."
 
     jump personality_test1
@@ -34,7 +34,7 @@ label personality_test1:
         "I grab a snack, or adjust my bed":
             $ physics_score += 1
 
-    show ryoheic look
+    show ryohei seated look
     ryohei "Gotcha."
     ryohei "Insomnia sounds exhausting. That must be rough."
     ryohei "Moving on...."
@@ -55,7 +55,7 @@ label personality_test2:
         "I shower, change into comfy clothes, then chill in a cozy spot":
             $ physics_score += 1
 
-    show ryoheic neutral
+    show ryohei seated neutral
     ryohei "I see."
 
     jump personality_test3
@@ -96,7 +96,7 @@ label personality_test4:
 
     ryohei "Noted."
     pause 0.5
-    show ryoheic smile
+    show ryohei seated smile
     ryohei "Alright, time for a little roleplay."
     ryohei "Please imagine the following scenario..."
 
@@ -172,7 +172,7 @@ label personality_test7:
     hide entity
     with dissolve
 
-    show ryoheic crazy
+    show ryohei seated crazy
     with dissolve
 
     "{cps=10}..."
@@ -182,7 +182,7 @@ label personality_test7:
     ryohei "Well, would your reaction align with the choice you made earlier?"
     pause 2.0
 
-    show ryoheic neutral with dissolve
+    show ryohei seated neutral with dissolve
     ryohei "Let’s continue. {w=0.3}We won’t dwell on it."
 
     play music "music/theme3.ogg" fadein 1.0 volume 0.4
@@ -295,7 +295,7 @@ label unreadable_result:
 label reveal_result:
     # Show the chosen type reveal. Ryohei reads it conversationally.
     if session1_result == "logic":
-        show ryoheic neutral with dissolve
+        show ryohei seated neutral with dissolve
         ryohei "It seems like you are {b}Logic-First"
         ryohei "{w=0.25}You’re good at cutting through confusion."
         ryohei "When things don’t make sense, you’re the one who figures it out and puts the pieces back together."
@@ -308,7 +308,7 @@ label reveal_result:
         jump session1_end
 
     elif session1_result == "ethics":
-        show ryoheic neutral with dissolve
+        show ryohei seated neutral with dissolve
         ryohei "It seems like you are {b}Ethics-First"
         ryohei "{w=0.25}You feel people deeply. You can walk into a room and pick up on what others are holding back — the hurt, the hope, the need."
         ryohei "That sensitivity makes people feel seen in ways they rarely do. Being around you feels safe, because you don’t just notice, you care."
@@ -320,7 +320,7 @@ label reveal_result:
         jump session1_end
 
     elif session1_result == "will":
-        show ryoheic neutral with dissolve
+        show ryohei seated neutral with dissolve
         ryohei "It seems like you are you are {b}Will-First."
         ryohei "{w=0.25}You don’t wait, you act. When others stall, you move forward; when doors close, you push them open."
         ryohei " Your drive creates paths where none exist, and that force keeps not just you alive, but often others too."
@@ -332,7 +332,7 @@ label reveal_result:
         jump session1_end
 
     elif session1_result == "physics":
-        show ryoheic neutral with dissolve
+        show ryohei seated neutral with dissolve
         ryohei "It seems like you are you are {b}Physics-First."
         ryohei "{w=0.25}You trust what’s real. The solid things, such as routines, touch, breath."
         ryohei "You’re good at keeping yourself steady when the world tilts, and that steadiness spills over to the people around you."
@@ -346,10 +346,10 @@ label reveal_result:
 
 label session1_end:
     stop music fadeout 1.0
-    show ryoheic smile
+    show ryohei seated smile
     ryohei "{w=0.4}Thanks for that. I’ve learned a lot about you already. Shall we move on to the next session?"
     ryohei "Remember, this is all just for fun. Don’t take the results too seriously."
-    show ryoheic look
+    show ryohei seated look
     "His tone stays gentle, though there’s a weight behind it."
 
     #jump session2
