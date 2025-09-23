@@ -27,12 +27,6 @@ init python:
         elif event == "slow_done":
             renpy.music.stop(channel="character", fadeout=0.2)
 
-    def nurse_callback(event, interact=True, **kwargs) -> None:
-        if event == "begin":
-            apply_zoom("nurse", speak_zoom)
-        elif event == "end":
-            apply_zoom("nurse", idle_zoom)
-
     def dismiss_callback() -> bool:
         renpy.play("ui/click.ogg")
         return True
@@ -43,6 +37,3 @@ init python:
 define narrator = Character(None, callback=narrator_callback)
 define eden = Character("Eden", callback=eden_callback, image="eden", what_color="#293728", who_color="#eceeea", who_outlines=[(3, "#949b8f", 0, 0)])
 define ryohei = Character("Ryohei", callback=ryohei_callback, image="ryohei", what_color="#272e3f", who_color="#6b7c95", who_outlines=[(3, "#303133", 0, 0)])
-define idk = Character("???", what_color="#ff3e96", what_italic=True)
-define unknown = Character("???")
-define m = Character("{i}[uname]{/i}")
