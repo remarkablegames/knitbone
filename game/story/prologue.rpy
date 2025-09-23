@@ -234,3 +234,7 @@ label timer_example:
             hide screen countdown
             $ slider = Slider(speed=5)
             jump hypnosis_minigame
+
+        "Personality test":
+            hide screen countdown
+            jump personality_test
