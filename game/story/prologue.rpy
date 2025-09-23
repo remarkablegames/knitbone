@@ -227,6 +227,7 @@ label timer_example:
             $ candle = Candle(moves=5, candles=6)
             jump candle_minigame
 
-        "No":
+        "Hypnosis":
             hide screen countdown
-            jump end
+            $ slider = Slider(speed=5)
+            jump hypnosis_minigame
