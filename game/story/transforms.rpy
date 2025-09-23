@@ -7,6 +7,14 @@ transform flip:
     xzoom -1.0
 
 
+transform opacity(value):
+    alpha value
+
+
+transform scale(ratio):
+    zoom ratio
+
+
 transform shake:
     linear 0.05 xoffset -12
     linear 0.05 xoffset 12

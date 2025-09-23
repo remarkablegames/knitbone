@@ -155,26 +155,30 @@ label personality_test7:
         "Run away":
             $ physics_score += 1
 
-    #slight jumpscare here
-    #idk what kind of transform is suitable here...
-
+    stop character fadeout 0.2
     stop music
     pause 0.5
+    play sound "sfx/tension.ogg"
 
-    show entity 1
-    pause 2.0
+    show entity 1 at center, opacity(0.6), scale(1.1)
+    with moveinbottom
+    with vpunch
+    pause 1
 
-    play sound "audio/sfx/bone_snap.ogg"
+    play sfx "sfx/bone_snap.ogg"
     show entity 2
-    pause 3.0
+    pause 1.5
 
     hide entity
+    with dissolve
+
     show ryoheic crazy
+    with dissolve
 
     "{cps=10}..."
     ryohei "{w=2.0}:)"
     ryohei "What’s wrong? Did that catch you off guard?"
-    ryohei "...You saw that too, right?"
+    ryohei "... You saw that too, right?"
     ryohei "Well, would your reaction align with the choice you made earlier?"
     pause 2.0
 
@@ -191,7 +195,7 @@ label personality_test8:
     pause 0.3
 
     menu:
-        "...Which compliment do you like the most?"
+        "... Which compliment do you like the most?"
         "“You’re so sharp and smart”":
             $ logic_score += 1
         "“You’re authentic and honest”":
@@ -201,7 +205,7 @@ label personality_test8:
         "“You seem steady and chill”":
             $ physics_score += 1
 
-    ryohei "We’re nearing the end...!"
+    ryohei "We’re nearing the end!"
 
     jump personality_test9
 
