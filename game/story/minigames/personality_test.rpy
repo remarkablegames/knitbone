@@ -9,7 +9,7 @@ default session1_result = ""  # logic/ethics/will/physics/unreadable
 
 label personality_test:
     scene bg_studio with fade
-    play music "music/theme3.ogg" fadein 1.0 volume 0.4
+    play music "music/theme3.ogg" fadein 1 volume 0.4
     #our composer made this :)
 
     "(Note: Your choices here won’t alter the endings... but they might reveal words you’d never hear otherwise.)"
@@ -180,7 +180,7 @@ label personality_test7:
 
     ryohei seated neutral "Let’s continue.{w=0.3} We won’t dwell on it."
 
-    play music "music/theme3.ogg" fadein 1.0 volume 0.4
+    play music "music/theme3.ogg" fadein 1 volume 0.4
 
     jump personality_test8
 
@@ -336,7 +336,7 @@ label reveal_result:
 
 
 label session1_end:
-    stop music fadeout 1.0
+    stop music fadeout 1
 
     ryohei seated smile "{w=0.4}Thanks for that. I’ve learned a lot about you already. Shall we move on to the next session?"
     ryohei "Remember, this is all just for fun. Don’t take the results too seriously."

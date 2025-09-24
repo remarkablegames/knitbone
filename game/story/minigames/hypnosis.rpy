@@ -1,14 +1,17 @@
 label hypnosis_minigame:
+    play music "sfx/ticking.ogg"
     show cg hypnosis with dissolve
     call screen hypnosis_minigame
 
 
 label hypnosis_minigame_win:
+    stop music
     eden "I beat the hypnosis minigame."
     jump end
 
 
 label hypnosis_minigame_lose:
+    stop music
     eden "I lost the hypnosis minigame."
     jump end
 

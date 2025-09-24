@@ -73,7 +73,7 @@ label prologue_cg1:
     "So I can’t help but to look..."
     pause 0.1
 
-    play music "music/theme2.ogg" fadein 1.0 volume 0.4
+    play music "music/theme2.ogg" fadein 1 volume 0.4
 
     scene bg lounge at slow_zoom
     with fade

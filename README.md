@@ -24,12 +24,13 @@ Play the game on:
 
 - [Kenney](https://kenney.nl/assets/interface-sounds)
 - Pixabay
+  - [Bone snap](https://pixabay.com/sound-effects/bone-snap-408148/)
   - [Footsteps Male](https://pixabay.com/sound-effects/footsteps-male-362053/)
   - [Glass Breaking Sound Effect](https://pixabay.com/sound-effects/glass-breaking-sound-effect-240679/)
   - [Open and Close Door](https://pixabay.com/sound-effects/open-and-close-door-405453/)
   - [Tension Stinger - Ambience](https://pixabay.com/sound-effects/tension-stinger-ambience-355381/)
+  - [Ticking Clock_1](https://pixabay.com/sound-effects/ticking-clock-1-27477/)
   - [Wind chime small](https://pixabay.com/sound-effects/wind-chime-small-64660/)
-  - [Bone snap](https://pixabay.com/sound-effects/bone-snap-408148/)
 
 ## Prerequisites
 
