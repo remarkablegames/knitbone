@@ -181,7 +181,7 @@ label prologue_ryohei:
 
     pause 0.7
 
-    scene cg talk at cover_screen
+    scene cg bar talk at cover_screen
     with dissolve
 
     "And yet, here he is."
