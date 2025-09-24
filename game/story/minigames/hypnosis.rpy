@@ -19,11 +19,12 @@ screen hypnosis_minigame:
         action Function(slider.update)
 
     button:
-        action Function(slider.click)
+        action Function(slider.stop)
         xalign 0.5
-        yalign 0.5
+        yalign 0.75
 
         frame:
+            background "#00000099"
             xsize slider.xsize_max
             ysize 50
 
@@ -36,12 +37,17 @@ screen hypnosis_minigame:
                 xsize slider.xsize
                 xpos slider.xpos_current
 
+    textbutton "Stop":
+        action Function(slider.stop)
+        xalign 0.5
+        yalign 0.85
+
 
 init python:
     class Slider:
         PADDING = 10
 
-        def __init__(self, speed: int, width=100, width_max=1000) -> None:
+        def __init__(self, speed=5, width=100, width_max=1000) -> None:
             self.xsize = width
             self.xsize_max = width_max
             self.xpos_target = renpy.random.randint(0, width_max - width - self.PADDING)
@@ -56,7 +62,7 @@ init python:
                 self.direction = -1
             self.xpos_current += self.speed * self.direction
 
-        def click(self) -> None:
+        def stop(self) -> None:
             xpos_current = self.xpos_current
             xpos_target = self.xpos_target
             xsize = self.xsize
@@ -72,3 +78,5 @@ init python:
                 renpy.jump("hypnosis_minigame_win")
             else:
                 renpy.jump("hypnosis_minigame_lose")
+
+    slider = Slider()

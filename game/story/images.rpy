@@ -34,21 +34,21 @@ image cg bar:
 
 
 image cg hypnosis:
-    "images/cg/hypnosis/cg hypnosis 1.png"
+    "images/cg/hypnosis/cg hypnosis 1.webp"
     pause 0.3
-    "images/cg/hypnosis/cg hypnosis 2.png"
+    "images/cg/hypnosis/cg hypnosis 2.webp"
     pause 0.3
-    "images/cg/hypnosis/cg hypnosis 3.png"
+    "images/cg/hypnosis/cg hypnosis 3.webp"
     pause 0.3
-    "images/cg/hypnosis/cg hypnosis 4.png"
+    "images/cg/hypnosis/cg hypnosis 4.webp"
     pause 0.3
-    "images/cg/hypnosis/cg hypnosis 5.png"
+    "images/cg/hypnosis/cg hypnosis 5.webp"
     pause 0.3
-    "images/cg/hypnosis/cg hypnosis 6.png"
+    "images/cg/hypnosis/cg hypnosis 6.webp"
     pause 0.3
-    "images/cg/hypnosis/cg hypnosis 7.png"
+    "images/cg/hypnosis/cg hypnosis 7.webp"
     pause 0.3
-    "images/cg/hypnosis/cg hypnosis 8.png"
+    "images/cg/hypnosis/cg hypnosis 8.webp"
     pause 0.3
     repeat
     fit "contain"
