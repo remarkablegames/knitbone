@@ -1,6 +1,11 @@
 init python:
     renpy.music.register_channel("character", "voice", loop=True, file_prefix="voice/", file_suffix=".ogg")
 
+    def apply_zoom(character_prefix, zoom_type) -> None:
+        for tag in renpy.get_showing_tags():
+            if tag.startswith(character_prefix):
+                renpy.show(tag, at_list=[zoom_type])
+
     def narrator_callback(event, interact=True, **kwargs) -> None:
         if event == "show_done":
             renpy.music.play("narrator", channel="character", relative_volume=0.3)
