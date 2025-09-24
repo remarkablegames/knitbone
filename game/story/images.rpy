@@ -1,36 +1,35 @@
 image cg bar:
-    "images/cg/bar/cg bar 1.png"
+    "images/cg/bar/cg bar 1.webp"
     pause 2.0
-    "images/cg/bar/cg bar 2.png"
+    "images/cg/bar/cg bar 2.webp"
     pause 0.1
-    "images/cg/bar/cg bar 3.png"
+    "images/cg/bar/cg bar 3.webp"
     pause 0.1
-    "images/cg/bar/cg bar 4.png"
+    "images/cg/bar/cg bar 4.webp"
     pause 0.1
-    "images/cg/bar/cg bar 5.png"
+    "images/cg/bar/cg bar 5.webp"
     pause 0.1
-    "images/cg/bar/cg bar 6.png"
+    "images/cg/bar/cg bar 6.webp"
     pause 0.1
-    "images/cg/bar/cg bar 7.png"
+    "images/cg/bar/cg bar 7.webp"
     pause 0.1
-    "images/cg/bar/cg bar 8.png"
+    "images/cg/bar/cg bar 8.webp"
     pause 0.1
-    "images/cg/bar/cg bar 9.png"
+    "images/cg/bar/cg bar 9.webp"
     pause 0.1
-    "images/cg/bar/cg bar 10.png"
+    "images/cg/bar/cg bar 10.webp"
     pause 0.1
-    "images/cg/bar/cg bar 11.png"
+    "images/cg/bar/cg bar 11.webp"
     pause 0.1
-    "images/cg/bar/cg bar 12.png"
+    "images/cg/bar/cg bar 12.webp"
     pause 0.1
-    "images/cg/bar/cg bar 13.png"
+    "images/cg/bar/cg bar 13.webp"
     pause 0.1
-    "images/cg/bar/cg bar 14.png"
+    "images/cg/bar/cg bar 14.webp"
     pause 0.1
-    "images/cg/bar/cg bar 15.png"
+    "images/cg/bar/cg bar 15.webp"
     pause 0.1
     repeat
-    fit "contain"
 
 
 image cg hypnosis:
@@ -51,4 +50,3 @@ image cg hypnosis:
     "images/cg/hypnosis/cg hypnosis 8.webp"
     pause 0.3
     repeat
-    fit "contain"

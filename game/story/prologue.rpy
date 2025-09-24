@@ -30,7 +30,7 @@ label prologue_cg0:
 
     pause 1.0
 
-    "Hmm."
+    "Hmm..."
     "Seems like the ice in my glass had succumbed to the warmth..."
     "...it looks just like my life."
 
