@@ -101,7 +101,7 @@ label session1_test:
             jump personality_test
 
         "No":
-            eden think "{cps=15}I...{w=0.3} I don’t think I’m ready yet."
+            eden thinking "{cps=15}I...{w=0.3} I don’t think I’m ready yet."
 
             ryohei glare "Hmm... Is that so?"
             ryohei "But even if you don’t take the test, you’re still here. And that tells me something already."
