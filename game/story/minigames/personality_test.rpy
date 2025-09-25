@@ -338,12 +338,11 @@ label reveal_result:
 label personality_test_end:
     stop music fadeout 1
 
-    ryohei seated smile "{w=0.4}Thanks for that. I’ve learned a lot about you already. Shall we move on to the next session?"
+    ryohei seated smile "{w=0.4}Thanks for that. I’ve learned a lot about you already. Shall we move on?"
     ryohei "Remember, this is all just for fun. Don’t take the results too seriously."
     show ryohei seated look
     "His tone stays gentle, though there’s a weight behind it."
 
     # Dialogue after finishing the test : What the hell was that? Something seems off, almost unnerving. I blame it on my lack of sleep, but a shiver runs down my spine. (i will add more later so just put this as placeholder)
-    # jump session2
 
-    jump end
+    jump session1_end
