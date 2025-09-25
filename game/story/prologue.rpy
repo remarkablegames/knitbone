@@ -27,4 +27,4 @@ label prologue:
 
     scene black with fade
 
-    jump bar
+    jump session1

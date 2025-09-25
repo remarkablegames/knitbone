@@ -138,7 +138,6 @@ label bar_flashback:
     eden "The Ryohei Damien."
 
     eden "We were in the same department back in college."
-    eden "We were both psychology majors although our paths never crossed deeply."
     eden "He was popular. He was effortlessly charming."
     eden "The kind of guy who made everyone feel seen, even when he probably didn’t know half of their names."
     eden "I never expected to be on his radar."
@@ -181,35 +180,18 @@ label bar_talk:
     pause 0.3
     "And for the first time in a long while...{w=0.2} I didn’t feel like a total failure."
     "Maybe this is what I needed after all."
-
-    pause 0.5
-
     "I just need a reminder that I hadn’t vanished completely."
 
-    jump timer_example
+    pause 0.5
+    "After a few meaningful conversations, I opened up to him about my problems."
+    "And he immediately seized the opportunity to suggest a private consultation."
 
+    pause 0.3
+    ryohei "Oh actually...! I do sleep therapy now. And also cognitive consultation."
+    "He then offered me his card"
+    ryohei "I can definitely help you with that, just come to my studio."
 
-label timer_example:
-    $ countdown.start(seconds=5, jump="end")
+    scene black with fade
+    stop music fadeout 2.0
 
-    menu:
-        "Play the minigame?"
-
-        "5 candles":
-            $ countdown.cancel()
-            $ candle = Candle(moves=4, candles=5)
-            jump candle_minigame
-
-        "6 candles":
-            $ countdown.cancel()
-            $ candle = Candle(moves=5, candles=6)
-            jump candle_minigame
-
-        "Hypnosis":
-            $ countdown.cancel()
-            $ slider = Slider(speed=5)
-            jump hypnosis_minigame
-
-        "Personality test":
-            $ countdown.cancel()
-            jump personality_test
+    jump session1_prestudio
