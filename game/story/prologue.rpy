@@ -5,7 +5,7 @@ label prologue:
 
     pause 1.5
 
-    scene cg prologue 1 at slow_zoom
+    scene cg prologue 1 at zoomout
     with fade
 
     "I didn’t know it would turn out like this."

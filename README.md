@@ -25,9 +25,11 @@ Play the game on:
 - [Kenney](https://kenney.nl/assets/interface-sounds)
 - Pixabay
   - [Bone snap](https://pixabay.com/sound-effects/bone-snap-408148/)
+  - [Door Creak 02](https://pixabay.com/sound-effects/door-creak-02-79920/)
   - [Footsteps Male](https://pixabay.com/sound-effects/footsteps-male-362053/)
   - [Glass Breaking Sound Effect](https://pixabay.com/sound-effects/glass-breaking-sound-effect-240679/)
-  - [Open and Close Door](https://pixabay.com/sound-effects/open-and-close-door-405453/)
+  - [Knock knock knock](https://pixabay.com/sound-effects/knock-knock-knock-40474/)
+  - [Main Door Opening-Closing](https://pixabay.com/sound-effects/main-door-opening-closing-38280/)
   - [Tension Stinger - Ambience](https://pixabay.com/sound-effects/tension-stinger-ambience-355381/)
   - [Ticking Clock_1](https://pixabay.com/sound-effects/ticking-clock-1-27477/)
   - [Wind chime small](https://pixabay.com/sound-effects/wind-chime-small-64660/)

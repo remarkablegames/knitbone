@@ -28,13 +28,18 @@ transform slight_shake:
     linear 0.05 xoffset 3
     linear 0.05 xoffset 0
 
-transform slow_zoom:
-    truecenter
-    zoom 1.1
-    linear 3.0 zoom 1.0
-
 transform speak_zoom:
     linear 0.15 zoom 1.025
 
 transform unflip:
     xzoom 1.0
+
+transform zoomin:
+    truecenter
+    zoom 1
+    linear 3 zoom 1.1
+
+transform zoomout:
+    truecenter
+    zoom 1.1
+    linear 3 zoom 1.0

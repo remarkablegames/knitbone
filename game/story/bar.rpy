@@ -43,7 +43,7 @@ label bar:
 
     play music "music/theme2.ogg" fadein 1 volume 0.4
 
-    scene bg lounge at slow_zoom
+    scene bg lounge at zoomout
     with fade
     pause 0.5
 
@@ -55,7 +55,7 @@ label bar_ryohei_entrance:
     # Ryohei’s entrance
 
     play sound "sfx/footsteps.ogg"
-    show ryohei look at slow_zoom, center
+    show ryohei look at zoomout, center
     with dissolve
 
     "A guy had walked in with an easy confidence, and everyone eyed on him."
@@ -97,10 +97,10 @@ label bar_ryohei_entrance:
 
     play sound "sfx/footsteps.ogg"
     "I heard footsteps approaching me slowly."
-
     pause 0.2
-    show ryohei neutral at left with dissolve
-    show eden neutral at right with dissolve
+
+    show ryohei neutral at left with moveinleft
+    show eden neutral at right with moveinright
 
     eden "{i}Why is he standing right here?"
     pause 0.2

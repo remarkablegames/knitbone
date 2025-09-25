@@ -8,7 +8,7 @@ default session1_result = ""  # logic/ethics/will/physics/unreadable
 
 
 label personality_test:
-    scene bg_studio with fade
+    scene bg studio with fade
     play music "music/theme3.ogg" fadein 1 volume 0.4
     #our composer made this :)
 
@@ -284,7 +284,7 @@ label unreadable_result:
 
     $ unreadable = True
 
-    #jump session1_end
+    # jump personality_test_end
 
 
 label reveal_result:
@@ -299,7 +299,7 @@ label reveal_result:
 
         $ persistent.session1_reading = "logic"
 
-        jump session1_end
+        jump personality_test_end
 
     elif session1_result == "ethics":
         ryohei seated neutral "It seems like you are {b}Ethics-First"
@@ -310,7 +310,7 @@ label reveal_result:
 
         $ persistent.session1_reading = "ethics"
 
-        jump session1_end
+        jump personality_test_end
 
     elif session1_result == "will":
         ryohei seated neutral "It seems like you are you are {b}Will-First."
@@ -321,7 +321,7 @@ label reveal_result:
 
         $ persistent.session1_reading = "will"
 
-        jump session1_end
+        jump personality_test_end
 
     elif session1_result == "physics":
         ryohei seated neutral "It seems like you are you are {b}Physics-First."
@@ -332,10 +332,10 @@ label reveal_result:
 
         $ persistent.session1_reading = "physics"
 
-        jump session1_end
+        jump personality_test_end
 
 
-label session1_end:
+label personality_test_end:
     stop music fadeout 1
 
     ryohei seated smile "{w=0.4}Thanks for that. I’ve learned a lot about you already. Shall we move on to the next session?"
@@ -343,6 +343,7 @@ label session1_end:
     show ryohei seated look
     "His tone stays gentle, though there’s a weight behind it."
 
-    #jump session2
+    # Dialogue after finishing the test : What the hell was that? Something seems off, almost unnerving. I blame it on my lack of sleep, but a shiver runs down my spine. (i will add more later so just put this as placeholder)
+    # jump session2
 
     jump end
