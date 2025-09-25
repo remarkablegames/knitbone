@@ -163,10 +163,10 @@ label session1_choice:
             ryohei "... You’ll come back when the nights make you."
 
             # ENDING 0 - AVOIDANCE
-            jump end
+            jump ending
 
 label timer_example:
-    $ countdown.start(seconds=5, jump="end")
+    $ countdown.start(seconds=5, jump="ending")
 
     menu:
         "Play the minigame?"

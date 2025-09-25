@@ -7,13 +7,13 @@ label hypnosis_minigame:
 label hypnosis_minigame_win:
     stop music
     eden "I beat the hypnosis minigame."
-    jump end
+    jump ending
 
 
 label hypnosis_minigame_lose:
     stop music
     eden "I lost the hypnosis minigame."
-    jump end
+    jump ending
 
 
 screen hypnosis_minigame:

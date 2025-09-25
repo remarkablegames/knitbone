@@ -4,12 +4,12 @@ label candle_minigame:
 
 label candle_minigame_win:
     eden "I solved the candle minigame."
-    jump end
+    jump ending
 
 
 label candle_minigame_lose:
     eden "I wasn't able to solve the candle minigame..."
-    jump end
+    jump ending
 
 
 screen candle_minigame:
