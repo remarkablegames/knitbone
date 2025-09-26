@@ -5,6 +5,7 @@ label session2:
 
     jump session2_start
 
+
 label session2_start:
 
     pause 1.0
@@ -35,10 +36,11 @@ label session2_start:
     pause 0.5
 
     hide eden
-    hide ryohei 
+    hide ryohei
     with dissolve
 
     jump session2_devotion
+
 
 label session2_devotion:
 
@@ -81,7 +83,7 @@ label session2_devotion:
 
     show ryohei seated serious
     "He paused, his expression shifting into something that looked unnervingly like a confession."
-    
+
     pause 1
     ryohei "I used to know people who were part of ... group."
     pause 0.5
@@ -103,10 +105,11 @@ label session2_devotion:
     show ryohei seated neutral with dissolve
     ryohei "My apologies. I didn’t mean to bring that up."
     "He waved a hand dismissively, the philosophical conversation ending as abruptly as it began."
-    
+
     stop music fadeout 5.0
     ryohei "Now, let's move on..."
     jump session2_candle
+
 
 label session2_candle:
 
@@ -137,7 +140,7 @@ label session2_candle:
 
     "I nodded. My mouth is suddenly dry."
     "I looked at the candles...."
-    
+
     $ candle = Candle(moves=4, candles=6)
     jump candle_minigame
 
@@ -183,11 +186,12 @@ label session2_success:
     #jump session3
     jump ending
 
+
 label session2_fail:
     $ trust -= 1
 
     #---very short-jumpscare, to make players wonder---
-    pause 
+    pause
     stop music
     scene black
     show entity 3 at slight_shake, center
@@ -199,7 +203,7 @@ label session2_fail:
 
     show bg studio
     show ryohei seated serious
-    
+
     "My hand froze in mid-air."
     ryohei "That's five. The pattern is now lost."
     "Although there was no anger in his voice. There was a flat disappointment that scraped against my nerves."

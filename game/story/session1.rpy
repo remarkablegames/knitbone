@@ -35,6 +35,7 @@ label session1:
     # jump to previous jazz scene prologue
     # I might change certain dialogue in the jazz scene tomorrow: e.g. “I do sleep therapy now. And also cognitive consultation, nothing scary. If you ever want to talk, text me.”
 
+
 label session1_prestudio:
     "And for some reason, I actually came."
     "This was probably a bad idea..."
@@ -62,6 +63,7 @@ label session1_prestudio:
     "But my feet started moving before I could even think about it."
 
     jump session1_studio
+
 
 label session1_studio:
     play music "music/theme3.ogg"
@@ -118,12 +120,13 @@ label session1_studio:
     pause 0.5
     ryohei neutral "Before we go deeper, I have a simple personality test."
     ryohei "To help me understand the shape of this... weight you're carrying..."
-    
+
     pause 1
     ryohei "It requires a bit of trust, I know. But it would help me understand."
     ryohei "....I really think you should take it."
 
     jump session1_test
+
 
 label session1_test:
     menu:
@@ -154,13 +157,14 @@ label session1_test:
             hide ryohei
             hide eden
             show bg studio4
-            show entity 2 at center, shake, 
+            show entity 2 at center, shake
             pause 0.5
-            scene black 
+            scene black
             pause 3.0
             stop sound
 
             jump session1_end
+
 
 label session1_end:
     play music "music/theme3.ogg"
@@ -246,9 +250,3 @@ label session1_choice:
 
             # ENDING 0 - AVOIDANCE
             jump end
-
-
-
-
-
-
