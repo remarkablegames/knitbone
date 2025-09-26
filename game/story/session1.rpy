@@ -185,14 +185,15 @@ label session1_end:
     pause 1
     ryohei serious "Your insomnia isn't a mistake. It's a pattern."
     ryohei "Your mind is stuck on a loop."
-    ryohei "Regular therapy won't work for you. What your mind need is a 'key', not just talking."
-    ryohei neutral "What I want to try is... different. It's not therapy. It's more like a... guided ritual."
+    ryohei "Regular therapy won't work for you. What your mind need is a 'key'."
+    ryohei neutral "What I want to propose isn’t therapy at all. Think of it more as a... guided ritual."
     pause 1.2
     "'Ritual.'"
     pause 0.3
     "..."
-    eden bitter2 "That word made me feel uneasy."
-    show eden awkward
+    show eden bitter2
+    "That word made me feel uneasy."
+    show eden awkward with dissolve
     pause 0.5
     ryohei "I will give you small tasks to do. You just have to do them exactly as I say."
     ryohei "If you do, you'll finally get some peace."
@@ -259,6 +260,7 @@ label timer_example:
         "Personality test":
             $ countdown.cancel()
             jump personality_test
+
 
 
 
