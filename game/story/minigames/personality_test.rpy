@@ -173,8 +173,8 @@ label personality_test7:
     show ryohei seated crazy
 
     "{cps=10}..."
-    ryohei "{w=2.0}:)"
-    ryohei "{sc}What’s wrong?"
+    ryohei "{w=2.0}{sc}:)"
+    ryohei "What’s wrong?"
     ryohei "Did that catch you off guard?"
     ryohei "... You saw that too, right?"
     ryohei "Well, would your reaction align with the choice you made earlier?"
