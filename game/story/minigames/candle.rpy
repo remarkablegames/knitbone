@@ -1,15 +1,13 @@
 label candle_minigame:
     call screen candle_minigame
 
-
 label candle_minigame_win:
-    eden "I solved the candle minigame."
-    jump ending
-
+    eden "I ...I did it."
+    jump session2_success
 
 label candle_minigame_lose:
-    eden "I wasn't able to solve the candle minigame..."
-    jump ending
+    ryohei seated serious "Stop."
+    jump session2_fail
 
 
 screen candle_minigame():

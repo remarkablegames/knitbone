@@ -175,14 +175,15 @@ label personality_test7:
     "{cps=10}..."
     ryohei "{w=2.0}{sc}:)"
     ryohei "What’s wrong?"
-    ryohei "Did that catch you off guard?"
-    ryohei "... You saw that too, right?"
+    ryohei "Did something catch you off guard?"
+    pause 0.3
     ryohei "Well, would your reaction align with the choice you made earlier?"
     pause 2.0
 
     ryohei seated neutral "Let’s continue.{w=0.3} We won’t dwell on it."
 
     play music "music/theme4.ogg" fadein 1 volume 0.4
+    show bg studio with dissolve
 
     jump personality_test8
 
@@ -340,11 +341,13 @@ label reveal_result:
 label personality_test_end:
     stop music fadeout 1
 
-    ryohei seated smile "{w=0.4}Thanks for that. I’ve learned a lot about you already. Shall we move on?"
-    ryohei "Remember, this is all just for fun. Don’t take the results too seriously."
+    ryohei seated smile "{w=0.4}Thanks for that. I’ve learned a lot about you already."
+    ryohei seated neutral "I’ve actually wanted to be closer to you since college… and it means a lot to finally be here with you now."
+
+    pause 1
+    ryohei seated look "Shall we move on?"
+    ryohei seated neutral "Remember, this is all just for fun. Don’t take the results too seriously."
     show ryohei seated look
     "His tone stays gentle, though there’s a weight behind it."
-
-    # Dialogue after finishing the test : What the hell was that? Something seems off, almost unnerving. I blame it on my lack of sleep, but a shiver runs down my spine. (i will add more later so just put this as placeholder)
 
     jump session1_end
