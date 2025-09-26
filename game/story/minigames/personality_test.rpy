@@ -9,7 +9,7 @@ default session1_result = ""  # logic/ethics/will/physics/unreadable
 
 label personality_test:
     scene bg studio with fade
-    play music "music/theme3.ogg" fadein 1 volume 0.4
+    play music "music/theme4.ogg" fadein 1 volume 0.4
     #our composer made this :)
 
     "(Note: Your choices here won’t alter the endings... but they might reveal words you’d never hear otherwise.)"
