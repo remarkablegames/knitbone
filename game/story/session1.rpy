@@ -196,7 +196,7 @@ label session1_end:
     show eden awkward with dissolve
     pause 0.5
     ryohei "I will give you small tasks to do. You just have to do them exactly as I say."
- ryohei "It was just simple tasks. But they have to be done with precision. Every step matters. If you’re careless, it won’t work. And If you’re attentive... well, you may find yourself able to sleep."
+    ryohei "It was just simple tasks. But they have to be done with precision. Every step matters. If you’re careless, it won’t work. And If you’re attentive... well, you may find yourself able to sleep."
     ryohei "And If you’re attentive... well, you'll finally get some peace."
     ryohei smirk "And you'll also finally meet the part of you that's been keeping you awake."
 

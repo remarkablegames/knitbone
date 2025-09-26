@@ -12,7 +12,7 @@ label candle_minigame_lose:
     jump ending
 
 
-screen candle_minigame:
+screen candle_minigame():
     frame:
         background Solid((0, 0, 0, 100))
         text "Remaining Moves: [candle.moves]"

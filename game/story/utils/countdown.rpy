@@ -22,7 +22,7 @@ init python:
     countdown = Countdown()
 
 
-screen countdown:
+screen countdown():
     timer countdown.DECREMENT:
         repeat True
         action If(

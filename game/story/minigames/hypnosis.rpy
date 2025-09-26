@@ -16,7 +16,7 @@ label hypnosis_minigame_lose:
     jump ending
 
 
-screen hypnosis_minigame:
+screen hypnosis_minigame():
     timer 0.001:
         repeat True
         action Function(slider.update)
