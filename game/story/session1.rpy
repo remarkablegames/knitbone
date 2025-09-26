@@ -196,8 +196,9 @@ label session1_end:
     show eden awkward with dissolve
     pause 0.5
     ryohei "I will give you small tasks to do. You just have to do them exactly as I say."
-    ryohei "If you do, you'll finally get some peace."
-    ryohei smirk "And you'll finally meet the part of you that's been keeping you awake."
+ ryohei "It was just simple tasks. But they have to be done with precision. Every step matters. If you’re careless, it won’t work. And If you’re attentive... well, you may find yourself able to sleep."
+    ryohei "And If you’re attentive... well, you'll finally get some peace."
+    ryohei smirk "And you'll also finally meet the part of you that's been keeping you awake."
 
     "He was quiet for a moment, just staring at me."
     pause 1
@@ -221,7 +222,7 @@ label session1_choice:
             show ryohei laugh with dissolve
             "A slow, happy smile grew on his face. He looked like he had just won something."
             ryohei "Good. I thought so. Session Two will be... interesting. It won't feel like your usual therapy."
-            "But it is exactly what you need."
+            ryohei smirk "But it is exactly what you need."
             # jump session2
             jump timer_example
 
@@ -260,6 +261,7 @@ label timer_example:
         "Personality test":
             $ countdown.cancel()
             jump personality_test
+
 
 
 
