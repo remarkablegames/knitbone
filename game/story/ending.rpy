@@ -8,25 +8,29 @@ label ending_attack:
 
     eden "{i}What?"
 
-    "I peered down at the knife in his hands, presented to me like a trophy. Like it’s something to be revered. Like {i}I{/i} was something to be revered, as long as I took that knife from him."
+    "I peered down at the knife in his hands, presented to me like a trophy."
+    "Like it’s something to be revered."
+    "Like {i}I{/i} was something to be revered, as long as I took that knife from him."
 
     eden "Ryohei...{w=0.2} what are you doing? Get...{w=0.2} get up."
 
     "But Ryohei doesn’t move. The knife lays in his palms, glinting in the simmering candlelight."
 
-    "Slowly, I reach out, unable to stop my hand from shaking as our skin brushes against each other, the handle making its way inside my loose grip. I turn the knife upside and down, my heavy heart sinking into my stomach."
+    "Slowly, I reach out, unable to stop my hand from shaking as our skin brushes against each other, the handle making its way inside my loose grip."
+    "I turn the knife upside and down, my heavy heart sinking into my stomach."
 
     eden "{cps=35}{i}No. no, no, no. This isn’t right. Ryohei isn’t in the right mind, and neither am I. This is messed up!"
     eden "Ryo...{w=0.2} I...{w=0.2} I can’t-"
 
     "..."
 
-    ryohei "What?"
+    ryohei "{sc}What?"
     pause 2
 
-    "He’s still kneeling, but his glare had shot up towards me, oozing such volumes of disgust that it made me take a step back. How could someone on his knees be so full of authority still?"
+    "He’s still kneeling, but his glare had shot up towards me, oozing such volumes of disgust that it made me take a step back."
+    "How could someone on his knees be so full of authority still?"
 
-    ryohei "What did you say?"
+    ryohei "{sc}What did you say?"
 
     "He sounded otherworldly. Less a voice, more an entity."
 
@@ -42,7 +46,8 @@ label ending_attack:
     eden "I won’t do it, Ryohei."
     "Silence fills the room."
 
-    "His expression is unexplainable, an amalgamation of surprise, horror, and fury. Piping hot fury, which I saw traveling from his pinpoint pupils down to the goosebumps on the back of his hands."
+    "His expression is unexplainable, an amalgamation of surprise, horror, and fury."
+    "Piping hot fury, which I saw traveling from his pinpoint pupils down to the goosebumps on the back of his hands."
 
     scene cg ending attack at zoomout
     with dissolve
@@ -50,16 +55,17 @@ label ending_attack:
     "–Then he moved."
     with hpunch
 
-    "Faster than I could’ve stopped him. Before I knew it, his hand was gripped around my neck, the other pushing the knife against my hands."
+    "Faster than I could’ve stopped him."
+    "Before I knew it, his hand was gripped around my neck, the other pushing the knife against my hands."
 
-    ryohei "Take it. Take it!"
+    ryohei "{sc}Take it. Take it!"
     "The room trembled beneath his cries."
 
     "I gasped, clawing to release myself from his grip – before bringing up a knee towards his stomach."
     "He’s caught off guard quick enough to drop me, but the knife was still in his hands."
     "As I tried to step sidewards, he lurched me back by my wrist, gripping tight enough to snap bone into two."
 
-    ryohei "{i}{b}EDEN!"
+    ryohei "{sc}EDEN!"
 
     "An overwhelming will to survive took over me, and I shoved with all my might against his towering figure."
 
@@ -77,15 +83,17 @@ label ending_attack:
     "His dazed eyes trailed down his chest, hands lifting slowly to hover above the unfamiliar scene."
 
     ryohei "{cps=10}Ha... haha..."
-    "He gurgled. A grin spreading across his perfect mouth."
+    "He gurgled."
+    "A grin spreading across his perfect mouth."
 
     eden "Ryohei!"
 
-    "As if on instinct I slid to the floor to hold his body up. His head tilted limply against my own hammering heartbeat, as his own heart started to crawl to a stop."
+    "As if on instinct I slid to the floor to hold his body up."
+    "His head tilted limply against my own hammering heartbeat, as his own heart started to crawl to a stop."
 
     eden "No, I-{w=0.2}I-{w=0.2} I didn’t mean to...{w=0.2} I didn’t-"
 
-    ryohei "Shh."
+    ryohei "{cps=10}Shh."
     "Around us, the candles fell into a dim glow, until a cold chill snuffed their lights completely."
     "I looked up to see veins of black and red chunks start to pour thinly from the walls, slithering like snakes towards the floor, and towards me."
     "I reeled back, holding Ryohei closer as I tried to pull him away from the vines, as if it could stop the blood pooling from his chest-"
@@ -99,23 +107,27 @@ label ending_attack:
 
     eden "Nothing...{w=0.2} nothing about this is good."
 
-    ryohei "You carry it now. The vessel."
+    ryohei "You carry it now.{w=0.3} The vessel."
     "His hand rises up to press against my hammering heart."
 
-    ryohei "It’s yours now. It’s you. It’s part of you."
+    ryohei "It’s yours now.{w=0.2} It’s you.{w=0.2} It’s part of you."
 
     eden "Ryohei-"
 
     ryohei "But I didn’t want it to end this way."
-    "Ryohei choked out, and in the bleary reflection of his tears I saw the person he had always been behind all the facades and perfect grins, all the popularity and the wonder – I saw a small, frightened little boy."
 
-    ryohei "I didn’t want to die, Eden."
+    "Ryohei choked out, and in the bleary reflection of his tears."
+    "I saw the person he had always been behind all the facades and perfect grins, all the popularity and the wonder – I saw a small, frightened little boy."
 
-    eden "You’re not going to die, Ryo, I-{w=0.2}I’ll call the ambulance and-"
+    ryohei "{cps=20}I don’t want to die,{w=0.2} Eden."
 
-    ryohei "Carry it, Eden."
+    eden "You’re not going to die,{w=0.2} Ryo, I-{w=0.2}I’ll call the ambulance and-"
+
+    ryohei "{cps=20}Carry it, Eden."
+
     "His eyes flickering like a troubled candle."
-    ryohei "You are one."
+
+    ryohei "{cps=20}You are one."
 
     "And then Ryohei Damien drew his last breath."
 
