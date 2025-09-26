@@ -157,6 +157,7 @@ label personality_test7:
     pause 0.5
     play sound "sfx/tension.ogg"
 
+    show bg studio4
     show entity 1 at center, opacity(0.6), scale(1.1)
     with moveinbottom
     with vpunch
@@ -173,7 +174,8 @@ label personality_test7:
 
     "{cps=10}..."
     ryohei "{w=2.0}:)"
-    ryohei "What’s wrong? Did that catch you off guard?"
+    ryohei "{sc}What’s wrong?"
+    ryohei "Did that catch you off guard?"
     ryohei "... You saw that too, right?"
     ryohei "Well, would your reaction align with the choice you made earlier?"
     pause 2.0
