@@ -175,7 +175,7 @@ label session1_end:
     "What the hell was THAT????"
     "Oh, perfect. Now I’m hallucinating in the middle of this 'therapy'."
     eden awkward"{i}{cps=30}Should..{w=0.2} I just... {w=0.2}chalk it up to sleep deprivation and call it a day?"
-    show eden neutral
+    show eden neutral with dissolve
 
     pause 1
     "His eyes flicked up to mine, and for a second it was like being pinned under a microscope slide."
@@ -259,6 +259,7 @@ label timer_example:
         "Personality test":
             $ countdown.cancel()
             jump personality_test
+
 
 
 
