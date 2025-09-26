@@ -1,7 +1,3 @@
-label ending:
-    jump ending_attack
-
-
 label ending_attack:
     scene black
     with fade
@@ -147,11 +143,3 @@ label ending_attack:
     "{i}I am the vessel now."
 
     jump end
-
-
-label end:
-    scene black
-
-    "{b}End{/b}."
-
-    return
