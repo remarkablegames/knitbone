@@ -1,14 +1,16 @@
 label prologue:
-    "{cps=35}It was supposed to be just another night."
-    "{cps=35}Just me and this pathetic quiet corner...{w=0.2} in a dimly lit lounge..."
-    "A place to vanish into my own thoughts without interruption."
+    "{cps=35}Where did it all go wrong?"
+    "{cps=35}Right.{w=0.2}  I shouldn't have had insomnia in the first place."
+    pause 0.5
+    "You see..."
+    "{cps=35}After a few days with no sleep and no direction,{w=0.2}  you get desperate."
 
     pause 1.5
 
     scene cg prologue 1 at zoomout
     with fade
 
-    "I didn’t know it would turn out like this."
+    "If I could turn back time..."
 
     play sound "sfx/tension.ogg"
 
@@ -23,7 +25,7 @@ label prologue:
 
     pause 1.5
 
-    "That night..."
+    "I never would’ve stepped through that door."
 
     scene black with fade
 

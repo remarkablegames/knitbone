@@ -2,26 +2,27 @@ label bar:
     play music "music/bar.ogg" fadein 1.5 volume 0.8
     pause 1
 
-    "Hmm..."
-    "Seems like the ice in my glass had succumbed to the warmth..."
-    "...it looks just like my life."
+    eden "Hmm..."
+    eden "Seems like the ice in my glass had succumbed to the warmth..."
+    eden "...it looks just like my life."
 
     show cg bar
     with dissolve
     pause 0.7
 
-    "Hi, I’m Eden."
-    "I’m a psychology major."
-    " I got good grades{w=0.2} and was considered to have {i}so much potential."
+    "My name's Eden. I'm a Psychology major."
+    "Voted as 'Most Likely to Succeed'."
     eden "...{cps=15}"
 
     pause 0.5
 
     eden "{i}But that was years ago...{w=0.2} When I had directions in my life."
 
-    eden "{i}Now? I’m surviving on coffee and three hours of sleep."
-    eden "{i}I changed three jobs in just twelve months.{w=0.2} What a record."
+    eden "{i}Now? I’m surviving on coffee with no sleep."
+    eden "{i}I changed three jobs in just twelve months.{w=0.2}"
     eden "{i}Every “fresh start” only left me more tangled in doubt.{w=0.1} And yeah, I just ended up more lost."
+    "...."
+    pause 1
     eden "{i}I don’t even recognize who I am anymore."
 
     show cg bar at shake
@@ -64,7 +65,7 @@ label bar_ryohei_entrance:
 
     eden "..."
     eden "{i}So, he’s that kind of guy huh."
-    eden "{i}He looked...{w=0.3} so put together—assertive and relaxed."
+    eden "{i}He looked...{w=0.3} so put together— assertive and relaxed."
     eden "{i}And his shirt—{w=0.3}that probably cost more than my rent, yet he wore it so casually."
     eden "{i}Everything about him was the opposite of me..."
 
@@ -105,21 +106,24 @@ label bar_ryohei_entrance:
     eden "{i}Why is he standing right here?"
     pause 0.2
 
-    ryohei "Hey...{w=0.2} Eden?"
+    ryohei "Eden Cross?{w=0.2}  No way. Is that really you?"
     eden awkward "!!"
 
     menu:
         "{i}How should I respond?"
 
-        "Hey...":
-            eden "{cps=15}Hey there..."
+        "Hey...?":
+            eden "{cps=15}Hey there...?"
+            eden "Uh....."
 
         "Who... are you?":
-            eden "You know my name?"
+            eden "Umm...who are you?"
+            eden "How do you know my name?"
             show ryohei smirk2 with dissolve
-            "My confusion must’ve shown on my face because he chuckled."
 
+    "My confusion must’ve shown on my face because he chuckled."
     ryohei neutral "It’s me, Ryohei Damien. Haha, sorry. You might not remember me."
+    ryohei "We had that philosophy elective together, remember?"
 
     pause 0.5
     eden "{i}Oh."
@@ -167,15 +171,14 @@ label bar_talk:
     "And yet, here he is."
     "Sitting across from me in this nearly empty lounge, grinning like we were old friends."
     "He even did it without asking like it was the most natural thing."
-    "Like I wasn’t just another forgotten face from his past."
-    "...{w=0.2} He’s probably only talking to me out of pity."
 
     pause 0.3
     eden "Of course I remember you. You were basically famous, Ryohei."
 
-    # Add some pause or animation if needed here to show warmth or irony.
-
+    pause 1
     "It made him laugh and he didn’t even try to deny it."
+    ryohei "Anyway, you can just call me Ryo."
+
 
     ryohei "I’m really glad we ran into each other again."
     ryohei "Hey, do you remember that time you made Professor Sam trip over his own lecture notes? Still one of the funniest moments ever."
@@ -183,18 +186,24 @@ label bar_talk:
     ryohei "Honestly, that’s one of my favorite memories from back in college."
 
     pause 0.3
-    "And for the first time in a long while...{w=0.2} I didn’t feel like a total failure."
-    "Maybe this is what I needed after all."
-    "I just need a reminder that I hadn’t vanished completely."
+    "And for the first time in what felt like forever...{w=0.2} I didn’t feel like a complete failure."
+    "We talked for a while. Something about his presence... Felt almost too welcoming."
+    "Made it easy for me to open up."
+    "It felt safe, or at least I convinced myself it was.{w=0.2}  After all, he was an old acquaintance,{w=0.2}  wasn’t he?"
+    "So, like an idiot, I spilled everything.{w=0.2}  The insomnia. The restless nights. The hollow feeling of being a stranger inside my own skin."
 
     pause 0.5
-    "After a few meaningful conversations, I opened up to him about my problems."
-    "And he immediately seized the opportunity to suggest a private consultation."
+    "He listened intently."
+    pause 0.5
+    "Then, almost casually, he suggested a private consultation."
 
     pause 0.3
-    ryohei "Oh actually...! I do sleep therapy now. And also cognitive consultation."
-    "He then offered me his card"
-    ryohei "I can definitely help you with that, just come to my studio."
+    ryohei "Oh, actually... I offer sleep therapy. And cognitive consultations as well."
+   
+    "Before I could react, he produced a card between his fingers, like it had been waiting there all along."
+    ryohei "I can definitely help you with that. Just come to my studio."
+
+    "His word 'studio' echoed in my head longer than it should have."
 
     scene black with fade
     stop music fadeout 2.0
