@@ -18,13 +18,14 @@ label session1:
 
     "Right. I told myself I’d actually show up."
     "Crossing over, a memory slid into place—"
-    "last night in the lounge, a guy approached me."
+    "Last night in the lounge, a guy approached me."
     scene black with fade
     pause 1.0
 
     jump bar
     # jump to previous jazz scene prologue
     # I might change certain dialogue in the jazz scene tomorrow: e.g. “I do sleep therapy now. And also cognitive consultation, nothing scary. If you ever want to talk, text me.”
+
 
 label session1_prestudio:
     "And well, here I am."

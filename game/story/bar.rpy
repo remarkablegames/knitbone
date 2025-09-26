@@ -64,8 +64,8 @@ label bar_ryohei_entrance:
 
     eden "..."
     eden "{i}So, he’s that kind of guy huh."
-    eden "{i}He looked... so put together—assertive and relaxed."
-    eden "{i}And his shirt—that probably cost more than my rent, yet he wore it so casually."
+    eden "{i}He looked...{w=0.3} so put together—assertive and relaxed."
+    eden "{i}And his shirt—{w=0.3}that probably cost more than my rent, yet he wore it so casually."
     eden "{i}Everything about him was the opposite of me..."
 
     show ryohei look at flip, center
@@ -90,7 +90,7 @@ label bar_ryohei_entrance:
     show eden awkward with dissolve
     "That got me holding my breath."
     "I quickly forced a polite smile even with my heart racing."
-    "There was something oddly familiar about him... but I couldn’t figure it out."
+    "There was something oddly familiar about him...{w=0.3} but I couldn’t figure it out."
 
     pause 0.5
     hide eden with fade
@@ -105,13 +105,19 @@ label bar_ryohei_entrance:
     eden "{i}Why is he standing right here?"
     pause 0.2
 
-    ryohei "Hey... Eden?"
+    ryohei "Hey...{w=0.2} Eden?"
     eden awkward "!!"
-    pause 0.2
 
-    eden "You know my name?"
-    show ryohei smirk2 with dissolve
-    "My confusion must’ve shown on my face because he chuckled."
+    menu:
+        "{i}How should I respond?"
+
+        "Hey...":
+            eden "{cps=15}Hey there..."
+
+        "Who... are you?":
+            eden "You know my name?"
+            show ryohei smirk2 with dissolve
+            "My confusion must’ve shown on my face because he chuckled."
 
     ryohei neutral "It’s me, Ryohei Damien. Haha, sorry. You might not remember me."
 
@@ -120,6 +126,7 @@ label bar_ryohei_entrance:
     pause 0.5
 
     scene bg lounge at slight_shake
+
     eden "{i}It’s you."
     pause 1
 
@@ -129,12 +136,10 @@ label bar_ryohei_entrance:
 label bar_flashback:
     # Flashback voiceover
     scene black with fade
-    pause 0.5
+    pause 1
 
-    pause 1.0
     eden "That hit me."
-
-    eden "Ryohei..."
+    eden "{cps=15}Ryohei..."
     eden "The Ryohei Damien."
 
     eden "We were in the same department back in college."

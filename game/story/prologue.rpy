@@ -1,6 +1,6 @@
 label prologue:
     "{cps=35}It was supposed to be just another night."
-    "{cps=35}Just me and this pathetic quiet corner... in a dimly lit lounge..."
+    "{cps=35}Just me and this pathetic quiet corner...{w=0.2} in a dimly lit lounge..."
     "A place to vanish into my own thoughts without interruption."
 
     pause 1.5
