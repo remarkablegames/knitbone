@@ -180,7 +180,7 @@ label personality_test7:
 
     ryohei seated neutral "Let’s continue.{w=0.3} We won’t dwell on it."
 
-    play music "music/theme3.ogg" fadein 1 volume 0.4
+    play music "music/theme4.ogg" fadein 1 volume 0.4
 
     jump personality_test8
 
