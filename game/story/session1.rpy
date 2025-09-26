@@ -13,11 +13,11 @@ label session1:
     "My thumb keeps brushing over the card in my pocket—"
     "1408, just like the card said. {w=0.5}That’s the room I’ve been trying to track down."
 
-    "After a tour of what felt like the world's most depressing maze, I finally spot the door."
+    "After a tour of what felt like the world’s most depressing maze, I finally spot the door."
     pause 1
-    "The little brass number on it looked shiny and new. It didn't fit with the rest of the dingy hallway."
+    "The little brass number on it looked shiny and new. It didn’t fit with the rest of the dingy hallway."
     "I stopped, and my hand just hovered in the air...."
-    "...{w=1.5}I wasn't sure if I should knock."
+    "...{w=1.5}I wasn’t sure if I should knock."
     "A part of me wanted to just turn around and leave."
     pause 1
 
@@ -34,6 +34,7 @@ label session1:
     jump bar
     # jump to previous jazz scene prologue
     # I might change certain dialogue in the jazz scene tomorrow: e.g. “I do sleep therapy now. And also cognitive consultation, nothing scary. If you ever want to talk, text me.”
+
 
 label session1_prestudio:
     "And for some reason, I actually came."
@@ -57,11 +58,12 @@ label session1_prestudio:
     ryohei "Eden!"
 
     "He had a warm practiced smile, and said my name like he knew I would come."
-    ryohei "I had a feeling you'd be here. Please, come in."
+    ryohei "I had a feeling you’d be here. Please, come in."
     "I hesitated-"
     "But my feet started moving before I could even think about it."
 
     jump session1_studio
+
 
 label session1_studio:
     play music "music/theme3.ogg"
@@ -79,7 +81,7 @@ label session1_studio:
     ryohei "Have a seat. Try to get comfortable."
     "I sat on the couch...."
     "..."
-    "{w=0.5}It wasn't comfortable at all."
+    "{w=0.5}It wasn’t comfortable at all."
     "He sat in his big chair and just watched me."
     ryohei "So..{cps=10}.Eden Cross..."
     ryohei serious "You know why you’re here. Is that right?"
@@ -95,7 +97,8 @@ label session1_studio:
     eden bitter2 "Wow. Not even a welcome, huh?"
     "Guess we’re skipping small talk and jumping right into the spotlight."
     "I barely sat down...{w=0.5} and already felt like I was on a trial."
-    show eden awkward 
+
+    show eden awkward
     "Still, I didn’t complain. I opened my mouth as I force the words out."
 
     pause 0.5
@@ -110,16 +113,17 @@ label session1_studio:
     "He pauses, weighing his words before going on."
     "His expression had turned serious., like he knows something that I don’t."
     ryohei serious "Insomnia and identity crisis. That’s a reasonable set to bring in together. Sleep and sense of self are closer than most people think."
-    ryohei serious "You're not sleeping because you're scared of losing your own sanity."
+    ryohei serious "You’re not sleeping because you’re scared of losing your own sanity."
     pause 0.5
-    ryohei smirk "And that's why your mind won't shut down."
+    ryohei smirk "And that’s why your mind won’t shut down."
     "The smile creeps back onto his face."
     pause 0.5
-    ryohei neutral "Before we go deeper, I have a simple personality test. It's not for a grade. It just helps me see how you think."
+    ryohei neutral "Before we go deeper, I have a simple personality test. It’s not for a grade. It just helps me see how you think."
     pause 1
     ryohei "....I really think you should take it."
 
     jump session1_test
+
 
 label session1_test:
     menu:
@@ -137,24 +141,25 @@ label session1_test:
             stop music
             ryohei glare "{cps=15}Hmm...{w=0.3} Is that so?"
             show bg studio2 with dissolve
-            ryohei serious "That's interesting. You came to me for help, but you're saying no to the first step."
+            ryohei serious "That’s interesting. You came to me for help, but you’re saying no to the first step."
             eden "Wh-...{w=0.3} What do you mean?"
 
             "He leaned forward, his voice low."
             ryohei "Eden."
-            ryohei smirk "Saying 'no' tells me everything I need to know. It shows me exactly what you're afraid of."
+            ryohei smirk "Saying “no” tells me everything I need to know. It shows me exactly what you’re afraid of."
 
             play sound "dialogue.ogg"
             hide ryohei
             hide eden
             show bg studio4
-            show entity 2 at center, shake, 
+            show entity 2 at center, shake
             pause 0.5
-            scene black 
+            scene black
             pause 3.0
             stop sound
 
             jump session1_end
+
 
 label session1_end:
     play music "music/theme3.ogg"
@@ -173,8 +178,8 @@ label session1_end:
     #show eden scared
     show eden bitter2
     "What the hell was THAT????"
-    "Oh, perfect. Now I’m hallucinating in the middle of this 'therapy'."
-    eden awkward"{i}{cps=30}Should..{w=0.2} I just... {w=0.2}chalk it up to sleep deprivation and call it a day?"
+    "Oh, perfect. Now I’m hallucinating in the middle of this “therapy”."
+    eden awkward "{i}{cps=30}Should..{w=0.2} I just... {w=0.2}chalk it up to sleep deprivation and call it a day?"
     show eden neutral with dissolve
 
     pause 1
@@ -183,12 +188,12 @@ label session1_end:
     ryohei glare "Your sleepless nights..."
     "He paused. It felt like he was studying me like I was some kind of bug."
     pause 1
-    ryohei serious "Your insomnia isn't a mistake. It's a pattern."
+    ryohei serious "Your insomnia isn’t a mistake. It’s a pattern."
     ryohei "Your mind is stuck on a loop."
-    ryohei "Regular therapy won't work for you. What your mind need is a 'key'."
+    ryohei "Regular therapy won’t work for you. What your mind need is a “key”."
     ryohei neutral "What I want to propose isn’t therapy at all. Think of it more as a... guided ritual."
     pause 1.2
-    "'Ritual.'"
+    "“Ritual.”"
     pause 0.3
     "..."
     show eden bitter2
@@ -197,15 +202,15 @@ label session1_end:
     pause 0.5
     ryohei "I will give you small tasks to do. You just have to do them exactly as I say."
     ryohei "It was just simple tasks. But they have to be done with precision. Every step matters. If you’re careless, it won’t work. And If you’re attentive... well, you may find yourself able to sleep."
-    ryohei "And If you’re attentive... well, you'll finally get some peace."
-    ryohei smirk "And you'll also finally meet the part of you that's been keeping you awake."
+    ryohei "And If you’re attentive... well, you’ll finally get some peace."
+    ryohei smirk "And you’ll also finally meet the part of you that’s been keeping you awake."
 
     "He was quiet for a moment, just staring at me."
     pause 1
-    ryohei neutral "I can't force you to do it. This only works if you choose it"
+    ryohei neutral "I can’t force you to do it. This only works if you choose it"
     ryohei "You can leave now and go back to your sleepless nights."
     pause 0.3
-    ryohei smirk "Or... you can agree to Session Two...! That's where we really begin."
+    ryohei smirk "Or... you can agree to Session Two...! That’s where we really begin."
 
     "..."
     "{cps=30}It felt like a challenge."
@@ -221,21 +226,22 @@ label session1_choice:
         "Agree":
             show ryohei laugh with dissolve
             "A slow, happy smile grew on his face. He looked like he had just won something."
-            ryohei "Good. I thought so. Session Two will be... interesting. It won't feel like your usual therapy."
+            ryohei "Good. I thought so. Session Two will be... interesting. It won’t feel like your usual therapy."
             ryohei smirk "But it is exactly what you need."
             # jump session2
             jump timer_example
 
         "Refuse":
-            "Ryohei just leaned back in his chair. He didn't look mad, just interested."
-            ryohei "That's okay.{w=0.3} Being scared is normal. The choice is yours."
+            "Ryohei just leaned back in his chair. He didn’t look mad, just interested."
+            ryohei "That’s okay.{w=0.3} Being scared is normal. The choice is yours."
             ryohei "Keep my number. And well....The door is always open."
 
             show bg studio2 with dissolve
-            ryohei smirk "...You'll be back anyway....{w=0.8} Your sleepless nights will bring you back to me."
+            ryohei smirk "... You’ll be back anyway... {w=0.8} Your sleepless nights will bring you back to me."
 
             # ENDING 0 - AVOIDANCE
             jump ending
+
 
 label timer_example:
     $ countdown.start(seconds=5, jump="ending")
@@ -261,9 +267,3 @@ label timer_example:
         "Personality test":
             $ countdown.cancel()
             jump personality_test
-
-
-
-
-
-
