@@ -13,12 +13,12 @@ label session1:
     "My thumb keeps brushing over the card in my pocket—"
     "1408,{w=0.2} just like the card said.{w=0.5} That’s the room I’ve been trying to track down."
 
-    "After a tour of what felt like the world's most depressing maze, I finally spot the door."
+    "After a tour of what felt like the world’s most depressing maze, I finally spot the door."
     pause 1
 
-    "The little brass number on it looked shiny and new. It didn't fit with the rest of the dingy hallway."
+    "The little brass number on it looked shiny and new. It didn’t fit with the rest of the dingy hallway."
     "I stopped,{w=0.3} and my hand just hovered in the air..."
-    "...{w=1.5} I wasn't sure if I should knock."
+    "...{w=1.5} I wasn’t sure if I should knock."
     "A part of me wanted to just turn around and leave."
     pause 1
 
@@ -64,7 +64,7 @@ label session1_prestudio:
 
     "He had a warm practiced smile, and said my name like he knew I would come."
 
-    ryohei "I had a feeling you'd be here.{w=0.2} Please, come in."
+    ryohei "I had a feeling you’d be here.{w=0.2} Please, come in."
 
     "I hesitated-"
     "But my feet started moving before I could even think about it."
@@ -98,7 +98,7 @@ label session1_studio:
 
     eden "{cps=10}...{w=0.2} Yeah."
     eden awkward "{cps=20}I guess so...?"
-    ryohei neutral "So.{w=0.2} Tell me...{w=0.2} What's in your mind?"
+    ryohei neutral "So.{w=0.2} Tell me...{w=0.2} What’s in your mind?"
     ryohei "What brought you here tonight?"
     pause 1
 
@@ -121,10 +121,10 @@ label session1_studio:
     "His expression had turned serious,{w=0.2} like he knows something that I don’t."
 
     ryohei serious "Insomnia and identity crisis.{w=0.2} That’s a reasonable set to bring in together.{w=0.2} Sleep and sense of self are closer than most people think."
-    ryohei "You're not sleeping because your mind refuse to let you be vulnerable."
+    ryohei "You’re not sleeping because your mind refuse to let you be vulnerable."
 
     pause 0.5
-    ryohei "And that's why your mind won't shut down."
+    ryohei "And that’s why your mind won’t shut down."
 
     pause 0.5
     "That...{w=0.3} hit closer to home than I expected."
@@ -134,7 +134,7 @@ label session1_studio:
 
     pause 0.5
     ryohei neutral "Before we go any deeper,{w=0.2} I have a simple personality test."
-    ryohei "To help me understand the shape of this...{w=0.3} {i}weight{/i} you're carrying..."
+    ryohei "To help me understand the shape of this...{w=0.3} {i}weight{/i} you’re carrying..."
 
     pause 1
     ryohei "It requires a bit of trust,{w=0.2} I know.{w=0.2} But it would help me understand."
@@ -164,12 +164,12 @@ label session1_test:
 
             show bg studio2 with dissolve
 
-            ryohei serious "You came to me for help,{w=0.2} but you're saying no to the first step."
+            ryohei serious "You came to me for help,{w=0.2} but you’re saying no to the first step."
             eden "Wh-...{w=0.3} What do you mean?"
 
             "He leaned forward,{w=0.2} his voice low."
             ryohei "Eden."
-            ryohei smirk "{cps=250}Refusing only reveals what you’re afraid of.{w=0.2} It shows me exactly what you're afraid of."
+            ryohei smirk "{cps=250}Refusing only reveals what you’re afraid of.{w=0.2} It shows me exactly what you’re afraid of."
 
             play sound "dialogue.ogg"
 
@@ -210,7 +210,7 @@ label session1_end:
     show eden bitter2
 
     "What the hell was {i}THAT{/i}???"
-    "Oh, perfect. Now I’m hallucinating in the middle of this 'therapy'."
+    "Oh, perfect. Now I’m hallucinating in the middle of this {i}“therapy”{/i}."
 
     eden awkward"{i}{cps=30}Should...{w=0.2} I just...{w=0.2} chalk it up to sleep deprivation and call it a day?"
     show eden neutral with dissolve
@@ -227,20 +227,20 @@ label session1_end:
     "He paused.{w=0.3} It felt like he was studying me like I was some kind of bug."
     pause 1
 
-    ryohei serious "Your insomnia isn't a mistake.{w=0.2} It's a pattern."
+    ryohei serious "Your insomnia isn’t a mistake.{w=0.2} It’s a pattern."
     ryohei "Your mind is stuck on a loop."
-    ryohei "Regular therapy won't work for you.{w=0.2} What your mind need is a 'key' to...{w=0.3} redistribute the weight."
+    ryohei "Regular therapy won’t work for you.{w=0.2} What your mind need is a {i}“key”{/i} to...{w=0.3} redistribute the weight."
     ryohei neutral "What I want to propose isn’t therapy at all.{w=0.2} Think of it more as a...{w=0.3} {i}guided ritual{/i}."
 
     pause 1.2
-    "'Ritual.'"
+    "{i}“Ritual”"
 
     pause 0.3
     "..."
 
     show eden awkward with dissolve
 
-    "That's...{w=0.3} an {i}interesting{/i} choice of word."
+    "That’s...{w=0.3} an {i}interesting{/i} choice of word."
     pause 0.5
 
     ryohei "I will give you small,{w=0.2} specific tasks to complete."
@@ -252,11 +252,11 @@ label session1_end:
     "He was quiet for a moment and stared at me."
     pause 1
 
-    ryohei neutral "I can't force you to do it.{w=0.2} This only works if you choose it."
+    ryohei neutral "I can’t force you to do it.{w=0.2} This only works if you choose it."
     ryohei "You can leave now and go back to your sleepless nights."
     pause 0.3
 
-    ryohei smirk "Or...{w=0.3} you can agree to Session Two...!{w=0.3} That's where we really begin."
+    ryohei smirk "Or...{w=0.3} you can agree to Session Two...!{w=0.3} That’s where we really begin."
 
     "..."
     "{cps=30}That felt like a challenge."
@@ -279,13 +279,13 @@ label session1_choice:
         "Refuse":
             ryohei look "Ryohei inclined his head slightly.{w=0.2} Surprisingly with no hint of disappointment."
             ryohei neutral "I understand..."
-            eden "I'm sorry,{w=0.2} Ryo..."
-            ryohei laugh "It's okay.{w=0.2} You can take your time.{w=0.2} The offer still stands if you change your mind."
-            ryohei "Here,{w=0.2} you can keep my number.{w=0.2} Don't hesitate to reach out,{w=0.2} even if you just need to talk."
+            eden "I’m sorry,{w=0.2} Ryo..."
+            ryohei laugh "It’s okay.{w=0.2} You can take your time.{w=0.2} The offer still stands if you change your mind."
+            ryohei "Here,{w=0.2} you can keep my number.{w=0.2} Don’t hesitate to reach out,{w=0.2} even if you just need to talk."
 
             show black with dissolve
 
-            ryohei smirk "...{w=0.2} I'm sure that...{w=0.3} {cps=30}Your sleepless nights will bring you back to me anyway."
+            ryohei smirk "...{w=0.2} I’m sure that...{w=0.3} {cps=30}Your sleepless nights will bring you back to me anyway."
 
             # ENDING 0 - AVOIDANCE
             jump end
