@@ -169,6 +169,7 @@ label session1_test:
             ryohei "Eden."
             ryohei smirk "{cps=250}Refusing only reveals what you’re afraid of.{w=0.2} It shows me exactly what you’re afraid of."
 
+            stop character fadeout 0.2
             hide ryohei
             hide eden
 
@@ -176,7 +177,10 @@ label session1_test:
             play sound "voice/entity.ogg"
 
             show bg studio4
-            show entity 2 at center, shake
+
+            show entity 2 at center, opacity(0.6), scale(1.1), shake
+            with moveinbottom
+            with vpunch
 
             pause 0.5
             scene black

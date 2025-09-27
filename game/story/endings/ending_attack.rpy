@@ -45,6 +45,7 @@ label ending_attack:
     "His expression is unexplainable, an amalgamation of surprise, horror, and fury."
     "Piping hot fury, which I saw traveling from his pinpoint pupils down to the goosebumps on the back of his hands."
 
+    play sound "sfx/tension.ogg"
     scene cg ending attack at zoomout
     with dissolve
 
@@ -54,7 +55,7 @@ label ending_attack:
     "Faster than I could’ve stopped him."
     "Before I knew it, his hand was gripped around my neck, the other pushing the knife against my hands."
 
-    ryohei "{sc}Take it. Take it!"
+    ryohei "{sc}Take it.{w=0.5} Take it!"
     "The room trembled beneath his cries."
 
     "I gasped, clawing to release myself from his grip – before bringing up a knee towards his stomach."
@@ -66,7 +67,6 @@ label ending_attack:
     "An overwhelming will to survive took over me, and I shoved with all my might against his towering figure."
 
     play sound "sfx/thud.ogg"
-
     "He barrelled backwards into the table, knocking chairs and vases as he fell to the floor with a loud thud."
 
     "..."

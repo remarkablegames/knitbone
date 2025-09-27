@@ -63,6 +63,7 @@ label ending_sacrifice:
     "He stayed still like a pretty porcelain doll,{w=0.2} as if forever carved in his pose of grievance."
     "Then I heard a small murmur."
 
+    play sound "sfx/tension.ogg"
     ryohei "If you won’t carry it...{w=0.5} {cps=15}you’ll feed it."
 
     eden "What?"
@@ -71,6 +72,7 @@ label ending_sacrifice:
     "My head raced,{w=0.2} wondering how he had managed to get up and seize me in just a blink of an eye."
     "The confusion muddled my brain,{w=0.2} the adrenaline pumping through my veins that I hadn’t even noticed that Ryohei’s fist was hovering over my chest. "
 
+    play sound "sfx/stab.ogg"
     "Gripping the knife’s handle that was plunged in my heart."
 
     "I looked down at it,{w=0.2} dazed."

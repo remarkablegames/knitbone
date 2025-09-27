@@ -158,9 +158,11 @@ label personality_test7:
     play sound "sfx/tension.ogg"
 
     show bg studio4
+
     show entity 1 at center, opacity(0.6), scale(1.1)
     with moveinbottom
     with vpunch
+
     pause 1
 
     play sfx "sfx/bone_snap.ogg"
