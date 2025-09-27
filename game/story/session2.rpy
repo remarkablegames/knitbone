@@ -93,14 +93,17 @@ label session2_devotion:
 
     "My skepticism must have been obvious. This had nothing to do with insomnia."
     "This was about something else entirely."
-    ryohei "They saw it as a...{w=0.2} transcendence.{w=0.2} To an outsider, their methods might have seemed extreme.{w=0.2} Cruel, even."
+    ryohei "They thought of it as...{w=0.2} reaching a new level."
+    ryohei "{w=0.2} To an outsider, their methods might have seemed extreme.{w=0.2} Maybe even cruel."
     "He continued, his eyes searching mine, gauging my reaction."
-    ryohei "But they believed true enlightenment required sacrifice."
-    ryohei "That you couldn’t become whole until a piece of you was given away."
+    ryohei "But that's what they believed. They believed {i}true enlightenment{/i} required total devotion."
+    ryohei "And that you couldn’t become {i}whole{/i} until a part of you was given away."
 
     pause 0.5
-    "It sounded an awful lot like he was talking about a cult."
-    "And it sounded an awful lot like this guy believed it."
+    "...{w=0.2}I couldn’t make sense of what he was saying…"
+    "Everything he said{w=0.2} sounded like cult nonsense."
+    "And he seemed completely convinced himself."
+    pause 0.5
     eden "Uh-huh..."
 
     show ryohei seated neutral with dissolve
