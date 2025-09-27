@@ -169,13 +169,13 @@ label session1_test:
             ryohei "Eden."
             ryohei smirk "{cps=250}Refusing only reveals what you’re afraid of.{w=0.2} It shows me exactly what you’re afraid of."
 
-            play sound "dialogue.ogg"
-
             hide ryohei
             hide eden
 
-            show bg studio4
+            play sfx "sfx/tension.ogg"
+            play sound "voice/entity.ogg"
 
+            show bg studio4
             show entity 2 at center, shake
 
             pause 0.5

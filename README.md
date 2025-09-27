@@ -31,6 +31,7 @@ Play the game on:
   - [Knock knock knock](https://pixabay.com/sound-effects/knock-knock-knock-40474/)
   - [Main Door Opening-Closing](https://pixabay.com/sound-effects/main-door-opening-closing-38280/)
   - [Tension Stinger - Ambience](https://pixabay.com/sound-effects/tension-stinger-ambience-355381/)
+  - [Thud Impact Sound SFX](https://pixabay.com/sound-effects/thud-impact-sound-sfx-379990/)
   - [Ticking Clock_1](https://pixabay.com/sound-effects/ticking-clock-1-27477/)
   - [Wind chime small](https://pixabay.com/sound-effects/wind-chime-small-64660/)
 

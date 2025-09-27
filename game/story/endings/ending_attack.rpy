@@ -65,7 +65,7 @@ label ending_attack:
 
     "An overwhelming will to survive took over me, and I shoved with all my might against his towering figure."
 
-    # play sound "sfx/thud.ogg"
+    play sound "sfx/thud.ogg"
 
     "He barrelled backwards into the table, knocking chairs and vases as he fell to the floor with a loud thud."
 
@@ -78,7 +78,7 @@ label ending_attack:
     "The handle of the ritual knife sunk deep inside him, serving as the stem for the scarlet flower blooming from his flesh."
     "His dazed eyes trailed down his chest, hands lifting slowly to hover above the unfamiliar scene."
 
-    ryohei "{cps=10}Ha... haha..."
+    ryohei "{cps=10}Ha...{w=0.5} haha..."
     "He gurgled."
     "A grin spreading across his perfect mouth."
 
@@ -139,7 +139,6 @@ label ending_attack:
     "And then I draw a frozen breath."
 
     pause 2
-
-    "{i}I am the vessel now."
+    eden "{sc}I am the vessel now."
 
     jump end
