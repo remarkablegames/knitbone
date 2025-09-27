@@ -4,6 +4,7 @@
 label pre_ending:
     jump pre_ending_start
 
+
 label pre_ending_start:
 
     #play scary ambient
@@ -104,4 +105,3 @@ label pre_ending_start:
             jump end
 
     return
-
