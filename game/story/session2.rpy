@@ -8,13 +8,13 @@ label session2:
 
 label session2_start:
 
-    pause 1.0
+    pause 1
 
     ryohei "Good."
     "Ryohei’s smile deepened, like the answer had been inevitable."
 
     pause 1.5
-    ryohei look "Hold on a sec...."
+    ryohei look "Hold on a sec..."
     hide ryohei with dissolve
 
     pause 1
@@ -28,7 +28,7 @@ label session2_start:
 
     "When he returned, he was holding a small, ornate box."
     pause 1
-    ryohei "Then let's begin Session Two."
+    ryohei "Then let’s begin Session Two."
     "His voice was lower now, a deep sound that seemed to make the room feel quiet."
 
     "..."
@@ -46,7 +46,7 @@ label session2_devotion:
 
     show ryohei seated neutral at center
     with fade
-    pause 1.0
+    pause 1
 
     "He moved to the table and sat directly across from me. A subtle shift that made him the focal point of the entire room."
 
@@ -59,23 +59,23 @@ label session2_devotion:
     eden "Devotion?{w=0.5} To what?"
     "The question was so out of left field I could only blink. "
 
-    ryohei seated smile "To...anything!{w=0.5} Whether it's a person, an idea, or a god."
+    ryohei seated smile "To... anything!{w=0.5} Whether it’s a person, an idea, or a god."
     pause 0.5
-    "...Huh."
+    "... Huh."
     "I hesitated. It felt like a trick question."
 
     menu:
 
         "It sounds dangerous.":
-            eden "It depends on what you're devoted to. Blind devotion can be dangerous."
-            ryohei seated look "I see. You're careful. That's understandable."
+            eden "It depends on what you’re devoted to. Blind devotion can be dangerous."
+            ryohei seated look "I see. You’re careful. That’s understandable."
             "He filed it that away but his expression was unreadable."
             $ trust -= 1
 
-        "It's a form of trust.":
-            eden "I guess it's a form of absolute trust. Devotion is like an anchor. Something to hold onto when you're lost."
+        "It’s a form of trust.":
+            eden "I guess it’s a form of absolute trust. Devotion is like an anchor. Something to hold onto when you’re lost."
             ryohei seated look "An anchor... Yes. A worthy cause requires unwavering trust."
-            "He looked satisfied, as if I'd given the correct answer."
+            "He looked satisfied, as if I’d given the correct answer."
             $ trust += 1
 
 
@@ -85,29 +85,29 @@ label session2_devotion:
     "He paused, his expression shifting into something that looked unnervingly like a confession."
 
     pause 1
-    ryohei "I used to know people who were part of ... group."
+    ryohei "I used to know people who were part of... group."
     pause 0.5
     ryohei "They were devoted to a singular idea."
     ryohei "They believed that to truly change—"
-    ryohei "To become more than what they were...they had to give up a part of themselves."
+    ryohei "To become more than what they were... they had to give up a part of themselves."
     "...?"
     "My skepticism must have been obvious. This had nothing to do with insomnia."
     "This was about something else entirely."
     ryohei "They saw it as a... transcendence. To an outsider, their methods might have seemed extreme. Cruel, even."
     "He continued, his eyes searching mine, gauging my reaction."
-    ryohei "But they believed true enlightenment required sacrifice. That you couldn't become whole until a piece of you was given away."
+    ryohei "But they believed true enlightenment required sacrifice. That you couldn’t become whole until a piece of you was given away."
 
     pause 0.5
     "It sounded an awful lot like he was talking about a cult."
     "And it sounded an awful lot like this guy believed it."
-    eden "Uh-huh...."
+    eden "Uh-huh..."
 
     show ryohei seated neutral with dissolve
     ryohei "My apologies. I didn’t mean to bring that up."
     "He waved a hand dismissively, the philosophical conversation ending as abruptly as it began."
 
     stop music fadeout 5.0
-    ryohei "Now, let's move on..."
+    ryohei "Now, let’s move on..."
     jump session2_candle
 
 
@@ -119,8 +119,8 @@ label session2_candle:
     pause 0.5
     "He opened the velvet-lined box. Inside, nestled in black satin, were six unlit candles of varying heights."
 
-    ryohei seated smile "Let's play a game, Eden."
-    ryohei seated neutral "This is a 'focusing exercise.'"
+    ryohei seated smile "Let’s play a game, Eden."
+    ryohei seated neutral "This is a ’focusing exercise.’"
     "He lit the candles and set them on the table in a chaotic line."
     pause 0.5
     ryohei "The objective is simple. Arrange these candles from {b}Shortest to tallest. Left to right."
@@ -135,11 +135,11 @@ label session2_candle:
     ryohei seated smile "Nuh-Uh."
     ryohei seated crazy "There are rules."
     "His tone was now flat, sharp, and cold."
-    ryohei "Discipline is paramount. You have {b}exactly four moves.{/b} A 'move' is the swapping of any candles."
+    ryohei "Discipline is paramount. You have {b}exactly four moves.{/b} A ’move’ is the swapping of any candles."
     ryohei seated look "Exceed {b}four{/b}, and the pattern is irrevocably broken. Do you understand?"
 
     "I nodded. My mouth is suddenly dry."
-    "I looked at the candles...."
+    "I looked at the candles..."
 
     $ candle = Candle(moves=4, candles=6)
     jump candle_minigame
@@ -152,15 +152,15 @@ label session2_success:
     "A perfect, ascending line. All in less than four moves."
     show ryohei seated crazy with dissolve
     "Ryohei was smiling."
-    "It wasn't his usual, practiced smile..."
+    "It wasn’t his usual, practiced smile..."
     "This was wide, genuine, and utterly terrifying."
-    ryohei "{i}Hmm...Excellent.{/i}"
+    ryohei "{i}Hmm... Excellent."
     "He whispered the word, savoring it like a fine wine."
 
     show bg studio2 at shake
     ryohei "I like you, you’re sharp."
-    ryohei "You act without hesitation and you're decisive."
-    ryohei "That's exactly why I need you."
+    ryohei "You act without hesitation and you’re decisive."
+    ryohei "That’s exactly why I need you."
     eden "Ryo..? What do you mea-"
 
     #----very short-jumpscare, to make players wonder---
@@ -177,11 +177,11 @@ label session2_success:
 
     show bg studio
     show ryohei seated neutral
-    ryohei "That is all for now. You've demonstrated remarkable potential."
+    ryohei "That is all for now. You’ve demonstrated remarkable potential."
     ryohei "You should prepare yourself for our next session."
 
     scene black with fade
-    stop music fadeout 2.0
+    stop music fadeout 2
 
     #jump session3
     jump ending
@@ -205,12 +205,12 @@ label session2_fail:
     show ryohei seated serious
 
     "My hand froze in mid-air."
-    ryohei "That's five. The pattern is now lost."
+    ryohei "That’s five. The pattern is now lost."
     "Although there was no anger in his voice. There was a flat disappointment that scraped against my nerves."
 
     "Before I could apologize, he reached over."
     "His hands moved in a blur of three graceful, precise swaps. The candles snapped into a perfect, ascending line."
-    "The sheer ease of it was a quiet.... brutal humiliation."
+    "The sheer ease of it was a quiet... brutal humiliation."
 
     show ryohei seated neutral with dissolve
     ryohei "Do not be discouraged."
@@ -225,7 +225,7 @@ label session2_fail:
     ryohei "Heads up, Eden. We must quiet the static in your mind."
 
     scene black with fade
-    stop music fadeout 2.0
+    stop music fadeout 2
 
     "I was left with the bitter taste of failure in my mouth."
 
