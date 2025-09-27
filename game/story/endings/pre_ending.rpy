@@ -61,7 +61,7 @@ label pre_ending_start:
 
     "He buried his face in his hands, his shoulders trembling. This was it. The full, horrifying truth. The core of his madness."
     "He looked up, and his eyes were glistening with unshed tears. But beneath the pain, there was something else. A chilling, obsessive focus. It was directed at me."
-    
+
     ryohei "And that’s why I needed you, Eden. I've been watching you. Even back in college."
 
     eden "What…?"
@@ -91,14 +91,14 @@ label pre_ending_start:
 
     ryohei "Will you accept this honor? Will you complete the ritual and become the new vessel?"
     ryohei "Will you do the sacrifice for me?"
-    
+
     "The question hung in the air, suspended between the flames of the seven candles. My heart hammered against my ribs. This was the final ritual. The final choice."
 
     # This is the final choice point of the game, leading to the different endings.
     menu:
         "Take the knife.":
             jump ending_attack
-        "\"No.\"":
+        "“No.”":
             jump ending_sacrifice
         "???": # This choice would only appear if certain conditions are met (e.g., high trust stat)
             #jump ending_3
