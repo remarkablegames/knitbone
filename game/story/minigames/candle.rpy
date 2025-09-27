@@ -1,9 +1,11 @@
 label candle_minigame:
     call screen candle_minigame
 
+
 label candle_minigame_win:
-    eden "I ...I did it."
+    eden "{cps=15}I...{w=0.3} I did it."
     jump session2_success
+
 
 label candle_minigame_lose:
     ryohei seated serious "Stop."
@@ -13,7 +15,7 @@ label candle_minigame_lose:
 screen candle_minigame():
     frame:
         background Solid((0, 0, 0, 100))
-        text "Remaining Moves: [candle.moves]"
+        text "{color=#ccc}Remaining Moves: [candle.moves]"
         xpos 30
         ypos 30
 
@@ -36,7 +38,9 @@ init python:
     class Candle:
         def __init__(self, moves: int, candles: int) -> None:
             self.moves = moves
-            self.values = renpy.random.sample(list(range(1, candles + 1)), candles)
+            self.values = []
+            while self.values == sorted(self.values):
+                self.values = renpy.random.sample(list(range(1, candles + 1)), candles)
 
         def ondrag(self, drags, drop) -> None:
             drag = drags[0]
