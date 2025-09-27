@@ -1,9 +1,9 @@
 label bar:
-    play music "music/bar.ogg" fadein 1.5 volume 0.8
+    play music "music/bar.ogg" fadein 3 volume 0.7
     pause 1
 
-    eden "{cps=15}Hmm..."
-    play sound "sfx/ice.ogg" volume 0.8
+    eden "{cps=10}Hmm..."
+    play sound "sfx/ice.ogg" volume 0.6
     eden "Seems like the ice in my glass had succumbed to the warmth..."
     eden "...it looks just like my life."
 
@@ -13,17 +13,19 @@ label bar:
 
     "My name’s Eden.{w=0.5} I’m a Psychology major."
     "Voted as “Most Likely to Succeed.”"
-    eden "{cps=15}..."
+    eden "{cps=10}..."
 
     pause 0.5
 
     eden "{i}But that was years ago...{w=0.2} When I had directions in my life."
 
-    eden "{i}Now? I’m surviving on coffee with no sleep."
+    eden "{i}Now?{w=0.3} I’m surviving on coffee with no sleep."
     eden "{i}I changed three jobs in just twelve months."
     eden "{i}Every “fresh start” only left me more tangled in doubt.{w=0.2} And yeah, I just ended up more lost."
-    "..."
+
+    "{cps=10}..."
     pause 1
+
     eden "{i}I don’t even recognize who I am anymore."
 
     show cg bar at shake
@@ -64,10 +66,10 @@ label bar_ryohei_entrance:
     "He smiled at the bartender,{w=0.1} waved at someone like they were old friends."
     show ryohei look2 at center
 
-    eden "..."
+    eden "{cps=10}..."
     eden "{i}So,{w=0.1} he’s that kind of guy huh."
-    eden "{i}He looked...{w=0.3} so put together— assertive and relaxed."
-    eden "{i}And his shirt—{w=0.3}that probably cost more than my rent,{w=0.1} yet he wore it so casually."
+    eden "{i}He looked...{w=0.3} so put together — assertive and relaxed."
+    eden "{i}And his shirt —{w=0.3} that probably cost more than my rent,{w=0.1} yet he wore it so casually."
     eden "{i}Everything about him was the opposite of me..."
 
     show ryohei look at flip, center
@@ -81,7 +83,7 @@ label bar_ryohei_entrance:
 
     show ryohei serious
     eden "!!"
-    "And then he saw me, surprised as his eyes locked onto mine."
+    "And then he saw me,{w=0.1} surprised as his eyes locked onto mine."
     pause 0.3
 
     ryohei laugh "..."

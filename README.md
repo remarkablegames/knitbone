@@ -25,6 +25,7 @@ Play the game on:
 - [Kenney](https://kenney.nl/assets/interface-sounds)
 - Pixabay
   - [Bone snap](https://pixabay.com/sound-effects/bone-snap-408148/)
+  - [Camera Flash](https://pixabay.com/sound-effects/camera-flash-204151/)
   - [Door Creak 02](https://pixabay.com/sound-effects/door-creak-02-79920/)
   - [Footsteps Male](https://pixabay.com/sound-effects/footsteps-male-362053/)
   - [Glass Breaking Sound Effect](https://pixabay.com/sound-effects/glass-breaking-sound-effect-240679/)
