@@ -48,14 +48,12 @@ label session1_prestudio:
 
     menu:
         "Knock":
-            pass
+            play sound "sfx/knock.ogg"
+            "I finally knocked on the door."
+            pause 1.5
 
-    "Finally,{w=0.5} I knocked on the door."
-    play sound "sfx/knock.ogg"
-    pause 1.5
-
-    "The door opened right away.{w=0.5} Like he was already standing there waiting for me."
     play sound "sfx/creak.ogg"
+    "The door opened right away.{w=0.5} Like he was already standing there waiting for me."
     pause 1
 
     show ryohei neutral with dissolve
