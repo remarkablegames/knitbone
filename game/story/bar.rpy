@@ -3,6 +3,7 @@ label bar:
     pause 1
 
     eden "{cps=15}Hmm..."
+    play sound "sfx/ice.ogg" volume 0.8
     eden "Seems like the ice in my glass had succumbed to the warmth..."
     eden "...it looks just like my life."
 
@@ -27,11 +28,11 @@ label bar:
 
     show cg bar at shake
     stop music
-    play sound "sfx/chime.ogg"
+    play sound "sfx/chime.ogg" volume 0.8
     "{i}*chimes*"
 
     pause 0.5
-    play sound "sfx/door.ogg"
+    play sound "sfx/door.ogg" volume 1.1
     "The door opened, but at first, I barely registered it."
 
     scene black with fade

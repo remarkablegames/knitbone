@@ -7,18 +7,18 @@ label session1:
     pause 0.5
 
     "My footsteps feel too loud as I walk."
-    "The hallway smelled old and dusty,"
-    "while the carpet looks ugly and stained."
+    "The hallway smelled old and dusty,{w=0.3} while the carpet looks ugly and stained."
 
     "My thumb keeps brushing over the card in my pocket—"
-    "1408,{w=0.2} just like the card said.{w=0.5} That’s the room I’ve been trying to track down."
+    "1408,{w=0.3} just like the card said.{w=0.5} That’s the room I’ve been trying to track down."
 
-    "After a tour of what felt like the world’s most depressing maze, I finally spot the door."
+    "After a tour of what felt like the world’s most depressing maze,{w=0.2} I finally spot the door."
     pause 1
 
-    "The little brass number on it looked shiny and new. It didn’t fit with the rest of the dingy hallway."
+    "The little brass number on it looked shiny and new.{w=0.3} It didn’t fit with the rest of the dingy hallway."
     "I stopped,{w=0.3} and my hand just hovered in the air..."
-    "...{w=1.5} I wasn’t sure if I should knock."
+    "..."
+    "I wasn’t sure if I should knock."
     "A part of me wanted to just turn around and leave."
     pause 1
 
