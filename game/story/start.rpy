@@ -26,7 +26,8 @@ label splashscreen:
 
 label start:
 
-    stop music fadeout 1.5
+    stop music fadeout 2
+    queue music "music/terror.ogg" fadein 0.5 volume 0.9
     pause 1
 
     show text "{size=75}{color=#ccc}KnitBone" with dissolve
