@@ -1,0 +1,139 @@
+label ending_sacrifice:
+    scene black
+    with fade
+
+    "A sacrifice?"
+
+    "The sheer ridiculousness of it all was enough to make me die laughing."
+    "What the hell?{w=0.3} Does he actually think I’m buying all of this?{w=0.3} This elaborate prank?"
+    "Ryohei sure did get me a couple of times there,{w=0.3} especially with the hypnosis part."
+    "But it’s time for him to drop the act."
+    "I wasn’t going to be swayed by all this cult talk any longer;{w=0.3} even this was too much."
+
+    "I looked down at the knife in his palms with a twitch in my eye,{w=0.2} then back down to the crown of his head,{w=0.2} bowed before me as he offered the weapon."
+
+    "Did he really have to go this far?"
+
+    eden "No."
+    pause 1
+
+    "The silence that followed was almost laughable."
+
+    ryohei "{cps=10}...{w=0.5} No?"
+    "Ryohei stayed unmoving."
+
+    eden "{cps=15}No."
+    "I managed to choke out a laugh."
+    eden "What the hell,{w=0.2} Ryo?"
+    eden "What are you even talking about?"
+    eden "This is...{w=0.3} this is crazy and you know it."
+
+    ryohei "{cps=15}What is?"
+    "His voice had gone cold."
+
+    eden "{cps=15}Like..."
+    "For some reason,{w=0.2} I felt myself sweating,{w=0.2} my heart rattling faster."
+    eden "Do you even know what you’re asking?"
+    eden "You’re asking me to kill myself for you."
+
+    ryohei "What’s wrong with that?"
+
+    "I looked at him in horror."
+    eden "Everything,{w=0.2} Ryohei.{w=0.2} Everything."
+    "Was he mentally well?"
+    "Wait,{w=0.3} did he actually believe that by killing myself,{w=0.2} he’d be free from this cult curse or whatever he said?"
+    eden "{cps=15}Hey,{w=0.2} do you...{w=0.2}{cps=30} do you actually believe this crap?"
+    eden "This crap you keep telling me,{w=0.2} the cult,{w=0.2} the curse,{w=0.2} everything...{w=0.3} do you actually think it’s real?"
+
+    "A pause fills the room,{w=0.2} then Ryohei speaks."
+    ryohei "{cps=15}...{w=0.5} You don’t?"
+
+    "On impulse,{w=0.2} I bark out a short ha.{w=0.3} A sound of ridicule,{w=0.2} of mockery,{w=0.2} of belittlement.{w=0.3} Of superiority."
+    "Oh Ryohei,{w=0.2} how far have you fallen?{w=0.3} Resorting to these sorts of trickery and for what?"
+    "I may not be in the best spot right now,{w=0.2} but at least my mind’s still intact."
+    "But Ryohei...{w=0.3} he’s genuinely lost it.{w=0.3} He isn’t the person I admired back in college."
+    "He’s downgraded into this...{w=0.2} this shell of insanity."
+    "And I don’t think I can save him.{w=0.2} I don’t think anyone can.{w=0.2} Not even a blood sacrifice."
+
+    eden "{cps=15}Ryohei..."
+    "I said in the gentlest way I could."
+    eden "I’m sorry.{w=0.2} I’m not doing this.{w=0.2} Get up from the ground,{w=0.2} please.{w=0.3} Let’s talk this out."
+
+    "My response drew nothing from Ryohei."
+    "He stayed still like a pretty porcelain doll,{w=0.2} as if forever carved in his pose of grievance."
+    "Then I heard a small murmur."
+
+    ryohei "If you won’t carry it...{w=0.5} {cps=15}you’ll feed it."
+
+    eden "What?"
+    "I asked,{w=0.2} blinking to see that we were suddenly face to face,{w=0.2} me staring up at his ashy pupils as he towered over me."
+    "Our bodies were uncomfortably close."
+    "My head raced,{w=0.2} wondering how he had managed to get up and seize me in just a blink of an eye."
+    "The confusion muddled my brain,{w=0.2} the adrenaline pumping through my veins that I hadn’t even noticed that Ryohei’s fist was hovering over my chest. "
+
+    "Gripping the knife’s handle that was plunged in my heart."
+
+    "I looked down at it,{w=0.2} dazed."
+    "What?"
+    "Must be a fake knife,{w=0.2} the one that retracts the more you push it in,{w=0.2} but it doesn’t look like it retracted."
+    "My sweater is pressed down where the knife’s silver blade has pushed, and bits of red have started to bloom from the spot."
+    "Slowly,{w=0.2} I started to feel the pain."
+    "In nausea and shock,{w=0.2} I fell to my knees,{w=0.2} unblinking."
+    "What?"
+    "{i}What?"
+    "I cough,{w=0.2} and I feel warm,{w=0.2} sticky liquid come out of my throat,{w=0.2} pooling out my mouth like a murky tap."
+    "Did he actually...{w=0.3} stab me?"
+
+    ryohei "{cps=15}I’m sorry."
+
+    "I hear Ryohei’s voice from above,{w=0.2} distant and echoing like he was speaking in an empty chapel,{w=0.2} the sounds bouncing off the hollowed halls."
+    "I feel his hand press softly against the back of my hair,{w=0.2} pressing the side of my face against his leg."
+    "His sick version of repentance,{w=0.2} of confession."
+    "His warmth seeps into me,{w=0.2} as my life flows out."
+
+    ryohei "{cps=15}I’m sorry, Eden."
+
+    "He repeats and he sounds human.{w=0.2} A good sound to hear,{w=0.2} for once.{w=0.2} Humanity."
+
+    "Ryohei is human.{w=0.2} Always has been."
+
+    "I just didn’t want to see that."
+
+    "He had always been a god to me."
+    "So much that I refused to acknowledge that he ever struggled."
+    "That must have followed me until now."
+    "He bared his heart to me,{w=0.2} but instead of seeing the real him for once,{w=0.2} I took it as an opportunity to finally feel better than him."
+
+    "How pathetic of me."
+    "And now..."
+    "I pay my price."
+
+    "As I go limp,{w=0.2} I feel his hands catch me,{w=0.2} setting me gently against the cold floor."
+    "Even in my death he treats me kindly."
+    "I feel my blood seep into the ritual circle,{w=0.2} as if the curse is hungrily licking up the offering I have provided."
+
+    ryohei "{cps=15}{i}I’m sorry,{w=0.2} Eden."
+
+    "He repeats it again and again, his hands over my corpse."
+
+    ryohei "I truly didn’t want to do this."
+    ryohei "I really...{w=0.5} I really thought you were different."
+    ryohei "Ever since we met back then in college."
+    ryohei "I thought you saw through my facade,{w=0.2} that you knew the grief I was hiding."
+    ryohei "That you could understand me."
+    ryohei "That you could understand...{w=0.5} who I really was."
+    ryohei "That you could...{w=0.5} accept it."
+
+    "He choked out, pressing his forehead against my bleeding heart."
+
+    ryohei "But I was wrong.{w=0.3} I can’t trust anyone.{w=0.3} I can’t show anybody who I truly am."
+    ryohei "This is my burden to bear...{w=0.5} {cps=15}{i}forever{/i}."
+
+    ryohei "{sc}I am the vessel."
+    ryohei "{sc}No one else."
+
+    "Ryohei is left kneeling over my corpse,{w=0.2} as shadowing veins crawl and dance throughout the room,{w=0.2} rejoicing in Ryohei’s inevitable surrender."
+
+    ryohei "{cps=10}{sc}No one else can be..."
+
+    jump end
