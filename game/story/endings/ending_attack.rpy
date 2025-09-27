@@ -20,6 +20,7 @@ label ending_attack:
 
     "..."
 
+    play sound "sfx/tension.ogg"
     ryohei "{sc}What?"
     pause 2
 
@@ -32,7 +33,8 @@ label ending_attack:
 
     eden "I..."
 
-    "The words twist in my throat. Panic seized me, fear freezing my blood, and for a split second I almost shifted the blade towards the flesh of my neck, ready to slice–"
+    "The words twist in my throat."
+    "Panic seized me, fear freezing my blood, and for a split second I almost shifted the blade towards the flesh of my neck, ready to slice–"
     "But I snap out of it. I hold the knife away from my body, putting it back into Ryohei’s outstretched hands."
 
     eden "No... no. I won’t."
@@ -51,6 +53,7 @@ label ending_attack:
 
     "–Then he moved."
     with hpunch
+    play sfx "sfx/thud.ogg"
 
     "Faster than I could’ve stopped him."
     "Before I knew it, his hand was gripped around my neck, the other pushing the knife against my hands."
@@ -64,9 +67,10 @@ label ending_attack:
 
     ryohei "{sc}EDEN!"
 
+    play sound "sfx/stab.ogg"
+
     "An overwhelming will to survive took over me, and I shoved with all my might against his towering figure."
 
-    play sound "sfx/thud.ogg"
     "He barrelled backwards into the table, knocking chairs and vases as he fell to the floor with a loud thud."
 
     "..."

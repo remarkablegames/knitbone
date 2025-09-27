@@ -204,17 +204,21 @@ label session2_fail:
 
     "My hand froze in mid-air."
     ryohei "That’s five. The pattern is now lost."
-    "Although there was no anger in his voice. There was a flat disappointment that scraped against my nerves."
+    "Although there was no anger in his voice.{w=0.2} There was a flat disappointment that scraped against my nerves."
 
     "Before I could apologize, he reached over."
-    "His hands moved in a blur of three graceful, precise swaps. The candles snapped into a perfect, ascending line."
-    "The sheer ease of it was a quiet... brutal humiliation."
+    "His hands moved in a blur of three graceful, precise swaps."
+    "The candles snapped into a perfect, ascending line."
+    "The sheer ease of it was a quiet...{w=0.2} brutal humiliation."
 
     show ryohei seated neutral with dissolve
     ryohei "Do not be discouraged."
-    "The placating words were a stark contrast to the cold calculation in his eyes. He was observing me, taking notes on my failure."
-    ryohei "It indicates your mind is still... noisy."
-    ryohei "Do not worry, we can still move on to the next session"
+
+    "The placating words were a stark contrast to the cold calculation in his eyes."
+    "He was observing me, taking notes on my failure."
+
+    ryohei "It indicates your mind is still...{w=0.3} noisy."
+    ryohei "Do not worry, we can still move on to the next session."
 
     ryohei seated serious "Our next session will require a more...{w=0.3} direct methodology. To help you focus."
     ryohei seated look "That will be all."
