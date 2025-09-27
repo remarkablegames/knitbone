@@ -8,8 +8,6 @@ label session2:
 
 label session2_start:
 
-    pause 1
-
     ryohei "Good."
     "Ryohei’s smile deepened, like the answer had been inevitable."
 
@@ -85,17 +83,20 @@ label session2_devotion:
     "He paused, his expression shifting into something that looked unnervingly like a confession."
 
     pause 1
-    ryohei "I used to know people who were part of... group."
+    ryohei "I used to know people who were part of...{w=0.3} a group."
+
     pause 0.5
     ryohei "They were devoted to a singular idea."
     ryohei "They believed that to truly change—"
-    ryohei "To become more than what they were... they had to give up a part of themselves."
-    "...?"
+    ryohei "To become more than what they were...{w=0.2} they had to give up a part of themselves."
+    eden "...?"
+
     "My skepticism must have been obvious. This had nothing to do with insomnia."
     "This was about something else entirely."
-    ryohei "They saw it as a... transcendence. To an outsider, their methods might have seemed extreme. Cruel, even."
+    ryohei "They saw it as a...{w=0.2} transcendence.{w=0.2} To an outsider, their methods might have seemed extreme.{w=0.2} Cruel, even."
     "He continued, his eyes searching mine, gauging my reaction."
-    ryohei "But they believed true enlightenment required sacrifice. That you couldn’t become whole until a piece of you was given away."
+    ryohei "But they believed true enlightenment required sacrifice."
+    ryohei "That you couldn’t become whole until a piece of you was given away."
 
     pause 0.5
     "It sounded an awful lot like he was talking about a cult."
@@ -113,17 +114,18 @@ label session2_devotion:
 
 label session2_candle:
 
-    play music "music/theme4.ogg" fadein 1.5
+    play music "music/theme4.ogg" fadein 1.5 volume 0.8
 
     #play sound "sfx/rustles.ogg"
     pause 0.5
     "He opened the velvet-lined box. Inside, nestled in black satin, were six unlit candles of varying heights."
 
     ryohei seated smile "Let’s play a game, Eden."
-    ryohei seated neutral "This is a ’focusing exercise.’"
+    ryohei seated neutral "This is a “focusing exercise.”"
     "He lit the candles and set them on the table in a chaotic line."
     pause 0.5
-    ryohei "The objective is simple. Arrange these candles from {b}Shortest to tallest. Left to right."
+    ryohei "The objective is simple."
+    "Arrange these candles from {i}shortest to tallest{/i}.{w=0.2} And {i}left to right{/i}."
 
     pause 0.5
     eden "Oh...{w=0.5} that sounds easy."
@@ -132,13 +134,13 @@ label session2_candle:
     show ryohei seated serious at slight_shake
     "His hand shot out, not touching mine, but hovering just above it."
 
-    ryohei seated smile "Nuh-Uh."
+    ryohei seated smile "Nuh-uh."
     ryohei seated crazy "There are rules."
     "His tone was now flat, sharp, and cold."
-    ryohei "Discipline is paramount. You have {b}exactly four moves.{/b} A ’move’ is the swapping of any candles."
-    ryohei seated look "Exceed {b}four{/b}, and the pattern is irrevocably broken. Do you understand?"
+    ryohei "Discipline is paramount.{w=0.2} You have {i}exactly four moves.{/i}{w=0.2} A “move” is the swapping of any candles."
+    ryohei seated look "Exceed {i}four{/i}, and the pattern is irrevocably broken.{w=0.2} Do you understand?"
 
-    "I nodded. My mouth is suddenly dry."
+    "I nodded,{w=0.2} my mouth suddenly dry."
     "I looked at the candles..."
 
     $ candle = Candle(moves=4, candles=6)
@@ -146,7 +148,6 @@ label session2_candle:
 
 
 label session2_success:
-    pause 1
     $ trust += 1
 
     "A perfect, ascending line. All in less than four moves."
@@ -165,15 +166,14 @@ label session2_success:
 
     #----very short-jumpscare, to make players wonder---
     stop music
+    play sound "sfx/tension.ogg"
     scene black with dissolve
     show entity 3 at slight_shake, center
-    play sound "sfx/tension.ogg"
     pause 0.3
     hide entity
-    stop sound
     #---
 
-    play music "music/theme3.ogg" fadein 1.5
+    play music "music/theme3.ogg" fadein 1.5 volume 0.8
 
     show bg studio
     show ryohei seated neutral
@@ -191,14 +191,12 @@ label session2_fail:
     $ trust -= 1
 
     #---very short-jumpscare, to make players wonder---
-    pause
     stop music
+    play sound "sfx/tension.ogg"
     scene black
     show entity 3 at slight_shake, center
-    play sound "sfx/tension.ogg"
     pause 0.3
     hide entity
-    stop sound
     #---
 
     show bg studio

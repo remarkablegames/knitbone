@@ -49,11 +49,14 @@ label session1_prestudio:
     menu:
         "Knock":
             play sound "sfx/knock.ogg"
-            "I finally knocked on the door."
             pause 1.5
 
+            "I finally knocked on the door."
+            pause 1
+
     play sound "sfx/creak.ogg"
-    "The door opened right away.{w=0.5} Like he was already standing there waiting for me."
+    "The door opened right away."
+    "Like he was already standing there waiting for me."
     pause 1
 
     show ryohei neutral with dissolve
@@ -71,7 +74,8 @@ label session1_prestudio:
 
 
 label session1_studio:
-    play music "music/theme3.ogg"
+    play music "music/theme3.ogg" fadein 1.5 volume 0.8
+
     scene bg studio
     with fade
 
@@ -96,7 +100,7 @@ label session1_studio:
 
     eden "{cps=10}...{w=0.2} Yeah."
     eden awkward "{cps=20}I guess so...?"
-    ryohei neutral "So.{w=0.2} Tell me...{w=0.2} What’s in your mind?"
+    ryohei neutral "So.{w=0.2} Tell me...{w=0.2} What’s on your mind?"
     ryohei "What brought you here tonight?"
     pause 1
 
@@ -119,7 +123,7 @@ label session1_studio:
     "His expression had turned serious,{w=0.2} like he knows something that I don’t."
 
     ryohei serious "Insomnia and identity crisis.{w=0.2} That’s a reasonable set to bring in together.{w=0.2} Sleep and sense of self are closer than most people think."
-    ryohei "You’re not sleeping because your mind refuse to let you be vulnerable."
+    ryohei "You’re not sleeping because your mind refuses to let you be vulnerable."
 
     pause 0.5
     ryohei "And that’s why your mind won’t shut down."
@@ -167,32 +171,31 @@ label session1_test:
 
             "He leaned forward,{w=0.2} his voice low."
             ryohei "Eden."
-            ryohei smirk "{cps=250}Refusing only reveals what you’re afraid of.{w=0.2} It shows me exactly what you’re afraid of."
+            ryohei smirk "{cps=100}Refusing only reveals what you’re afraid of.{w=0.2} It shows me exactly what you’re afraid of."
 
             stop character fadeout 0.2
             hide ryohei
             hide eden
 
-            play sfx "sfx/tension.ogg"
-            play sound "voice/entity.ogg"
-
             show bg studio4
 
-            show entity 2 at center, opacity(0.6), scale(1.1), shake
-            with moveinbottom
-            with vpunch
+            play sfx "sfx/tension.ogg"
 
+            show entity 2 at center, scale(1.1), shake
+            with hpunch
+
+            play sound "sfx/thud.ogg"
             pause 0.5
             scene black
 
-            pause 3.0
+            pause 1
             stop sound
 
             jump session1_end
 
 
 label session1_end:
-    play music "music/theme3.ogg"
+    play music "music/theme3.ogg" fadein 1.5 volume 0.8
 
     scene bg studio
     with fade
@@ -207,7 +210,6 @@ label session1_end:
 
     "..."
     pause 1
-    #show eden scared
 
     show eden bitter2
 
@@ -221,17 +223,18 @@ label session1_end:
     "An awkward silence settled between us."
 
     pause 1
-    "His eyes flicked up to mine"
+    "His eyes flicked up to mine."
 
     ryohei "What you’ve shown me earlier tells me enough.{w=0.2} More than enough."
     ryohei glare "Your sleepless nights..."
 
-    "He paused.{w=0.3} It felt like he was studying me like I was some kind of bug."
+    "He paused."
+    "It felt like he was studying me like I was some kind of bug."
     pause 1
 
     ryohei serious "Your insomnia isn’t a mistake.{w=0.2} It’s a pattern."
     ryohei "Your mind is stuck on a loop."
-    ryohei "Regular therapy won’t work for you.{w=0.2} What your mind need is a {i}“key”{/i} to...{w=0.3} redistribute the weight."
+    ryohei "Regular therapy won’t work for you.{w=0.2} What your mind need is a {i}“key”{/i} to...{w=0.2} redistribute the weight."
     ryohei neutral "What I want to propose isn’t therapy at all.{w=0.2} Think of it more as a...{w=0.3} {i}guided ritual{/i}."
 
     pause 1.2
