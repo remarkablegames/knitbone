@@ -2,7 +2,7 @@ label bar:
     play music "music/bar.ogg" fadein 1.5 volume 0.8
     pause 1
 
-    eden "Hmm..."
+    eden "{cps=15}Hmm..."
     eden "Seems like the ice in my glass had succumbed to the warmth..."
     eden "...it looks just like my life."
 
@@ -10,25 +10,25 @@ label bar:
     with dissolve
     pause 0.7
 
-    "My name's Eden. I'm a Psychology major."
-    "Voted as 'Most Likely to Succeed'."
-    eden "...{cps=15}"
+    "My name’s Eden.{w=0.5} I’m a Psychology major."
+    "Voted as “Most Likely to Succeed”."
+    eden "{cps=15}..."
 
     pause 0.5
 
     eden "{i}But that was years ago...{w=0.2} When I had directions in my life."
 
     eden "{i}Now? I’m surviving on coffee with no sleep."
-    eden "{i}I changed three jobs in just twelve months.{w=0.2}"
-    eden "{i}Every “fresh start” only left me more tangled in doubt.{w=0.1} And yeah, I just ended up more lost."
-    "...."
+    eden "{i}I changed three jobs in just twelve months."
+    eden "{i}Every “fresh start” only left me more tangled in doubt.{w=0.2} And yeah, I just ended up more lost."
+    "..."
     pause 1
     eden "{i}I don’t even recognize who I am anymore."
 
     show cg bar at shake
     stop music
     play sound "sfx/chime.ogg"
-    "*chimes*"
+    "{i}*chimes*"
 
     pause 0.5
     play sound "sfx/door.ogg"
@@ -203,7 +203,7 @@ label bar_talk:
     "Before I could react, he produced a card between his fingers, like it had been waiting there all along."
     ryohei "I can definitely help you with that. Just come to my studio."
 
-    "His word 'studio' echoed in my head longer than it should have."
+    "His word “studio” echoed in my head longer than it should have."
 
     scene black with fade
     stop music fadeout 2.0
