@@ -5,15 +5,15 @@ label hypnosis_minigame:
 
 
 label hypnosis_minigame_win:
-    stop music
-    eden "I beat the hypnosis minigame."
-    jump ending
+    $ trust += 1
+    eden "I matched each inhale with an exhale, regaining control over my breath."
+    jump session3_hypnosis2
 
 
 label hypnosis_minigame_lose:
-    stop music
-    eden "I lost the hypnosis minigame."
-    jump ending
+    $ trust -= 1
+    eden "My breathing faltered. The steady pattern I’d relied on slipped away."
+    jump session3_hypnosis2
 
 
 screen hypnosis_minigame():
