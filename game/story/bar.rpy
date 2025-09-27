@@ -103,7 +103,10 @@ label bar_ryohei_entrance:
     "I heard footsteps approaching me slowly."
     pause 0.2
 
+    play sfx "sfx/woosh.ogg" volume 0.8
     show ryohei neutral at left with moveinleft
+
+    play sound "sfx/woosh.ogg" volume 0.8
     show eden neutral at right with moveinright
 
     eden "{i}Why is he standing right here?"
@@ -150,17 +153,19 @@ label bar_flashback:
     eden "The Ryohei Damien."
 
     eden "We were in the same department back in college."
-    eden "He was popular.{w=0.1} He was effortlessly charming."
+    eden "He was popular.{w=0.2} He was effortlessly charming."
     eden "The kind of guy who made everyone feel seen,{w=0.1} even when he probably didn’t know half of their names."
     eden "I never expected to be on his radar."
-    eden "We shared a few lectures,{w=0.1} maybe a group project once,{w=0.1} but I was always the quiet one.{w=0.1} I was the guy people tend to forget."
+    eden "We shared a few lectures,{w=0.1} maybe a group project once,{w=0.1} but I was always the quiet one."
+    eden "I was the guy people tend to forget."
 
     eden "{i}But I remembered him."
     eden "{i}Goddamn,{w=0.1} I think I remembered him more than I should."
 
     eden "People wouldn’t shut up about him."
     eden "The rumors that he got scouted by some research lab."
-    eden "The times he stood in front of the class with that calm presence.{w=0.1} He’s always sure of himself."
+    eden "The times he stood in front of the class with that calm demeanor."
+    eden "As if he’s always sure of himself."
 
     pause 0.7
 
@@ -184,8 +189,9 @@ label bar_talk:
 
 
     ryohei "I’m really glad we ran into each other again."
-    ryohei "Hey, do you remember that time you made Professor Sam trip over his own lecture notes?{w=0.1} Still one of the funniest moments ever."
-    eden "You...{w=0.2} remembered that?"
+    ryohei "Hey, do you remember that time you made Professor Sam trip over his own lecture notes?"
+    ryohei "Still one of the funniest moments ever."
+    eden "You...{w=0.2} you remembered that?"
     ryohei "Honestly, that’s one of my favorite memories from back in college."
 
     pause 0.3

@@ -16,7 +16,7 @@ label ending_attack:
     "I turn the knife upside and down, my heavy heart sinking into my stomach."
 
     eden "{cps=35}{i}No. no, no, no. This isn’t right. Ryohei isn’t in the right mind, and neither am I. This is messed up!"
-    eden "Ryo...{w=0.2} I...{w=0.2} I can’t-"
+    eden "Ryo...{w=0.2} I...{w=0.2} I can’t—"
 
     "..."
 
@@ -91,12 +91,12 @@ label ending_attack:
     "As if on instinct I slid to the floor to hold his body up."
     "His head tilted limply against my own hammering heartbeat, as his own heart started to crawl to a stop."
 
-    eden "No, I-{w=0.2}I-{w=0.2} I didn’t mean to...{w=0.2} I didn’t-"
+    eden "No, I-{w=0.2}I-{w=0.2} I didn’t mean to...{w=0.2} I didn’t—"
 
     ryohei "{cps=10}Shh."
     "Around us, the candles fell into a dim glow, until a cold chill snuffed their lights completely."
     "I looked up to see veins of black and red chunks start to pour thinly from the walls, slithering like snakes towards the floor, and towards me."
-    "I reeled back, holding Ryohei closer as I tried to pull him away from the vines, as if it could stop the blood pooling from his chest-"
+    "I reeled back, holding Ryohei closer as I tried to pull him away from the vines, as if it could stop the blood pooling from his chest—"
 
     ryohei "Eden"
     "When I looked down at him, tears were already building in his ash-colored eyes."
@@ -112,7 +112,7 @@ label ending_attack:
 
     ryohei "It’s yours now.{w=0.2} It’s you.{w=0.2} It’s part of you."
 
-    eden "Ryohei-"
+    eden "Ryohei—"
 
     ryohei "But I didn’t want it to end this way."
 
@@ -121,7 +121,7 @@ label ending_attack:
 
     ryohei "{cps=20}I don’t want to die,{w=0.2} Eden."
 
-    eden "You’re not going to die,{w=0.2} Ryo, I-{w=0.2}I’ll call the ambulance and-"
+    eden "You’re not going to die,{w=0.2} Ryo, I-{w=0.2}I’ll call the ambulance and—"
 
     ryohei "{cps=20}Carry it, Eden."
 

@@ -38,20 +38,23 @@ label session1:
 
 
 label session1_prestudio:
+
     "And for some reason,{w=0.2} I actually came."
     "This was probably a bad idea..."
     "We hardly even know each other."
 
-    scene bg hallway with fade
+    scene bg hallway at zoomin
+    with fade
     pause 1.0
 
     menu:
         "Knock":
+            pause 0.5
             play sound "sfx/knock.ogg"
-            pause 1.5
+            pause 1
 
             "I finally knocked on the door."
-            pause 1
+            pause 0.5
 
     play sound "sfx/creak.ogg"
     "The door opened right away."
@@ -66,7 +69,7 @@ label session1_prestudio:
 
     ryohei "I had a feeling you’d be here.{w=0.2} Please, come in."
 
-    "I hesitated-"
+    "I hesitated—"
     "But my feet started moving before I could even think about it."
 
     jump session1_studio
@@ -83,7 +86,10 @@ label session1_studio:
     "And the studio was very simple.{w=0.2} Just a couch for me, and a single, fancy chair for him.{w=0.2} It felt like a stage."
     "There was soft jazz music playing."
 
+    play sound "sfx/woosh.ogg" volume 0.8
     show ryohei neutral at left with moveinleft
+
+    play sfx "sfx/woosh.ogg" volume 0.8
     show eden neutral at right with moveinright
 
     ryohei "Please, have a seat.{w=0.2} Try to get comfortable."
