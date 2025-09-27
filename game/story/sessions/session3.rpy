@@ -205,7 +205,7 @@ label session3_hypnosis0:
     "My hands shook violently, my pulse racing, and a whisper of fear told me to turn back."
     "But even knowing that, I couldn’t make myself move away."
     "Just before he whisper, I saw his composure slip for a fraction of a second."
-    ryohei look "{i}{cps=40}Shhh...It's okay Eden...{/i}"
+    ryohei look "{i}{cps=40}Shhh...{w=0.3} It's okay Eden..."
 
     pause 1.0
     "Then his eyes cleared, and he smiled at me, his focus absolute."

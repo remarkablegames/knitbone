@@ -11,7 +11,7 @@ label pre_ending_start:
     #show ryohei desperate at center
     show ryohei glare at center
     ryohei "Wait."
-    play sound "sfx/grab_cloth.ogg"
+    # play sound "sfx/grab_cloth.ogg"
 
     "His voice was sharp, cutting through my daze. I felt his hand grab my arm, his grip surprisingly strong, almost bruising."
     "I turned back. The calm facade was gone, shattered completely. In its place was raw, unfiltered desperation."
@@ -54,9 +54,9 @@ label pre_ending_start:
 
     "The silence in the room was deafening, broken only by the crackle of the candle wicks."
 
-    eden "What...do you mean?"
+    eden "What...{w=0.3} do you mean?"
 
-    ryohei smirked "I killed him. I plunged his own ritual knife into his chest. I thought if the leader was gone, the curse would die with him."
+    ryohei smirk "I killed him. I plunged his own ritual knife into his chest. I thought if the leader was gone, the curse would die with him."
     ryohei "But I was wrong. It didn't die. It just… transferred. It latched onto me. Now I carry it. I hear its whispers. I feel its hunger."
 
     "He buried his face in his hands, his shoulders trembling. This was it. The full, horrifying truth. The core of his madness."
