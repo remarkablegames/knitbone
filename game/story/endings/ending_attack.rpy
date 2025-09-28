@@ -61,16 +61,20 @@ label ending_attack:
     ryohei "{sc}Take it.{w=0.5} Take it!"
     "The room trembled beneath his cries."
 
+    scene cg ending struggle at slight_shake
+    with dissolve
+
     "I gasped, clawing to release myself from his grip – before bringing up a knee towards his stomach."
     "He’s caught off guard quick enough to drop me, but the knife was still in his hands."
     "As I tried to step sidewards, he lurched me back by my wrist, gripping tight enough to snap bone into two."
 
     ryohei "{sc}EDEN!"
 
+
     play sound "sfx/stab.ogg"
 
     "An overwhelming will to survive took over me, and I shoved with all my might against his towering figure."
-
+    scene black
     "He barrelled backwards into the table, knocking chairs and vases as he fell to the floor with a loud thud."
 
     "{cps=10}..."
@@ -87,6 +91,10 @@ label ending_attack:
     "A grin spreading across his perfect mouth."
 
     eden "Ryohei!"
+
+    pause 1
+    scene cg ending ryohei death at zoomout
+    with dissolve
 
     "As if on instinct I slid to the floor to hold his body up."
     "His head tilted limply against my own hammering heartbeat, as his own heart started to crawl to a stop."
@@ -130,6 +138,9 @@ label ending_attack:
     ryohei "{cps=20}You are one."
 
     "And then Ryohei Damien drew his last breath."
+
+    scene cg ending vessel
+    with dissolve
 
     "Without his presence, the chill in the room hiked up to a horrible cold."
     "I held his lifeless body against his own, only realizing the weight of his words when it had been too late."
