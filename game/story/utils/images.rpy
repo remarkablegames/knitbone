@@ -50,3 +50,16 @@ image cg hypnosis:
     "images/cg/hypnosis/cg hypnosis 8.webp"
     pause 0.3
     repeat
+
+image cg eyes:
+    "images/cg/cg eyes/cg eyes 1.webp"
+    pause 3.0
+    "images/cg/cg eyes/cg eyes 2.webp"
+    pause 0.3
+    "images/cg/cg eyes/cg eyes 3.webp"
+    pause 0.3
+    "images/cg/cg eyes/cg eyes 4.webp"
+    pause 0.3
+    "images/cg/cg eyes/cg eyes 3.webp"
+    pause 0.3
+    repeat
