@@ -80,6 +80,8 @@ label session3_start:
 
     show ryohei neutral
     show eden neutral
+    show cg comfrey with dissolve
+
     "He then pointed to a small, potted herb on his desk. It was the only living thing in the room."
     ryohei "Let’s try a different approach. What do you see there?"
 
@@ -109,6 +111,8 @@ label session3_start:
     show eden neutral
     "He was talking about the plant, but his eyes told me he was talking about something else."
     pause 1.0
+
+    hide cg comfrey with dissolve
 
     #ryohei trauma dumps------
     show ryohei serious at slight_shake
@@ -294,19 +298,19 @@ label session3_hypnosis2:
     pause 0.3
     show entity 3 at center, zoomin
     with vpunch
-    pause 1.0
+    pause 0.5
     hide entity
     pause 1.0
 
     "A presence. Huge, cold, and utterly indifferent."
-    show entity 2 at center, zoomin
+    show cg eyes at zoomin
     with dissolve
     "It feels like a web of black veins, pulsing slowly in the darkness behind my eyes."
 
     "The pressure grew, like the air was turning to lead around me."
     "The pressure was too much. A scream built in my chest, and my eyes flew open."
 
-    hide entity
+    hide cg eyes
     scene bg studio2 at hpunch
     with dissolve
 
