@@ -41,7 +41,7 @@ label ending_sacrifice:
     "I looked at him in horror."
     eden "Everything,{w=0.2} Ryohei.{w=0.2} Everything."
     "Was he mentally well?"
-    "Wait,{w=0.3} did he actually believe that by killing myself,{w=0.2} he’d be free from this cult curse or whatever he said?"
+    "Wait,{w=0.3} did he actually believe that by offering him my blood,{w=0.2} he’d be free from this cult curse or whatever he said?"
     eden "{cps=15}Hey,{w=0.2} do you...{w=0.2}{cps=30} do you actually believe this crap?"
     eden "This crap you keep telling me,{w=0.2} the cult,{w=0.2} the curse,{w=0.2} everything...{w=0.3} do you actually think it’s real?"
 
