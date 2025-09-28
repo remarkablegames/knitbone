@@ -159,6 +159,8 @@ label personality_test7:
     with dissolve
 
     play sound "sfx/tension.ogg"
+    voice "voice/entity/eden.ogg"
+    pause 0.5
 
     show entity 1 at center, opacity(0.8), scale(1.1)
     with moveinbottom
