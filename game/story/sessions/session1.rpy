@@ -94,8 +94,8 @@ label session1_studio:
 
     ryohei "Please, have a seat.{w=0.2} Try to get comfortable."
     "I sat on the couch..."
-    "..."
-    "{w=0.5}It was actually pretty comfortable.."
+    "{cps=10}..."
+    "It was actually pretty comfortable.."
     "He sat in his big chair and just watched me."
 
     ryohei "So...{w=0.2}{cps=10} Eden Cross..."
@@ -213,7 +213,7 @@ label session1_end:
 
     pause 1
 
-    "..."
+    "{cps=10}..."
     pause 1
 
     show eden bitter2
@@ -246,7 +246,7 @@ label session1_end:
     "{i}“Ritual”"
 
     pause 0.3
-    "..."
+    "{cps=10}..."
 
     show eden awkward with dissolve
 
@@ -268,7 +268,7 @@ label session1_end:
 
     ryohei smirk "Or...{w=0.3} you can agree to Session Two...!{w=0.3} That’s where we really begin."
 
-    "..."
+    "{cps=10}..."
     "{cps=30}That felt like a challenge."
 
     ryohei neutral "So, Eden.{w=0.2} What do you think?"

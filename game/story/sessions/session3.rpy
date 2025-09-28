@@ -48,9 +48,11 @@ label session3_start:
     stop music
     show bg studio3 at shake
     with dissolve
-    "He fell silent, letting the tension build...."
+
+    "He fell silent, letting the tension build..."
     "His gaze drifted to a dark corner of the room behind me."
-    ryohei serious "Don’t look now... but I think someone is watching us."
+
+    ryohei serious "Don’t look now...{w=0.3} but I think someone is watching us."
 
     show eden bitter at slight_shake
     "My blood ran cold."
@@ -70,7 +72,9 @@ label session3_start:
     ryohei smirk2 "Relax. I’m just testing your focus."
     ryohei "Were you expecting something?"
     pause 0.5
-    "..."
+
+    "{cps=10}..."
+
     eden bitter2 "{i}Sometimes, I wonder what is wrong with this guy."
     pause 1
 
@@ -86,7 +90,8 @@ label session3_start:
     eden "My grandma used to call it by its old name...{w=0.3} {i}{cps=10}Knitbone."
 
     "Ryohei seemed surprised by my sudden shift in mood, though he masked it with a smile."
-    ryohei smirk2 "... Knitbone.{w=0.3} An interesting name."
+
+    ryohei smirk2 "Knitbone...{w=0.3} An interesting name."
 
     eden smile "She said it could heal broken bones."
 
@@ -113,16 +118,18 @@ label session3_start:
     "He looked past me, his eyes unfocused, lost in a memory."
     ryohei serious "Just like you, they were also searching for ways to heal themselves...mentally or physically."
 
-    eden awkward "...?"
-    ryohei "When they’re desperate enough, they find a ‘community’ that promises something more than just a fix."
-    ryohei "Their philosophy was simple... at least on the surface. To ‘become enlightened,’ you had to give something away."
-    ryohei smirk " They called it an ‘offering’ to some cosmic entity.."
+    eden awkward "{cps=10}...?"
+
+    ryohei "When they’re desperate enough, they find a “community” that promises something more than just a fix."
+    ryohei "Their philosophy was simple... at least on the surface. To become “enlightened”, you had to give something away."
+    ryohei smirk " They called it an “offering” to some cosmic entity..."
+
     "He let out a short, harsh laugh that held no humor."
 
-    ryohei glare "But ‘offering’ was just a pretty word for ritualized murder."
+    ryohei glare "But “offering” was just a pretty word for ritualized murder."
     pause 1.0
 
-    eden bitter "What...?"
+    eden bitter "{cps=10}What...?"
 
     ryohei "They had this twisted... logic,  They believed pain was a currency. That you could only heal your own wound by taking on another’s life."
 
@@ -171,11 +178,13 @@ label session3_start:
 label session3_hypnosis0:
     play music "music/theme4.ogg" fadein 1.5 volume 0.8
 
-    ryohei look "Ahem... I apologize. That was... unprofessional."
-    ryohei "..."
-    pause 1.0
+    ryohei look "Ahem...{w=0.2} I apologize.{w=0.1} That was...{w=0.3} unprofessional."
+    ryohei "{cps=10}..."
+    pause 1
+
     ryohei "Anyways."
     pause 0.3
+
     ryohei look2 "All of that was just an attempt to open your mind."
     ryohei laugh "Looks like it’s ready! So let’s use it."
 
@@ -225,11 +234,11 @@ label session3_hypnosis1:
 
     pause 1.0
 
-    "..."
-    "......"
+    "{cps=10}..."
+    "{cps=10}......"
     eden "I can do that."
 
-    ryohei "Good. Breathe in... and out. Match my breathing."
+    ryohei "Good.{w=0.1} Breathe in...{w=0.3} and out.{w=0.1} Match my breathing."
 
     $ countdown.start(seconds=5, jump="session3_hypnosis2")
 
@@ -275,8 +284,9 @@ label session3_hypnosis2:
     "And then I saw it."
     pause 1.0
     show entity 1 at center
-    "..."
-    "... am I hallucinating again?"
+
+    "{cps=10}..."
+    "Am I hallucinating again?"
 
     window hide
     show entity 2 at center, zoomin

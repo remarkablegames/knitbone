@@ -175,7 +175,7 @@ label personality_test7:
     show ryohei seated crazy
 
     "{cps=10}..."
-    ryohei "{w=2.0}{sc}:)"
+    ryohei "{sc}:)"
     ryohei "What’s wrong?"
     ryohei "Did something catch you off guard?"
     pause 0.3
@@ -279,8 +279,8 @@ label unreadable_result:
     $ session1_result = "unreadable"
 
     pause 0.6
-    ryohei "{w=0.25}…Huh."
-    ryohei "{w=0.5}You’re not… anything, are you?"
+    ryohei "{cps=10}... Huh."
+    ryohei "{cps=10}You’re not...{w=0.3} anything, are you?"
 
     "He smiles, but it doesn’t reach his eyes. The silence that follows feels like a test."
 
@@ -296,9 +296,9 @@ label reveal_result:
     # Show the chosen type reveal. Ryohei reads it conversationally.
     if session1_result == "logic":
         ryohei seated neutral "It seems like you are {b}Logic-First"
-        ryohei "{w=0.25}You’re good at cutting through confusion."
+        ryohei "You’re good at cutting through confusion."
         ryohei "When things don’t make sense, you’re the one who figures it out and puts the pieces back together."
-        ryohei "{w=0.4}But there’s a cost, isn’t there?"
+        ryohei "But there’s a cost, isn’t there?"
         ryohei "You wonder if people see you as too cold or distant—"
         ryohei "Like you care more about facts than feelings. And you worry what happens if your logic stops working one day."
 
@@ -308,9 +308,9 @@ label reveal_result:
 
     elif session1_result == "ethics":
         ryohei seated neutral "It seems like you are {b}Ethics-First"
-        ryohei "{w=0.25}You feel people deeply. You can walk into a room and pick up on what others are holding back — the hurt, the hope, the need."
+        ryohei "You feel people deeply. You can walk into a room and pick up on what others are holding back — the hurt, the hope, the need."
         ryohei "That sensitivity makes people feel seen in ways they rarely do. Being around you feels safe, because you don’t just notice, you care."
-        ryohei "{w=0.4}But it’s heavy sometimes, isn’t it?"
+        ryohei "But it’s heavy sometimes, isn’t it?"
         ryohei "Being that open can be heavy. You worry you’re too much sometimes, or that people won’t handle the depth of what you feel."
 
         $ persistent.session1_reading = "ethics"
@@ -319,9 +319,9 @@ label reveal_result:
 
     elif session1_result == "will":
         ryohei seated neutral "It seems like you are you are {b}Will-First."
-        ryohei "{w=0.25}You don’t wait, you act. When others stall, you move forward; when doors close, you push them open."
+        ryohei "You don’t wait, you act. When others stall, you move forward; when doors close, you push them open."
         ryohei " Your drive creates paths where none exist, and that force keeps not just you alive, but often others too."
-        ryohei "{w=0.4}But there’s a cost, isn’t there?"
+        ryohei "But there’s a cost, isn’t there?"
         ryohei "Force comes with risk. You fear people see you as reckless or intimidating, and worse... your own hands might one day destroy what you most wanted to protect."
 
         $ persistent.session1_reading = "will"
@@ -330,9 +330,9 @@ label reveal_result:
 
     elif session1_result == "physics":
         ryohei seated neutral "It seems like you are you are {b}Physics-First."
-        ryohei "{w=0.25}You trust what’s real. The solid things, such as routines, touch, and breath."
+        ryohei "You trust what’s real. The solid things, such as routines, touch, and breath."
         ryohei "You’re good at keeping yourself steady when the world tilts, and that steadiness spills over to the people around you."
-        ryohei "{w=0.4}But there’s a cost, isn’t there?"
+        ryohei "But there’s a cost, isn’t there?"
         ryohei "You wonder if it makes you small. That people will think you’re clinging to little comforts, too simple to handle the big picture."
 
         $ persistent.session1_reading = "physics"
@@ -343,8 +343,8 @@ label reveal_result:
 label personality_test_end:
     stop music fadeout 1
 
-    ryohei seated smile "{w=0.4}Thanks for that. I’ve learned a lot about you already."
-    ryohei seated neutral "I’ve actually wanted to be closer to you since college… and it means a lot to finally be here with you now."
+    ryohei seated smile "Thanks for that. I’ve learned a lot about you already."
+    ryohei seated neutral "I’ve actually wanted to be closer to you since college...{w=0.2} and it means a lot to finally be here with you now."
 
     pause 1
     ryohei seated look "Shall we move on?"

@@ -29,7 +29,7 @@ label session2_start:
     ryohei "Then let’s begin Session Two."
     "His voice was lower now, a deep sound that seemed to make the room feel quiet."
 
-    "..."
+    "{cps=10}..."
     "The feeling of being in a safe place was starting to fade."
     pause 0.5
 
@@ -57,9 +57,11 @@ label session2_devotion:
     eden "Devotion?{w=0.5} To what?"
     "The question was so out of left field I could only blink. "
 
-    ryohei seated smile "To... anything!{w=0.5} Whether it’s a person, an idea, or a god."
+    ryohei seated smile "To...{w=0.1} anything!{w=0.5} Whether it’s a person, an idea, or a god."
+
     pause 0.5
-    "... Huh."
+
+    "{cps=15}... Huh."
     "I hesitated. It felt like a trick question."
 
     menu:
@@ -89,18 +91,19 @@ label session2_devotion:
     ryohei "They were devoted to a singular idea."
     ryohei "They believed that to truly change—"
     ryohei "To become more than what they were...{w=0.2} they had to give up a part of themselves."
-    eden "...?"
+    eden "{cps=10}...?"
 
     "My skepticism must have been obvious. This had nothing to do with insomnia."
     "This was about something else entirely."
     ryohei "They thought of it as...{w=0.2} reaching a new level."
-    ryohei "{w=0.2} To an outsider, their methods might have seemed extreme.{w=0.2} Maybe even cruel."
+    ryohei "To an outsider,{w=0.1} their methods might have seemed extreme.{w=0.2} Maybe even cruel."
     "He continued, his eyes searching mine, gauging my reaction."
     ryohei "But that's what they believed. They believed {i}true enlightenment{/i} required total devotion."
     ryohei "And that you couldn’t become {i}whole{/i} until a part of you was given away."
 
     pause 0.5
-    "...{w=0.2}I couldn’t make sense of what he was saying…"
+    "{cps=10}..."
+    "I couldn’t make sense of what he was saying..."
     "Everything he said{w=0.2} sounded like cult nonsense."
     "And he seemed completely convinced himself."
     pause 0.5

@@ -18,7 +18,7 @@ label ending_attack:
     eden "{cps=35}{i}No. no, no, no. This isn’t right. Ryohei isn’t in the right mind, and neither am I. This is messed up!"
     eden "Ryo...{w=0.2} I...{w=0.2} I can’t—"
 
-    "..."
+    "{cps=10}..."
 
     play sound "sfx/tension.ogg"
     ryohei "{sc}What?"
@@ -31,7 +31,7 @@ label ending_attack:
 
     "He sounded otherworldly. Less a voice, more an entity."
 
-    eden "I..."
+    eden "{cps=10}I..."
 
     "The words twist in my throat."
     "Panic seized me, fear freezing my blood, and for a split second I almost shifted the blade towards the flesh of my neck, ready to slice–"
@@ -73,7 +73,7 @@ label ending_attack:
 
     "He barrelled backwards into the table, knocking chairs and vases as he fell to the floor with a loud thud."
 
-    "..."
+    "{cps=10}..."
 
     "For a minute all that occupied the room was the sound of both our labored breathing, each breath feeling like my last."
 
