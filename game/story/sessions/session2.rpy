@@ -159,24 +159,27 @@ label session2_success:
     $ trust += 1
     $ candle_success = True
 
-    "A perfect, ascending line. All in less than four moves."
+    "A perfect,{w=0.1} ascending line.{w=0.2} All in less than four moves."
+
     show ryohei seated crazy with dissolve
+
     "Ryohei was smiling."
-    "It wasn’t his usual, practiced smile..."
+    "It wasn’t his usual,{w=0.1} practiced smile..."
     "This was wide, genuine, and utterly terrifying."
-    ryohei "{i}Hmm... Excellent."
-    "He whispered the word, savoring it like a fine wine."
+
+    ryohei "{i}Hmm...{w=0.2} Excellent."
+    "He whispered the word,{w=0.2} savoring it like a fine wine."
 
     show bg studio2 at shake
-    ryohei "I like you, you’re sharp."
+    ryohei "I like you,{w=0.1} you’re sharp."
     ryohei "You act without hesitation and you’re decisive."
     ryohei "That’s exactly why I need you."
-    eden "Ryo..? What do you mea-"
+    eden "{cps=15}Ryo...?{w=0.1} What do you mea-"
 
     #----very short-jumpscare, to make players wonder---
     stop music
-    play sound "sfx/tension.ogg"
-    scene black with dissolve
+    scene black
+    play sound "sfx/jumpscare.ogg"
     show entity 3 at slight_shake, center
     pause 0.3
     hide entity
@@ -186,7 +189,8 @@ label session2_success:
 
     show bg studio
     show ryohei seated neutral
-    ryohei "That is all for now. You’ve demonstrated remarkable potential."
+
+    ryohei "That is all for now.{w=0.2} You’ve demonstrated remarkable potential."
     ryohei "You should prepare yourself for our next session."
 
     scene black with fade
@@ -201,8 +205,8 @@ label session2_fail:
 
     #---very short-jumpscare, to make players wonder---
     stop music
-    play sound "sfx/tension.ogg"
     scene black
+    play sound "sfx/jumpscare.ogg"
     show entity 3 at slight_shake, center
     pause 0.3
     hide entity
