@@ -34,6 +34,6 @@ label start:
     pause 2
 
     scene black with dissolve
-    pause 2
+    pause 1
 
     jump prologue

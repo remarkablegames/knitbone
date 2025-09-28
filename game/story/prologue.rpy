@@ -13,25 +13,26 @@ label prologue:
     scene cg prologue 1 at zoomout
     with fade
 
-    stop music fadeout 2
     "If I could turn back time..."
 
-    play sound "sfx/tension.ogg"
+    play sfx "sfx/jumpscare2.ogg" volume 0.3
 
     scene cg prologue 2
     with dissolve
 
     pause 0.5
 
-    play sfx "sfx/glass.ogg" volume 0.8
+    play sound "sfx/glass.ogg" volume 0.4
 
     scene cg prologue 3
-
     pause 1.5
 
     "I never would’ve stepped through that door."
 
+    stop music fadeout 2
+
     scene black with fade
+    pause 0.5
 
     jump session1
 
