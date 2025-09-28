@@ -1,4 +1,5 @@
 label ending_sacrifice:
+
     scene black
     with fade
 

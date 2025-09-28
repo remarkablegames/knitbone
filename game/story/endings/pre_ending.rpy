@@ -153,9 +153,11 @@ label pre_ending_start:
         "What is my choice?"
 
         "Accept":
+            stop music fadeout 1
             jump ending_attack
 
         "Refuse":
+            stop music fadeout 1
             jump ending_sacrifice
 
         # "???" if trust > 2: # This choice would only appear if certain conditions are met (e.g., high trust stat)
