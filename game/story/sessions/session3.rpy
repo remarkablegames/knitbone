@@ -10,13 +10,13 @@ label session3_start:
     show ryohei neutral at left
     with dissolve
 
-    "My hallucinations felt like they were getting worse, and being in this room wasn't helping."
+    "My hallucinations felt like they were getting worse, and being in this room wasn’t helping."
     pause 0.8
     "Was this all in my head or...?"
 
     if candle_success:
         ryohei "You did very well, Eden."
-        ryohei "I assume you’re ready for what's next."
+        ryohei "I assume you’re ready for what’s next."
     else:
         ryohei "Your mind is still clouded. There is noise where there should be focus."
         pause 0.5
@@ -37,12 +37,12 @@ label session3_start:
 
     menu:
         "Yes, I am.":
-            eden awkward "I guess so. More than I'd like to admit."
+            eden awkward "I guess so. More than I’d like to admit."
             ryohei look "Okay."
 
         "No, not really.":
             eden neutral "Not really. I can handle myself."
-            ryohei smirk "I love your confidence. We'll see how it goes."
+            ryohei smirk "I love your confidence. We’ll see how it goes."
 
     pause 1
     stop music
@@ -50,7 +50,7 @@ label session3_start:
     with dissolve
     "He fell silent, letting the tension build...."
     "His gaze drifted to a dark corner of the room behind me."
-    ryohei serious "Don't look now... but I think someone is watching us."
+    ryohei serious "Don’t look now... but I think someone is watching us."
 
     show eden bitter at slight_shake
     "My blood ran cold."
@@ -67,7 +67,7 @@ label session3_start:
     show ryohei laugh with dissolve
     "Ryohei chuckled, a low, unnerving sound."
 
-    ryohei smirk2 "Relax. I'm just testing your focus."
+    ryohei smirk2 "Relax. I’m just testing your focus."
     ryohei "Were you expecting something?"
     pause 0.5
     "..."
@@ -77,7 +77,7 @@ label session3_start:
     show ryohei neutral
     show eden neutral
     "He then pointed to a small, potted herb on his desk. It was the only living thing in the room."
-    ryohei "Let's try a different approach. What do you see there?"
+    ryohei "Let’s try a different approach. What do you see there?"
 
     "I recognized the broad, hairy leaves instantly."
     eden happy "Oh, that’s comfrey!"
@@ -93,7 +93,7 @@ label session3_start:
     pause 1.0
     show eden neutral
 
-    ryohei neutral "But...{w=0.5} some breaks aren't in the bone, are they, Eden?"
+    ryohei neutral "But...{w=0.5} some breaks aren’t in the bone, are they, Eden?"
     "I stayed quiet, letting his words settle in the air between us."
     eden bitter "Uh...well.."
 
@@ -114,24 +114,24 @@ label session3_start:
     ryohei serious "Just like you, they were also searching for ways to heal themselves...mentally or physically."
 
     eden awkward "...?"
-    ryohei "When they're desperate enough, they find a ‘community’ that promises something more than just a fix."
+    ryohei "When they’re desperate enough, they find a ‘community’ that promises something more than just a fix."
     ryohei "Their philosophy was simple... at least on the surface. To ‘become enlightened,’ you had to give something away."
     ryohei smirk " They called it an ‘offering’ to some cosmic entity.."
     "He let out a short, harsh laugh that held no humor."
 
-    ryohei glare "But 'offering' was just a pretty word for ritualized murder."
+    ryohei glare "But ‘offering’ was just a pretty word for ritualized murder."
     pause 1.0
 
     eden bitter "What...?"
 
-    ryohei "They had this twisted... logic,  They believed pain was a currency. That you could only heal your own wound by taking on another's life."
+    ryohei "They had this twisted... logic,  They believed pain was a currency. That you could only heal your own wound by taking on another’s life."
 
     pause 0.5
     eden "{i}Why is he telling me this?"
     pause 0.5
     "His voice cracked, the mask of the calm therapist completely gone, replaced by a raw, burning anger."
     show ryohei at slight_shake
-    ryohei serious"They would make you believe that ending someone's life wasn’t wrong... it was {i}kindness."
+    ryohei serious"They would make you believe that ending someone’s life wasn’t wrong... it was {i}kindness."
     ryohei "They said you weren’t a killer. You were an angel... taking their pain away so they could finally rest. And their death... that was supposed to be your reward. Your new weight to carry."
     ryohei glare "It was all a lie to control you. A lie to break you down and own the pieces."
 
@@ -141,20 +141,20 @@ label session3_start:
 
     ryohei "But I saw it for what it was. I ended that bullshit.  so I ended it. I took the burden for myself."
     "He stared at his own trembling hands, a flicker of something... desperation... in his eyes."
-    ryohei "It's supposed to be over. But it... it doesn't just disappear."
+    ryohei "It’s supposed to be over. But it... it doesn’t just disappear."
 
     pause 2.0
     show ryohei at slight_shake
     "He stood there, breathing heavily, his knuckles white."
 
-    "I'm starting to realize... he was talking about his past experience."
+    "I’m starting to realize... he was talking about his past experience."
     show eden bitter at slight_shake
     "Wait—{w=0.5} was he...{w=0.5} in a cult?"
-    "This guy wasn't just troubled. He was haunted."
+    "This guy wasn’t just troubled. He was haunted."
     "And for a second, I forgot to be scared and just felt... a weird pang of pity."
 
     menu:
-        "Ask him if he's okay":
+        "Ask him if he’s okay":
             eden awkward "Ryo...? A-are you okay?"
             $ trust += 1
 
@@ -184,14 +184,14 @@ label session3_hypnosis0:
 
     pause 1
     "I just stood there, frozen..... How did his mood... shift so quickly?"
-    "Suddenly, his words from our first session... about a 'guided ritual'... took on a much darker meaning."
+    "Suddenly, his words from our first session... about a ’guided ritual’... took on a much darker meaning."
     "A cold dread washed over me."
-    eden bitter "{i}What if this isn’t therapy. He's not even trying to fix my insomnia... "
-    eden bitter "Instead, he's actually trying to do something else, and I'm his test subject??"
+    eden bitter "{i}What if this isn’t therapy. He’s not even trying to fix my insomnia... "
+    eden bitter "Instead, he’s actually trying to do something else, and I’m his test subject??"
 
     pause 0.5
     ryohei smirk "I found it."
-    "He then took out a pendulum, a pointed crystal on a silver chain. It looked less like a therapist's tool and more like a ritual object."
+    "He then took out a pendulum, a pointed crystal on a silver chain. It looked less like a therapist’s tool and more like a ritual object."
 
     show ryohei at center
     with moveinright
@@ -206,7 +206,7 @@ label session3_hypnosis0:
     "My hands shook violently, my pulse racing, and a whisper of fear told me to turn back."
     "But even knowing that, I couldn’t make myself move away."
     "Just before he whisper, I saw his composure slip for a fraction of a second."
-    ryohei look "{i}{cps=40}Shhh...{w=0.3} It's okay Eden..."
+    ryohei look "{i}{cps=40}Shhh...{w=0.3} It’s okay Eden..."
 
     pause 1.0
     "Then his eyes cleared, and he smiled at me, his focus absolute."
@@ -304,7 +304,7 @@ label session3_hypnosis2:
     pause 1.0
     "His face was pale, his eyes wide with a terrifying mix of fear and excitement."
 
-    ryohei "{cps=30}{size=-4}You saw it... didn't you?{/size}"
+    ryohei "{cps=30}{size=-4}You saw it... didn’t you?"
 
     "His words barely registered. All I could think of was the image burned into my mind. The feeling of that... thing. It was wrong. All of this was wrong."
     "Adrenaline surged through me, overpowering my exhaustion. I scrambled to my feet, my chair scraping loudly on the floor."
@@ -316,15 +316,15 @@ label session3_hypnosis2:
     #show eden panicked at left
 
     "I have to get out. Now."
-    eden "I'm leaving."
+    eden "I’m leaving."
     "My voice was shaky, but firm. I took a step back, towards the door."
 
-    "Panic flashed across Ryohei's face. He dropped the pendulum, the crystal clattering against the table."
+    "Panic flashed across Ryohei’s face. He dropped the pendulum, the crystal clattering against the table."
 
     #show ryohei panic at center (will add this soon if possible)
     show ryohei serious at center
     ryohei "{i}No—wait. I shouldn’t have—{/i}"
-    "He looked genuinely terrified, as if he'd revealed a secret he could never take back."
+    "He looked genuinely terrified, as if he’d revealed a secret he could never take back."
 
     pause 1.0
     "But his panic lasted only a moment. As I reached for the door, his expression hardened into something desperate and resolute."
