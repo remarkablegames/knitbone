@@ -16,11 +16,11 @@ label pre_ending_start:
     "His voice was sharp, cutting through my daze. I felt his hand grab my arm, his grip surprisingly strong, almost bruising."
     "I turned back. The calm facade was gone, shattered completely. In its place was raw, unfiltered desperation."
 
-    ryohei "You can't leave. Not now."
-    ryohei smirk "You saw it too. Don't you understand what that means?"
+    ryohei "You can’t leave. Not now."
+    ryohei smirk "You saw it too. Don’t you understand what that means?"
     ryohei serious "That...thing."
 
-    "He pulled me back from the door, his eyes wide and wild. He wasn't asking me... he was pleading with me."
+    "He pulled me back from the door, his eyes wide and wild. He wasn’t asking me... he was pleading with me."
     "He guided me back to the couch and pushed me down gently, a strange, reverent care in his otherwise forceful actions."
 
     show bg studio3 with hpunch
@@ -31,16 +31,16 @@ label pre_ending_start:
     scene bg studio4 with dissolve
 
     "As the flames grew, the room transformed. It was no longer a studio. It was an altar. And I was the offering."
-    "He sat down across from me again, the firelight carving deep shadows into his face. He looked older, burdened by a weight I couldn't comprehend."
+    "He sat down across from me again, the firelight carving deep shadows into his face. He looked older, burdened by a weight I couldn’t comprehend."
 
     ryohei "What you saw... Is not just a thing. It has a name. A purpose."
-    ryohei " It's one of my debt, passed down through generations in my family, all under the guise of enlightenment."
-    ryohei "My uncle, Callister… he was the leader. He called their belief system 'Transcendology'."
+    ryohei " It’s one of my debt, passed down through generations in my family, all under the guise of enlightenment."
+    ryohei "My uncle, Callister… he was the leader. He called their belief system “Transcendology”."
 
     "The way he said the word, it was thick with disgust."
 
     ryohei "He groomed me. Not as a nephew, but as a successor. He said the entity was an honor, a sacred burden."
-    ryohei "He taught that our bodies were temporary vessels, needing purification through 'bloodletting' to achieve a higher existence."
+    ryohei "He taught that our bodies were temporary vessels, needing purification through “bloodletting” to achieve a higher existence."
     ryohei "He made it sound so beautiful. The art of {i}ritual."
 
     # A brief, distorted CG or flashback image could flash here: a younger Ryohei looking up at a charismatic, shadowed figure (Callister).
@@ -48,8 +48,8 @@ label pre_ending_start:
     # pause 0.5
     # hide cg_callister_flash with Dissolve(0.2)
 
-    ryohei "But I saw what it really was. A machine for offerings. He wasn't enlightening people; he was grooming them for slaughter. To keep the {b}entity{/b} fed."
-    ryohei "I couldn't let him pass it on. I couldn't let him choose another victim."
+    ryohei "But I saw what it really was. A machine for offerings. He wasn’t enlightening people; he was grooming them for slaughter. To keep the {b}entity{/b} fed."
+    ryohei "I couldn’t let him pass it on. I couldn’t let him choose another victim."
     ryohei "So… I took it from him."
 
     "The silence in the room was deafening, broken only by the crackle of the candle wicks."
@@ -57,12 +57,12 @@ label pre_ending_start:
     eden "What...{w=0.3} do you mean?"
 
     ryohei smirk "I killed him. I plunged his own ritual knife into his chest. I thought if the leader was gone, the curse would die with him."
-    ryohei "But I was wrong. It didn't die. It just… transferred. It latched onto me. Now I carry it. I hear its whispers. I feel its hunger."
+    ryohei "But I was wrong. It didn’t die. It just… transferred. It latched onto me. Now I carry it. I hear its whispers. I feel its hunger."
 
     "He buried his face in his hands, his shoulders trembling. This was it. The full, horrifying truth. The core of his madness."
     "He looked up, and his eyes were glistening with unshed tears. But beneath the pain, there was something else. A chilling, obsessive focus. It was directed at me."
 
-    ryohei "And that’s why I needed you, Eden. I've been watching you. Even back in college."
+    ryohei "And that’s why I needed you, Eden. I’ve been watching you. Even back in college."
 
     eden "What…?"
 
@@ -74,17 +74,17 @@ label pre_ending_start:
 
     ryohei "I was lucky to meet you again. I knew you were the only one worthy of this gift. The only one strong enough to see the truth."
 
-    "He slid off his chair and knelt on the floor in front of me. This wasn't a plea for help. This was the final step of his plan."
+    "He slid off his chair and knelt on the floor in front of me. This wasn’t a plea for help. This was the final step of his plan."
     "He pulled a knife from his pocket. The handle had the same vein-like carvings I saw in my vision. He held it out to me on his open palms, like it was a key."
     "My breath caught in my throat. My heart was pounding so hard I could feel it in my ears. This was insane. Completely insane."
     "But looking at him kneeling there, offering me this... purpose... another thought crept in. A horrible, tempting thought."
-    "He's not asking me to die. He's asking me to be reborn. To become something else. To trade my empty life for one filled with this terrible, powerful thing."
-    "What if he's not crazy? What if this is the cure for the nothingness I feel every day?"
+    "He’s not asking me to die. He’s asking me to be reborn. To become something else. To trade my empty life for one filled with this terrible, powerful thing."
+    "What if he’s not crazy? What if this is the cure for the nothingness I feel every day?"
 
     #show ryohei kneeling at center with move
     hide eden
     ryohei "This gift is meant to be shared. You saw it. It saw you. It has chosen you to be my equal."
-    ryohei "Your trouble sleeping, feeling lost… that's not a sickness. It's just an opening. A crack to let the light in. I'm here to open the door all the way."
+    ryohei "Your trouble sleeping, feeling lost… that’s not a sickness. It’s just an opening. A crack to let the light in. I’m here to open the door all the way."
     ryohei "Please, Eden....."
 
     "His voice was a low, convincing whisper, promising a strange and terrible secret. He was asking me to join him in his reality."
@@ -103,5 +103,3 @@ label pre_ending_start:
         "???": # This choice would only appear if certain conditions are met (e.g., high trust stat)
             #jump ending_3
             jump end
-
-    return

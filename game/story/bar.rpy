@@ -12,7 +12,7 @@ label bar:
     pause 0.7
 
     "My name’s Eden.{w=0.5} I’m a Psychology major."
-    "Voted as “Most Likely to Succeed.”"
+    "Voted as “Most Likely to Succeed”."
     eden "{cps=10}..."
 
     pause 0.5
