@@ -7,30 +7,43 @@ label pre_ending:
 
 label pre_ending_start:
 
-    #play scary ambient
-    #show ryohei desperate at center
+    play music "music/terror.ogg" fadein 0.5 volume 0.9
+    # play scary ambient
+    # show ryohei desperate at center
+
     show ryohei glare at center
     ryohei "Wait."
+
     # play sound "sfx/grab_cloth.ogg"
 
-    "His voice was sharp, cutting through my daze. I felt his hand grab my arm, his grip surprisingly strong, almost bruising."
-    "I turned back. The calm facade was gone, shattered completely. In its place was raw, unfiltered desperation."
+    "His voice was sharp,{w=0.1} cutting through my daze."
+    "I felt his hand grab my arm,{w=0.1} his grip surprisingly strong,{w=0.1} almost bruising."
+
+    play sound "sfx/woosh.ogg" volume 0.5
+    "I turned back."
+
+    "The calm facade was gone,{w=0.1} shattered completely."
+    "In its place was raw,{w=0.1} unfiltered desperation."
 
     ryohei "You can’t leave. Not now."
     ryohei smirk "You saw it too. Don’t you understand what that means?"
-    ryohei serious "That...thing."
+    ryohei serious "{cps=25}That...{w=0.1} thing."
 
-    "He pulled me back from the door, his eyes wide and wild. He wasn’t asking me... he was pleading with me."
-    "He guided me back to the couch and pushed me down gently, a strange, reverent care in his otherwise forceful actions."
+    "He pulled me back from the door,{w=0.1} his eyes wide and wild."
+    "He wasn’t asking me...{w=0.1} he was pleading with me."
+    "He guided me back to the couch and pushed me down gently,{w=0.1} a strange,{w=0.1} reverent care in his otherwise forceful actions."
 
     show bg studio3 with hpunch
-    eden "H-hey!"
-    eden "What the hell, Ryo?!"
 
-    "He ignored my question. He moved to the table, and with a click, lit a match and then lit the candles."
+    eden "H-{w=0.1}hey!"
+    eden "What the hell,{w=0.1} Ryo?!"
+
+    "He ignored my question.{w=0.1} He moved to the table,{w=0.1} and with a click,{w=0.1} lit a match and then lit the candles."
+
     scene bg studio4 with dissolve
 
-    "As the flames grew, the room transformed. It was no longer a studio. It was an altar. And I was the offering."
+    "As the flames grew,{w=0.1} the room transformed.{w=0.2} It was no longer a studio.{w=0.2} It was an altar."
+    "And I was the offering."
     "He sat down across from me again, the firelight carving deep shadows into his face. He looked older, burdened by a weight I couldn’t comprehend."
 
     ryohei "What you saw... Is not just a thing. It has a name. A purpose."
@@ -96,10 +109,14 @@ label pre_ending_start:
 
     # This is the final choice point of the game, leading to the different endings.
     menu:
-        "Take the knife.":
+
+        "What is my choice?"
+
+        "Take the knife":
             jump ending_attack
-        "“No.”":
+
+        "Refuse":
             jump ending_sacrifice
-        #"???": # This choice would only appear if certain conditions are met (e.g., high trust stat)
-            #jump ending_3
-            jump end
+
+        # "???" if trust > 2: # This choice would only appear if certain conditions are met (e.g., high trust stat)
+            # jump ending_3

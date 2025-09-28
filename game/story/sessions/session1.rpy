@@ -86,10 +86,10 @@ label session1_studio:
     "And the studio was very simple.{w=0.2} Just a couch for me, and a single, fancy chair for him.{w=0.2} It felt like a stage."
     "There was soft jazz music playing."
 
-    play sound "sfx/woosh.ogg" volume 0.8
+    play sound "sfx/woosh.ogg" volume 0.5
     show ryohei neutral at left with moveinleft
 
-    play sfx "sfx/woosh.ogg" volume 0.8
+    play sfx "sfx/woosh.ogg" volume 0.5
     show eden neutral at right with moveinright
 
     ryohei "Please, have a seat.{w=0.2} Try to get comfortable."
@@ -202,10 +202,10 @@ label session1_end:
     scene bg studio
     with fade
 
-    play sound "sfx/woosh.ogg" volume 0.8
+    play sound "sfx/woosh.ogg" volume 0.5
     show ryohei neutral at left with moveinleft
 
-    play sound "sfx/woosh.ogg" volume 0.8
+    play sound "sfx/woosh.ogg" volume 0.5
     show eden neutral at right with moveinright
 
     ryohei "Thank you.{w=0.2} You’ve given me quite a clear impression."

@@ -103,10 +103,14 @@ label bar_ryohei_entrance:
     "I heard footsteps approaching me slowly."
     pause 0.2
 
-    play sfx "sfx/woosh.ogg" volume 0.8
+    jump bar_encounter
+
+
+label bar_encounter:
+    play sfx "sfx/woosh.ogg" volume 0.5
     show ryohei neutral at left with moveinleft
 
-    play sound "sfx/woosh.ogg" volume 0.8
+    play sound "sfx/woosh.ogg" volume 0.5
     show eden neutral at right with moveinright
 
     eden "{i}Why is he standing right here?"
