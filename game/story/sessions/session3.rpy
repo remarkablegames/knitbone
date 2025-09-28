@@ -233,22 +233,37 @@ label session3_hypnosis0:
 label session3_hypnosis1:
 
     show cg hypnosis with fade
+
     ryohei "This will help quiet the noise in your head."
-    ryohei "Just watch the crystal. And listen to my voice. Can you do that for me?"
+    ryohei "Just watch the crystal.{w=0.1} And listen to my voice."
+    ryohei "Can you do that for me?"
 
-    pause 1.0
+    menu:
+        "Follow his instructions?"
 
-    "{cps=10}..."
-    "{cps=10}......"
-    eden "I can do that."
+        "Yes":
+            eden "I can do that."
+            ryohei "Good."
 
-    ryohei "Good.{w=0.1} Breathe in...{w=0.3} and out.{w=0.1} Match my breathing."
+        "...":
+            "{cps=10}..."
+            "{cps=10}......"
+            ryohei "Let’s continue."
+
+    voice "voice/eden/inhale.ogg"
+    ryohei "Breathe in..."
+
+    voice "voice/eden/exhale.ogg"
+    ryohei "... and out."
+
+    ryohei "Match my breathing."
 
     $ countdown.start(seconds=5, jump="session3_hypnosis2")
 
     menu:
 
         "Breathe":
+            voice "voice/eden/inhale.ogg"
             $ countdown.cancel()
             $ slider = Slider(speed=3)
             jump hypnosis_minigame
@@ -272,6 +287,7 @@ label session3_hypnosis2:
     menu:
 
         "Breathe":
+            voice "voice/eden/inhale.ogg"
             $ countdown.cancel()
 
     ryohei "{i}Deeper now. Down into the quiet. The walls are gone. There is only the path. Follow it."

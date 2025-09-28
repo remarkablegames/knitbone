@@ -1,6 +1,9 @@
 # This label is intended to be jumped to from the end of session1.rpy
 # e.g. after the player agrees to proceed.
 
+default candle_success = False
+
+
 label session2:
 
     jump session2_start
@@ -113,8 +116,9 @@ label session2_devotion:
     ryohei "My apologies. I didn’t mean to bring that up."
     "He waved a hand dismissively, the philosophical conversation ending as abruptly as it began."
 
-    stop music fadeout 5.0
+    stop music fadeout 5
     ryohei "Now, let’s move on..."
+
     jump session2_candle
 
 
