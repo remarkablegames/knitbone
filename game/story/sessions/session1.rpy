@@ -184,17 +184,14 @@ label session1_test:
 
             show bg studio4
 
-            play sfx "sfx/tension.ogg"
+            play sound "sfx/jumpscare.ogg" volume 0.5
 
             show entity 2 at center, scale(1.1), shake
             with hpunch
 
-            play sound "sfx/thud.ogg"
-            pause 0.5
             scene black
 
             pause 1
-            stop sound
 
             jump session1_end
 
@@ -205,8 +202,11 @@ label session1_end:
     scene bg studio
     with fade
 
-    show ryohei neutral at left with dissolve
-    show eden neutral at right with dissolve
+    play sound "sfx/woosh.ogg" volume 0.8
+    show ryohei neutral at left with moveinleft
+
+    play sound "sfx/woosh.ogg" volume 0.8
+    show eden neutral at right with moveinright
 
     ryohei "Thank you.{w=0.2} You’ve given me quite a clear impression."
     eden "{cps=10}...Y{w=0.3}... Yeah."
@@ -218,16 +218,30 @@ label session1_end:
 
     show eden bitter2
 
-    "What the hell was {i}THAT{/i}???"
-    "Oh, perfect. Now I’m hallucinating in the middle of this {i}“therapy”{/i}."
+    "What the hell was {b}{i}THAT{/i}{/b}?"
+    "Oh, perfect.{w=0.1} Now I’m hallucinating in the middle of this {i}“therapy”{/i}."
 
-    eden awkward"{i}{cps=30}Should...{w=0.2} I just...{w=0.2} chalk it up to sleep deprivation and call it a day?"
-    show eden neutral with dissolve
+    eden awkward "{i}{cps=30}Should...{w=0.2} I just...{w=0.2} chalk it up to sleep deprivation and call it a day?"
 
+    menu:
+        "What should you do?"
+
+        "Bring it up":
+            eden "{cps=10}Um..."
+            ryohei "Yes?"
+            eden "{cps=15}Did you happen to see...{w=0.2} {i}that?"
+            ryohei "See what?"
+            eden "Nevermind."
+
+        "Remain silent":
+            eden "{cps=10}..."
+
+    show eden neutral
     pause 1
+
     "An awkward silence settled between us."
-
     pause 1
+
     "His eyes flicked up to mine."
 
     ryohei "What you’ve shown me earlier tells me enough.{w=0.2} More than enough."
