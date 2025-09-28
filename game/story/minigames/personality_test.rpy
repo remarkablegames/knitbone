@@ -154,18 +154,20 @@ label personality_test7:
 
     stop character fadeout 0.2
     stop music
-    pause 0.5
+
+    scene bg studio4
+    with dissolve
+
     play sound "sfx/tension.ogg"
 
-    show bg studio4
-
-    show entity 1 at center, opacity(0.6), scale(1.1)
+    show entity 1 at center, opacity(0.8), scale(1.1)
     with moveinbottom
     with vpunch
 
     pause 1
 
     play sfx "sfx/bone_snap.ogg"
+
     show entity 2
     pause 1.5
 

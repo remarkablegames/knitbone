@@ -169,7 +169,7 @@ label session1_test:
             ryohei neutral "Thank you for being honest with me.{w=0.3} That,{w=0.2} in itself,{w=0.2} is a very important step."
             ryohei serious "{cps=10}But..."
 
-            show bg studio2 with dissolve
+            scene bg studio2 with dissolve
 
             ryohei serious "You came to me for help,{w=0.2} but you’re saying no to the first step."
             eden "Wh-...{w=0.3} What do you mean?"
