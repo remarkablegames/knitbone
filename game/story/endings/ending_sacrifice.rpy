@@ -34,7 +34,7 @@ label ending_sacrifice:
     eden "{cps=15}Like..."
     "For some reason,{w=0.2} I felt myself sweating,{w=0.2} my heart rattling faster."
     eden "Do you even know what you’re asking?"
-    eden "You’re asking me to kill myself for you."
+    eden "You’re asking me to offer my blood for you."
 
     ryohei "What’s wrong with that?"
 
@@ -67,13 +67,23 @@ label ending_sacrifice:
     ryohei "If you won’t carry it...{w=0.5} {cps=15}you’ll feed it."
 
     eden "What?"
+
     "I asked,{w=0.2} blinking to see that we were suddenly face to face,{w=0.2} me staring up at his ashy pupils as he towered over me."
+    scene cg ending struggle at hpunch
+    with dissolve
+    play sound "sfx/thud.ogg"
+
+    pause 1
     "Our bodies were uncomfortably close."
     "My head raced,{w=0.2} wondering how he had managed to get up and seize me in just a blink of an eye."
     "The confusion muddled my brain,{w=0.2} the adrenaline pumping through my veins that I hadn’t even noticed that Ryohei’s fist was hovering over my chest. "
 
     play sound "sfx/stab.ogg"
+    scene black with fade
     "Gripping the knife’s handle that was plunged in my heart."
+    
+    scene cg ending eden death at hpunch
+    with dissolve
 
     "I looked down at it,{w=0.2} dazed."
     "What?"
@@ -86,6 +96,7 @@ label ending_sacrifice:
     "I cough,{w=0.2} and I feel warm,{w=0.2} sticky liquid come out of my throat,{w=0.2} pooling out my mouth like a murky tap."
     "Did he actually...{w=0.3} stab me?"
 
+    pause 1
     ryohei "{cps=15}I’m sorry."
 
     "I hear Ryohei’s voice from above,{w=0.2} distant and echoing like he was speaking in an empty chapel,{w=0.2} the sounds bouncing off the hollowed halls."
