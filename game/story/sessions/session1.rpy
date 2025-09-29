@@ -304,7 +304,7 @@ label session1_end:
     ryohei "Regular therapy won’t work for you."
     ryohei "What your mind needs is a {i}“key”{/i}...{w=0.3} to redistribute the weight."
     ryohei neutral "What I want to propose isn’t therapy at all."
-    ryohei "Think of it more as a...{w=0.3} {cps=20}{i}guided ritual{/i}."
+    ryohei "Think of it more as a sort of...{w=0.3} {cps=20}{i}guided ritual{/i}."
 
     pause 1
     "{i}“Ritual”"
@@ -318,8 +318,8 @@ label session1_end:
     pause 0.5
 
     ryohei "I will give you small,{w=0.2} specific tasks to complete."
-    ryohei "Though they require precision and focus."
-    ryohei look "The goal is to give the burden a new place to rest,{w=0.2} so your mind can finally find peace."
+    ryohei "They'll require precision and focus."
+    ryohei look "The goal is to give the burden a new place to rest,{w=0.2} so that your mind can finally find peace."
     ryohei "It’s an unconventional path and it requires absolute trust."
     ryohei neutral "Not just in me,{w=0.2} but in yourself."
 
@@ -327,7 +327,7 @@ label session1_end:
     pause 1
 
     ryohei neutral "I can’t force you to do it.{w=0.2} This only works if you choose it."
-    ryohei "You can leave now and go back to your sleepless nights."
+    ryohei "You can leave now, but that means going back to your restless routine."
     pause 0.3
 
     ryohei smirk "Or...{w=0.3} you can agree to Session Two...!"
@@ -353,14 +353,14 @@ label session1_choice:
 
         "No":
             ryohei look "Ryohei inclined his head slightly.{w=0.2} Surprisingly, there was no hint of disappointment."
-            ryohei neutral "I understand..."
+            ryohei neutral "I understand."
             eden "I’m sorry,{w=0.2} Ryo..."
             ryohei laugh "It’s okay.{w=0.2} You can take your time.{w=0.2} The offer still stands if you change your mind."
             ryohei "Here,{w=0.2} you can keep my number.{w=0.2} Don’t hesitate to reach out,{w=0.2} even if you just need to talk."
 
             show black with dissolve
 
-            ryohei smirk "...{w=0.2} I’m sure that...{w=0.3} {cps=30}your sleepless nights will bring you back to me anyway."
+            ryohei smirk "...{w=0.2} I'm sure that...{w=0.3} {cps=30}your sleepless nights will bring you right back to me."
 
             # ENDING 0 - AVOIDANCE
             jump end
