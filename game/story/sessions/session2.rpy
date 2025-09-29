@@ -12,7 +12,7 @@ label session2:
 label session2_start:
 
     ryohei "Good."
-    "Ryohei’s smile deepened, like the answer had been inevitable."
+    "Ryohei’s smile deepened,{w=0.1} like the answer had been inevitable."
 
     pause 1.5
     ryohei look "Hold on a sec..."
@@ -20,19 +20,20 @@ label session2_start:
 
     pause 1
     #play sound "sfx/rustles.ogg"
-    "He stood and began rummaging through the shelves, his movements smooth and deliberate."
-    "Suddenly, the air felt thick and still. The faint, pleasant scent of lemon oil and herbs now seemed synthetic, like a cheap air freshener."
+    "He stood and began rummaging through the shelves,{w=0.1} his movements smooth and deliberate."
+    "Suddenly, the air felt thick and still."
+    "The faint,{w=0.1} pleasant scent of lemon oil and herbs now seemed synthetic,{w=0.1} like a cheap air freshener."
 
-    pause 2
+    pause 1
     show ryohei neutral at center
     with dissolve
 
-    "When he returned, he was holding a small, ornate box."
+    "When he returned,{w=0.1} he was holding a small, ornate box."
     pause 1
     ryohei "Then let’s begin Session Two."
-    "His voice was lower now, a deep sound that seemed to make the room feel quiet."
+    "His voice was lower now,{w=0.1} a deep sound that seemed to make the room feel quiet."
 
-    "{cps=10}..."
+    "{cps=5}..."
     "The feeling of being in a safe place was starting to fade."
     pause 0.5
 
@@ -49,12 +50,14 @@ label session2_devotion:
     with fade
     pause 1
 
-    "He moved to the table and sat directly across from me. A subtle shift that made him the focal point of the entire room."
+    "He moved to the table and sat directly across from me."
+    "A subtle shift that made him the focal point of the entire room."
 
     pause 0.5
-    ryohei "Before we begin the exercise, I want to ask you something, Eden."
+    ryohei "Before we begin the exercise,{w=0.1} I want to ask you something,{w=0.1} Eden."
+
     pause 0.5
-    ryohei seated "What is your opinion... on devotion?"
+    ryohei seated "What is your opinion...{w=0.3} on devotion?"
 
     pause 0.5
     eden "Devotion?{w=0.5} To what?"
@@ -64,60 +67,66 @@ label session2_devotion:
 
     pause 0.5
 
-    "{cps=15}... Huh."
-    "I hesitated. It felt like a trick question."
+    "{cps=15}...{w=0.1} Huh."
+    "I hesitated.{w=0.1} It felt like a trick question."
 
     menu:
 
+        "My opinion on devotion..."
+
         "It sounds dangerous.":
-            eden "It depends on what you’re devoted to. Blind devotion can be dangerous."
-            ryohei seated look "I see. You’re careful. That’s understandable."
+            eden "It depends on what you’re devoted to."
+            eden "Blind devotion can be dangerous."
+            ryohei seated look "I see.{w=0.1} You’re careful.{w=0.1} That’s understandable."
             "He filed it that away but his expression was unreadable."
             $ trust -= 1
 
         "It’s a form of trust.":
-            eden "I guess it’s a form of absolute trust. Devotion is like an anchor. Something to hold onto when you’re lost."
-            ryohei seated look "An anchor... Yes. A worthy cause requires unwavering trust."
-            "He looked satisfied, as if I’d given the correct answer."
+            eden "I guess it’s a form of absolute trust."
+            eden "Devotion is like an anchor.{w=0.1} Something to hold onto when you’re lost."
+            ryohei seated look "An anchor...{w=0.3} Yes.{w=0.1} A worthy cause requires unwavering trust."
+            "He looked satisfied,{w=0.1} as if I’d given the correct answer."
             $ trust += 1
 
 
     pause 1.2
 
     show ryohei seated serious
-    "He paused, his expression shifting into something that looked unnervingly like a confession."
+    "He paused,{w=0.1} his expression shifting into something that looked unnervingly like a confession."
 
     pause 1
-    ryohei "I used to know people who were part of...{w=0.3} a group."
-
+    ryohei "I used to know people who were part of...{w=0.4} a group."
     pause 0.5
+
     ryohei "They were devoted to a singular idea."
     ryohei "They believed that to truly change—"
     ryohei "To become more than what they were...{w=0.2} they had to give up a part of themselves."
-    eden "{cps=10}...?"
+    eden "{cps=5}...?"
 
-    "My skepticism must have been obvious. This had nothing to do with insomnia."
+    "My skepticism must have been obvious.{w=0.1} This had nothing to do with insomnia."
     "This was about something else entirely."
+
     ryohei "They thought of it as...{w=0.2} reaching a new level."
     ryohei "To an outsider,{w=0.1} their methods might have seemed extreme.{w=0.2} Maybe even cruel."
-    "He continued, his eyes searching mine, gauging my reaction."
-    ryohei "But that's what they believed. They believed {i}true enlightenment{/i} required total devotion."
+
+    "He continued,{w=0.1} his eyes searching mine,{w=0.1} gauging my reaction."
+    ryohei "But that's what they believed.{w=0.1} They believed {i}true enlightenment{/i} required total devotion."
     ryohei "And that you couldn’t become {i}whole{/i} until a part of you was given away."
 
     pause 0.5
-    "{cps=10}..."
+    "{cps=5}..."
     "I couldn’t make sense of what he was saying..."
     "Everything he said{w=0.2} sounded like cult nonsense."
     "And he seemed completely convinced himself."
     pause 0.5
-    eden "Uh-huh..."
+    eden "{cps=15}Uh-huh..."
 
     show ryohei seated neutral with dissolve
-    ryohei "My apologies. I didn’t mean to bring that up."
-    "He waved a hand dismissively, the philosophical conversation ending as abruptly as it began."
+    ryohei "My apologies.{w=0.2} I didn’t mean to bring that up."
+    "He waved a hand dismissively,{w=0.1} the philosophical conversation ending as abruptly as it began."
 
     stop music fadeout 5
-    ryohei "Now, let’s move on..."
+    ryohei "Now,{w=0.1} let’s move on..."
 
     jump session2_candle
 
@@ -126,25 +135,29 @@ label session2_candle:
 
     $ candle_success = False
 
-    play music "music/theme4.ogg" fadein 1.5 volume 0.8
+    play music "music/theme4.ogg" fadein 1.5 volume 0.7
 
     #play sound "sfx/rustles.ogg"
     pause 0.5
-    "He opened the velvet-lined box. Inside, nestled in black satin, were six unlit candles of varying heights."
 
-    ryohei seated smile "Let’s play a game, Eden."
+    "He opened the velvet-lined box."
+    "Inside,{w=0.1} nestled in black satin,{w=0.1} were six unlit candles of varying heights."
+
+    ryohei seated smile "Let’s play a game,{w=0.1} Eden."
     ryohei seated neutral "This is a “focusing exercise.”"
+
     "He lit the candles and set them on the table in a chaotic line."
     pause 0.5
+
     ryohei "The objective is simple."
     "Arrange these candles from {i}shortest to tallest{/i}.{w=0.2} And {i}left to right{/i}."
 
     pause 0.5
     eden "Oh...{w=0.5} that sounds easy."
-    "Without thinking, I reached for the nearest one."
+    "Without thinking,{w=0.1} I reached for the nearest one."
 
     show ryohei seated serious at slight_shake
-    "His hand shot out, not touching mine, but hovering just above it."
+    "His hand shot out,{w=0.1} not touching mine,{w=0.1} but hovering just above it."
 
     ryohei seated smile "Nuh-uh."
     ryohei seated crazy "There are rules."
@@ -169,9 +182,13 @@ label session2_success:
 
     "Ryohei was smiling."
     "It wasn’t his usual,{w=0.1} practiced smile..."
-    "This was wide, genuine, and utterly terrifying."
+    "This was wide,{w=0.1} genuine,{w=0.1} and utterly terrifying."
 
     ryohei "{i}Hmm...{w=0.2} Excellent."
+
+    voice "voice/ryohei/nice.ogg"
+    pause 1
+
     "He whispered the word,{w=0.2} savoring it like a fine wine."
 
     show bg studio2 at shake

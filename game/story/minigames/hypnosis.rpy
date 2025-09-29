@@ -1,5 +1,5 @@
 label hypnosis_minigame:
-    play music "sfx/ticking.ogg"
+    queue music "sfx/ticking.ogg"
     show cg hypnosis with dissolve
     call screen hypnosis_minigame
 

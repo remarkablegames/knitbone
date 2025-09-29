@@ -3,7 +3,7 @@ label session3:
 
 
 label session3_start:
-    play music "music/theme4.ogg" fadein 1.5 volume 0.8
+    play music "music/theme4.ogg" fadein 1.5 volume 0.7
     scene bg studio with fade
 
     show eden thinking at right
@@ -15,79 +15,99 @@ label session3_start:
     "Was this all in my head or...?"
 
     if candle_success:
-        ryohei "You did very well, Eden."
+        ryohei "You did very well,{w=0.1} Eden."
         ryohei "I assume you’re ready for what’s next."
     else:
-        ryohei "Your mind is still clouded. There is noise where there should be focus."
+        ryohei "Your mind is still clouded.{w=0.1} There is noise where there should be focus."
         pause 0.5
-        ryohei "Still, we will proceed."
+        ryohei "Still,{w=0.2} we will proceed."
 
-    "Pass or fail, it seemed I was being dragged into the next session regardless."
-    "I just nodded, too tired to argue."
+    "Pass or fail,{w=0.1} it seemed I was being dragged into the next session regardless."
+    "I just nodded,{w=0.1} too tired to argue."
 
-    eden bitter2 "Fine. What’s next?"
+    eden bitter2 "Fine.{w=0.1} What’s next?"
+    pause 1
 
-    pause 1.0
     show ryohei look2 with dissolve
 
     ryohei "I have a simple question."
-    ryohei serious "Tell me, Eden... are you easily frightened?"
+    ryohei serious "Tell me,{w=0.1} Eden...{w=0.2} are you easily frightened?"
 
-    "The question was unsettling. He leaned forward slightly with his eyes fixed on me."
+    "The question was unsettling.{w=0.1} He leaned forward slightly with his eyes fixed on me."
 
     menu:
+        "Am I easily frightened?"
+
         "Yes, I am.":
-            eden awkward "I guess so. More than I’d like to admit."
+            eden awkward "I guess so.{w=0.1} More than I’d like to admit."
             ryohei look "Okay."
 
         "No, not really.":
-            eden neutral "Not really. I can handle myself."
-            ryohei smirk "I love your confidence. We’ll see how it goes."
+            eden neutral "Not really.{w=0.1} I can handle myself."
+            ryohei smirk "I love your confidence.{w=0.1} We’ll see how it goes."
 
     pause 1
     stop music
     show bg studio3 at shake
     with dissolve
 
-    "He fell silent, letting the tension build..."
+    "He fell silent,{w=0.1} letting the tension build..."
     "His gaze drifted to a dark corner of the room behind me."
 
     ryohei serious "Don’t look now...{w=0.3} but I think someone is watching us."
 
     show eden bitter at slight_shake
+
+    play sound "sfx/tension.ogg"
     "My blood ran cold."
+
     pause 1
-    "Against my better judgment, my eyes darted to the corner."
+    "Against my better judgment,{w=0.1} my eyes darted to the corner."
 
     pause 1.0
     show bg studio at shake
     with dissolve
+
     pause 0.5
     show eden awkward at slight_shake
     "There was nothing there."
 
     show ryohei laugh with dissolve
-    "Ryohei chuckled, a low, unnerving sound."
+    "Ryohei chuckled,{w=0.1} a low,{w=0.1} unnerving sound."
 
-    ryohei smirk2 "Relax. I’m just testing your focus."
+    ryohei smirk2 "Relax.{w=0.1} I’m just testing your focus."
     ryohei "Were you expecting something?"
     pause 0.5
 
-    "{cps=10}..."
+    "{cps=5}..."
 
-    eden bitter2 "{i}Sometimes, I wonder what is wrong with this guy."
+    eden bitter2 "{i}Sometimes,{w=0.1} I wonder what is wrong with this guy."
     pause 1
 
-    show ryohei neutral
-    show eden neutral
-    show cg comfrey with dissolve
+    hide ryohei
+    hide eden
 
-    "He then pointed to a small, potted herb on his desk. It was the only living thing in the room."
-    ryohei "Let’s try a different approach. What do you see there?"
+    show cg comfrey
+    show ryohei neutral at left
+    show eden neutral at right
 
-    "I recognized the broad, hairy leaves instantly."
+    "He then pointed to a small,{w=0.1} potted herb on his desk."
+    "It was the only living thing in the room."
+
+    ryohei "Let’s try a different approach."
+    ryohei "What do you see there?"
+
+    menu:
+        "I see..."
+
+        "Comfrey":
+            pass
+
+    "I recognized the broad,{w=0.1} hairy leaves instantly."
     eden happy "Oh, that’s comfrey!"
-    "{cps=70}For the first time since I arrived, my expression softened. Seeing something familiar from my childhood stirred feelings I thought I’d buried."
+
+    "{cps=70}For the first time since I arrived,{w=0.1} my expression softened."
+    "{cps=70}Seeing something familiar from my childhood stirred feelings I thought I’d buried."
 
     eden "My grandma used to call it by its old name...{w=0.3} {i}{cps=10}Knitbone."
 
@@ -97,82 +117,102 @@ label session3_start:
 
     eden smile "She said it could heal broken bones."
 
-    pause 1.0
+    voice "voice/ryohei/hmm.ogg"
+    pause 1
+
     show eden neutral
 
-    ryohei neutral "But...{w=0.5} some breaks aren’t in the bone, are they, Eden?"
-    "I stayed quiet, letting his words settle in the air between us."
-    eden bitter "Uh...well.."
+    ryohei neutral "But...{w=0.5} some breaks aren’t in the bone,{w=0.1} are they,{w=0.1} Eden?"
+    "I stayed quiet,{w=0.1} letting his words settle in the air between us."
+    eden bitter "{cps=15}Uh...{w=0.2} well..."
 
-    ryohei serious "Some breaks are deeper. And no herb can fix them."
-    ryohei smirk "The irony is,  In the past, people thought comfrey..or {i}Knitbone{/i} was safe to use in any way, inside and out."
+    ryohei serious "Some breaks are deeper.{w=0.1} And no herb can fix them."
+    ryohei smirk "The irony is,{w=0.1} in the past,{w=0.1} people thought comfrey...{w=0.2} or {i}Knitbone{/i} was safe to use in any way,{w=0.1} inside and out."
     ryohei look2 "But studies have shown that ingesting it can be toxic."
 
     show eden neutral
-    "He was talking about the plant, but his eyes told me he was talking about something else."
-    pause 1.0
+    "He was talking about the plant,{w=0.1} but his eyes told me he was talking about something else."
+    pause 1
 
     hide cg comfrey with dissolve
 
     #ryohei trauma dumps------
     show ryohei serious at slight_shake
-    "His expression soured, his voice taking on a bitter, sharp edge."
-    ryohei "Listen, Eden."
+    "His expression soured,{w=0.1} his voice taking on a bitter, sharp edge."
+
+    ryohei "Listen,{w=0.1} Eden."
     ryohei glare "There are people obsessed with cures like that."
-    "He looked past me, his eyes unfocused, lost in a memory."
-    ryohei serious "Just like you, they were also searching for ways to heal themselves...mentally or physically."
+    "He looked past me,{w=0.1} his eyes unfocused,{w=0.1} lost in a memory."
+    ryohei serious "Just like you,{w=0.1} they were also searching for ways to heal themselves...{w=0.2} mentally or physically."
 
-    eden awkward "{cps=10}...?"
+    eden awkward "{cps=5}...?"
 
-    ryohei "When they’re desperate enough, they find a “community” that promises something more than just a fix."
-    ryohei "Their philosophy was simple... at least on the surface. To become “enlightened”, you had to give something away."
+    ryohei "When they’re desperate enough,{w=0.1} they find a “community” that promises something more than just a fix."
+    ryohei "Their philosophy was simple...{w=0.2} at least on the surface."
+    ryohei "To become “enlightened”,{w=0.1} you had to give something away."
     ryohei smirk " They called it an “offering” to some cosmic entity..."
 
-    "He let out a short, harsh laugh that held no humor."
+    voice "voice/ryohei/chuckle.ogg"
+    "He let out a short,{w=0.1} harsh laugh that held no humor."
 
     ryohei glare "But “offering” was just a pretty word for ritualized murder."
-    pause 1.0
+    pause 1
 
     eden bitter "{cps=10}What...?"
 
-    ryohei "They had this twisted... logic,  They believed pain was a currency. That you could only heal your own wound by taking on another’s life."
+    ryohei "They had this twisted...{w=0.2} logic."
+    ryohei "They believed pain was a currency.{w=0.1} That you could only heal your own wound by taking on another’s life."
 
     pause 0.5
     eden "{i}Why is he telling me this?"
     pause 0.5
-    "His voice cracked, the mask of the calm therapist completely gone, replaced by a raw, burning anger."
+
+    "His voice cracked,{w=0.1} the mask of the calm therapist completely gone,{w=0.1} replaced by a raw,{w=0.1} burning anger."
+
     show ryohei at slight_shake
-    ryohei serious"They would make you believe that ending someone’s life wasn’t wrong... it was {i}kindness."
-    ryohei "They said you weren’t a killer. You were an angel... taking their pain away so they could finally rest. And their death... that was supposed to be your reward. Your new weight to carry."
-    ryohei glare "It was all a lie to control you. A lie to break you down and own the pieces."
+    ryohei serious "They would make you believe that ending someone’s life wasn’t wrong...{w=0.2} it was {i}kindness."
+    ryohei "They said you weren’t a killer.{w=0.1} You were an angel...{w=0.1} taking their pain away so they could finally rest."
+    ryohei "And their death...{w=0.2} that was supposed to be your reward.{w=0.1} Your new weight to carry."
+    ryohei glare "It was all a lie to control you.{w=0.1} A lie to break you down and own the pieces."
 
-    "The therapist I came to see was gone. In his place was just a guy, terrified of his own hands."
-    "Everything he’s saying is coming at me too fast. I can’t process it all."
-    "He stood abruptly, his chair scraping back. The outburst was so sudden, so violent, it made me flinch."
+    "The therapist I came to see was gone."
+    "In his place was just a guy,{w=0.1} terrified of his own hands."
+    "Everything he’s saying is coming at me too fast."
+    "I can’t process it all."
+    "He stood abruptly,{w=0.1} his chair scraping back."
+    "The outburst was so sudden,{w=0.1} so violent,{w=0.1} it made me flinch."
 
-    ryohei "But I saw it for what it was. I ended that bullshit.  so I ended it. I took the burden for myself."
-    "He stared at his own trembling hands, a flicker of something... desperation... in his eyes."
-    ryohei "It’s supposed to be over. But it... it doesn’t just disappear."
+    ryohei "But I saw it for what it was."
+    ryohei "I ended that bullshit.{w=0.1} So I took on burden for myself."
+    "He stared at his own trembling hands,{w=0.1} a flicker of something...{w=0.1} desperation...{w=0.1} in his eyes."
+    ryohei "It’s supposed to be over.{w=0.1} But it...{w=0.2} it doesn’t just disappear."
 
-    pause 2.0
+    pause 1
     show ryohei at slight_shake
-    "He stood there, breathing heavily, his knuckles white."
 
-    "I’m starting to realize... he was talking about his past experience."
+    voice "voice/eden/inhale.ogg"
+    "He stood there,{w=0.1} breathing heavily,{w=0.1} his knuckles white."
+
+    "I’m starting to realize...{w=0.1} he was talking about his past experience."
+
     show eden bitter at slight_shake
+
     "Wait—{w=0.5} was he...{w=0.5} in a cult?"
-    "This guy wasn’t just troubled. He was haunted."
-    "And for a second, I forgot to be scared and just felt... a weird pang of pity."
+    "This guy wasn’t just troubled.{w=0.1} He was haunted."
+    "And for a second,{w=0.1} I forgot to be scared and just felt...{w=0.1} a weird pang of pity."
 
     menu:
+        "Should I say something?"
+
         "Ask him if he’s okay":
-            eden awkward "Ryo...? A-are you okay?"
+            eden awkward "{cps=15}Ryo...?{w=0.1} A-are you okay?"
             $ trust += 1
 
-        "Stay quiet.":
-            eden bitter "You bite your tongue, unsure if speaking would make things worse."
+        "Stay quiet":
+            eden bitter "You bite your tongue,{w=0.1} unsure if speaking would make things worse."
 
-    "He sank back into his chair, visibly forcing himself to be calm."
+    "He sank back into his chair,{w=0.1} visibly forcing himself to be calm."
+
     show ryohei neutral at slight_shake
     with dissolve
 
@@ -180,49 +220,62 @@ label session3_start:
 
 
 label session3_hypnosis0:
-    play music "music/theme4.ogg" fadein 1.5 volume 0.8
+    play music "music/theme4.ogg" fadein 1.5 volume 0.7
 
     ryohei look "Ahem...{w=0.2} I apologize.{w=0.1} That was...{w=0.3} unprofessional."
-    ryohei "{cps=10}..."
+    ryohei "{cps=5}..."
     pause 1
 
     ryohei "Anyways."
-    pause 0.3
+    pause 0.5
 
     ryohei look2 "All of that was just an attempt to open your mind."
-    ryohei laugh "Looks like it’s ready! So let’s use it."
+    ryohei laugh "Looks like it’s ready!{w=0.1} So let’s use it."
 
     pause 0.5
     "He opened a drawer and started rummaging it."
 
     pause 1
-    "I just stood there, frozen..... How did his mood... shift so quickly?"
-    "Suddenly, his words from our first session... about a ’guided ritual’... took on a much darker meaning."
+
+    "I just stood there,{w=0.1} frozen..."
+    "How did his mood...{w=0.2} shift so quickly?"
+    "Suddenly,{w=0.1} his words from our first session...{w=0.1} about a “guided ritual”...{w=0.2} took on a much darker meaning."
     "A cold dread washed over me."
-    eden bitter "{i}What if this isn’t therapy. He’s not even trying to fix my insomnia... "
-    eden bitter "Instead, he’s actually trying to do something else, and I’m his test subject??"
+
+    eden bitter "{i}What if this isn’t therapy.{w=0.2} He’s not even trying to fix my insomnia... "
+    eden bitter "Instead,{w=0.1} he’s actually trying to do something else,{w=0.1} and I’m his test subject?"
 
     pause 0.5
     ryohei smirk "I found it."
-    "He then took out a pendulum, a pointed crystal on a silver chain. It looked less like a therapist’s tool and more like a ritual object."
 
+    "He then took out a pendulum,{w=0.1} a pointed crystal on a silver chain."
+    "It looked less like a therapist’s tool and more like a ritual object."
+
+    play sound "<from 0 to 1>sfx/footsteps.ogg"
     show ryohei at center
     with moveinright
-    pause 1.0
+
     "He stepped closer to me."
 
-    pause 0.3
+    pause 0.5
     show eden bitter at slight_shake
-    "Doubt wrapped around my mind like chains, tightening with every thought."
-    eden awkward "{i}Is he going to do something to me????"
-    "Ryohei edged closer behind me, the heat of his body pressing near mine. Panic surged and I felt trapped."
-    "My hands shook violently, my pulse racing, and a whisper of fear told me to turn back."
-    "But even knowing that, I couldn’t make myself move away."
-    "Just before he whisper, I saw his composure slip for a fraction of a second."
-    ryohei look "{i}{cps=40}Shhh...{w=0.3} It’s okay Eden..."
 
-    pause 1.0
-    "Then his eyes cleared, and he smiled at me, his focus absolute."
+    "Doubt wrapped around my mind like chains,{w=0.1} tightening with every thought."
+    eden awkward "{i}Is he going to do something to me???"
+
+    "Ryohei edged closer behind me,{w=0.1} the heat of his body pressing near mine."
+    "Panic surged and I felt trapped."
+    "My hands shook violently,{w=0.1} my pulse racing,{w=0.1} and a whisper of fear told me to turn back."
+    "But even knowing that,{w=0.1} I couldn’t make myself move away."
+    "As he moved closer to my ear,{w=0.1} I saw his composure slip for a fraction of a second."
+
+    voice "voice/eden/exhale.ogg"
+    ryohei look "{i}{cps=20}Shhh...{w=0.3} It’s okay Eden..."
+
+    pause 1
+
+    "Then his eyes cleared and he smiled at me,{w=0.1} his focus absolute."
+
     hide ryohei
     hide eden
     with dissolve
@@ -232,7 +285,11 @@ label session3_hypnosis0:
 
 label session3_hypnosis1:
 
+    stop music fadeout 1
+
     show cg hypnosis with fade
+
+    play music "sfx/ticking.ogg"
 
     ryohei "This will help quiet the noise in your head."
     ryohei "Just watch the crystal.{w=0.1} And listen to my voice."
@@ -265,24 +322,29 @@ label session3_hypnosis1:
         "Breathe":
             voice "voice/eden/inhale.ogg"
             $ countdown.cancel()
-            $ slider = Slider(speed=3)
+            $ slider = Slider(speed=10)
             jump hypnosis_minigame
 
 
 label session3_hypnosis2:
 
-    "I found myself breathing in sync with him. It felt strangely intimate, as if we were sharing the same air."
+    "I found myself breathing in sync with him."
+    "It felt strangely intimate,{w=0.1} as if we were sharing the same air."
 
-    ryohei "{i}Now, watch."
+    ryohei "{i}Now,{w=0.1} watch."
 
-    "The world vanished in an instant. Everything else disappeared, leaving only the pendulum swinging before my eyes."
+    "The world vanished in an instant."
+    "Everything else disappeared,{w=0.1} leaving only the pendulum swinging before my eyes."
 
-    ryohei "{i}You’re so tired, Eden. It’s time to let go. Let me hold the weight for you."
-    "His voice was a promise of rest, and I wanted it more than anything."
+    ryohei "{i}You’re so tired, Eden."
+    ryohei "{i}It’s time to let go."
+    ryohei "{i}Let me hold the weight for you."
 
-    ryohei "Breath in, Eden."
+    "His voice was a promise of rest,{w=0.1} and I wanted it more than anything."
 
-    $ countdown.start(seconds=5, jump="session3_hypnosis3")
+    ryohei "Breath in,{w=0.1} Eden."
+
+    $ countdown.start(seconds=3, jump="session3_hypnosis3")
 
     menu:
 
@@ -290,75 +352,109 @@ label session3_hypnosis2:
             voice "voice/eden/inhale.ogg"
             $ countdown.cancel()
 
-    ryohei "{i}Deeper now. Down into the quiet. The walls are gone. There is only the path. Follow it."
+    ryohei "{i}Deeper now."
+    ryohei "{i}Down into the quiet."
+    ryohei "{i}The walls are gone."
+    ryohei "{i}There is only the path."
+    ryohei "{i}Follow it."
 
-    pause 1.0
-    stop music fadeout 1.0
+    pause 1
+    stop music fadeout 1
 
     window hide
     scene black with Dissolve(2.0)
-    pause 1.0
 
-    "My vision went dark. I felt like I was falling, not through air, but through myself."
-    pause 1.0
+    pause 1
+
+    "My vision went dark."
+    "I felt like I was falling,{w=0.1} not through air,{w=0.1} but through myself."
+
+    pause 1
     "And then I saw it."
-    pause 1.0
+    pause 1
+
+    play sfx "sfx/tension.ogg"
     show entity 1 at center
 
-    "{cps=10}..."
+    "{cps=5}..."
     "Am I hallucinating again?"
 
-    window hide
+    play music "sfx/static.ogg" volume 0.8
+
+    play sound "sfx/thud.ogg" volume 0.7
     show entity 2 at center, zoomin
     with vpunch
+
     pause 0.3
+
+    play sound "sfx/bone_snap.ogg"
     show entity 3 at center, zoomin
     with vpunch
     pause 0.5
     hide entity
-    pause 1.0
+    pause 1
 
-    "A presence. Huge, cold, and utterly indifferent."
+    "A presence.{w=0.1} Huge, cold, and utterly indifferent."
     show cg eyes at zoomin
     with dissolve
-    "It feels like a web of black veins, pulsing slowly in the darkness behind my eyes."
 
-    "The pressure grew, like the air was turning to lead around me."
-    "The pressure was too much. A scream built in my chest, and my eyes flew open."
+    "It feels like a web of black veins{w=0.1}, pulsing slowly in the darkness behind my eyes."
+
+    "The pressure grew{w=0.1}, like the air was turning to lead around me."
+    "The pressure was too much.{w=0.1} A scream built in my chest{w=0.1}, and my eyes flew open."
 
     hide cg eyes
+    stop music
+    play sound "sfx/heartbeat.ogg"
+
     scene bg studio2 at hpunch
     with dissolve
 
-    "I was back in the studio, gasping, my heart hammering against my ribs. Ryohei was staring at me."
-    pause 1.0
-    "His face was pale, his eyes wide with a terrifying mix of fear and excitement."
+    "I was back in the studio,{w=0.1} gasping,{w=0.1} my heart hammering against my ribs."
+    "Ryohei was staring at me."
 
-    ryohei "{cps=30}{size=-4}You saw it... didn’t you?"
+    pause 1
+    "His face was pale,{w=0.1} his eyes wide with a terrifying mix of fear and excitement."
 
-    "His words barely registered. All I could think of was the image burned into my mind. The feeling of that... thing. It was wrong. All of this was wrong."
-    "Adrenaline surged through me, overpowering my exhaustion. I scrambled to my feet, my chair scraping loudly on the floor."
+    ryohei "{cps=30}{size=-4}You saw it...{w=0.1} didn’t you?"
 
-    "I stood up, my legs unsteady. My mind was a chaotic mess of pulsating veins and the echo of his frantic whispers."
-    "Rest felt impossible. All I wanted was to get out of this room, away from his suffocating presence."
-    "I turned towards the door, my hand reaching for the handle."
+    "His words barely registered."
+    "All I could think of was the image burned into my mind."
+    "The feeling of that...{w=0.1} thing."
+    "It was wrong.{w=0.1} All of this was wrong."
+    "Adrenaline surged through me,{w=0.1} overpowering my exhaustion."
+    "I scrambled to my feet,{w=0.1} my chair scraping loudly on the floor."
+
+    "I stood up,{w=0.1} my legs unsteady."
+    "My mind was a chaotic mess of pulsating veins and the echo of his frantic whispers."
+    "All I wanted was to get out of this room,{w=0.1} away from his suffocating presence."
+    "I turned towards the door,{w=0.1} my hand reaching for the handle."
 
     #show eden panicked at left
 
-    "I have to get out. Now."
+    "I have to get out.{w=0.1} Now."
     eden "I’m leaving."
-    "My voice was shaky, but firm. I took a step back, towards the door."
+    "My voice was shaky,{w=0.1} but firm."
+    "I took a step back,{w=0.1} towards the door."
 
-    "Panic flashed across Ryohei’s face. He dropped the pendulum, the crystal clattering against the table."
+    "Panic flashed across Ryohei’s face."
+
+    play sound "sfx/chime.ogg" volume 0.8
+    "He dropped the pendulum,{w=0.1} the crystal clattering against the table."
 
     #show ryohei panic at center (will add this soon if possible)
     show ryohei serious at center
-    ryohei "{i}No—wait. I shouldn’t have—{/i}"
-    "He looked genuinely terrified, as if he’d revealed a secret he could never take back."
+    ryohei "{i}No—wait.{w=0.1} I shouldn’t have—"
+    "He looked genuinely terrified,{w=0.1} as if he’d revealed a secret he could never take back."
 
-    pause 1.0
-    "But his panic lasted only a moment. As I reached for the door, his expression hardened into something desperate and resolute."
+    pause 1
+
+    "But his panic lasted only a moment."
+    "As I reached for the door,{w=0.1} his expression hardened into something desperate and resolute."
+
+    play sound "sfx/thud.ogg" volume 0.7
     show bg studio3 with hpunch
-    "He moved faster than I thought possible, blocking my path."
+
+    "He moved faster than I thought possible,{w=0.1} blocking my path."
 
     jump pre_ending

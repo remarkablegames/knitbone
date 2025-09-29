@@ -217,11 +217,11 @@ label session1_end:
     show eden neutral at right with moveinright
 
     ryohei "Thank you.{w=0.2} You’ve given me quite a clear impression."
-    eden "{cps=10}...Y{w=0.3}... Yeah."
+    eden "{cps=15}...Y{w=0.2}... Yeah."
 
     pause 1
 
-    "{cps=10}..."
+    "{cps=5}..."
     pause 1
 
     show eden bitter2
@@ -232,12 +232,12 @@ label session1_end:
     eden awkward "{i}{cps=30}Should...{w=0.2} I just...{w=0.2} chalk it up to sleep deprivation and call it a day?"
 
     menu:
-        "What should you do?"
+        "What should I do?"
 
         "Bring it up":
             eden "{cps=10}Um..."
             ryohei "Yes?"
-            eden "{cps=15}Did you happen to see...{w=0.2} {i}that?"
+            eden "{cps=20}Did you happen to see...{w=0.2} {i}that?"
             ryohei "See what?"
             eden "Nevermind."
 
@@ -261,14 +261,16 @@ label session1_end:
 
     ryohei serious "Your insomnia isn’t a mistake.{w=0.2} It’s a pattern."
     ryohei "Your mind is stuck on a loop."
-    ryohei "Regular therapy won’t work for you.{w=0.2} What your mind need is a {i}“key”{/i} to...{w=0.2} redistribute the weight."
-    ryohei neutral "What I want to propose isn’t therapy at all.{w=0.2} Think of it more as a...{w=0.3} {i}guided ritual{/i}."
+    ryohei "Regular therapy won’t work for you."
+    ryohei "What your mind needs is a {i}“key”{/i}...{w=0.3} to redistribute the weight."
+    ryohei neutral "What I want to propose isn’t therapy at all."
+    ryohei "Think of it more as a...{w=0.3} {cps=20}{i}guided ritual{/i}."
 
-    pause 1.2
+    pause 1
     "{i}“Ritual”"
 
-    pause 0.3
-    "{cps=10}..."
+    pause 0.5
+    "{cps=5}..."
 
     show eden awkward with dissolve
 
@@ -278,7 +280,7 @@ label session1_end:
     ryohei "I will give you small,{w=0.2} specific tasks to complete."
     ryohei "Though they require precision and focus."
     ryohei look "The goal is to give the burden a new place to rest,{w=0.2} so your mind can finally find peace."
-    ryohei "It is an unconventional path and it requires absolute trust."
+    ryohei "It’s an unconventional path and it requires absolute trust."
     ryohei neutral "Not just in me,{w=0.2} but in yourself."
 
     "He was quiet for a moment and stared at me."
@@ -288,12 +290,13 @@ label session1_end:
     ryohei "You can leave now and go back to your sleepless nights."
     pause 0.3
 
-    ryohei smirk "Or...{w=0.3} you can agree to Session Two...!{w=0.3} That’s where we really begin."
+    ryohei smirk "Or...{w=0.3} you can agree to Session Two...!"
+    ryohei "That’s where we really begin."
 
-    "{cps=10}..."
+    "{cps=5}..."
     "{cps=30}That felt like a challenge."
 
-    ryohei neutral "So, Eden.{w=0.2} What do you think?"
+    ryohei neutral "So,{w=0.1} Eden.{w=0.2} What do you think?"
 
     show eden neutral
 
@@ -304,11 +307,11 @@ label session1_choice:
     menu:
         "Proceed with Session Two?"
 
-        "Agree":
+        "Yes":
             show ryohei laugh with dissolve
             jump session2
 
-        "Refuse":
+        "No":
             ryohei look "Ryohei inclined his head slightly.{w=0.2} Surprisingly with no hint of disappointment."
             ryohei neutral "I understand..."
             eden "I’m sorry,{w=0.2} Ryo..."
