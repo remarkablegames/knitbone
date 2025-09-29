@@ -85,7 +85,7 @@ label ending_sacrifice:
 
     eden "{cps=10}{i}Ryohei..."
 
-    "I said in the gentlest way I could."
+    "I said in the gentlest voice I could manage."
 
     eden "I’m sorry.{w=0.2} I’m not doing this.{w=0.2} Get up from the ground,{w=0.2} please.{w=0.3} Let’s talk this out."
 
@@ -116,7 +116,7 @@ label ending_sacrifice:
 
     "Our bodies were uncomfortably close."
     "My head raced,{w=0.2} wondering how he had managed to get up and seize me in just a blink of an eye."
-    "The confusion muddled my brain,{w=0.2} the adrenaline pumping through my veins that I hadn’t even noticed that Ryohei’s fist was hovering over my chest. "
+    "The confusion muddled my brain,{w=0.2} the adrenaline pumping through my veins so fast that I hadn’t even noticed that Ryohei’s fist was hovering over my chest. "
 
     scene black with fade
 
@@ -149,11 +149,11 @@ label ending_sacrifice:
     "I hear Ryohei’s voice from above,{w=0.2} distant and echoing like he was speaking in an empty chapel,{w=0.2} the sounds bouncing off the hollowed halls."
     "I feel his hand press softly against the back of my hair,{w=0.2} pressing the side of my face against his leg."
     "His sick version of repentance,{w=0.2} of confession."
-    "His warmth seeps into me,{w=0.2} as my life flows out."
+    "His warmth seeps into me,{w=0.2} as my life ebbs out."
 
     ryohei "{cps=15}I’m sorry, Eden."
 
-    "He repeats and he sounds human."
+    "He repeats my name, and he sounds human."
     "A good sound to hear,{w=0.2} for once.{w=0.2} Humanity."
 
     "Ryohei is human.{w=0.2} Always has been."
