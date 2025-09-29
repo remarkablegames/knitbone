@@ -2,9 +2,6 @@ label ending_attack:
 
     play music "music/oasis/intro1.ogg" fadein 0.5 volume 0.5
 
-    scene black
-    with fade
-
     eden "{i}What?"
 
     queue music "music/oasis/intro2.ogg" volume 0.5
