@@ -2,9 +2,6 @@ label ending_sacrifice:
 
     play music "music/prologue/intro.ogg" fadein 0.5
 
-    scene black
-    with fade
-
     "A sacrifice?"
 
     "The sheer ridiculousness of it all was enough to make me die laughing."
@@ -23,6 +20,9 @@ label ending_sacrifice:
     pause 1
 
     "The silence that followed was almost laughable."
+
+    pause 0.5
+    scene cg ryohei kneel 2 with dissolve
 
     ryohei "{cps=10}...{w=0.5} No?"
     "Ryohei stayed unmoving."
@@ -91,6 +91,8 @@ label ending_sacrifice:
 
     "My response drew nothing from Ryohei."
     "He stayed still like a pretty porcelain doll,{w=0.2} as if forever carved in his pose of grievance."
+
+    scene black with fade
 
     "Then I heard a small murmur."
 
