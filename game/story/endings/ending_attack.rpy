@@ -48,7 +48,7 @@ label ending_attack:
     eden "{cps=5}I..."
 
     "The words twist in my throat."
-    "Panic seized me,{w=0.1} fear freezing my blood,{w=0.1} and for a split second I almost shifted the blade towards the flesh of my neck,{w=0.1} ready to slice–"
+    "Panic seized me,{w=0.1} fear freezing my blood,{w=0.1} and for a split second I almost shifted the blade towards the flesh of my palm,{w=0.1} ready to slice–"
     "But I snap out of it.{w=0.2} I hold the knife away from my body,{w=0.1} putting it back into Ryohei’s outstretched hands."
 
     eden "{cps=25}No...{w=0.3} no.{w=0.2} I won’t."
@@ -61,7 +61,7 @@ label ending_attack:
     pause 1
 
     "His expression is unexplainable,{w=0.2} an amalgamation of surprise,{w=0.1} horror,{w=0.1} and fury."
-    "Piping hot fury,{w=0.2} which I saw traveling from his pinpoint pupils down to the goosebumps on the back of his hands."
+    "Piping hot fury,{w=0.2} which travelled from his pinpoint pupils down to the goosebumps on the back of his hands."
 
     scene black with dissolve
     pause 0.5
@@ -91,9 +91,9 @@ label ending_attack:
 
     scene cg ending struggle at slight_shake
 
-    "I gasped,{w=0.1} clawing to release myself from his grip – before bringing up a knee towards his stomach."
-    "He’s caught off guard quick enough to drop me,{w=0.1} but the knife was still in his hands."
-    "As I tried to step sidewards,{w=0.1} he lurched me back by my wrist,{w=0.1} gripping tight enough to snap bone into two."
+    "I gasped,{w=0.1} clawing to release myself from his grip – before driving a knee into his stomach."
+    "He’s caught off guard quick enough to drop me-{w=0.1} but the knife was still in his hands."
+    "As I tried to step sidewards,{w=0.1} he lurched me back by my wrist,{w=0.1} gripping tight enough to snap bone."
 
     play music "music/oasis/bridge2.ogg"
 
@@ -107,7 +107,7 @@ label ending_attack:
 
     play sound "sfx/thud.ogg" volume 0.7
 
-    "He barrelled backwards into the table,{w=0.1} knocking chairs and vases as he fell to the floor with a loud thud."
+    "He barrelled backwards into the table,{w=0.1} knocking chairs and vases over as he fell with a loud thud."
 
     voice "voice/eden/inhale.ogg"
     "{cps=5}..."
@@ -149,7 +149,7 @@ label ending_attack:
     "I looked up to see veins of black and red chunks start to pour thinly from the walls,{w=0.1} slithering like snakes towards the floor,{w=0.1} and towards me."
     "I reeled back,{w=0.1} holding Ryohei closer as I tried to pull him away from the vines,{w=0.1} as if it could stop the blood pooling from his chest—"
 
-    ryohei "Eden"
+    ryohei "Eden."
 
     "When I looked down at him,{w=0.1} tears were already building in his ash-colored eyes."
 
@@ -162,7 +162,7 @@ label ending_attack:
     ryohei "You carry it now.{w=0.3} The vessel."
 
     play sfx "sfx/heartbeat.ogg"
-    "His hand rises up to press against my hammering heart."
+    "His hand rose up to press against my hammering heart."
 
     ryohei "It’s yours now.{w=0.2} It’s you.{w=0.2} It’s part of you."
 
@@ -170,7 +170,7 @@ label ending_attack:
 
     ryohei "But I didn’t want it to end this way."
 
-    "Ryohei choked out,{w=0.1} and in the bleary reflection of his tears."
+    "Ryohei choked out,{w=0.1} and in the bleary reflection of his tears..."
     "I saw the person he had always been behind all the facades and perfect grins,{w=0.1} all the popularity and the wonder – I saw a small,{w=0.1} frightened little boy."
 
     ryohei "{i}{cps=15}I don’t want to die,{w=0.2} Eden."
@@ -179,7 +179,7 @@ label ending_attack:
 
     ryohei "{cps=20}Carry it, Eden."
 
-    "His eyes flickering like a troubled candle."
+    "His eyes flickered like a troubled candle."
 
     ryohei "{cps=20}You are one."
 
