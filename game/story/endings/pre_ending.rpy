@@ -22,12 +22,19 @@ label pre_ending_start:
     play sound "sfx/woosh.ogg" volume 0.5
     "I turned back."
 
+    hide eden
+    hide ryohei with dissolve
+    show cg ryohei scared with dissolve
     "The calm facade was gone,{w=0.1} shattered completely."
     "In its place was raw,{w=0.1} unfiltered desperation."
 
     ryohei "You can’t leave. Not now."
     ryohei smirk "You saw it too. Don’t you understand what that means?"
-    ryohei serious "{cps=25}That...{w=0.1} thing."
+    ryohei serious "{cps=25}That...{w=0.1} thing."  
+
+    hide cg ryohei scared with dissolve
+
+    pause 1
 
     "He pulled me back from the door,{w=0.1} his eyes wide and wild."
     "He wasn’t asking me...{w=0.1} he was pleading with me."
@@ -43,15 +50,16 @@ label pre_ending_start:
 
     play sound "sfx/light.ogg"
     scene bg studio4 with dissolve
+    show ryohei glare with dissolve
 
     "As the flames grew,{w=0.1} the room transformed.{w=0.2} It was no longer a studio.{w=0.2} It was an altar."
     "And I was the offering."
     "He sat down across from me again,{w=0.1} the firelight carving deep shadows into his face."
     "He looked older,{w=0.1} burdened by a weight I couldn’t comprehend."
 
-    ryohei "What you saw...{w=0.1} Is not just a thing.{w=0.1} It has a name.{w=0.1} A purpose."
+    ryohei serious "What you saw...{w=0.1} Is not just a thing.{w=0.1} It has a name.{w=0.1} A purpose."
     ryohei "It’s one of my debt,{w=0.1} passed down through generations in my family,{w=0.1} all under the guise of enlightenment."
-    ryohei "My uncle, Callister...{w=0.3} he was the leader.{w=0.2} He called their belief system {cps=25}“Transcendology”."
+    ryohei glare "My uncle, Callister...{w=0.3} he was the leader.{w=0.2} He called their belief system {cps=25}“Transcendology”."
 
     "The way he said the word,{w=0.1} it was thick with disgust."
 
@@ -74,16 +82,25 @@ label pre_ending_start:
 
     eden "What...{w=0.3} do you mean?"
 
-    ryohei smirk "I killed him.{w=0.1} I plunged his own ritual knife into his chest.{w=0.1} I thought if the leader was gone,{w=0.1} the curse would die with him."
+    "{cps=5}..."
+    pause 1
+    hide ryohei with dissolve
+    show cg ryohei scared at slight_shake
+    with dissolve
+
+    ryohei "I killed him, Eden."
+    ryohei "I killed him!{w=0.1} I plunged his own ritual knife into his chest.{w=0.1} I thought if the leader was gone,{w=0.1} the curse would die with him."
 
     ryohei "But I was wrong.{w=0.1} It didn’t die.{w=0.1} It just...{w=0.3} transferred.{w=0.1} It latched onto me."
 
     voice "voice/entity/feed_me.ogg"
     ryohei "Now I carry it.{w=0.1} I hear its whispers.{w=0.1} I feel its hunger."
 
+    show cg ryohei scared at slight_shake
     "He buried his face in his hands,{w=0.1} his shoulders trembling."
     "This was it.{w=0.1} The full,{w=0.1} horrifying truth.{w=0.1} The core of his madness."
 
+    hide cg ryohei scared with dissolve
     "He looked up,{w=0.1} and his eyes were glistening with unshed tears.{w=0.1} But beneath the pain,{w=0.1} there was something else."
     "A chilling,{w=0.1} obsessive focus."
     "It was directed at me."
@@ -109,6 +126,11 @@ label pre_ending_start:
 
     "He slid off his chair and knelt on the floor in front of me."
     "This wasn’t a plea for help.{w=0.1} This was the final step of his plan."
+
+    pause 0.5
+    scene cg ryohei kneel 1 with dissolve
+    pause 0.5
+
     "He pulled a knife from his pocket.{w=0.1} The handle had the same vein-like carvings I saw in my vision."
     "He held it out to me on his open palms,{w=0.1} like it was a key."
     "My breath caught in my throat."
@@ -121,11 +143,9 @@ label pre_ending_start:
     "A horrible,{w=0.1} tempting thought."
     "He’s not asking me to die."
     "He’s asking me to bleed for him.{w=0.1} To become something else."
-    "To trade my empty life for one filled with this terrible,{w=0.1} powerful thing."
+    "To trade my blood for one filled with this terrible,{w=0.1} powerful thing."
     "What if he’s not crazy?{w=0.1} What if this is the cure for the nothingness I feel every day?"
 
-    #show ryohei kneeling at center with move
-    hide eden
     ryohei "This gift is meant to be shared.{w=0.2} You saw it.{w=0.2} It saw you.{w=0.2} It has chosen you to be my equal."
     ryohei "Your trouble sleeping,{w=0.1} feeling lost...{w=0.3} that’s not a sickness."
     ryohei "It’s just an opening.{w=0.2} A crack to let the light in.{w=0.2} I’m here to open the door all the way."
