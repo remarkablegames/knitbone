@@ -20,7 +20,20 @@ Play the game on:
 
 - [aespipu](https://aespipu.itch.io/)
 
-### Audio
+### Writing
+
+- [meo](https://github.com/mizphawu)
+- [The Sloth](https://a-villarroel.itch.io/)
+
+### Development
+
+- [remarkablemark](https://github.com/remarkablemark)
+
+### Music
+
+- seamus
+
+### Sounds
 
 - [Kenney](https://kenney.nl/assets/interface-sounds)
 - Pixabay
