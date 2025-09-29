@@ -5,24 +5,24 @@ label bar:
     eden "{cps=10}Hmm..."
     play sound "sfx/ice.ogg" volume 0.5
     eden "Seems like the ice in my glass had succumbed to the warmth..."
-    eden "...it looks just like my life."
+    eden "...looks just like my life."
 
     show cg bar
     with dissolve
     pause 0.7
 
-    "My name’s Eden.{w=0.5} I’m a Psychology major."
+    "My name’s Eden.{w=0.5} A Psychology major."
     "Voted as “Most Likely to Succeed”."
     eden "{cps=10}..."
 
     pause 0.5
 
     eden "{i}But that was years ago..."
-    eden "{i}When I had directions in my life."
-    eden "{i}Now?{w=0.3} I’m surviving on coffee with no sleep."
+    eden "{i}When I had direction in my life."
+    eden "{i}Now?{w=0.3} I’m barely surviving on cheap coffee and no sleep."
     eden "{i}I changed three jobs in just twelve months."
     eden "{i}Every “fresh start” only left me more tangled in doubt."
-    eden "{i}And yeah, I just ended up more lost."
+    eden "{i}And yeah, I ended up even more lost."
 
     "{cps=5}..."
     pause 1
@@ -36,14 +36,14 @@ label bar:
 
     pause 0.5
     play sound "sfx/door.ogg" volume 1.1
-    "The door opened, but at first,{w=0.1} I barely registered it."
+    "The door opened, but at first,{w=0.1} I hardly registered it."
 
     scene black with fade
     pause 0.7
     hide cg bar with dissolve
 
-    "It seems like the vibe shifted,{w=0.1} as if someone flipped a switch."
-    "So I can’t help but to look..."
+    "The vibe suddenly seemed to shift,{w=0.1} as if someone flipped a switch."
+    "I couldn’t help but look…..."
     pause 0.1
 
     play music "music/theme2.ogg" fadein 1 volume 0.4
@@ -63,7 +63,7 @@ label bar_ryohei_entrance:
     show ryohei look at zoomout, center
     with dissolve
 
-    "A guy had walked in with an easy confidence,{w=0.1} and everyone eyed on him."
+    "A man walked in,{w=0.1} with the sort of effortless confidence that drew everyone’s eyes to him."
     "He smiled at the bartender,{w=0.1} waved at someone like they were old friends."
     show ryohei look2 at center
 
@@ -84,7 +84,7 @@ label bar_ryohei_entrance:
 
     show ryohei serious
     eden "!!"
-    "And then he saw me,{w=0.1} surprised as his eyes locked onto mine."
+    "And then he saw me,{w=0.1} eyes widening as they locked onto mine."
     pause 0.3
 
     voice "voice/ryohei/chuckle.ogg"
@@ -95,7 +95,7 @@ label bar_ryohei_entrance:
 
     show eden awkward with dissolve
     "That got me holding my breath."
-    "I quickly forced a polite smile even with my heart racing."
+    "I forced a polite smile, despite my racing heart."
     "There was something oddly familiar about him...{w=0.3} but I couldn’t figure it out."
 
     pause 0.5
@@ -188,15 +188,15 @@ label bar_talk:
     voice "voice/ryohei/chuckle.ogg"
     pause 0.5
 
-    "It made him laugh and he didn’t even try to deny it."
+    "It made him laugh. He didn’t even try to deny it."
     ryohei "You can just call me Ryo."
     ryohei "I’m really glad we ran into each other again."
 
     pause 1
     ryohei "Well,{w=0.1} Eden,{w=0.2} your name really does you justice."
     ryohei "Looking splendid, as always!"
-    "I can’t help but smile back at him."
-    "I’m not sure if I’m most amused by his outlandish teasing{w=0.2} or curious of the fact he even remembers my name."
+    "I couldn't help but smile back."
+    "I’m not sure if I’m most amused by his outlandish teasing,{w=0.2} or by the fact that he remembered my name."
     eden "I don’t think lounging at a jazz club after an exhausting day is much of a splendid look,{w=0.2} but thanks...?{w=0.2}"
     eden "You look like...{w=0.2} life has been treating you well."
     "I leave out the “as always”."
@@ -238,10 +238,10 @@ label bar_talk:
     ryohei "Would you pay me a visit?"
     eden "What?"
     ryohei "I want to see you."
-    "I muster a smile,{w=0.1} hoping he doesn’t notice my bafflement."
+    "I mustered a smile,{w=0.1} hoping he didn't notice my bewilderment."
     ryohei "It’d be a private consultation.{w=0.2} I’ve had my studio set up."
     eden "It’s okay.{w=0.2} I’ve already visited doctors."
-    ryohei "I figured, but maybe I can do something about it,{w=0.1} and if I can’t it’s no wasted money."
+    ryohei "I figured, but... maybe I can do something about it.{w=0.1} And if I can’t, well, it’s no wasted money."
     ryohei "I’m offering it for free."
     eden "{cps=5}Oh."
     "It'll probably be in vain,{w=0.2} but declining now that he seems so willing to help would make an even more pitiful sight."
@@ -250,7 +250,7 @@ label bar_talk:
     "Before I could react,{w=0.1} he produced a card between his fingers,{w=0.1} like it had been waiting there all along."
     ryohei "Come to my studio whenever you’re ready,{w=0.1} no pressure."
 
-    "His word “studio” echoed in my head longer than it should have."
+    "The word “studio” echoed in my head longer than it should have."
 
     scene black with fade
     stop music fadeout 2.0
