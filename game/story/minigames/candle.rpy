@@ -2,16 +2,6 @@ label candle_minigame:
     call screen candle_minigame
 
 
-label candle_minigame_win:
-    eden "{cps=15}I...{w=0.3} I did it."
-    jump session2_success
-
-
-label candle_minigame_lose:
-    ryohei seated serious "Stop."
-    jump session2_fail
-
-
 screen candle_minigame():
     frame:
         background Solid((0, 0, 0, 100))
@@ -36,11 +26,22 @@ screen candle_minigame():
 
 init python:
     class Candle:
-        def __init__(self, moves: int, candles: int) -> None:
+        NAME = "candle_minigame"
+
+        def __init__(self) -> None:
+            self.moves = 0
+            self.values = []
+
+        def start(self, moves: int, candles: int, win: str, lose: str) -> None:
             self.moves = moves
             self.values = []
+            self.win = win
+            self.lose = lose
+
             while self.values == sorted(self.values):
                 self.values = renpy.random.sample(list(range(1, candles + 1)), candles)
+
+            renpy.jump(self.NAME)
 
         def ondrag(self, drags, drop) -> None:
             drag = drags[0]
@@ -62,14 +63,14 @@ init python:
             self.values[drop_index - 1] = drag_value
 
             if self.values == sorted(self.values):
-                renpy.jump("candle_minigame_win")
+                renpy.jump(self.win)
 
             self.moves -= 1
             if not self.moves:
-                renpy.jump("candle_minigame_lose")
+                renpy.jump(self.lose)
 
             renpy.sound.queue("ui/drop_003.ogg", relative_volume=0.5)
-            renpy.jump("candle_minigame")
+            renpy.jump(self.NAME)
 
         def get_snap(self, index: int) -> dict:
             return {
@@ -78,11 +79,12 @@ init python:
                 "delay": 0.2,
             }
 
-
         def stringify_drag_name(self, index: int, value: int) -> str:
             return f"{index},{value}"
-
 
         def parse_drag_name(self, name: str) -> dict:
             [index, value] = name.split(",")
             return [int(index), int(value)]
+
+
+    candle = Candle()

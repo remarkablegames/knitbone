@@ -148,6 +148,7 @@ label session2_candle:
     ryohei seated smile "Let’s play a game,{w=0.1} Eden."
     ryohei seated neutral "This is a “focusing exercise.”"
 
+    play sound "sfx/light.ogg"
     "He lit the candles and set them on the table in a chaotic line."
     pause 0.5
 
@@ -163,20 +164,32 @@ label session2_candle:
 
     ryohei seated smile "Nuh-uh."
     ryohei seated crazy "There are rules."
-    "His tone was now flat, sharp, and cold."
-    ryohei "Discipline is paramount.{w=0.2} You have {i}exactly four moves.{/i}{w=0.2} A “move” is the swapping of any candles."
-    ryohei seated look "Exceed {i}four{/i}, and the pattern is irrevocably broken.{w=0.2} Do you understand?"
 
-    "I nodded,{w=0.2} my mouth suddenly dry."
-    "I looked at the candles..."
+    "His tone was now flat,{w=0.1} sharp,{w=0.1} and cold."
 
-    $ candle = Candle(moves=4, candles=6)
-    jump candle_minigame
+    ryohei "Discipline is paramount."
+    ryohei "You have {i}exactly four moves."
+    ryohei "A “move” is the swapping of any candles."
+    ryohei seated look "Exceed {i}four{/i}, and the pattern is irrevocably broken."
+    ryohei "Do you understand?"
+
+    menu:
+        "Do I understand the rules?"
+        "Yes":
+            "I nodded,{w=0.2} my mouth suddenly dry."
+            "I looked at the candles..."
+        "No":
+            ryohei "You’ll figure it out."
+            ryohei "Let’s play."
+
+    $ candle.start(moves=4, candles=6, win="session2_success", lose="session2_fail")
 
 
 label session2_success:
     $ trust += 1
     $ candle_success = True
+
+    eden "{cps=15}I...{w=0.3} I did it."
 
     "A perfect,{w=0.1} ascending line.{w=0.2} All in less than four moves."
 
@@ -225,6 +238,8 @@ label session2_success:
 
 label session2_fail:
     $ trust -= 1
+
+    ryohei seated serious "Stop."
 
     #---very short-jumpscare, to make players wonder---
     stop music
