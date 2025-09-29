@@ -7,20 +7,20 @@ label session1:
     pause 0.5
 
     "My footsteps feel too loud as I walk."
-    "The hallway smelled old and dusty,{w=0.2} while the carpet looks ugly and stained."
+    "The hallway smelled old and dusty,{w=0.2} the carpet ugly and stained."
 
-    "My thumb keeps brushing over the card in my pocket—"
+    "My thumb kept brushing over the card in my pocket—"
     "1408,{w=0.3} just like the card said.{w=0.3} That’s the room I’ve been trying to track down."
 
-    "After a tour of what felt like the world’s most depressing maze,{w=0.2} I finally spot the door."
+    "After a tour of what felt like the world’s most depressing maze,{w=0.2} I finally spotted the door."
     pause 1
     show cg door with dissolve
 
     "The little brass number on it looked shiny and new.{w=0.3} It didn’t fit with the rest of the dingy hallway."
-    "I stopped,{w=0.3} my hand just hovering in the air..."
+    "I stopped,{w=0.3} my hand hovering in the air..."
     "{cps=10}..."
     "I wasn’t sure if I should knock."
-    "A part of me wanted to just turn around and leave."
+    "A part of me just wanted to turn around and leave."
     pause 1
 
     "{cps=10}..."
@@ -32,7 +32,7 @@ label session1:
     scene black with flash
     pause 0.5
 
-    "In the lounge last night, I feel like I revealed too much to someone who was practically a stranger."
+    "Last night at the lounge, I revealed too much to someone who was practically a stranger."
 
     jump bar
     # jump to previous jazz scene prologue
@@ -61,7 +61,7 @@ label session1_prestudio:
     play sound "sfx/creak.ogg"
 
     "The door opened right away."
-    "Like he was already standing there waiting for me."
+    "As if he'd been standing there the whole time, waiting for me."
     pause 1
 
     show ryohei neutral with dissolve
@@ -71,9 +71,9 @@ label session1_prestudio:
 
     "He had a warm practiced smile,{w=0.1} and said my name like he knew I would come."
 
-    ryohei "I had a feeling you’d be here.{w=0.2} Please, come in."
+    ryohei "I had a feeling you’d arrive.{w=0.2} Please, come in."
 
-    "I hesitated—"
+    "I hesitated-"
     "But my feet started moving before I could even think about it."
     play sound "sfx/footsteps.ogg" volume 0.7 fadeout 1
 
@@ -86,12 +86,12 @@ label session1_studio:
     scene bg studio
     with fade
 
-    "The smell was different inside.{w=0.2} It smells like lemon oil and faint herbs."
-    "It felt like he was trying too hard to curate it to smell relaxing."
-    "And the studio was very simple."
+    "The smell was different inside.{w=0.2} The scent of lemon oil and faint herbs filled the air."
+    "It felt a bit phony, like he was trying too hard to make it smell naturally relaxing."
+    "The studio was quite simple."
     "Just a couch for me, and a single, fancy chair for him."
-    "My gaze catches a collection of arranged objects as Ryhoei leads me into the studio."
-    "There was soft jazz music playing in the background."
+    "My gaze drifted past a collection of arranged objects as Ryohei led me inside the studio."
+    "Soft jazz music played in the background."
 
     play sound "sfx/woosh.ogg" volume 0.5
     show ryohei neutral at left with moveinleft
@@ -99,13 +99,13 @@ label session1_studio:
     play sfx "sfx/woosh.ogg" volume 0.5
     show eden neutral at right with moveinright
 
-    ryohei "Please,{w=0.1} have a seat.{w=0.2} Try to get comfortable."
+    ryohei "Please,{w=0.1} have a seat.{w=0.2} Make yourself at home."
     "I sat on the couch..."
     "{cps=5}..."
-    "It was actually pretty comfortable.."
+    "It was actually pretty cozy..."
     ryohei smirk2 "Comfortable?"
     "I nodded."
-    "He sat in his big chair and just watched me."
+    "He sat on his big chair and watched me."
 
     ryohei "So...{w=0.2} {cps=15}Eden Cross..."
     ryohei serious "You know why you’re here.{w=0.2} Is that right?"
@@ -115,7 +115,7 @@ label session1_studio:
     eden "{cps=10}...{w=0.2} Yeah."
     eden awkward "{cps=20}I guess so...?"
     ryohei neutral "So.{w=0.2} Tell me...{w=0.2} What’s on your mind?"
-    ryohei "What brought you here tonight?"
+    ryohei "What brings you here tonight?"
     pause 1
 
     "My mouth went dry,{w=0.2} as I finally said the line I practiced."
@@ -148,7 +148,7 @@ label session1_studio:
     show eden neutral
 
     "He pauses,{w=0.4} weighing his words before going on."
-    "His expression had turned serious,{w=0.2} like he knows something that I don’t."
+    "His expression turned serious,{w=0.2} as if he knows something that I don’t."
 
     ryohei serious "Insomnia and identity crisis.{w=0.2} That’s a reasonable set to bring in together."
     ryohei "Sleep and sense of self are closer than most people think."
@@ -161,7 +161,7 @@ label session1_studio:
     "That...{w=0.3} hit closer to home than I expected."
 
     show ryohei laugh
-    "The smile creeps back onto his face."
+    "The smile crept back onto his face."
 
     pause 0.5
     ryohei neutral "Before we go any deeper,{w=0.2} I have a simple personality test."
@@ -255,7 +255,7 @@ label session1_end:
             ryohei "Yes?"
             eden "{cps=20}Did you happen to see...{w=0.2} {i}that?"
             ryohei "See what?"
-            eden "Nevermind."
+            eden "...Nevermind."
 
         "Remain silent":
             eden "{cps=10}..."
@@ -272,7 +272,7 @@ label session1_end:
     ryohei glare "Your sleepless nights..."
 
     "He paused."
-    "It felt like he was studying me like I was some kind of bug."
+    "His gaze was piercing, studying me like I was some kind of specimen."
 
     pause 1
     ryohei serious "Your insomnia isn’t a mistake.{w=0.2} It’s a pattern."
@@ -328,7 +328,7 @@ label session1_choice:
             jump session2
 
         "No":
-            ryohei look "Ryohei inclined his head slightly.{w=0.2} Surprisingly with no hint of disappointment."
+            ryohei look "Ryohei inclined his head slightly.{w=0.2} Surprisingly, there was no hint of disappointment."
             ryohei neutral "I understand..."
             eden "I’m sorry,{w=0.2} Ryo..."
             ryohei laugh "It’s okay.{w=0.2} You can take your time.{w=0.2} The offer still stands if you change your mind."
@@ -336,7 +336,7 @@ label session1_choice:
 
             show black with dissolve
 
-            ryohei smirk "...{w=0.2} I’m sure that...{w=0.3} {cps=30}Your sleepless nights will bring you back to me anyway."
+            ryohei smirk "...{w=0.2} I’m sure that...{w=0.3} {cps=30}your sleepless nights will bring you back to me anyway."
 
             # ENDING 0 - AVOIDANCE
             jump end
