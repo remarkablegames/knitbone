@@ -330,12 +330,22 @@ label session3_hypnosis1:
     $ countdown.start(seconds=5, jump="session3_hypnosis2")
 
     menu:
-
         "Breathe":
             voice "voice/eden/inhale.ogg"
             $ countdown.cancel()
-            $ slider = Slider(speed=10)
-            jump hypnosis_minigame
+            $ slider.start(speed=10, win="hypnosis_minigame_win", lose="hypnosis_minigame_lose")
+
+
+label hypnosis_minigame_win:
+    $ trust += 1
+    eden "I matched each inhale with an exhale,{w=0.1} regaining control over my breath."
+    jump session3_hypnosis2
+
+
+label hypnosis_minigame_lose:
+    $ trust -= 1
+    eden "My breathing faltered.{w=0.1} The steady pattern I’d relied on slipped away."
+    jump session3_hypnosis2
 
 
 label session3_hypnosis2:

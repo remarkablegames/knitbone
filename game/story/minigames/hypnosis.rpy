@@ -4,18 +4,6 @@ label hypnosis_minigame:
     call screen hypnosis_minigame
 
 
-label hypnosis_minigame_win:
-    $ trust += 1
-    eden "I matched each inhale with an exhale, regaining control over my breath."
-    jump session3_hypnosis2
-
-
-label hypnosis_minigame_lose:
-    $ trust -= 1
-    eden "My breathing faltered. The steady pattern I’d relied on slipped away."
-    jump session3_hypnosis2
-
-
 screen hypnosis_minigame():
     timer 0.001:
         repeat True
@@ -50,13 +38,18 @@ init python:
     class Slider:
         PADDING = 10
 
-        def __init__(self, speed=5, width=100, width_max=1000) -> None:
+        def start(self, speed: int, win: str, lose: str) -> None:
+            width = 100
+            width_max = 1000
             self.xsize = width
             self.xsize_max = width_max
             self.xpos_target = renpy.random.randint(0, width_max - width - self.PADDING)
             self.speed = speed
             self.xpos_current = 0
             self.direction = 1
+            self.win = win
+            self.lose = lose
+            renpy.jump("hypnosis_minigame")
 
         def update(self) -> None:
             if self.xpos_current <= 0:
@@ -78,8 +71,9 @@ init python:
             )
 
             if collision:
-                renpy.jump("hypnosis_minigame_win")
+                renpy.jump(self.win)
             else:
-                renpy.jump("hypnosis_minigame_lose")
+                renpy.jump(self.lose)
+
 
     slider = Slider()
