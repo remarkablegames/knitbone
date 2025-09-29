@@ -43,7 +43,7 @@ label bar:
     hide cg bar with dissolve
 
     "The vibe suddenly seemed to shift,{w=0.1} as if someone flipped a switch."
-    "I couldn’t help but look…..."
+    "I couldn’t help but look..."
     pause 0.1
 
     play music "music/theme2.ogg" fadein 1 volume 0.4
@@ -187,38 +187,45 @@ label bar_talk:
 
     voice "voice/ryohei/chuckle.ogg"
     pause 0.5
+    "It made him laugh.{w=0.1} He didn’t even try to deny it."
 
-    "It made him laugh. He didn’t even try to deny it."
     ryohei "You can just call me Ryo."
     ryohei "I’m really glad we ran into each other again."
 
     pause 1
+
     ryohei "Well,{w=0.1} Eden,{w=0.2} your name really does you justice."
-    ryohei "Looking splendid, as always!"
-    "I couldn't help but smile back."
+    ryohei "Looking splendid,{w=0.1} as always!"
+
+    "I couldn’t help but smile back."
     "I’m not sure if I’m most amused by his outlandish teasing,{w=0.2} or by the fact that he remembered my name."
-    eden "I don’t think lounging at a jazz club after an exhausting day is much of a splendid look,{w=0.2} but thanks...?{w=0.2}"
+
+    eden "I don’t think lounging at a jazz club after an exhausting day is much of a splendid look,{w=0.2} but {cps=15}thanks...?"
     eden "You look like...{w=0.2} life has been treating you well."
+
     "I leave out the “as always”."
 
     voice "voice/ryohei/chuckle.ogg"
-    "He laughs, but his eyes narrow in…"
+    "He laughs,{w=0.1} but his eyes narrow in..."
 
-    ryohei "I did notice you’re tired, though."
+    ryohei "I did notice you’re tired,{w=0.1} though."
     ryohei "Ah-{w=0.2} I don’t meant to offend–"
-    eden "No, it's fine. I know I’m living dead…"
-    "I laugh, trying to brush it off."
-    eden "Insomnia, that’s all.{w=0.1}  I get used to it."
-    ryohei "...What a shame."
+    eden "No,{w=0.1} it’s fine.{w=0.1} I know I’m living dead..."
+
+    "I laugh,{w=0.1} trying to brush it off."
+
+    eden "Insomnia,{w=0.1} that’s all.{w=0.1} I get used to it."
+    ryohei "...{w=0.1} What a shame."
 
     pause 0.3
+
     "And for the first time in what felt like forever..."
     "I didn’t feel like a complete failure."
     "We caught up and talked for a while."
     "Something about his presence...{w=0.2} felt almost too welcoming."
     "Made it easy for me to open up."
     "It felt safe,{w=0.1} or at least I convinced myself it was."
-    "After all,{w=0.1} he was an old acquaintance,{w=0.2}  wasn’t he?"
+    "After all,{w=0.1} he was an old acquaintance,{w=0.2} wasn’t he?"
     "So, like an idiot,{w=0.1} I spilled everything."
 
     pause 0.5
@@ -238,13 +245,13 @@ label bar_talk:
     ryohei "Would you pay me a visit?"
     eden "What?"
     ryohei "I want to see you."
-    "I mustered a smile,{w=0.1} hoping he didn't notice my bewilderment."
+    "I mustered a smile,{w=0.1} hoping he didn’t notice my bewilderment."
     ryohei "It’d be a private consultation.{w=0.2} I’ve had my studio set up."
     eden "It’s okay.{w=0.2} I’ve already visited doctors."
     ryohei "I figured, but... maybe I can do something about it.{w=0.1} And if I can’t, well, it’s no wasted money."
     ryohei "I’m offering it for free."
     eden "{cps=5}Oh."
-    "It'll probably be in vain,{w=0.2} but declining now that he seems so willing to help would make an even more pitiful sight."
+    "It’ll probably be in vain,{w=0.2} but declining now that he seems so willing to help would make an even more pitiful sight."
 
     pause 0.3
     "Before I could react,{w=0.1} he produced a card between his fingers,{w=0.1} like it had been waiting there all along."

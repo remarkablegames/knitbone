@@ -61,7 +61,8 @@ label session1_prestudio:
     play sound "sfx/creak.ogg"
 
     "The door opened right away."
-    "As if he'd been standing there the whole time, waiting for me."
+    "As if he’d been standing there the whole time,{w=0.1} waiting for me."
+
     pause 1
 
     show ryohei neutral with dissolve
@@ -123,27 +124,33 @@ label session1_studio:
 
     eden neutral "Last night...{w=0.2} you mentioned you could help."
     eden neutral "You said you help people with sleep issues."
+
     "I told him how I couldn’t sleep, and how I felt like I didn’t know who I was when the lights went off."
     "He listened without rushing."
     "No interruption and no pity."
     "Just that steady,{w=0.1} practiced attention."
 
     pause 1
+
     ryohei look2 "Alright then.{w=0.2} Starting with some questions."
     ryohei neutral "Do you have more trouble falling asleep{w=0.1} or staying asleep?"
-    eden "Umm… both,{w=0.1} equally,{w=0.1} I suppose?"
+    eden "Umm...{w=0.2} both,{w=0.1} equally,{w=0.1} I suppose?"
     ryohei "How many times a week do you suffer from this?"
     eden "I can’t really remember."
     eden "Maybe five?"
+
     "He purses his lips."
+
     ryohei "Ok."
     ryohei "Are you taking any medications?"
     eden "None."
 
     pause 1
+
     ryohei look "I see."
 
     pause 1
+
     show ryohei glare
     show eden neutral
 
@@ -158,7 +165,7 @@ label session1_studio:
     ryohei "And that’s why your mind won’t shut down."
 
     pause 0.5
-    "That...{w=0.3} hit closer to home than I expected."
+    "{cps=15}That...{/cps}{w=0.3} hit closer to home than I expected."
 
     show ryohei laugh
     "The smile crept back onto his face."

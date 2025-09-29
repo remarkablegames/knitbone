@@ -112,14 +112,16 @@ label session2_devotion:
     ryohei "To an outsider,{w=0.1} their methods might have seemed extreme.{w=0.2} Maybe even cruel."
 
     "He continued,{w=0.1} his eyes searching mine,{w=0.1} gauging my reaction."
-    ryohei "But that's what they believed.{w=0.1} They believed {i}true enlightenment{/i} required total devotion."
+    ryohei "But that’s what they believed.{w=0.1} They believed {i}true enlightenment{/i} required total devotion."
     ryohei "And that you couldn’t become {i}whole{/i} until a part of you was given away."
 
     pause 0.5
     "{cps=5}..."
+
     "I couldn’t make sense of what he was saying..."
     "Everything he said{w=0.2} sounded like cult nonsense."
     "And he seemed completely convinced himself."
+
     pause 0.5
     eden "{cps=15}Uh-huh..."
 
