@@ -167,9 +167,7 @@ label bar_flashback:
     eden "{i}Goddamn,{w=0.2} I think I remembered him more than I should."
 
     eden "People wouldn’t shut up about him."
-    eden "The rumors that he got scouted by some research lab."
-    eden "The times he stood in front of the class with that calm demeanor."
-    eden "As if he’s always sure of himself."
+    eden "I’ve always been envious of him,{w=0.2} even now."
 
     pause 0.7
 
@@ -191,13 +189,27 @@ label bar_talk:
     pause 0.5
 
     "It made him laugh and he didn’t even try to deny it."
-    ryohei "Anyway, you can just call me Ryo."
-
+    ryohei "You can just call me Ryo."
     ryohei "I’m really glad we ran into each other again."
-    ryohei "Hey, do you remember that time you made Professor Sam trip over his own lecture notes?"
-    ryohei "Still one of the funniest moments ever."
-    eden "You...{w=0.2} you remembered that?"
-    ryohei "Honestly, that’s one of my favorite memories from back in college."
+
+    pause 1
+    ryohei "Well,{w=0.1} Eden,{w=0.2} your name really does you justice."
+    ryohei "Looking splendid, as always!"
+    "I can’t help but smile back at him."
+    "I’m not sure if I’m most amused by his outlandish teasing{w=0.2} or curious of the fact he even remembers my name."
+    eden "I don’t think lounging at a jazz club after an exhausting day is much of a splendid look,{w=0.2} but thanks...?{w=0.2}"
+    eden "You look like...{w=0.2} life has been treating you well."
+    "I leave out the “as always”."
+
+    voice "voice/ryohei/chuckle.ogg"
+    "He laughs, but his eyes narrow in…"
+
+    ryohei "I did notice you’re tired, though."
+    ryohei "Ah-{w=0.2} I don’t meant to offend–"
+    eden "No, it's fine. I know I’m living dead…"
+    "I laugh, trying to brush it off."
+    eden "Insomnia, that’s all.{w=0.1}  I get used to it."
+    ryohei "...What a shame."
 
     pause 0.3
     "And for the first time in what felt like forever..."
@@ -208,7 +220,6 @@ label bar_talk:
     "It felt safe,{w=0.1} or at least I convinced myself it was."
     "After all,{w=0.1} he was an old acquaintance,{w=0.2}  wasn’t he?"
     "So, like an idiot,{w=0.1} I spilled everything."
-    "The insomnia.{w=0.2} The restless nights.{w=0.2} The hollow feeling of being a stranger inside my own skin."
 
     pause 0.5
     "He listened intently."
@@ -216,13 +227,28 @@ label bar_talk:
     voice "voice/ryohei/hmm.ogg"
     pause 1
 
-    "Then, almost casually,{w=0.1} he suggested a private consultation."
+    ryohei "Hmm,{w=0.1} what a...{w=0.2} coincidence?"
+    "He chuckles at the last word."
+    ryohei "Actually...{w=0.2} I specialize in sleep therapy,{w=0.1} as well as cognitive consultations."
+
+    pause 1
+    "Maybe I’m not that strange for feeling like I’m meant to be here with him tonight."
+    "Maybe he feels it too."
+
+    ryohei "Would you pay me a visit?"
+    eden "What?"
+    ryohei "I want to see you."
+    "I muster a smile,{w=0.1} hoping he doesn’t notice my bafflement."
+    ryohei "It’d be a private consultation.{w=0.2} I’ve had my studio set up."
+    eden "It’s okay.{w=0.2} I’ve already visited doctors."
+    ryohei "I figured, but maybe I can do something about it,{w=0.1} and if I can’t it’s no wasted money."
+    ryohei "I’m offering it for free."
+    eden "{cps=5}Oh."
+    "It'll probably be in vain,{w=0.2} but declining now that he seems so willing to help would make an even more pitiful sight."
 
     pause 0.3
-    ryohei "Oh, actually...{w=0.2} I offer sleep therapy.{w=0.1} And cognitive consultations as well."
-   
     "Before I could react,{w=0.1} he produced a card between his fingers,{w=0.1} like it had been waiting there all along."
-    ryohei "I can definitely help you with that.{w=0.1} Just come to my studio."
+    ryohei "Come to my studio whenever you’re ready,{w=0.1} no pressure."
 
     "His word “studio” echoed in my head longer than it should have."
 
