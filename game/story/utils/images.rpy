@@ -51,15 +51,16 @@ image cg hypnosis:
     pause 0.3
     repeat
 
+
 image cg eyes:
-    "images/cg/cg eyes/cg eyes 1.webp"
+    "images/cg/eyes/cg eyes 1.webp"
     pause 3.0
-    "images/cg/cg eyes/cg eyes 2.webp"
+    "images/cg/eyes/cg eyes 2.webp"
     pause 0.3
-    "images/cg/cg eyes/cg eyes 3.webp"
+    "images/cg/eyes/cg eyes 3.webp"
     pause 0.3
-    "images/cg/cg eyes/cg eyes 4.webp"
+    "images/cg/eyes/cg eyes 4.webp"
     pause 0.3
-    "images/cg/cg eyes/cg eyes 3.webp"
+    "images/cg/eyes/cg eyes 3.webp"
     pause 0.3
     repeat
