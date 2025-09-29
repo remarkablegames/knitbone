@@ -168,9 +168,9 @@ label session2_candle_intro:
     "His tone was now flat,{w=0.1} sharp,{w=0.1} and cold."
 
     ryohei "Discipline is paramount."
-    ryohei "You have {i}exactly four moves."
+    ryohei "You have {i}exactly five moves."
     ryohei "A “move” is the swapping of any candles."
-    ryohei seated look "Exceed {i}four{/i}, and the pattern is irrevocably broken."
+    ryohei seated look "Exceed {i}five{/i}, and the pattern is irrevocably broken."
     ryohei "Do you understand?"
 
     jump session2_candle_confirm
@@ -183,11 +183,11 @@ label session2_candle_confirm:
         "Yes":
             "I nodded,{w=0.2} my mouth suddenly dry."
             "I looked at the candles..."
-            $ candle.start(moves=4, candles=6, win="session2_success", lose="session2_fail")
+            $ candle.start(moves=5, candles=6, win="session2_candle_win1", lose="session2_candle_lose")
 
         "No":
-            ryohei "Let’s play a tutorial with four candles and two moves."
-            $ candle.start(moves=2, candles=4, win="session2_candle_tutorial_win", lose="session2_candle_tutorial_lose")
+            ryohei "Let’s play a tutorial with {i}four candles{/i} and {i}three moves{/i}."
+            $ candle.start(moves=3, candles=4, win="session2_candle_tutorial_win", lose="session2_candle_tutorial_lose")
 
 
 label session2_candle_tutorial_win:
@@ -200,13 +200,27 @@ label session2_candle_tutorial_lose:
     jump session2_candle_confirm
 
 
-label session2_success:
+label session2_candle_win1:
+    ryohei "Great job."
+    ryohei "I believe you’re ready for the next challenge."
+    ryohei "Do you think you can sort {i}seven candles{/i} with {i}five moves{/i}?"
+
+    menu:
+        "Am I up to the challenge?"
+
+        "Yes":
+            eden "Let’s do it."
+            ryohei "Good luck."
+            $ candle.start(moves=5, candles=7, win="session2_candle_win2", lose="session2_candle_lose")
+
+
+label session2_candle_win2:
     $ trust += 1
     $ candle_success = True
 
     eden "{cps=15}I...{w=0.3} I did it."
 
-    "A perfect,{w=0.1} ascending line.{w=0.2} All in less than four moves."
+    "A perfect,{w=0.1} ascending line.{w=0.2} All in less than five moves."
 
     show ryohei seated crazy with dissolve
 
@@ -247,11 +261,10 @@ label session2_success:
     scene black with fade
     stop music fadeout 2
 
-    #jump session3
     jump session3
 
 
-label session2_fail:
+label session2_candle_lose:
     $ trust -= 1
 
     ryohei seated serious "Stop."
