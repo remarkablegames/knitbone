@@ -273,19 +273,8 @@ label session1_end:
 
     "He paused."
     "It felt like he was studying me like I was some kind of bug."
-    pause 1
-
-    "He remains quiet for a while,{w=0.2} and the silence of the room weights in."
-    "Eyes watch me,{w=0.1} knowing there’s no way for me to watch them back…"
-    "Where are they?{w=0.2} Hidden in the cloak of darkness over the corners of the room?"
-    "Is it the ground,{w=0.2} polished enough for a snake to slide in silently?"
-    "No,{w=0.1} no there’s nothing here."
-    "This feeling…"
-    "It’s just Ryohei's eyes."
-    "It’s been a while since an actual human’s seen me, actively seeing me."
 
     pause 1
-    "Ryohei finally broke the silence."
     ryohei serious "Your insomnia isn’t a mistake.{w=0.2} It’s a pattern."
     ryohei "Your mind is stuck on a loop."
     ryohei "Regular therapy won’t work for you."
