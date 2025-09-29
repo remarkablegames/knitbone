@@ -134,6 +134,7 @@ label ending_attack:
 
     eden "{i}Ryohei!"
 
+    play music "music/theme5_eerie.ogg" fadein 1.5 volume 0.5
     scene cg ending ryohei death at zoomout
     with dissolve
 
