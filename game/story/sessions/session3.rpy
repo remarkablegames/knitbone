@@ -334,16 +334,36 @@ label session3_hypnosis1:
 
     ryohei "Match my breathing."
 
-    $ countdown.start(seconds=5, jump="session3_hypnosis2")
+    $ countdown.start(seconds=3, jump="hypnosis_minigame_lose")
 
     menu:
         "Breathe":
             voice "voice/eden/inhale.ogg"
             $ countdown.cancel()
-            $ slider.start(speed=10, win="hypnosis_minigame_win", lose="hypnosis_minigame_lose")
+            $ slider.start(speed=10, win="hypnosis_minigame_win1", lose="hypnosis_minigame_lose")
 
 
-label hypnosis_minigame_win:
+label hypnosis_minigame_win1:
+    $ trust += 1
+    ryohei "Great, let’s go faster."
+    $ countdown.start(seconds=2, jump="hypnosis_minigame_lose")
+    menu:
+        "Faster":
+            $ countdown.cancel()
+            $ slider.start(speed=15, win="hypnosis_minigame_win2", lose="hypnosis_minigame_lose")
+
+
+label hypnosis_minigame_win2:
+    $ trust += 1
+    ryohei "Excellent,{w=0.2} now don’t get distracted and focus."
+    $ countdown.start(seconds=1, jump="hypnosis_minigame_lose")
+    menu:
+        "Focus":
+            $ countdown.cancel()
+            $ slider.start(speed=20, win="hypnosis_minigame_win3", lose="hypnosis_minigame_lose")
+
+
+label hypnosis_minigame_win3:
     $ trust += 1
     eden "I matched each inhale with an exhale,{w=0.1} regaining control over my breath."
     jump session3_hypnosis2
