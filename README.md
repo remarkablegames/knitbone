@@ -40,6 +40,7 @@ Play the game on:
   - [Thud Impact Sound SFX](https://pixabay.com/sound-effects/thud-impact-sound-sfx-379990/)
   - [Ticking Clock_1](https://pixabay.com/sound-effects/ticking-clock-1-27477/)
   - [Wind chime small](https://pixabay.com/sound-effects/wind-chime-small-64660/)
+  - [Wrapping Paper Rustle](https://pixabay.com/sound-effects/wrapping-paper-rustle-72405/)
 
 ## Prerequisites
 

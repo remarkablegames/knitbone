@@ -82,7 +82,11 @@ label session3_start:
     "{cps=5}..."
 
     eden bitter2 "{i}Sometimes,{w=0.1} I wonder what is wrong with this guy."
-    pause 1
+
+    jump session3_comfrey
+
+
+label session3_comfrey:
 
     hide ryohei
     hide eden
@@ -136,8 +140,13 @@ label session3_start:
 
     hide cg comfrey with dissolve
 
-    #ryohei trauma dumps------
+    jump session3_trauma
+
+
+label session3_trauma:
+
     show ryohei serious at slight_shake
+
     "His expression soured,{w=0.1} his voice taking on a bitter, sharp edge."
 
     ryohei "Listen,{w=0.1} Eden."
@@ -179,6 +188,9 @@ label session3_start:
     "In his place was just a guy,{w=0.1} terrified of his own hands."
     "Everything he’s saying is coming at me too fast."
     "I can’t process it all."
+
+    play sound "<from 0.2 to 1.6>sfx/creak.ogg"
+
     "He stood abruptly,{w=0.1} his chair scraping back."
     "The outburst was so sudden,{w=0.1} so violent,{w=0.1} it made me flinch."
 
@@ -347,7 +359,6 @@ label session3_hypnosis2:
     $ countdown.start(seconds=3, jump="session3_hypnosis3")
 
     menu:
-
         "Breathe":
             voice "voice/eden/inhale.ogg"
             $ countdown.cancel()
@@ -361,8 +372,12 @@ label session3_hypnosis2:
     pause 1
     stop music fadeout 1
 
-    window hide
-    scene black with Dissolve(2.0)
+    jump session3_entity
+
+
+label session3_entity:
+
+    scene black with Dissolve(2)
 
     pause 1
 
@@ -405,6 +420,12 @@ label session3_hypnosis2:
 
     hide cg eyes
     stop music
+
+    jump session3_escape
+
+
+label session3_escape:
+
     play sound "sfx/heartbeat.ogg"
 
     scene bg studio2 at hpunch
@@ -414,6 +435,7 @@ label session3_hypnosis2:
     "Ryohei was staring at me."
 
     pause 1
+
     "His face was pale,{w=0.1} his eyes wide with a terrifying mix of fear and excitement."
 
     ryohei "{cps=30}{size=-4}You saw it...{w=0.1} didn’t you?"
@@ -423,6 +445,9 @@ label session3_hypnosis2:
     "The feeling of that...{w=0.1} thing."
     "It was wrong.{w=0.1} All of this was wrong."
     "Adrenaline surged through me,{w=0.1} overpowering my exhaustion."
+
+    play sound "<from 0.2 to 1.6>sfx/creak.ogg"
+
     "I scrambled to my feet,{w=0.1} my chair scraping loudly on the floor."
 
     "I stood up,{w=0.1} my legs unsteady."
@@ -432,8 +457,10 @@ label session3_hypnosis2:
 
     #show eden panicked at left
 
-    "I have to get out.{w=0.1} Now."
-    eden "I’m leaving."
+    "I have to get out.{w=0.1} {i}Now."
+
+    eden "{i}I’m leaving."
+
     "My voice was shaky,{w=0.1} but firm."
     "I took a step back,{w=0.1} towards the door."
 

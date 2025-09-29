@@ -20,7 +20,7 @@ label session2_start:
     hide ryohei with dissolve
     pause 1
 
-    #play sound "sfx/rustles.ogg"
+    play sound "sfx/rustle.ogg"
 
     "He stood and began rummaging through the shelves,{w=0.1} his movements smooth and deliberate."
     "Suddenly,{w=0.1} the air felt thick and still."
@@ -139,7 +139,7 @@ label session2_candle:
 
     play music "music/theme4.ogg" fadein 1.5 volume 0.7
 
-    #play sound "sfx/rustles.ogg"
+    play sound "sfx/rustle.ogg"
     pause 0.5
 
     "He opened the velvet-lined box."
