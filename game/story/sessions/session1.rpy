@@ -18,12 +18,12 @@ label session1:
 
     "The little brass number on it looked shiny and new.{w=0.3} It didn’t fit with the rest of the dingy hallway."
     "I stopped,{w=0.3} my hand hovering in the air..."
-    "{cps=10}..."
+    "{cps=5}..."
     "I wasn’t sure if I should knock."
     "A part of me just wanted to turn around and leave."
     pause 1
 
-    "{cps=10}..."
+    "{cps=5}..."
     "Right.{w=0.2} I told myself I’d actually show up."
     "As I got ready to knock,{w=0.2} a memory popped into my head..."
     hide cg door with dissolve
@@ -42,7 +42,7 @@ label session1:
 label session1_prestudio:
 
     "And for some reason,{w=0.2} I actually came."
-    "This was probably a bad idea..."
+    "{cps=25}This was probably a bad idea..."
     "We hardly even know each other."
 
     scene bg hallway at zoomin
@@ -57,6 +57,23 @@ label session1_prestudio:
 
             "I finally knocked on the door."
             pause 0.5
+
+        "Turn around":
+            scene bg hallway at zoomout
+
+            "I decided to skip the consultation.{w=0.3} I just didn’t feel comfortable."
+
+            scene black
+            with fade
+
+            "{cps=35}But my insomnia worsened over time,{w=0.1} leading me to withdraw from society."
+            "I heard Ryohei’s consultancy has been growing and he’s now dealing with a large number of patients."
+            pause 1
+
+            "Perhaps I should have reached out to him after all?"
+            "Like how the saying goes,{w=0.1} {cps=30}“Nothing ventured, nothing gained.”"
+
+            jump end
 
     play sound "sfx/creak.ogg"
 
@@ -265,7 +282,7 @@ label session1_end:
             eden "...Nevermind."
 
         "Remain silent":
-            eden "{cps=10}..."
+            eden "{cps=5}..."
 
     show eden neutral
     pause 1

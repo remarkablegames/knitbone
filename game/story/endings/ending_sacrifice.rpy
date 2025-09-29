@@ -63,7 +63,7 @@ label ending_sacrifice:
 
     "A pause fills the room,{w=0.4} then Ryohei speaks."
 
-    ryohei "{cps=10}..."
+    ryohei "{cps=5}..."
     ryohei "{cps=15}You don’t?"
 
     "On impulse,{w=0.2} I bark out a short ha."

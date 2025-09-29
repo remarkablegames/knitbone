@@ -24,7 +24,7 @@ label ending_attack:
     queue music "music/oasis/verse2.ogg"
 
     eden "Ryo...{w=0.2} I...{w=0.2} I can’t—"
-    "{cps=10}..."
+    "{cps=5}..."
 
     play sound "sfx/thud.ogg" volume 0.7
 
@@ -47,7 +47,7 @@ label ending_attack:
 
     queue music "music/oasis/verse3.ogg"
 
-    eden "{cps=10}I..."
+    eden "{cps=5}I..."
 
     "The words twist in my throat."
     "Panic seized me,{w=0.1} fear freezing my blood,{w=0.1} and for a split second I almost shifted the blade towards the flesh of my neck,{w=0.1} ready to slice–"
@@ -115,7 +115,7 @@ label ending_attack:
     "He barrelled backwards into the table,{w=0.1} knocking chairs and vases as he fell to the floor with a loud thud."
 
     voice "voice/eden/inhale.ogg"
-    "{cps=10}..."
+    "{cps=5}..."
 
     voice "voice/eden/exhale.ogg"
     "For a minute all that occupied the room was the sound of both our labored breathing,{w=0.1} each breath feeling like my last."
@@ -146,7 +146,7 @@ label ending_attack:
 
     eden "{cps=15}No, I-{w=0.2}I-{w=0.2} I didn’t mean to...{w=0.2} I didn’t—"
 
-    ryohei "{cps=10}Shh..."
+    ryohei "{cps=5}Shh..."
 
     play sound "sfx/fire.ogg" fadein 0.5
 
