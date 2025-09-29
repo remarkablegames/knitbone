@@ -16,7 +16,7 @@ label pre_ending_start:
 
     # play sound "sfx/grab_cloth.ogg"
 
-    "His voice was sharp,{w=0.1} cutting through my daze."
+    "His voice cut sharp,{w=0.1} cutting through my daze."
     "I felt his hand grab my arm,{w=0.1} his grip surprisingly strong,{w=0.1} almost bruising."
 
     play sound "sfx/woosh.ogg" volume 0.5
@@ -55,13 +55,13 @@ label pre_ending_start:
     "As the flames grew,{w=0.1} the room transformed.{w=0.2} It was no longer a studio.{w=0.2} It was an altar."
     "And I was the offering."
     "He sat down across from me again,{w=0.1} the firelight carving deep shadows into his face."
-    "He looked older,{w=0.1} burdened by a weight I couldn’t comprehend."
+    "He looked older,{w=0.1} burdened by a weight beyond my comprehension."
 
-    ryohei serious "What you saw...{w=0.1} Is not just a thing.{w=0.1} It has a name.{w=0.1} A purpose."
-    ryohei "It’s one of my debt,{w=0.1} passed down through generations in my family,{w=0.1} all under the guise of enlightenment."
+    ryohei serious "What you saw...{w=0.1} is not just a thing.{w=0.1} It has a name.{w=0.1} A purpose."
+    ryohei "It’s my debt,{w=0.1} passed down through generations in my family,{w=0.1} all under the guise of enlightenment."
     ryohei glare "My uncle, Callister...{w=0.3} he was the leader.{w=0.2} He called their belief system {cps=25}“Transcendology”."
 
-    "The way he said the word,{w=0.1} it was thick with disgust."
+    "The way he said the word,{w=0.1} was thick with disgust."
 
     ryohei "He groomed me.{w=0.1} Not as a nephew,{w=0.1} but as a successor.{w=0.1} He saw the entity as an honor,{w=0.1} a sacred burden."
     ryohei "He taught that our bodies were temporary vessels,{w=0.1} needing purification through “bloodletting” to achieve a higher existence."
@@ -146,7 +146,7 @@ label pre_ending_start:
     "To trade my blood for one filled with this terrible,{w=0.1} powerful thing."
     "What if he’s not crazy?{w=0.1} What if this is the cure for the nothingness I feel every day?"
 
-    ryohei "This gift is meant to be shared.{w=0.2} You saw it.{w=0.2} It saw you.{w=0.2} It has chosen you to be my equal."
+    ryohei "This gift is meant to be passed on.{w=0.2} You saw it.{w=0.2} It saw you.{w=0.2} It has chosen you to be my equal."
     ryohei "Your trouble sleeping,{w=0.1} feeling lost...{w=0.3} that’s not a sickness."
     ryohei "It’s just an opening.{w=0.2} A crack to let the light in.{w=0.2} I’m here to open the door all the way."
     ryohei "Please,{w=0.3} {cps=10}Eden..."
