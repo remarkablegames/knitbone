@@ -35,29 +35,3 @@ label prologue:
     pause 0.5
 
     jump session1
-
-
-label timer_example:
-    $ countdown.start(seconds=5, jump="ending")
-
-    menu:
-        "Play the minigame?"
-
-        "5 candles":
-            $ countdown.cancel()
-            $ candle = Candle(moves=4, candles=5)
-            jump candle_minigame
-
-        "6 candles":
-            $ countdown.cancel()
-            $ candle = Candle(moves=5, candles=6)
-            jump candle_minigame
-
-        "Hypnosis":
-            $ countdown.cancel()
-            $ slider = Slider(speed=5)
-            jump hypnosis_minigame
-
-        "Personality test":
-            $ countdown.cancel()
-            jump personality_test
