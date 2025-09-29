@@ -30,6 +30,11 @@ label ending_attack:
     "{cps=10}..."
 
     play sound "sfx/thud.ogg" volume 0.7
+
+    pause 0.5
+    scene cg ryohei kneel 2 with dissolve
+    pause 0.5
+
     ryohei "{sc}What?"
 
     eden "!!"
@@ -64,6 +69,9 @@ label ending_attack:
 
     "His expression is unexplainable,{w=0.2} an amalgamation of surprise,{w=0.1} horror,{w=0.1} and fury."
     "Piping hot fury,{w=0.2} which I saw traveling from his pinpoint pupils down to the goosebumps on the back of his hands."
+
+    scene black with dissolve
+    pause 0.5
 
     play sfx "sfx/thud.ogg" volume 0.7
 
