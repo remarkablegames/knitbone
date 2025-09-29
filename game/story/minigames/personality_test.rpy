@@ -9,13 +9,14 @@ default session1_result = ""  # logic/ethics/will/physics/unreadable
 
 label personality_test:
     scene bg studio with fade
+
     play music "music/theme4.ogg" fadein 1 volume 0.4
     #our composer made this :)
 
-    "(Note: Your choices here won’t alter the endings... but they might reveal words you’d never hear otherwise.)"
-    pause 0.5
     show ryohei seated neutral with dissolve
-    ryohei "Alright!{w=0.4} rules are simple: pick whatever feels most like you. Don’t overthink it, just go with your gut."
+
+    ryohei "Alright!{w=0.4} Rules are simple."
+    ryohei "Pick whatever feels most like you.{w=0.1} Don’t overthink it,{w=0.1} just go with your gut."
 
     jump personality_test1
 
@@ -35,8 +36,10 @@ label personality_test1:
             $ physics_score += 1
 
     ryohei seated look "Gotcha."
-    ryohei "Insomnia sounds exhausting. That must be rough."
-    ryohei "Moving on...."
+    pause 0.5
+
+    ryohei "Insomnia sounds exhausting.{w=0.1} That must be rough."
+    ryohei "Moving on..."
 
     jump personality_test2
 
@@ -47,7 +50,7 @@ label personality_test2:
 
         "Maybe read a book":
             $ logic_score += 1
-        "I do journal or just cope with my feelings for a bit":
+        "I journal or cope with my feelings for a bit":
             $ ethics_score += 1
         "I do something active or take decisive action to reset my energy":
             $ will_score += 1
@@ -55,6 +58,7 @@ label personality_test2:
             $ physics_score += 1
 
     ryohei seated neutral "I see."
+    pause 0.5
 
     jump personality_test3
 
@@ -72,8 +76,10 @@ label personality_test3:
         "Their body gives it away. Like gestures, posture, or fidgeting":
             $ physics_score += 1
 
-    ryohei "Hmm, interesting."
-    ryohei "Okay, next one."
+    ryohei "Hmm,{w=0.1} interesting."
+    pause 0.5
+
+    ryohei "Okay,{w=0.1} next one."
 
     jump personality_test4
 
@@ -82,20 +88,20 @@ label personality_test4:
     menu:
         "What motivates you the most?"
 
-        "Figuring things out or understanding the world.":
+        "Figuring things out or understanding the world":
             $ logic_score += 1
-        "Living in a way that feels authentic to me.":
+        "Living in a way that feels authentic to me":
             $ ethics_score += 1
-        "Proving I can do or achieve something.":
+        "Proving I can do or achieve something":
             $ will_score += 1
-        "Feeling comfortable, safe, or in control physically.":
+        "Feeling comfortable, safe, or in control physically":
             $ physics_score += 1
 
     ryohei "Noted."
     pause 0.5
 
-    ryohei seated smile "Alright, time for a little roleplay."
-    ryohei "Please imagine the following scenario..."
+    ryohei seated smile "Alright,{w=0.1} time for a little roleplay."
+    ryohei "Imagine the following scenario..."
 
     jump personality_test5
 
@@ -113,7 +119,7 @@ label personality_test5:
         "Test each path physically to see which is more safe and “comfortable”":
             $ physics_score += 1
 
-    ryohei "Nice... That’s an interesting take."
+    ryohei "Nice...{w=0.2} That’s an interesting take."
     pause 0.5
 
     jump personality_test6
@@ -133,8 +139,8 @@ label personality_test6:
             $ physics_score += 1
 
     ryohei "I see.{w=0.3} Okay."
-    ryohei "Let’s proceed."
     pause 0.5
+    ryohei "Let’s proceed."
 
     jump personality_test7
 
@@ -158,10 +164,10 @@ label personality_test7:
     scene bg studio4
     with dissolve
 
-    play sound "sfx/tension.ogg"
     voice "voice/entity/eden.ogg"
     pause 0.5
 
+    play sound "sfx/tension.ogg"
     show entity 1 at center, opacity(0.8), scale(1.1)
     with moveinbottom
     with vpunch
@@ -178,15 +184,15 @@ label personality_test7:
 
     show ryohei seated crazy
 
-    "{cps=10}..."
+    "{cps=5}..."
     ryohei "{sc}:)"
     ryohei "What’s wrong?"
     ryohei "Did something catch you off guard?"
     pause 0.3
-    ryohei "Well, would your reaction align with the choice you made earlier?"
-    pause 2.0
+    ryohei "Well,{w=0.1} would your reaction align with the choice you made earlier?"
+    pause 1
 
-    ryohei seated neutral "Let’s continue.{w=0.3} We won’t dwell on it."
+    ryohei seated neutral "Let’s continue.{w=0.2} No need to dwell on it."
 
     play music "music/theme4.ogg" fadein 1 volume 0.4
     show bg studio with dissolve
@@ -195,17 +201,21 @@ label personality_test7:
 
 
 label personality_test8:
-    ryohei "Okay, roleplay’s over! Let’s get back to you."
+    ryohei "Okay,{w=0.1} roleplay’s over!{w=0.2} Let’s get back to the test."
     pause 0.3
 
     menu:
-        "... Which compliment do you like the most?"
+        "Which compliment do you like the most?"
+
         "“You’re so sharp and smart”":
             $ logic_score += 1
+
         "“You’re authentic and honest”":
             $ ethics_score += 1
+
         "“You’re brave and bold”":
             $ will_score += 1
+
         "“You seem steady and chill”":
             $ physics_score += 1
 
@@ -217,12 +227,16 @@ label personality_test8:
 label personality_test9:
     menu:
         "Which word resonates with you the most?"
+
         "Luminous":
             $ logic_score += 1
+
         "Pulse":
             $ ethics_score += 1
+
         "Flame":
             $ will_score += 1
+
         "Balance":
             $ physics_score += 1
 
@@ -282,18 +296,20 @@ label unreadable_result:
     # "nothing at all" outcome
     $ session1_result = "unreadable"
 
-    pause 0.6
-    ryohei "{cps=10}... Huh."
-    ryohei "{cps=10}You’re not...{w=0.3} anything, are you?"
+    pause 0.5
+    ryohei "{cps=10}...{w=0.2} Huh."
+    ryohei "{cps=20}You’re not...{w=0.2} anything,{w=0.1} are you?"
 
-    "He smiles, but it doesn’t reach his eyes. The silence that follows feels like a test."
+    "He smiles,{w=0.1} but it doesn’t reach his eyes."
+    "The silence that follows feels like a test."
+    pause 0.5
 
-    ryohei "You don’t fit any box. That’s interesting."
-    ryohei "I thought I liked predictable people. Maybe I like this more."
+    ryohei "You don’t fit any box.{w=0.1} That’s interesting."
+    ryohei "I thought I liked predictable people.{w=0.1} Maybe I like this more."
 
     $ unreadable = True
 
-    # jump personality_test_end
+    jump personality_test_end
 
 
 label reveal_result:
@@ -347,13 +363,14 @@ label reveal_result:
 label personality_test_end:
     stop music fadeout 1
 
-    ryohei seated smile "Thanks for that. I’ve learned a lot about you already."
+    ryohei seated smile "Thanks for that.{w=0.2} I learned a lot about you today."
     ryohei seated neutral "I’ve actually wanted to be closer to you since college...{w=0.2} and it means a lot to finally be here with you now."
 
     pause 1
     ryohei seated look "Shall we move on?"
-    ryohei seated neutral "Remember, this is all just for fun. Don’t take the results too seriously."
+    ryohei seated neutral "Remember,{w=0.1} this is all just for fun.{w=0.2} Don’t take the results too seriously."
+
     show ryohei seated look
-    "His tone stays gentle, though there’s a weight behind it."
+    "His tone stays gentle,{w=0.1} though there’s a weight behind it."
 
     jump session1_end

@@ -189,7 +189,7 @@ label session2_success:
     hide entity
     #---
 
-    play music "music/theme3.ogg" fadein 1.5 volume 0.8
+    play music "music/theme3.ogg" fadein 1.5 volume 0.7
 
     show bg studio
     show ryohei seated neutral

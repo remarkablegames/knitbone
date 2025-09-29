@@ -3,7 +3,7 @@ label bar:
     pause 1
 
     eden "{cps=10}Hmm..."
-    play sound "sfx/ice.ogg" volume 0.6
+    play sound "sfx/ice.ogg" volume 0.5
     eden "Seems like the ice in my glass had succumbed to the warmth..."
     eden "...it looks just like my life."
 
@@ -17,13 +17,14 @@ label bar:
 
     pause 0.5
 
-    eden "{i}But that was years ago...{w=0.2} When I had directions in my life."
-
+    eden "{i}But that was years ago..."
+    eden "{i}When I had directions in my life."
     eden "{i}Now?{w=0.3} I’m surviving on coffee with no sleep."
     eden "{i}I changed three jobs in just twelve months."
-    eden "{i}Every “fresh start” only left me more tangled in doubt.{w=0.2} And yeah, I just ended up more lost."
+    eden "{i}Every “fresh start” only left me more tangled in doubt."
+    eden "{i}And yeah, I just ended up more lost."
 
-    "{cps=10}..."
+    "{cps=5}..."
     pause 1
 
     eden "{i}I don’t even recognize who I am anymore."
@@ -35,13 +36,13 @@ label bar:
 
     pause 0.5
     play sound "sfx/door.ogg" volume 1.1
-    "The door opened, but at first, I barely registered it."
+    "The door opened, but at first,{w=0.1} I barely registered it."
 
     scene black with fade
     pause 0.7
     hide cg bar with dissolve
 
-    "It seems like the vibe shifted, as if someone flipped a switch."
+    "It seems like the vibe shifted,{w=0.1} as if someone flipped a switch."
     "So I can’t help but to look..."
     pause 0.1
 
@@ -66,7 +67,7 @@ label bar_ryohei_entrance:
     "He smiled at the bartender,{w=0.1} waved at someone like they were old friends."
     show ryohei look2 at center
 
-    eden "{cps=10}..."
+    eden "{cps=5}..."
     eden "{i}So,{w=0.1} he’s that kind of guy huh."
     eden "{i}He looked...{w=0.3} so put together — assertive and relaxed."
     eden "{i}And his shirt —{w=0.3} that probably cost more than my rent,{w=0.1} yet he wore it so casually."
@@ -86,6 +87,7 @@ label bar_ryohei_entrance:
     "And then he saw me,{w=0.1} surprised as his eyes locked onto mine."
     pause 0.3
 
+    voice "voice/ryohei/chuckle.ogg"
     ryohei laugh "..."
     "He smiled."
     pause 0.4
@@ -116,27 +118,25 @@ label bar_encounter:
     eden "{i}Why is he standing right here?"
     pause 0.2
 
-    ryohei "Eden Cross?{w=0.2} No way.{w=0.1} Is that really you?"
-    eden awkward "!!"
-
     menu:
-        "{i}How should I respond?"
+        "What should I say?"
 
         "Hey...?":
             eden "{cps=15}Hey there...?"
-            eden "{cps=15}Uh..."
+            ryohei "Eden Cross?{w=0.2} No way.{w=0.1} Is that really you?"
+            eden awkward "!!"
+            eden "{cps=5}Uh..."
 
         "Who... are you?":
-            eden "{cps=15}Umm...{w=0.3} who are you?"
-            eden "How do you know my name?"
+            eden "{cps=15}Umm...{w=0.3} do I know you?"
             show ryohei smirk2 with dissolve
 
     "My confusion must’ve shown on my face because he chuckled."
     ryohei neutral "It’s me,{w=0.1} Ryohei Damien.{w=0.1} Haha, sorry.{w=0.1} You might not remember me."
-    ryohei "We had that philosophy elective together,{w=0.1} remember?"
-
+    ryohei "We had that psychology elective together,{w=0.1} remember?"
     pause 0.5
-    eden "{i}Oh."
+
+    eden "{cps=5}{i}Oh."
     pause 0.5
 
     scene bg lounge at slight_shake
@@ -164,7 +164,7 @@ label bar_flashback:
     eden "I was the guy people tend to forget."
 
     eden "{i}But I remembered him."
-    eden "{i}Goddamn,{w=0.1} I think I remembered him more than I should."
+    eden "{i}Goddamn,{w=0.2} I think I remembered him more than I should."
 
     eden "People wouldn’t shut up about him."
     eden "The rumors that he got scouted by some research lab."
@@ -187,10 +187,11 @@ label bar_talk:
     pause 0.3
     eden "Of course I remember you.{w=0.2} You were basically famous, Ryohei."
 
-    pause 1
+    voice "voice/ryohei/chuckle.ogg"
+    pause 0.5
+
     "It made him laugh and he didn’t even try to deny it."
     ryohei "Anyway, you can just call me Ryo."
-
 
     ryohei "I’m really glad we ran into each other again."
     ryohei "Hey, do you remember that time you made Professor Sam trip over his own lecture notes?"
@@ -199,21 +200,28 @@ label bar_talk:
     ryohei "Honestly, that’s one of my favorite memories from back in college."
 
     pause 0.3
-    "And for the first time in what felt like forever...{w=0.2} I didn’t feel like a complete failure."
-    "We talked for a while.{w=0.2} Something about his presence...{w=0.2} Felt almost too welcoming."
+    "And for the first time in what felt like forever..."
+    "I didn’t feel like a complete failure."
+    "We caught up and talked for a while."
+    "Something about his presence...{w=0.2} felt almost too welcoming."
     "Made it easy for me to open up."
-    "It felt safe, or at least I convinced myself it was.{w=0.2}  After all, he was an old acquaintance,{w=0.2}  wasn’t he?"
-    "So, like an idiot, I spilled everything.{w=0.2} The insomnia.{w=0.2} The restless nights.{w=0.2} The hollow feeling of being a stranger inside my own skin."
+    "It felt safe,{w=0.1} or at least I convinced myself it was."
+    "After all,{w=0.1} he was an old acquaintance,{w=0.2}  wasn’t he?"
+    "So, like an idiot,{w=0.1} I spilled everything."
+    "The insomnia.{w=0.2} The restless nights.{w=0.2} The hollow feeling of being a stranger inside my own skin."
 
     pause 0.5
     "He listened intently."
-    pause 0.5
-    "Then, almost casually, he suggested a private consultation."
+
+    voice "voice/ryohei/hmm.ogg"
+    pause 1
+
+    "Then, almost casually,{w=0.1} he suggested a private consultation."
 
     pause 0.3
-    ryohei "Oh, actually...{w=0.2} I offer sleep therapy. And cognitive consultations as well."
+    ryohei "Oh, actually...{w=0.2} I offer sleep therapy.{w=0.1} And cognitive consultations as well."
    
-    "Before I could react, he produced a card between his fingers, like it had been waiting there all along."
+    "Before I could react,{w=0.1} he produced a card between his fingers,{w=0.1} like it had been waiting there all along."
     ryohei "I can definitely help you with that.{w=0.1} Just come to my studio."
 
     "His word “studio” echoed in my head longer than it should have."

@@ -57,34 +57,39 @@ label session1_prestudio:
             pause 0.5
 
     play sound "sfx/creak.ogg"
+
     "The door opened right away."
     "Like he was already standing there waiting for me."
     pause 1
 
     show ryohei neutral with dissolve
-    pause 1
+
+    play sound "voice/ryohei/hey.ogg" volume 0.7
     ryohei "Eden!"
 
-    "He had a warm practiced smile, and said my name like he knew I would come."
+    "He had a warm practiced smile,{w=0.1} and said my name like he knew I would come."
 
     ryohei "I had a feeling you’d be here.{w=0.2} Please, come in."
 
     "I hesitated—"
     "But my feet started moving before I could even think about it."
+    play sound "sfx/footsteps.ogg" volume 0.7 fadeout 1
 
     jump session1_studio
 
 
 label session1_studio:
-    play music "music/theme3.ogg" fadein 1.5 volume 0.8
+    play music "music/theme3.ogg" fadein 1.5 volume 0.7
 
     scene bg studio
     with fade
 
     "The smell was different inside.{w=0.2} It smells like lemon oil and faint herbs."
     "It felt like he was trying too hard to curate it to smell relaxing."
-    "And the studio was very simple.{w=0.2} Just a couch for me, and a single, fancy chair for him.{w=0.2} It felt like a stage."
-    "There was soft jazz music playing."
+    "And the studio was very simple."
+    "Just a couch for me, and a single, fancy chair for him."
+    "It felt like a stage."
+    "There was soft jazz music playing in the background."
 
     play sound "sfx/woosh.ogg" volume 0.5
     show ryohei neutral at left with moveinleft
@@ -92,13 +97,13 @@ label session1_studio:
     play sfx "sfx/woosh.ogg" volume 0.5
     show eden neutral at right with moveinright
 
-    ryohei "Please, have a seat.{w=0.2} Try to get comfortable."
+    ryohei "Please,{w=0.1} have a seat.{w=0.2} Try to get comfortable."
     "I sat on the couch..."
-    "{cps=10}..."
+    "{cps=5}..."
     "It was actually pretty comfortable.."
     "He sat in his big chair and just watched me."
 
-    ryohei "So...{w=0.2}{cps=10} Eden Cross..."
+    ryohei "So...{w=0.2} {cps=15}Eden Cross..."
     ryohei serious "You know why you’re here.{w=0.2} Is that right?"
 
     "He got straight to the point."
@@ -115,7 +120,9 @@ label session1_studio:
     eden neutral "Last night...{w=0.2} you mentioned you could help."
     eden neutral "You said you help people with sleep issues."
     "I told him how I couldn’t sleep, and how I felt like I didn’t know who I was when the lights went off."
-    "He listened without rushing.{w=0.2} No interruption and no pity.{w=0.2} Just that steady, practiced attention."
+    "He listened without rushing."
+    "No interruption and no pity."
+    "Just that steady,{w=0.1} practiced attention."
 
     pause 1
     ryohei look "I see."
@@ -124,10 +131,11 @@ label session1_studio:
     show ryohei glare
     show eden neutral
 
-    "He pauses,{w=0.3} weighing his words before going on."
+    "He pauses,{w=0.4} weighing his words before going on."
     "His expression had turned serious,{w=0.2} like he knows something that I don’t."
 
-    ryohei serious "Insomnia and identity crisis.{w=0.2} That’s a reasonable set to bring in together.{w=0.2} Sleep and sense of self are closer than most people think."
+    ryohei serious "Insomnia and identity crisis.{w=0.2} That’s a reasonable set to bring in together."
+    ryohei "Sleep and sense of self are closer than most people think."
     ryohei "You’re not sleeping because your mind refuses to let you be vulnerable."
 
     pause 0.5
@@ -197,7 +205,7 @@ label session1_test:
 
 
 label session1_end:
-    play music "music/theme3.ogg" fadein 1.5 volume 0.8
+    play music "music/theme3.ogg" fadein 1.5 volume 0.7
 
     scene bg studio
     with fade
