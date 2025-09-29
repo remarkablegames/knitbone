@@ -13,15 +13,17 @@ label session2_start:
 
     ryohei "Good."
     "Ryohei’s smile deepened,{w=0.1} like the answer had been inevitable."
-
     pause 1.5
-    ryohei look "Hold on a sec..."
-    hide ryohei with dissolve
 
+    ryohei look "Hold on a sec..."
+
+    hide ryohei with dissolve
     pause 1
+
     #play sound "sfx/rustles.ogg"
+
     "He stood and began rummaging through the shelves,{w=0.1} his movements smooth and deliberate."
-    "Suddenly, the air felt thick and still."
+    "Suddenly,{w=0.1} the air felt thick and still."
     "The faint,{w=0.1} pleasant scent of lemon oil and herbs now seemed synthetic,{w=0.1} like a cheap air freshener."
 
     pause 1
