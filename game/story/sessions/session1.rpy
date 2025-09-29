@@ -14,6 +14,7 @@ label session1:
 
     "After a tour of what felt like the world’s most depressing maze,{w=0.2} I finally spot the door."
     pause 1
+    show cg door with dissolve
 
     "The little brass number on it looked shiny and new.{w=0.3} It didn’t fit with the rest of the dingy hallway."
     "I stopped,{w=0.3} my hand just hovering in the air..."
@@ -25,6 +26,7 @@ label session1:
     "{cps=10}..."
     "Right.{w=0.2} I told myself I’d actually show up."
     "As I got ready to knock,{w=0.2} a memory popped into my head..."
+    hide cg door with dissolve
 
     play sound "sfx/flash.ogg" volume 0.7
     scene black with flash
@@ -88,7 +90,7 @@ label session1_studio:
     "It felt like he was trying too hard to curate it to smell relaxing."
     "And the studio was very simple."
     "Just a couch for me, and a single, fancy chair for him."
-    "It felt like a stage."
+    "My gaze catches a collection of arranged objects as Ryhoei leads me into the studio."
     "There was soft jazz music playing in the background."
 
     play sound "sfx/woosh.ogg" volume 0.5
@@ -101,6 +103,8 @@ label session1_studio:
     "I sat on the couch..."
     "{cps=5}..."
     "It was actually pretty comfortable.."
+    ryohei smirk2 "Comfortable?"
+    "I nodded."
     "He sat in his big chair and just watched me."
 
     ryohei "So...{w=0.2} {cps=15}Eden Cross..."
@@ -123,6 +127,18 @@ label session1_studio:
     "He listened without rushing."
     "No interruption and no pity."
     "Just that steady,{w=0.1} practiced attention."
+
+    pause 1
+    ryohei look2 "Alright then.{w=0.2} Starting with some questions."
+    ryohei neutral "Do you have more trouble falling asleep{w=0.1} or staying asleep?"
+    eden "Umm… both,{w=0.1} equally,{w=0.1} I suppose?"
+    ryohei "How many times a week do you suffer from this?"
+    eden "I can’t really remember."
+    eden "Maybe five?"
+    "He purses his lips."
+    ryohei "Ok."
+    ryohei "Are you taking any medications?"
+    eden "None."
 
     pause 1
     ryohei look "I see."
@@ -259,6 +275,17 @@ label session1_end:
     "It felt like he was studying me like I was some kind of bug."
     pause 1
 
+    "He remains quiet for a while,{w=0.2} and the silence of the room weights in."
+    "Eyes watch me,{w=0.1} knowing there’s no way for me to watch them back…"
+    "Where are they?{w=0.2} Hidden in the cloak of darkness over the corners of the room?"
+    "Is it the ground,{w=0.2} polished enough for a snake to slide in silently?"
+    "No,{w=0.1} no there’s nothing here."
+    "This feeling…"
+    "It’s just Ryohei's eyes."
+    "It’s been a while since an actual human’s seen me, actively seeing me."
+
+    pause 1
+    "Ryohei finally broke the silence."
     ryohei serious "Your insomnia isn’t a mistake.{w=0.2} It’s a pattern."
     ryohei "Your mind is stuck on a loop."
     ryohei "Regular therapy won’t work for you."
