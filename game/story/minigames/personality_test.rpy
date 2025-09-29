@@ -165,7 +165,7 @@ label personality_test7:
     with dissolve
 
     voice "voice/entity/eden.ogg"
-    pause 0.5
+    pause 1
 
     play sound "sfx/tension.ogg"
     show entity 1 at center, opacity(0.8), scale(1.1)

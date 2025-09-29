@@ -4,7 +4,7 @@ label ending_attack:
 
     eden "{i}What?"
 
-    queue music "music/oasis/intro2.ogg" volume 0.5
+    play music "music/oasis/intro2.ogg" volume 0.5
 
     "I peered down at the knife in his hands,{w=0.1} presented to me like a trophy."
     "Like it’s something to be revered."
@@ -21,12 +21,10 @@ label ending_attack:
     eden "{i}Ryohei isn’t in the right mind,{w=0.1} and neither am I."
     eden "{i}This is messed up!"
 
-    queue music "music/oasis/verse2.ogg"
-
     eden "Ryo...{w=0.2} I...{w=0.2} I can’t—"
     "{cps=5}..."
 
-    play sound "sfx/thud.ogg" volume 0.7
+    play music "music/oasis/verse2.ogg"
 
     pause 0.5
     scene cg ryohei kneel 2 with dissolve
@@ -39,13 +37,13 @@ label ending_attack:
     "He’s still kneeling,{w=0.1} but his glare had shot up towards me,{w=0.1} oozing such volumes of disgust that it made me take a step back."
     "How could someone on his knees be so full of authority still?"
 
+    play music "music/oasis/verse3.ogg"
+
     play sound "<from 0 to 1>voice/entity/entity.ogg"
     ryohei "{sc}What did you say?"
     stop sound
 
     "He sounded otherworldly.{w=0.2} Less a voice,{w=0.1} more an entity."
-
-    queue music "music/oasis/verse3.ogg"
 
     eden "{cps=5}I..."
 
@@ -62,8 +60,6 @@ label ending_attack:
     "Silence fills the room."
     pause 1
 
-    queue music "music/oasis/verse4.ogg"
-
     "His expression is unexplainable,{w=0.2} an amalgamation of surprise,{w=0.1} horror,{w=0.1} and fury."
     "Piping hot fury,{w=0.2} which I saw traveling from his pinpoint pupils down to the goosebumps on the back of his hands."
 
@@ -72,7 +68,7 @@ label ending_attack:
 
     play sfx "sfx/thud.ogg" volume 0.7
 
-    queue music "music/oasis/bridge2.ogg"
+    play music "music/oasis/verse4.ogg"
 
     scene cg ending attack at zoomout
     with dissolve
@@ -89,18 +85,17 @@ label ending_attack:
 
     "The room trembled beneath his cries."
 
-    play sound "sfx/thud.ogg" volume 0.7
-
-    scene cg ending struggle at slight_shake
-    with dissolve
-
     play sound "sfx/stab.ogg"
 
-    queue music "music/oasis/chorus.ogg"
+    play music "music/oasis/chorus.ogg"
+
+    scene cg ending struggle at slight_shake
 
     "I gasped,{w=0.1} clawing to release myself from his grip – before bringing up a knee towards his stomach."
     "He’s caught off guard quick enough to drop me,{w=0.1} but the knife was still in his hands."
     "As I tried to step sidewards,{w=0.1} he lurched me back by my wrist,{w=0.1} gripping tight enough to snap bone into two."
+
+    play music "music/oasis/bridge2.ogg"
 
     voice "voice/entity/eden.ogg"
     ryohei "{sc}EDEN!"
@@ -134,11 +129,11 @@ label ending_attack:
 
     eden "{i}Ryohei!"
 
-    play music "music/theme5_eerie.ogg" fadein 1.5 volume 0.5
+    play music "music/theme5_eerie.ogg" fadein 1 volume 0.4
+
     scene cg ending ryohei death at zoomout
     with dissolve
 
-    play sound "sfx/woosh.ogg" volume 0.5
     "As if on instinct I slid to the floor to hold his body up."
 
     play sfx "sfx/heartbeat.ogg"
@@ -211,7 +206,7 @@ label ending_attack:
     "And then I draw a frozen breath."
 
     pause 1
-    play sfx "sfx/tension.ogg"
+
     play sound "<from 0 to 1.5>voice/entity/entity.ogg"
     eden "{sc}I am the vessel now."
     stop sound

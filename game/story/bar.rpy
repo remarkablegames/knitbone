@@ -9,7 +9,8 @@ label bar:
 
     show cg bar
     with dissolve
-    pause 0.7
+
+    pause 0.5
 
     "My name’s Eden.{w=0.5} A Psychology major."
     "Voted as “Most Likely to Succeed”."
@@ -39,7 +40,8 @@ label bar:
     "The door opened, but at first,{w=0.1} I hardly registered it."
 
     scene black with fade
-    pause 0.7
+    pause 0.5
+
     hide cg bar with dissolve
 
     "The vibe suddenly seemed to shift,{w=0.1} as if someone flipped a switch."
@@ -85,12 +87,12 @@ label bar_ryohei_entrance:
     show ryohei serious
     eden "!!"
     "And then he saw me,{w=0.1} eyes widening as they locked onto mine."
-    pause 0.3
+    pause 0.5
 
     voice "voice/ryohei/chuckle.ogg"
     ryohei laugh "..."
     "He smiled."
-    pause 0.4
+    pause 0.5
     hide ryohei
 
     show eden awkward with dissolve
@@ -103,7 +105,7 @@ label bar_ryohei_entrance:
 
     play sound "sfx/footsteps.ogg"
     "I heard footsteps approaching me slowly."
-    pause 0.2
+    pause 0.5
 
     jump bar_encounter
 
@@ -116,7 +118,7 @@ label bar_encounter:
     show eden neutral at right with moveinright
 
     eden "{i}Why is he standing right here?"
-    pause 0.2
+    pause 0.5
 
     menu:
         "What should I say?"
@@ -169,7 +171,7 @@ label bar_flashback:
     eden "People wouldn’t shut up about him."
     eden "I’ve always been envious of him,{w=0.2} even now."
 
-    pause 0.7
+    pause 0.5
 
     jump bar_talk
 
@@ -188,7 +190,7 @@ label bar_talk:
     eden "You were basically famous, Ryohei."
 
     voice "voice/ryohei/chuckle.ogg"
-    pause 0.5
+    pause 1
 
     "It made him laugh.{w=0.1} He didn’t even try to deny it."
 

@@ -32,7 +32,7 @@ label ending_sacrifice:
     "I managed to choke out a laugh."
 
     voice "voice/ryohei/chuckle.ogg"
-    pause 0.5
+    pause 1
 
     eden "What the hell,{w=0.2} Ryo?"
     eden "What are you even talking about?"
@@ -69,7 +69,7 @@ label ending_sacrifice:
     "On impulse,{w=0.2} I bark out a short ha."
 
     voice "voice/ryohei/ha.ogg"
-    pause 0.5
+    pause 1
 
     "A sound of ridicule,{w=0.2} of mockery,{w=0.2} of belittlement.{w=0.3} Of superiority."
 
@@ -81,7 +81,7 @@ label ending_sacrifice:
     "I don’t think anyone can.{w=0.3} Not even a blood sacrifice."
 
     voice "voice/ryohei/hey.ogg"
-    pause 0.5
+    pause 1
 
     eden "{cps=10}{i}Ryohei..."
 
@@ -104,32 +104,34 @@ label ending_sacrifice:
     play sound "sfx/tension.ogg"
     eden "{i}What?"
 
-    queue music "music/prologue/verse1.ogg"
     "I blinked and suddenly we were face to face,{w=0.3} me staring up at his ashy pupils as he towered over me."
 
-    scene cg ending struggle at hpunch, zoomin
-    with dissolve
+    play music "music/prologue/verse1.ogg"
+
+    scene cg ending struggle at hpunch, zoomin, slight_shake
 
     play sound "sfx/stab.ogg"
 
     pause 1
+
     "Our bodies were uncomfortably close."
     "My head raced,{w=0.2} wondering how he had managed to get up and seize me in just a blink of an eye."
     "The confusion muddled my brain,{w=0.2} the adrenaline pumping through my veins that I hadn’t even noticed that Ryohei’s fist was hovering over my chest. "
 
     scene black with fade
-    "Gripping the knife’s handle that was plunged in my heart."
 
-    play sound "sfx/thud.ogg"
+    "Gripping the knife’s handle that was plunged in my heart."
 
     "I looked down at it,{w=0.2} dazed."
     "{i}What?"
     "Must be a fake knife,{w=0.2} the one that retracts the more you push it in,{w=0.1} but it doesn’t look like it retracted."
     "My sweater is pressed down where the knife’s silver blade has pushed,{w=0.1} and bits of red have started to bloom from the spot."
 
-    queue music "music/theme5_eerie.ogg"
+    play music "music/theme5_eerie.ogg" fadein 1 volume 0.4
 
-    scene cg ending eden death at zoomout
+    play sfx "sfx/thud.ogg" volume 0.5
+
+    scene cg ending eden death at zoomout, slight_shake
     with dissolve
 
     voice "voice/eden/inhale.ogg"
@@ -167,7 +169,7 @@ label ending_sacrifice:
     "{cps=20}And now..."
     "{cps=10}I pay my price."
 
-    queue music "music/prologue/intro.ogg"
+    play music "music/prologue/intro.ogg"
 
     "As I go limp,{w=0.2} I feel his hands catch me,{w=0.2} setting me gently against the cold floor."
     "Even in my death he treats me kindly."
