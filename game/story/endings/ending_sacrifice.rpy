@@ -127,7 +127,7 @@ label ending_sacrifice:
     "Must be a fake knife,{w=0.2} the one that retracts the more you push it in,{w=0.1} but it doesn’t look like it retracted."
     "My sweater is pressed down where the knife’s silver blade has pushed,{w=0.1} and bits of red have started to bloom from the spot."
 
-    queue music "music/prologue/verse2.ogg"
+    queue music "music/theme5_eerie.ogg"
 
     scene cg ending eden death at zoomout
     with dissolve
@@ -186,6 +186,8 @@ label ending_sacrifice:
     ryohei "That you could understand me."
     ryohei "That you could understand...{w=0.5} who I really was."
     ryohei "That you could...{w=0.5} accept it."
+
+    stop music fadeout 1.5
 
     play sound "sfx/heartbeat.ogg"
     "He choked out,{w=0.1} pressing his forehead against my bleeding heart."
