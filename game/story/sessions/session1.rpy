@@ -6,7 +6,7 @@ label session1:
 
     pause 0.5
 
-    "My footsteps feel too loud as I walk."
+    "My footsteps felt too loud as I walked."
     "The hallway smelled old and dusty,{w=0.2} the carpet ugly and stained."
 
     "My thumb kept brushing over the card in my pocket—"
