@@ -12,7 +12,7 @@ label session2:
 label session2_start:
 
     ryohei "Good."
-    "Ryohei’s smile deepened,{w=0.1} like the answer had been inevitable."
+    "Ryohei’s smile deepened,{w=0.1} as if the answer had been inevitable."
     pause 1.5
 
     ryohei look "Hold on a sec..."
@@ -23,8 +23,8 @@ label session2_start:
     play sound "sfx/rustle.ogg"
 
     "He stood and began rummaging through the shelves,{w=0.1} his movements smooth and deliberate."
-    "Suddenly,{w=0.1} the air felt thick and still."
-    "The faint,{w=0.1} pleasant scent of lemon oil and herbs now seemed synthetic,{w=0.1} like a cheap air freshener."
+    "Suddenly,{w=0.1} the air went still, lingering thick with every breath."
+    "The faint,{w=0.1} pleasant scent of lemon oil and herbs felt even more synthetic,{w=0.1} like cheap air freshener."
 
     pause 1
     show ryohei neutral at center
@@ -33,7 +33,7 @@ label session2_start:
     "When he returned,{w=0.1} he was holding a small, ornate box."
     pause 1
     ryohei "Then let’s begin Session Two."
-    "His voice was lower now,{w=0.1} a deep sound that seemed to make the room feel quiet."
+    "His voice was lower now,{w=0.1} a smooth, deep sound that silenced the room."
 
     "{cps=5}..."
     "The feeling of being in a safe place was starting to fade."
@@ -63,9 +63,9 @@ label session2_devotion:
 
     pause 0.5
     eden "Devotion?{w=0.5} To what?"
-    "The question was so out of left field I could only blink. "
+    "The question was so left field that I could only blink. "
 
-    ryohei seated smile "To...{w=0.1} anything!{w=0.5} Whether it’s a person, an idea, or a god."
+    ryohei seated smile "To...{w=0.1} anything!{w=0.5} Whether it’s a person, an idea, a god..."
 
     pause 0.5
 
@@ -80,7 +80,7 @@ label session2_devotion:
             eden "It depends on what you’re devoted to."
             eden "Blind devotion can be dangerous."
             ryohei seated look "I see.{w=0.1} You’re careful.{w=0.1} That’s understandable."
-            "He filed it that away but his expression was unreadable."
+            "He filed that away, his expression unreadable."
             $ trust -= 1
 
         "It’s a form of trust.":
@@ -196,7 +196,7 @@ label session2_candle_tutorial_win:
 
 
 label session2_candle_tutorial_lose:
-    ryohei "You weren’t able to beat tutorial."
+    ryohei "You weren’t able to finish the tutorial."
     jump session2_candle_confirm
 
 
@@ -270,7 +270,7 @@ label session2_fail:
 
     "My hand froze in mid-air."
     ryohei "That’s five. The pattern is now lost."
-    "Although there was no anger in his voice.{w=0.2} There was a flat disappointment that scraped against my nerves."
+    "Although there was no anger in his voice,{w=0.2} there was a flat disappointment that scraped against my nerves."
 
     "Before I could apologize, he reached over."
     "His hands moved in a blur of three graceful, precise swaps."
