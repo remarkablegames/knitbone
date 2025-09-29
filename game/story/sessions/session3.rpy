@@ -88,10 +88,11 @@ label session3_start:
 
 label session3_comfrey:
 
+    play music "music/theme4_nopiano.ogg" fadein 1.5 volume 0.7
     hide ryohei
     hide eden
 
-    show cg comfrey
+    show cg comfrey with dissolve
     show ryohei neutral at left
     show eden neutral at right
 
@@ -145,6 +146,7 @@ label session3_comfrey:
 
 label session3_trauma:
 
+    stop music fadeout 1.5
     show ryohei serious at slight_shake
 
     "His expression soured,{w=0.1} his voice taking on a bitter, sharp edge."
@@ -179,16 +181,20 @@ label session3_trauma:
     "His voice cracked,{w=0.1} the mask of the calm therapist completely gone,{w=0.1} replaced by a raw,{w=0.1} burning anger."
 
     show ryohei at slight_shake
+    show cg ryohei scared at slight_shake
+    with dissolve
     ryohei serious "They would make you believe that ending someone’s life wasn’t wrong...{w=0.2} it was {i}kindness."
     ryohei "They said you weren’t a killer.{w=0.1} You were an angel...{w=0.1} taking their pain away so they could finally rest."
     ryohei "And their death...{w=0.2} that was supposed to be your reward.{w=0.1} Your new weight to carry."
     ryohei glare "It was all a lie to control you.{w=0.1} A lie to break you down and own the pieces."
 
+    hide cg ryohei scared with dissolve
+    pause 1
     "The therapist I came to see was gone."
     "In his place was just a guy,{w=0.1} terrified of his own hands."
     "Everything he’s saying is coming at me too fast."
     "I can’t process it all."
-
+    
     play sound "<from 0.2 to 1.6>sfx/creak.ogg"
 
     "He stood abruptly,{w=0.1} his chair scraping back."
@@ -245,6 +251,7 @@ label session3_hypnosis0:
     ryohei laugh "Looks like it’s ready!{w=0.1} So let’s use it."
 
     pause 0.5
+    play sound "sfx/rustle.ogg"
     "He opened a drawer and started rummaging it."
 
     pause 1
@@ -453,6 +460,10 @@ label session3_escape:
     "His words barely registered."
     "All I could think of was the image burned into my mind."
     "The feeling of that...{w=0.1} thing."
+    
+    pause 1
+    show cg eden scared at hpunch
+    with dissolve
     "It was wrong.{w=0.1} All of this was wrong."
     "Adrenaline surged through me,{w=0.1} overpowering my exhaustion."
 
@@ -465,11 +476,10 @@ label session3_escape:
     "All I wanted was to get out of this room,{w=0.1} away from his suffocating presence."
     "I turned towards the door,{w=0.1} my hand reaching for the handle."
 
-    #show eden panicked at left
-
     "I have to get out.{w=0.1} {i}Now."
 
     eden "{i}I’m leaving."
+    hide cg eden scared with dissolve
 
     "My voice was shaky,{w=0.1} but firm."
     "I took a step back,{w=0.1} towards the door."
