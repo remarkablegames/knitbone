@@ -130,12 +130,10 @@ label session2_devotion:
     stop music fadeout 5
     ryohei "Now,{w=0.1} let’s move on..."
 
-    jump session2_candle
+    jump session2_candle_intro
 
 
-label session2_candle:
-
-    $ candle_success = False
+label session2_candle_intro:
 
     play music "music/theme4.ogg" fadein 1.5 volume 0.7
 
@@ -173,16 +171,31 @@ label session2_candle:
     ryohei seated look "Exceed {i}four{/i}, and the pattern is irrevocably broken."
     ryohei "Do you understand?"
 
+    jump session2_candle_confirm
+
+
+label session2_candle_confirm:
     menu:
-        "Do I understand the rules?"
+        "Are the rules of the candle game clear?"
+
         "Yes":
             "I nodded,{w=0.2} my mouth suddenly dry."
             "I looked at the candles..."
-        "No":
-            ryohei "You’ll figure it out."
-            ryohei "Let’s play."
+            $ candle.start(moves=4, candles=6, win="session2_success", lose="session2_fail")
 
-    $ candle.start(moves=4, candles=6, win="session2_success", lose="session2_fail")
+        "No":
+            ryohei "Let’s play a tutorial with four candles and two moves."
+            $ candle.start(moves=2, candles=4, win="session2_candle_tutorial_win", lose="session2_candle_tutorial_lose")
+
+
+label session2_candle_tutorial_win:
+    ryohei "Good job.{w=0.1} You beat the tutorial."
+    jump session2_candle_confirm
+
+
+label session2_candle_tutorial_lose:
+    ryohei "You weren’t able to beat tutorial."
+    jump session2_candle_confirm
 
 
 label session2_success:
