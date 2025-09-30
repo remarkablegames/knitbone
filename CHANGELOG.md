@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/remarkablegames/knitbone/compare/v1.0.1...v1.0.2) (2025-09-30)
+
+
+### Bug Fixes
+
+* **minigames:** use jump instead of call in candle ([1a3ed0e](https://github.com/remarkablegames/knitbone/commit/1a3ed0e5eaa05f46edf9d739356e4e68042e89e3))
+
 ## [1.0.1](https://github.com/remarkablegames/knitbone/compare/v1.0.0...v1.0.1) (2025-09-30)
 
 
