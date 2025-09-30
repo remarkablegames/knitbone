@@ -4,18 +4,21 @@ label ending_sacrifice:
 
     "A sacrifice?"
 
+    voice "voice/ryohei/chuckle.ogg"
     "The sheer ridiculousness of it all was enough to make me die laughing."
+
     "What the hell?"
     "Does he actually think I’m buying all of this crap?"
     "This elaborate prank?"
     "Ryohei sure did get me a couple of times there,{w=0.3} especially with the hypnosis part."
     "But it’s time for him to drop the act."
-    "I wasn’t going to be swayed by all this cult talk any longer;{w=0.3} even this was too much."
+    "I wasn’t going to be swayed by all this cult talk any longer;{w=0.2} even this was too much."
 
     "I looked down at the knife in his palms with a twitch in my eye,{w=0.2} then back down to the crown of his head,{w=0.2} bowed before me as he offered the weapon."
 
     "Did he really have to go this far?"
 
+    voice "voice/ryohei/no.ogg"
     eden "{cps=10}No."
     pause 1
 
@@ -27,6 +30,7 @@ label ending_sacrifice:
     ryohei "{cps=10}...{w=0.5} No?"
     "Ryohei stayed unmoving."
 
+    voice "voice/ryohei/no.ogg"
     eden "{cps=15}No."
 
     "I managed to choke out a laugh."
@@ -38,14 +42,14 @@ label ending_sacrifice:
     eden "What are you even talking about?"
     eden "This is...{w=0.3} this is crazy and you know it."
 
-    ryohei "{cps=15}What is?"
+    ryohei "{cps=10}What is?"
 
     "His voice had gone cold."
 
     eden "{cps=15}Like..."
 
     play sound "sfx/heartbeat.ogg"
-    "For some reason,{w=0.2} I felt myself sweating,{w=0.2} my heart rattling faster."
+    "For some reason,{w=0.1} I felt myself sweating,{w=0.1} my heart rattling faster."
 
     eden "Do you even know what you’re asking?"
     eden "You’re asking me to offer my blood for you."
@@ -151,12 +155,11 @@ label ending_sacrifice:
     "His sick version of repentance,{w=0.2} of confession."
     "His warmth seeps into me,{w=0.2} as my life ebbs out."
 
-    ryohei "{cps=15}I’m sorry, Eden."
+    ryohei "{cps=15}I’m sorry,{w=0.2} Eden."
 
-    "He repeats my name, and he sounds human."
-    "A good sound to hear,{w=0.2} for once.{w=0.2} Humanity."
-
-    "Ryohei is human.{w=0.2} Always has been."
+    "He repeats my name,{w=0.1} and he sounds human."
+    "A good sound to hear,{w=0.2} for once.{w=0.3} Humanity."
+    "Ryohei is human.{w=0.3} Always has been."
 
     "I just didn’t want to see that."
 
@@ -175,11 +178,11 @@ label ending_sacrifice:
     "Even in my death he treats me kindly."
 
     play sound "sfx/fire.ogg" fadein 0.5
-    "I feel my blood seep into the ritual circle,{w=0.2} as if the curse is hungrily licking up the offering I have provided."
+    "I feel my blood seep into the ritual circle,{w=0.3} as if the curse is hungrily licking up the offering I have provided."
 
     ryohei "{cps=15}{i}I’m sorry,{w=0.2} Eden."
 
-    "He repeats it again and again, his hands over my corpse."
+    "He repeats it again and again,{w=0.1} his hands over my corpse."
 
     ryohei "I truly didn’t want to do this."
     ryohei "I really...{w=0.5} I really thought you were {i}different{/i}."

@@ -2,6 +2,7 @@ label ending_attack:
 
     play music "music/oasis/intro1.ogg" fadein 0.5 volume 0.5
 
+    play sound "voice/ryohei/uh.ogg"
     eden "{i}What?"
 
     play music "music/oasis/intro2.ogg" volume 0.5
@@ -10,26 +11,26 @@ label ending_attack:
     "Like it’s something to be revered."
     "Like {i}I{/i} was something to be revered,{w=0.1} as long as I took that knife from him."
 
-    eden "Ryohei...{w=0.2} what are you doing? {cps=20}Get...{w=0.2} get up."
+    eden "Ryohei...{w=0.3} what the hell are you doing?{w=0.3} {cps=20}Get...{w=0.2} get up."
 
     "But Ryohei doesn’t move.{w=0.1} The knife lays in his palms,{w=0.1} glinting in the simmering candlelight."
 
     "Slowly,{w=0.1} I reach out,{w=0.1} unable to stop my hand from shaking as our skin brushes against each other,{w=0.1} the handle making its way inside my loose grip."
     "I turn the knife upside and down,{w=0.1} my heavy heart sinking into my stomach."
 
-    eden "{i}No. no, no, no.{w=0.2} This isn’t right."
+    eden "{i}No.{w=0.1} no,{w=0.1} no,{w=0.1} no.{w=0.3} This isn’t right."
     eden "{i}Ryohei isn’t in the right mind,{w=0.1} and neither am I."
     eden "{i}This is messed up!"
 
-    eden "Ryo...{w=0.2} I...{w=0.2} I can’t—"
+    eden "Ryo...{w=0.2} I...{w=0.3} I can’t—"
     "{cps=5}..."
 
     play music "music/oasis/verse2.ogg"
 
     pause 0.5
     scene cg ryohei kneel 2 with dissolve
-    pause 0.5
 
+    play sound "sfx/thud.ogg" volume 0.7
     ryohei "{sc}What?"
 
     eden "!!"
@@ -37,11 +38,11 @@ label ending_attack:
     "He’s still kneeling,{w=0.1} but his glare had shot up towards me,{w=0.1} oozing such volumes of disgust that it made me take a step back."
     "How could someone on his knees be so full of authority still?"
 
-    play music "music/oasis/verse3.ogg"
-
     play sound "<from 0 to 1>voice/entity/entity.ogg"
     ryohei "{sc}What did you say?"
     stop sound
+
+    play music "music/oasis/verse3.ogg"
 
     "He sounded otherworldly.{w=0.2} Less a voice,{w=0.1} more an entity."
 
@@ -52,7 +53,7 @@ label ending_attack:
     "But I snap out of it.{w=0.2} I hold the knife away from my body,{w=0.1} putting it back into Ryohei’s outstretched hands."
 
     eden "{cps=25}No...{w=0.3} no.{w=0.2} I won’t."
-    ryohei "{cps=15}No...?"
+    ryohei "{sc}{cps=15}No...?"
     pause 1
 
     eden "I won’t do it, Ryohei."
@@ -64,11 +65,15 @@ label ending_attack:
     "Piping hot fury,{w=0.2} which travelled from his pinpoint pupils down to the goosebumps on the back of his hands."
 
     scene black with dissolve
-    pause 0.5
+    pause 1.5
 
-    play sfx "sfx/thud.ogg" volume 0.7
+    "{cps=5}..."
 
     play music "music/oasis/verse4.ogg"
+    queue music "music/oasis/chorus.ogg"
+    queue music "music/oasis/bridge2.ogg"
+
+    play sfx "sfx/thud.ogg" volume 0.7
 
     scene cg ending attack at zoomout
     with dissolve
@@ -87,15 +92,14 @@ label ending_attack:
 
     play sound "sfx/stab.ogg"
 
-    play music "music/oasis/chorus.ogg"
-
     scene cg ending struggle at slight_shake
 
-    "I gasped,{w=0.1} clawing to release myself from his grip – before driving a knee into his stomach."
-    "He’s caught off guard quick enough to drop me-{w=0.1} but the knife was still in his hands."
-    "As I tried to step sidewards,{w=0.1} he lurched me back by my wrist,{w=0.1} gripping tight enough to snap bone."
+    "!!"
 
-    play music "music/oasis/bridge2.ogg"
+    "I gasped,{w=0.1} clawing to release myself from his grip — before driving a knee into his stomach."
+    "He’s caught off guard quick enough to drop me — {w=0.2}but the knife was still in his hands."
+
+    "As I tried to step sidewards,{w=0.1} he lurched me back by my wrist,{w=0.1} gripping tight enough to snap bone."
 
     voice "voice/entity/eden.ogg"
     ryohei "{sc}EDEN!"
@@ -141,6 +145,7 @@ label ending_attack:
 
     eden "{cps=15}No, I-{w=0.2}I-{w=0.2} I didn’t mean to...{w=0.2} I didn’t—"
 
+    voice "voice/eden/exhale.ogg"
     ryohei "{cps=5}Shh..."
 
     play sound "sfx/fire.ogg" fadein 0.5
@@ -164,18 +169,18 @@ label ending_attack:
     play sfx "sfx/heartbeat.ogg"
     "His hand rose up to press against my hammering heart."
 
-    ryohei "It’s yours now.{w=0.2} It’s you.{w=0.2} It’s part of you."
+    ryohei "It’s yours now.{w=0.3} It’s you.{w=0.3} It’s part of you."
 
     eden "Ryohei—"
 
     ryohei "But I didn’t want it to end this way."
 
-    "Ryohei choked out,{w=0.1} and in the bleary reflection of his tears..."
-    "I saw the person he had always been behind all the facades and perfect grins,{w=0.1} all the popularity and the wonder – I saw a small,{w=0.1} frightened little boy."
+    "Ryohei choked out,{w=0.2} and in the bleary reflection of his tears..."
+    "I saw the person he had always been behind all the facades and perfect grins,{w=0.2} all the popularity and the wonder —{w=0.3} I saw a small,{w=0.2} frightened little boy."
 
     ryohei "{i}{cps=15}I don’t want to die,{w=0.2} Eden."
 
-    eden "You’re not going to die,{w=0.2} Ryo, I-{w=0.2}I’ll call the ambulance and—"
+    eden "You’re not going to die,{w=0.2} Ryo,{w=0.1} I-{w=0.2}I’ll call the ambulance and—"
 
     ryohei "{cps=20}Carry it, Eden."
 
@@ -199,7 +204,7 @@ label ending_attack:
 
     "The veins have travelled up my legs,{w=0.1} coiling around my skin in their grasp,{w=0.1} urging the beginning of our symbiotic relationship."
 
-    "I feel everything and nothing all at once."
+    "I feel everything{w=0.1} and nothing all at once."
     "Not even the veins burying themselves into my pores,{w=0.1} hijacking the red lines of my eyes,{w=0.1} the valves of my heart that no longer belongs to just me."
 
     voice "voice/eden/inhale.ogg"
