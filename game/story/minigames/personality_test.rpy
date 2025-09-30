@@ -147,7 +147,7 @@ label personality_test6:
         "Peek around and figure out what’s going on":
             $ logic_score += 1
 
-        "Pause and notice how it makes you feel":
+        "Pause and notice how it makes me feel":
             $ ethics_score += 1
 
         "Run upstairs like a boss":
@@ -333,7 +333,7 @@ label unreadable_result:
     ryohei "{cps=10}...{w=0.2} Huh."
     ryohei "{cps=20}You’re not...{w=0.2} anything,{w=0.1} are you?"
 
-    "He smiles,{w=0.1} but it doesn’t reach his eyes."
+    "He smiled,{w=0.1} but it didn’t reach his eyes."
     "The silence that follows feels like a test."
     pause 0.5
 
@@ -404,6 +404,6 @@ label personality_test_end:
     ryohei seated neutral "Remember,{w=0.1} this is all just for fun.{w=0.2} Don’t take the results too seriously."
 
     show ryohei seated look
-    "His tone stays gentle,{w=0.1} though there’s a weight behind it."
+    "His tone stayed gentle,{w=0.1} though there was a weight behind it."
 
     jump session1_end
