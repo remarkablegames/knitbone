@@ -8,7 +8,7 @@
 [![build](https://github.com/remarkablegames/knitbone/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablegames/knitbone/actions/workflows/build.yml)
 [![lint](https://github.com/remarkablegames/knitbone/actions/workflows/lint.yml/badge.svg)](https://github.com/remarkablegames/knitbone/actions/workflows/lint.yml)
 
-🦴 KnitBone is a psychological horror visual novel where the therapist is more traumatized than the patient.
+🦴 KnitBone is a story-driven psychological horror visual novel, where the therapist is more traumatized than the patient.
 
 Play the game on:
 
