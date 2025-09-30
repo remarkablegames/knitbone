@@ -17,7 +17,7 @@ label pre_ending_start:
     # play sound "sfx/grab_cloth.ogg"
 
     "His voice cut sharp,{w=0.1} cutting through my daze."
-    "I felt his hand grab my arm,{w=0.1} his grip surprisingly strong,{w=0.1} almost bruising."
+    "He grabbed my arm,{w=0.1} his grip surprisingly strong,{w=0.1} almost bruising."
 
     play sound "sfx/woosh.ogg" volume 0.5
     "I turned back."
