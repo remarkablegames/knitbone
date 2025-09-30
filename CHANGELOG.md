@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/remarkablegames/knitbone/compare/v1.0.3...v1.0.4) (2025-09-30)
+
+
+### Bug Fixes
+
+* **story:** play voice chuckle in bar ([cf52755](https://github.com/remarkablegames/knitbone/commit/cf52755c6198f1833a9a6dd09680dfc4a6d4d5ce))
+
 ## [1.0.3](https://github.com/remarkablegames/knitbone/compare/v1.0.2...v1.0.3) (2025-09-30)
 
 
