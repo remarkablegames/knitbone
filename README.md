@@ -15,7 +15,7 @@ Play the game on:
 - [remarkablegames](https://remarkablegames.org/knitbone)
 - [itch.io](https://remarkablegames.itch.io/knitbone)
 
-Read the [blog post](https://remarkablegames.org/posts/knitbone/).
+Read the [blog post](https://remarkablegames.org/posts/knitbone/) or watch the [video](https://youtu.be/pr6leS3s8cU).
 
 ## Credits
 
