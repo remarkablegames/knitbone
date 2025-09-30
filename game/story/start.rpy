@@ -15,10 +15,10 @@ label splashscreen:
     scene black with fade
     pause 1
 
-    show text "{color=#ccc}⚠️ Content Warning\n\nThis game contains content such as cult, murder, emotional manipulation, body horror, blood, flashing lights, and jumpscares." with Dissolve(1)
-    pause 5
+    show text "{color=#ccc}⚠️ Content Warning\n\nThis game contains content such as cult, murder, emotional manipulation, body horror, blood, flashing lights, and jumpscares." with Dissolve(1.5)
+    pause 8
 
-    scene black with Dissolve(1)
+    scene black with Dissolve(1.5)
     pause 1
 
     return
