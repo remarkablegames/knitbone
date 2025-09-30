@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.1](https://github.com/remarkablegames/knitbone/compare/v1.0.0...v1.0.1) (2025-09-30)
+
+
+### Bug Fixes
+
+* **minigames:** don't break back functionality for candle game ([4d0d757](https://github.com/remarkablegames/knitbone/commit/4d0d757a9f7fe2dbe15141f1e97f0b8d17d0c55e))
+* **minigames:** show cg hypnosis once for slider game ([e9e53c6](https://github.com/remarkablegames/knitbone/commit/e9e53c6a55cdcc35a85c0c4f83954424e31b8e68))
+
 ## [1.0.0](https://github.com/remarkablegames/knitbone/tree/v1.0.0) (2025-09-30)
 
 ### Features
