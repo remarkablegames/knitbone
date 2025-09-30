@@ -226,7 +226,7 @@ label session2_candle_tutorial_win:
 
 
 label session2_candle_tutorial_lose:
-    ryohei "You weren’t able to finish the tutorial."
+    ryohei "You weren’t able to complete the tutorial."
     jump session2_candle_confirm
 
 

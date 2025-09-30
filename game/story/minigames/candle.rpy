@@ -1,3 +1,6 @@
+default candle = Candle()
+
+
 label candle_minigame:
     call screen candle_minigame
 
@@ -26,11 +29,12 @@ screen candle_minigame():
 
 init python:
     class Candle:
-        NAME = "candle_minigame"
-
         def __init__(self) -> None:
             self.moves = 0
             self.values = []
+
+        def call(self) -> None:
+            renpy.call("candle_minigame")
 
         def start(self, moves: int, candles: int, win: str, lose: str) -> None:
             self.moves = moves
@@ -41,7 +45,7 @@ init python:
             while self.values == sorted(self.values):
                 self.values = renpy.random.sample(list(range(1, candles + 1)), candles)
 
-            renpy.jump(self.NAME)
+            self.call()
 
         def ondrag(self, drags, drop) -> None:
             drag = drags[0]
@@ -70,7 +74,7 @@ init python:
                 renpy.jump(self.lose)
 
             renpy.sound.queue("ui/drop_003.ogg", relative_volume=0.5)
-            renpy.jump(self.NAME)
+            self.call()
 
         def get_snap(self, index: int) -> dict:
             return {
@@ -85,6 +89,3 @@ init python:
         def parse_drag_name(self, name: str) -> dict:
             [index, value] = name.split(",")
             return [int(index), int(value)]
-
-
-    candle = Candle()
