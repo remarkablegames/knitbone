@@ -26,13 +26,17 @@ label personality_test1:
 
     menu:
         "When you can’t sleep, what do you usually do?"
+
         "Analyze random deep thoughts":
             $ logic_score += 1
-        "Replaying past cringe interactions in my head":
+
+        "Replay past cringe interactions in my head":
             $ ethics_score += 1
-        "Getting up to “be productive” even if it’s 2 AM":
+
+        "Get up to “be productive” even if it’s 2 AM":
             $ will_score += 1
-        "I grab a snack, or adjust my bed":
+
+        "Grab a snack or adjust my bed":
             $ physics_score += 1
 
     ryohei seated look "Gotcha."
@@ -48,13 +52,16 @@ label personality_test2:
     menu:
         "How do you usually recharge after a long stressful day?"
 
-        "Maybe read a book":
+        "Read a book":
             $ logic_score += 1
-        "I journal or cope with my feelings for a bit":
+
+        "Journal or cope with my feelings for a bit":
             $ ethics_score += 1
-        "I do something active or take decisive action to reset my energy":
+
+        "Do something active or take decisive action to reset my energy":
             $ will_score += 1
-        "I shower, change into comfy clothes, then chill in a cozy spot":
+
+        "Shower, change into comfy clothes, then chill in a cozy spot":
             $ physics_score += 1
 
     ryohei seated neutral "I see."
@@ -69,16 +76,18 @@ label personality_test3:
 
         "When their story makes zero sense":
             $ logic_score += 1
+
         "I don’t know, I just feel it":
             $ ethics_score += 1
+
         "If they hesitate or act unsure of themselves":
             $ will_score += 1
-        "Their body gives it away. Like gestures, posture, or fidgeting":
+
+        "Their body gives it away; like gestures, posture, or fidgeting":
             $ physics_score += 1
 
     ryohei "Hmm,{w=0.1} interesting."
     pause 0.5
-
     ryohei "Okay,{w=0.1} next one."
 
     jump personality_test4
@@ -90,10 +99,13 @@ label personality_test4:
 
         "Figuring things out or understanding the world":
             $ logic_score += 1
+
         "Living in a way that feels authentic to me":
             $ ethics_score += 1
+
         "Proving I can do or achieve something":
             $ will_score += 1
+
         "Feeling comfortable, safe, or in control physically":
             $ physics_score += 1
 
@@ -112,10 +124,13 @@ label personality_test5:
 
         "Look for clues to pick the smartest path":
             $ logic_score += 1
+
         "Reflect and go with the path that feels right to me":
             $ ethics_score += 1
+
         "Pick one fast and move, no hesitation":
             $ will_score += 1
+
         "Test each path physically to see which is more safe and “comfortable”":
             $ physics_score += 1
 
@@ -131,10 +146,13 @@ label personality_test6:
 
         "Peek around and figure out what’s going on":
             $ logic_score += 1
+
         "Pause and notice how it makes you feel":
             $ ethics_score += 1
+
         "Run upstairs like a boss":
             $ will_score += 1
+
         "Grab something nearby just to feel safer":
             $ physics_score += 1
 
@@ -151,10 +169,13 @@ label personality_test7:
 
         "Quickly look away":
             $ logic_score += 1
+
         "Scream or shout out of fear":
             $ ethics_score += 1
+
         "Instinctively raise my hands or get ready to defend":
             $ will_score += 1
+
         "Run away":
             $ physics_score += 1
 
@@ -248,21 +269,24 @@ label personality_test9:
 label personality_test10:
     menu:
         "Which word resonates with you the most?"
+
         "Logic":
             $ logic_score += 1
-            jump personality_result
+
         "Ethics":
             $ ethics_score += 1
-            jump personality_result
+
         "Volition":
             $ will_score += 1
-            jump personality_result
+
         "Physics":
             $ physics_score += 1
-            jump personality_result
 
     pause 0.5
-    ryohei "Congratulations! You’ve completed the questionnaire. I will review and present your results now."
+    ryohei "Congratulations!{w=0.1} You’ve completed the questionnaire."
+    ryohei "I’ll review and present your results now."
+
+    jump personality_result
 
 
 label personality_result:
