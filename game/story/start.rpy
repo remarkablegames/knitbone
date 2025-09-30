@@ -1,6 +1,4 @@
 default trust = 0
-default karmic = 0
-default karmic_awareness = 0
 
 
 init python:
