@@ -136,7 +136,7 @@ label session3_comfrey:
     ryohei look2 "But studies have shown that ingesting it can be toxic."
 
     show eden neutral
-    "He was talking about the plant,{w=0.1} but his eyes told me he was talking about something else."
+    "He was talking about the plant,{w=0.1} but his eyes told me he meant something else."
     pause 1
 
     hide cg comfrey with dissolve
@@ -262,7 +262,7 @@ label session3_hypnosis0:
     "A cold dread washed over me."
 
     eden bitter "{i}What if this isn’t therapy?{w=0.2} He’s not even trying to fix my insomnia... "
-    eden bitter "Instead,{w=0.1} he’s trying to do something else,{w=0.1} with me as his test subject...?"
+    eden bitter "{i}Instead,{w=0.1} he’s trying to do something else,{w=0.1} with me as his test subject...?"
 
     pause 0.5
     ryohei smirk "I found it."
@@ -402,7 +402,7 @@ label session3_entity:
     pause 1
 
     "My vision went dark."
-    "I felt like I was falling,{w=0.1} not through air,{w=0.1} but through myself."
+    "I was falling,{w=0.1} not through air,{w=0.1} but through myself."
 
     pause 1
     "And then I saw it."
