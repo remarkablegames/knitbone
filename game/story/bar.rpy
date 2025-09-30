@@ -214,7 +214,7 @@ label bar_talk:
     "He laughs,{w=0.1} but his eyes narrow in..."
 
     ryohei "I did notice you’re tired,{w=0.1} though."
-    ryohei "Ah-{w=0.2} I don’t meant to offend–"
+    ryohei "Ah-{w=0.2} I don’t mean to offend–"
     eden "No,{w=0.1} it’s fine.{w=0.2} I know I’m living dead..."
 
     "I laugh,{w=0.1} trying to brush it off."
