@@ -13,6 +13,7 @@
 Play the game on:
 
 - [remarkablegames](https://remarkablegames.org/knitbone)
+- [itch.io](https://remarkablegames.itch.io/knitbone)
 
 ## Credits
 
