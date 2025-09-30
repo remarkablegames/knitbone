@@ -33,8 +33,8 @@ init python:
             self.moves = 0
             self.values = []
 
-        def call(self) -> None:
-            renpy.call("candle_minigame")
+        def jump(self) -> None:
+            renpy.jump("candle_minigame")
 
         def start(self, moves: int, candles: int, win: str, lose: str) -> None:
             self.moves = moves
@@ -45,7 +45,7 @@ init python:
             while self.values == sorted(self.values):
                 self.values = renpy.random.sample(list(range(1, candles + 1)), candles)
 
-            self.call()
+            self.jump()
 
         def ondrag(self, drags, drop) -> None:
             drag = drags[0]
@@ -74,7 +74,7 @@ init python:
                 renpy.jump(self.lose)
 
             renpy.sound.queue("ui/drop_003.ogg", relative_volume=0.5)
-            self.call()
+            self.jump()
 
         def get_snap(self, index: int) -> dict:
             return {
