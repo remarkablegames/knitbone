@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/remarkablegames/knitbone/compare/v1.0.2...v1.0.3) (2025-09-30)
+
+
+### Build System
+
+* add animated web-presplash.webp ([54826c1](https://github.com/remarkablegames/knitbone/commit/54826c198c82298e4b00c4fb5aa1c7053b21d95b))
+
 ## [1.0.2](https://github.com/remarkablegames/knitbone/compare/v1.0.1...v1.0.2) (2025-09-30)
 
 
