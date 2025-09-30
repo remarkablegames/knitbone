@@ -138,7 +138,8 @@ label bar_encounter:
     ryohei "We had that psychology elective together,{w=0.1} remember?"
     pause 0.5
 
-    eden "{cps=5}{i}Oh."
+    voice "voice/ryohei/oh.ogg"
+    eden "{cps=10}{i}Oh."
     pause 0.5
 
     scene bg lounge at slight_shake
@@ -214,10 +215,14 @@ label bar_talk:
     "He laughs,{w=0.1} but his eyes narrow in..."
 
     ryohei "I did notice you’re tired,{w=0.1} though."
+
+    voice "voice/ryohei/ah.ogg"
     ryohei "Ah-{w=0.2} I don’t mean to offend–"
+
     eden "No,{w=0.1} it’s fine.{w=0.2} I know I’m living dead..."
 
-    "I laugh,{w=0.1} trying to brush it off."
+    voice "voice/ryohei/ha.ogg"
+    "I laugh,{w=0.2} trying to brush it off."
 
     eden "Insomnia,{w=0.1} that’s all.{w=0.1} I get used to it."
     ryohei "{cps=5}...{/cps}{w=0.3} What a shame."
@@ -251,15 +256,17 @@ label bar_talk:
     ryohei "Would you pay me a visit?"
     eden "What?"
     ryohei "I want to see you."
+
     "I mustered a smile,{w=0.1} hoping he didn’t notice my bewilderment."
+
     ryohei "It’d be a private consultation.{w=0.2} I’ve had my studio set up."
     eden "It’s okay.{w=0.2} I’ve already visited doctors."
-    ryohei "I figured,{w=0.1} but...{w=0.2} maybe I can do something about it."
-    ryohei "And if I can’t,{w=0.1} well,{w=0.1} it’s no wasted money."
+    ryohei "I figured,{w=0.1} but...{w=0.3} maybe I can do something about it."
+    ryohei "And if I can’t,{w=0.1} well,{w=0.2} it’s no wasted money."
     ryohei "I’m offering it for free."
 
     voice "voice/ryohei/oh.ogg"
-    eden "{cps=5}Oh..."
+    eden "{cps=10}Oh."
 
     "It’ll probably be in vain,{w=0.2} but declining now that he seems so willing to help would make an even more pitiful sight."
 
@@ -268,7 +275,7 @@ label bar_talk:
     "Before I could react,{w=0.1} he produced a card between his fingers,{w=0.1} like it had been waiting there all along."
     ryohei "Come to my studio whenever you’re ready,{w=0.2} no pressure."
 
-    "The word “studio” echoed in my head longer than it should have."
+    "The word {i}“studio”{/i} echoed in my head longer than it should have."
 
     scene black with fade
     stop music fadeout 2.0

@@ -47,7 +47,9 @@ label session1_prestudio:
 
     scene bg hallway at zoomin
     with fade
-    pause 1.0
+    pause 2
+
+    show cg door
 
     menu:
         "Knock":
@@ -59,6 +61,7 @@ label session1_prestudio:
             pause 0.5
 
         "Turn around":
+            hide cg door with dissolve
             scene bg hallway at zoomout
 
             "I decided to skip the consultation.{w=0.3} I just didn’t feel comfortable."
@@ -76,6 +79,7 @@ label session1_prestudio:
             jump end
 
     play sound "sfx/creak.ogg"
+    hide cg door with dissolve
 
     "The door opened right away."
     "As if he’d been standing there the whole time,{w=0.1} waiting for me."
@@ -91,7 +95,7 @@ label session1_prestudio:
 
     ryohei "I had a feeling you’d arrive.{w=0.2} Please, come in."
 
-    "I hesitated-"
+    "I hesitated—"
     "But my feet started moving before I could even think about it."
     play sound "sfx/footsteps.ogg" volume 0.7 fadeout 1
 
@@ -99,15 +103,16 @@ label session1_prestudio:
 
 
 label session1_studio:
-    play music "music/theme3.ogg" fadein 1.5 volume 0.7
 
     scene bg studio
     with fade
 
+    play music "music/theme3.ogg" fadein 2 volume 0.7
+
     "The smell was different inside.{w=0.2} The scent of lemon oil and faint herbs filled the air."
-    "It felt a bit phony, like he was trying too hard to make it smell naturally relaxing."
+    "It felt a bit phony,{w=0.1} like he was trying too hard to make it smell naturally relaxing."
     "The studio was quite simple."
-    "Just a couch for me, and a single, fancy chair for him."
+    "Just a couch for me,{w=0.1} and a single,{w=0.1} fancy chair for him."
     "My gaze drifted past a collection of arranged objects as Ryohei led me inside the studio."
     "Soft jazz music played in the background."
 
@@ -118,19 +123,27 @@ label session1_studio:
     show eden neutral at right with moveinright
 
     ryohei "Please,{w=0.1} have a seat.{w=0.2} Make yourself at home."
+
     "I sat on the couch..."
     "{cps=5}..."
-    "It was actually pretty cozy..."
+    "It was actually pretty cozy."
+
     ryohei smirk2 "Comfortable?"
+
     "I nodded."
     "He sat on his big chair and watched me."
 
-    ryohei "So...{w=0.2} {cps=15}Eden Cross..."
-    ryohei serious "You know why you’re here.{w=0.2} Is that right?"
+    ryohei "So...{w=0.3} {cps=15}Eden Cross..."
+
+    ryohei serious "You know why you’re here.{w=0.3} Is that right?"
 
     "He got straight to the point."
 
-    eden "{cps=10}...{w=0.2} Yeah."
+    eden "{cps=10}..."
+
+    voice "voice/ryohei/yea.ogg"
+    eden "Yeah."
+
     eden awkward "{cps=20}I guess so...?"
     ryohei neutral "So.{w=0.2} Tell me...{w=0.2} What’s on your mind?"
     ryohei "What brings you here tonight?"
@@ -143,7 +156,12 @@ label session1_studio:
     eden neutral "You said you help people with sleep issues."
 
     "I told him how I couldn’t sleep, and how I felt like I didn’t know who I was when the lights went off."
+
     "He listened without rushing."
+
+    voice "voice/ryohei/hmm.ogg"
+    pause 1
+
     "No interruption and no pity."
     "Just that steady,{w=0.1} practiced attention."
 
@@ -151,17 +169,23 @@ label session1_studio:
 
     ryohei look2 "Alright then.{w=0.2} Starting with some questions."
     ryohei neutral "Do you have more trouble falling asleep{w=0.1} or staying asleep?"
+
+    voice "voice/ryohei/um.ogg"
     eden "Umm...{w=0.2} both,{w=0.1} equally,{w=0.1} I suppose?"
+
     ryohei "How many times a week do you suffer from this?"
     eden "I can’t really remember."
     eden "Maybe five?"
 
     "He purses his lips."
 
-    ryohei "Ok."
+    voice "voice/ryohei/ok.ogg"
+    ryohei "Okay."
+
     ryohei "Are you taking any medications?"
     eden "None."
 
+    voice "voice/ryohei/hmm.ogg"
     pause 1
 
     ryohei look "I see."
@@ -181,7 +205,9 @@ label session1_studio:
     pause 0.5
     ryohei "And that’s why your mind won’t shut down."
 
+    voice "voice/ryohei/ah.ogg"
     pause 0.5
+
     "{cps=15}That...{/cps}{w=0.3} hit closer to home than I expected."
 
     show ryohei laugh
@@ -193,7 +219,7 @@ label session1_studio:
 
     pause 1
     ryohei "It requires a bit of trust,{w=0.2} I know.{w=0.2} But it would help me understand."
-    ryohei "...{w=0.3} I really think you should take it."
+    ryohei "...{w=0.4} I really think you should take it."
 
     jump session1_test
 
@@ -213,7 +239,9 @@ label session1_test:
 
             stop music
 
+            voice "voice/ryohei/hmm.ogg"
             ryohei glare "{cps=15}Hmm...{w=0.3} Is that so?"
+
             ryohei neutral "Thank you for being honest with me.{w=0.3} That,{w=0.2} in itself,{w=0.2} is a very important step."
             ryohei serious "{cps=10}But..."
 
