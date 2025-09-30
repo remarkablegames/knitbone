@@ -32,7 +32,7 @@ Play the game on:
 
 ### Music
 
-- seamus
+- [seamus](https://seemvevo.itch.io/)
 
 ### Sounds
 
