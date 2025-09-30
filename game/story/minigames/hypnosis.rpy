@@ -1,6 +1,8 @@
+default slider = Slider()
+
+
 label hypnosis_minigame:
     queue music "sfx/ticking.ogg"
-    show cg hypnosis with dissolve
     call screen hypnosis_minigame
 
 
@@ -74,6 +76,3 @@ init python:
                 renpy.jump(self.win)
             else:
                 renpy.jump(self.lose)
-
-
-    slider = Slider()
