@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/remarkablegames/knitbone/master/game/gui/window_icon.png" alt="KnitBone">
+  <img src="https://github.com/remarkablegames/knitbone/blob/master/web-presplash.webp?raw=true" width="600" alt="KnitBone">
 </p>
 
 # KnitBone
