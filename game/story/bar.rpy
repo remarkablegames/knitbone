@@ -134,6 +134,10 @@ label bar_encounter:
             show ryohei smirk2 with dissolve
 
     "My confusion must’ve shown on my face because he chuckled."
+
+    voice "voice/ryohei/chuckle.ogg"
+    pause 1
+
     ryohei neutral "It’s me,{w=0.1} Ryohei Damien.{w=0.1} Haha, sorry.{w=0.1} You might not remember me."
     ryohei "We had that psychology elective together,{w=0.1} remember?"
     pause 0.5
