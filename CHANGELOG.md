@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.5](https://github.com/remarkablegames/knitbone/compare/v1.0.4...v1.0.5) (2025-10-02)
+
+
+### Bug Fixes
+
+* **minigames:** make candle game harder and show screen at win or lose ([5544c3f](https://github.com/remarkablegames/knitbone/commit/5544c3f2db561a25efa0f48a587a07a912e82af8))
+
 ## [1.0.4](https://github.com/remarkablegames/knitbone/compare/v1.0.3...v1.0.4) (2025-09-30)
 
 
