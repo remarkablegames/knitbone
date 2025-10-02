@@ -197,9 +197,9 @@ label session2_candle_intro:
     "His tone was now flat,{w=0.1} sharp,{w=0.1} and cold."
 
     ryohei "Discipline is paramount."
-    ryohei "You have exactly {i}five moves."
+    ryohei "You have exactly {i}four moves."
     ryohei "A “move” is the swapping of any candles."
-    ryohei seated look "Exceed {i}five{/i}, and the pattern is irrevocably broken."
+    ryohei seated look "Exceed {i}four{/i}, and the pattern is irrevocably broken."
     ryohei "Do you understand?"
 
     jump session2_candle_confirm
@@ -212,7 +212,7 @@ label session2_candle_confirm:
         "Yes":
             "I nodded,{w=0.2} my mouth suddenly dry."
             "I looked at the candles..."
-            $ candle.start(moves=5, candles=6, win="session2_candle_win1", lose="session2_candle_lose")
+            $ candle.start(moves=4, candles=6, win="session2_candle_win1", lose="session2_candle_lose")
 
         "No":
             ryohei "Let’s play a tutorial with {i}four candles{/i} and {i}three moves{/i}."
@@ -234,7 +234,7 @@ label session2_candle_win1:
     voice "voice/ryohei/nice.ogg"
     ryohei "Great job."
     ryohei "I believe you’re ready for the next challenge."
-    ryohei "Do you think you can sort {i}seven candles{/i} with {i}five moves{/i}?"
+    ryohei "Do you think you can sort {i}seven candles{/i} with {i}four moves{/i}?"
 
     menu:
         "Am I up to the challenge?"
@@ -242,7 +242,7 @@ label session2_candle_win1:
         "Yes":
             eden "Let’s do it."
             ryohei "Good luck."
-            $ candle.start(moves=5, candles=7, win="session2_candle_win2", lose="session2_candle_lose")
+            $ candle.start(moves=4, candles=7, win="session2_candle_win2", lose="session2_candle_lose")
 
 
 label session2_candle_win2:
@@ -251,7 +251,7 @@ label session2_candle_win2:
 
     eden "{cps=15}I...{w=0.3} I did it."
 
-    "A perfect,{w=0.1} ascending line.{w=0.2} All in less than five moves."
+    "A perfect,{w=0.1} ascending line.{w=0.2} All in less than four moves."
 
     show ryohei seated crazy with dissolve
 
@@ -318,11 +318,11 @@ label session2_candle_lose:
     show ryohei seated serious
 
     "My hand froze in mid-air."
-    ryohei "That’s five.{w=0.2} The pattern is now lost."
+    ryohei "You’re out of moves.{w=0.2} The pattern is now lost."
     "Although there was no anger in his voice,{w=0.2} there was a flat disappointment that scraped against my nerves."
 
     "Before I could apologize,{w=0.1} he reached over."
-    "His hands moved in a blur of five graceful,{w=0.1} precise swaps."
+    "His hands moved in a blur of graceful,{w=0.1} precise swaps."
     "The candles snapped into a perfect,{w=0.1} ascending line."
     "The sheer ease of it was a quiet...{w=0.2} brutal humiliation."
 

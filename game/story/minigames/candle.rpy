@@ -2,6 +2,17 @@ default candle = Candle()
 
 
 label candle_minigame:
+    if candle.won():
+        show screen candle_minigame
+        eden "Yes!"
+        hide screen candle_minigame
+        jump expression candle.win
+    elif candle.lost():
+        show screen candle_minigame
+        eden "Oh no..."
+        hide screen candle_minigame
+        jump expression candle.lose
+
     call screen candle_minigame
 
 
@@ -19,7 +30,7 @@ screen candle_minigame():
                 hover_child f"candle/candle {value} hover.png"
                 selected_child f"candle/candle {value} hover.png"
                 drag_name candle.stringify_drag_name(index, value)
-                draggable True
+                draggable not(candle.won() or candle.lost())
                 dragged candle.ondrag
                 droppable True
                 xpos candle.get_snap(index)["x"]
@@ -33,8 +44,10 @@ init python:
             self.moves = 0
             self.values = []
 
+
         def jump(self) -> None:
             renpy.jump("candle_minigame")
+
 
         def start(self, moves: int, candles: int, win: str, lose: str) -> None:
             self.moves = moves
@@ -46,6 +59,15 @@ init python:
                 self.values = renpy.random.sample(list(range(1, candles + 1)), candles)
 
             self.jump()
+
+
+        def won(self) -> bool:
+            return self.values == sorted(self.values)
+
+
+        def lost(self) -> bool:
+            return not self.moves
+
 
         def ondrag(self, drags, drop) -> None:
             drag = drags[0]
@@ -66,15 +88,10 @@ init python:
             self.values[drag_index - 1] = drop_value
             self.values[drop_index - 1] = drag_value
 
-            if self.values == sorted(self.values):
-                renpy.jump(self.win)
-
             self.moves -= 1
-            if not self.moves:
-                renpy.jump(self.lose)
-
             renpy.sound.queue("ui/drop_003.ogg", relative_volume=0.5)
             self.jump()
+
 
         def get_snap(self, index: int) -> dict:
             return {
@@ -83,8 +100,10 @@ init python:
                 "delay": 0.2,
             }
 
+
         def stringify_drag_name(self, index: int, value: int) -> str:
             return f"{index},{value}"
+
 
         def parse_drag_name(self, name: str) -> dict:
             [index, value] = name.split(",")
