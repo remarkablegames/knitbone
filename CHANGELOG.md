@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.6](https://github.com/remarkablegames/knitbone/compare/v1.0.5...v1.0.6) (2025-10-04)
+
+
+### Miscellaneous Chores
+
+* **options:** update credits ([3ca6c83](https://github.com/remarkablegames/knitbone/commit/3ca6c836b8137795fe1d45bbcdf3f33bc1ca58b5))
+
 ## [1.0.5](https://github.com/remarkablegames/knitbone/compare/v1.0.4...v1.0.5) (2025-10-02)
 
 
