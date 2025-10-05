@@ -8,6 +8,7 @@ default session1_result = ""  # logic/ethics/will/physics/unreadable
 
 
 label personality_test:
+
     scene bg studio with fade
 
     play music "music/theme4.ogg" fadein 1 volume 0.4
@@ -16,12 +17,14 @@ label personality_test:
     show ryohei seated neutral with dissolve
 
     ryohei "Alright!{w=0.4} Rules are simple."
-    ryohei "Pick whatever feels most like you.{w=0.1} Don’t overthink it,{w=0.1} just go with your gut."
+    ryohei "Pick whatever feels most like you."
+    ryohei "Don’t overthink it,{w=0.1} just go with your gut."
 
     jump personality_test1
 
 
 label personality_test1:
+
     ryohei "First question..."
 
     menu:
@@ -49,6 +52,7 @@ label personality_test1:
 
 
 label personality_test2:
+
     menu:
         "How do you usually recharge after a long stressful day?"
 
@@ -71,6 +75,7 @@ label personality_test2:
 
 
 label personality_test3:
+
     menu:
         "How do you usually tell when someone’s lying to you?"
 
@@ -94,6 +99,7 @@ label personality_test3:
 
 
 label personality_test4:
+
     menu:
         "What motivates you the most?"
 
@@ -119,6 +125,7 @@ label personality_test4:
 
 
 label personality_test5:
+
     menu:
         "You’re on a forest path and it splits three ways. What do you do?"
 
@@ -141,6 +148,7 @@ label personality_test5:
 
 
 label personality_test6:
+
     menu:
         "You hear a weird noise upstair in an empty house. What is the first thing you’ll do?"
 
@@ -164,6 +172,7 @@ label personality_test6:
 
 
 label personality_test7:
+
     $ countdown.start(seconds=3, jump="personality_test7_jumpscare")
 
     menu:
@@ -218,11 +227,12 @@ label personality_test7_jumpscare:
     ryohei "{sc}:)"
     ryohei "What’s wrong?"
     ryohei "Did something catch you off guard?"
-    pause 0.3
-    ryohei "Well,{w=0.1} would your reaction align with the choice you made earlier?"
+    pause 0.5
+
+    ryohei "{cps=15}Well,{/cps}{w=0.2} would your reaction align with the choice you made earlier?"
     pause 1
 
-    ryohei seated neutral "Let’s continue.{w=0.2} No need to dwell on it."
+    ryohei seated neutral "Let’s continue.{w=0.3} No need to dwell on it."
 
     play music "music/theme4.ogg" fadein 1 volume 0.4
     show bg studio with dissolve
@@ -231,8 +241,9 @@ label personality_test7_jumpscare:
 
 
 label personality_test8:
-    ryohei "Okay,{w=0.1} roleplay’s over!{w=0.2} Let’s get back to the test."
-    pause 0.3
+
+    ryohei "Okay,{w=0.1} roleplay’s over!{w=0.3} Let’s get back to the test."
+    pause 0.5
 
     menu:
         "Which compliment do you like the most?"
@@ -255,6 +266,7 @@ label personality_test8:
 
 
 label personality_test9:
+
     menu:
         "Which word resonates with you the most?"
 
@@ -276,6 +288,7 @@ label personality_test9:
 
 
 label personality_test10:
+
     menu:
         "Which word resonates with you the most?"
 
@@ -292,18 +305,19 @@ label personality_test10:
             $ physics_score += 1
 
     pause 0.5
-    ryohei "Congratulations!{w=0.1} You’ve completed the questionnaire."
-    ryohei "I’ll review and present your results now."
+    ryohei "Congratulations,{w=0.1} you’ve completed the test!"
+    ryohei "I’ll go over your results now."
 
     jump personality_result
 
 
 label personality_result:
+
     $ scores = {
         "logic": logic_score,
         "ethics": ethics_score,
         "will": will_score,
-        "physics": physics_score
+        "physics": physics_score,
     }
     $ max_score = max(scores.values())
     $ winners = [k for k,v in scores.items() if v == max_score]
@@ -311,7 +325,6 @@ label personality_result:
     # note: if two-way tie, tiebreaker. If 3+ tie, unreadable.
     if len(winners) == 1:
         $ session1_result = winners[0]
-        jump reveal_result
 
     elif len(winners) == 2:
         # tiebreaker: pick the one that reached the score first
@@ -319,15 +332,37 @@ label personality_result:
             $ session1_result = winners[0]
         else:
             $ session1_result = winners[1]
-            jump reveal_result
 
     else:
-        jump unreadable_result
+        # "nothing at all" outcome
+        $ session1_result = "unreadable"
+
+    jump personality_reveal
 
 
-label unreadable_result:
-    # "nothing at all" outcome
-    $ session1_result = "unreadable"
+label personality_reveal:
+
+    # Show the chosen type reveal. Ryohei reads it conversationally.
+    if session1_result == "logic":
+        jump personality_logic
+
+    elif session1_result == "ethics":
+        jump personality_ethics
+
+    elif session1_result == "will":
+        jump personality_will
+
+    elif session1_result == "physics":
+        jump personality_physics
+
+    elif session1_result == "unreadable":
+        jump personality_unreadable
+
+    else:
+        jump personality_unreadable
+
+
+label personality_unreadable:
 
     pause 0.5
     ryohei "{cps=10}...{w=0.2} Huh."
@@ -340,64 +375,70 @@ label unreadable_result:
     ryohei "You don’t fit any box.{w=0.1} That’s interesting."
     ryohei "I thought I liked predictable people.{w=0.1} Maybe I like this more."
 
-    $ unreadable = True
+    jump personality_test_end
+
+
+label personality_logic:
+
+    ryohei seated neutral "It seems like you’re {i}Logic-First{/i}."
+    ryohei "You’re good at cutting through confusion."
+    ryohei "When things don’t make sense,{w=0.1} you’re the one who figures it out and puts the pieces back together."
+    ryohei "But there’s a cost,{w=0.2} isn’t there?"
+    ryohei "You wonder if people see you as too cold or distant—"
+    ryohei "Like you care more about facts than feelings."
+    ryohei "And you worry what happens if your logic stops working one day."
 
     jump personality_test_end
 
 
-label reveal_result:
-    # Show the chosen type reveal. Ryohei reads it conversationally.
-    if session1_result == "logic":
-        ryohei seated neutral "It seems like you are {b}Logic-First"
-        ryohei "You’re good at cutting through confusion."
-        ryohei "When things don’t make sense, you’re the one who figures it out and puts the pieces back together."
-        ryohei "But there’s a cost, isn’t there?"
-        ryohei "You wonder if people see you as too cold or distant—"
-        ryohei "Like you care more about facts than feelings. And you worry what happens if your logic stops working one day."
+label personality_ethics:
 
-        $ persistent.session1_reading = "logic"
+    ryohei seated neutral "It seems like you’re {i}Ethics-First{/i}."
+    ryohei "You feel people deeply."
+    ryohei "You can walk into a room and pick up on what others are holding back —{w=0.3} the hurt,{w=0.1} the hope,{w=0.1} the need."
+    ryohei "That sensitivity makes people feel seen in ways they rarely do."
+    ryohei "Being around you feels safe,{w=0.1} because you don’t just notice,{w=0.1} you care."
+    ryohei "But it’s heavy sometimes,{w=0.2} isn’t it?"
+    ryohei "Being that open can be heavy."
+    ryohei "You worry you’re too much sometimes,{w=0.1} or that people won’t handle the depth of what you feel."
 
-        jump personality_test_end
+    jump personality_test_end
 
-    elif session1_result == "ethics":
-        ryohei seated neutral "It seems like you are {b}Ethics-First"
-        ryohei "You feel people deeply. You can walk into a room and pick up on what others are holding back — the hurt, the hope, the need."
-        ryohei "That sensitivity makes people feel seen in ways they rarely do. Being around you feels safe, because you don’t just notice, you care."
-        ryohei "But it’s heavy sometimes, isn’t it?"
-        ryohei "Being that open can be heavy. You worry you’re too much sometimes, or that people won’t handle the depth of what you feel."
 
-        $ persistent.session1_reading = "ethics"
+label personality_will:
 
-        jump personality_test_end
+    ryohei seated neutral "It seems like you’re {i}Will-First{/i}."
+    ryohei "You don’t wait,{w=0.1} you act."
+    ryohei "When others stall,{w=0.1} you move forward;{w=0.1} when doors close,{w=0.1} you push them open."
+    ryohei "Your drive creates paths where none exist,{w=0.1} and that force keeps not just you alive,{w=0.1} but often others too."
+    ryohei "But there’s a cost,{w=0.2} isn’t there?"
+    ryohei "Force comes with risk."
+    ryohei "You fear that others see you as reckless or intimidating,{w=0.1} and worse..."
+    ryohei "You may one day destroy the very thing that you wish to protect."
 
-    elif session1_result == "will":
-        ryohei seated neutral "It seems like you are you are {b}Will-First."
-        ryohei "You don’t wait, you act. When others stall, you move forward; when doors close, you push them open."
-        ryohei " Your drive creates paths where none exist, and that force keeps not just you alive, but often others too."
-        ryohei "But there’s a cost, isn’t there?"
-        ryohei "Force comes with risk. You fear people see you as reckless or intimidating, and worse... your own hands might one day destroy what you most wanted to protect."
+    jump personality_test_end
 
-        $ persistent.session1_reading = "will"
 
-        jump personality_test_end
+label personality_physics:
 
-    elif session1_result == "physics":
-        ryohei seated neutral "It seems like you are you are {b}Physics-First."
-        ryohei "You trust what’s real. The solid things, such as routines, touch, and breath."
-        ryohei "You’re good at keeping yourself steady when the world tilts, and that steadiness spills over to the people around you."
-        ryohei "But there’s a cost, isn’t there?"
-        ryohei "You wonder if it makes you small. That people will think you’re clinging to little comforts, too simple to handle the big picture."
+    ryohei seated neutral "It seems like you’re {i}Physics-First{/i}."
+    ryohei "You trust what’s real."
+    ryohei "The solid things,{w=0.1} such as routines,{w=0.1} touch,{w=0.1} and breath."
+    ryohei "You’re good at keeping yourself steady when the world tilts,{w=0.1} and that steadiness spills over to the people around you."
+    ryohei "But there’s a cost,{w=0.2} isn’t there?"
+    ryohei "You wonder if it makes you small."
+    ryohei "That people will think you’re clinging to little comforts,{w=0.1} too simple to handle the big picture."
 
-        $ persistent.session1_reading = "physics"
-
-        jump personality_test_end
+    jump personality_test_end
 
 
 label personality_test_end:
+
     stop music fadeout 1
 
-    ryohei seated smile "Thanks for that.{w=0.2} I learned a lot about you today."
-    ryohei seated neutral "I’ve actually wanted to be closer to you since college...{w=0.2} and it means a lot to finally be here with you now."
+    ryohei seated smile "Thank you for that."
+    ryohei "I learned a lot about you today."
+    ryohei seated neutral "I’ve actually wanted to be closer to you since {cps=15}college...{/cps}{w=0.4} and it means a lot to finally be here with you now."
 
     pause 1
     ryohei seated look "Shall we move on?"
