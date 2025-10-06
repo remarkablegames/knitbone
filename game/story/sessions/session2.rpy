@@ -216,6 +216,7 @@ label session2_candle_confirm:
 
         "No":
             ryohei "Let’s play a tutorial with {i}four candles{/i} and {i}three moves{/i}."
+            ryohei "Remember that you’ll need to drag and drop the candles to move them."
             $ candle.start(moves=3, candles=4, win="session2_candle_tutorial_win", lose="session2_candle_tutorial_lose")
 
 
