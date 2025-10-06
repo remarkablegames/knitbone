@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.8](https://github.com/remarkablegames/knitbone/compare/v1.0.7...v1.0.8) (2025-10-06)
+
+
+### Bug Fixes
+
+* **session2:** explain how to move candle in tutorial ([9d51296](https://github.com/remarkablegames/knitbone/commit/9d5129693e323e45a4754b56e38d3a1594e5e4ea))
+
 ## [1.0.7](https://github.com/remarkablegames/knitbone/compare/v1.0.6...v1.0.7) (2025-10-05)
 
 
