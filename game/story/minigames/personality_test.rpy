@@ -150,7 +150,7 @@ label personality_test5:
 label personality_test6:
 
     menu:
-        "You hear a weird noise upstair in an empty house. What is the first thing you’ll do?"
+        "You hear a weird noise upstairs in an empty house. What’s the first thing you do?"
 
         "Peek around and figure out what’s going on":
             $ logic_score += 1
@@ -422,12 +422,10 @@ label personality_will:
 label personality_physics:
 
     ryohei seated neutral "It seems like you’re {i}Physics-First{/i}."
-    ryohei "You trust what’s real."
-    ryohei "The solid things,{w=0.1} such as routines,{w=0.1} touch,{w=0.1} and breath."
+    ryohei "You trust what’s real.{w=0.2} The solid things,{w=0.1} such as routines,{w=0.1} touch,{w=0.1} and breath."
     ryohei "You’re good at keeping yourself steady when the world tilts,{w=0.1} and that steadiness spills over to the people around you."
     ryohei "But there’s a cost,{w=0.2} isn’t there?"
-    ryohei "You wonder if it makes you small."
-    ryohei "That people will think you’re clinging to little comforts,{w=0.1} too simple to handle the big picture."
+    ryohei "You wonder if it makes you small.{w=0.2} That people will think you’re clinging to little comforts,{w=0.1} too simple to handle the big picture."
 
     jump personality_test_end
 
