@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.9](https://github.com/remarkablegames/knitbone/compare/v1.0.8...v1.0.9) (2025-10-07)
+
+
+### Bug Fixes
+
+* **minigames:** fix grammar in personality test question 6 ([ed2505b](https://github.com/remarkablegames/knitbone/commit/ed2505b309dc5a96365f20416f6e9fbe295077c8))
+
 ## [1.0.8](https://github.com/remarkablegames/knitbone/compare/v1.0.7...v1.0.8) (2025-10-06)
 
 
