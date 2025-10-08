@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.10](https://github.com/remarkablegames/knitbone/compare/v1.0.9...v1.0.10) (2025-10-08)
+
+
+### Bug Fixes
+
+* **minigames:** remove countdown timer in personality test question 7 ([f857efb](https://github.com/remarkablegames/knitbone/commit/f857efb0419e519a6a7523612c58b3a28299919d))
+
 ## [1.0.9](https://github.com/remarkablegames/knitbone/compare/v1.0.8...v1.0.9) (2025-10-07)
 
 
