@@ -173,8 +173,6 @@ label personality_test6:
 
 label personality_test7:
 
-    $ countdown.start(seconds=3, jump="personality_test7_jumpscare")
-
     menu:
         "A strange creature suddenly appears and stares at you. How do you react?"
 
@@ -189,8 +187,6 @@ label personality_test7:
 
         "Run away":
             $ physics_score += 1
-
-    $ countdown.cancel()
 
     jump personality_test7_jumpscare
 
