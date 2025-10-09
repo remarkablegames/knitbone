@@ -167,7 +167,7 @@ label session2_candle_intro:
     pause 0.5
 
     "He opened the velvet-lined box."
-    "Inside,{w=0.2} nestled in black satin,{w=0.1} were six unlit candles of varying heights."
+    "Inside,{w=0.2} nestled in black satin,{w=0.1} were seven unlit candles of varying heights."
 
     ryohei seated smile "Let’s play a game,{w=0.2} Eden."
     ryohei seated neutral "This is a “focusing exercise.”"
@@ -197,8 +197,7 @@ label session2_candle_intro:
     "His tone was now flat,{w=0.1} sharp,{w=0.1} and cold."
 
     ryohei "Discipline is paramount."
-    ryohei "You have exactly {i}four moves."
-    ryohei "A “move” is the swapping of any candles."
+    ryohei "You have exactly {i}four moves.{w=0.3} A “move” is the swapping of two candles."
     ryohei seated look "Exceed {i}four{/i}, and the pattern is irrevocably broken."
     ryohei "Do you understand?"
 
