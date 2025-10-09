@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.11](https://github.com/remarkablegames/knitbone/compare/v1.0.10...v1.0.11) (2025-10-09)
+
+
+### Bug Fixes
+
+* **story:** tidy session2 dialogue ([b8a1eca](https://github.com/remarkablegames/knitbone/commit/b8a1ecab0d29994aaf19d563115e119b0878b5aa))
+
 ## [1.0.10](https://github.com/remarkablegames/knitbone/compare/v1.0.9...v1.0.10) (2025-10-08)
 
 
