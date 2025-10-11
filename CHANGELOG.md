@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.12](https://github.com/remarkablegames/knitbone/compare/v1.0.11...v1.0.12) (2025-10-11)
+
+
+### Bug Fixes
+
+* **sessions:** fix grammar in session3 ([5d7d588](https://github.com/remarkablegames/knitbone/commit/5d7d588d7d9371a6b42bf503e1e7cb7cb14d5796))
+
 ## [1.0.11](https://github.com/remarkablegames/knitbone/compare/v1.0.10...v1.0.11) (2025-10-09)
 
 
