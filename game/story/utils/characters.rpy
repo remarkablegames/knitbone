@@ -1,5 +1,7 @@
 init python:
-    renpy.music.register_channel("character", "voice", loop=True, file_prefix="voice/", file_suffix=".ogg")
+    MUSIC_CHANNEL_DIALOGUE="dialogue"
+
+    renpy.music.register_channel(MUSIC_CHANNEL_DIALOGUE, "voice", loop=True, file_prefix="voice/", file_suffix=".ogg")
 
     def apply_zoom(character_prefix, zoom_type) -> None:
         for tag in renpy.get_showing_tags():
@@ -8,9 +10,9 @@ init python:
 
     def narrator_callback(event, interact=True, **kwargs) -> None:
         if event == "show_done":
-            renpy.music.play("narrator", channel="character", relative_volume=0.3)
+            renpy.music.play("narrator", channel=MUSIC_CHANNEL_DIALOGUE, relative_volume=0.3)
         elif event == "slow_done":
-            renpy.music.stop(channel="character", fadeout=0.2)
+            renpy.music.stop(channel=MUSIC_CHANNEL_DIALOGUE, fadeout=0.2)
 
     def ryohei_callback(event, interact=True, **kwargs) -> None:
         if event == "begin":
@@ -18,9 +20,9 @@ init python:
         elif event == "end":
             apply_zoom("ryohei", idle_zoom)
         if event == "show_done":
-            renpy.music.play("narrator", channel="character", relative_volume=0.3)
+            renpy.music.play("narrator", channel=MUSIC_CHANNEL_DIALOGUE, relative_volume=0.3)
         elif event == "slow_done":
-            renpy.music.stop(channel="character", fadeout=0.2)
+            renpy.music.stop(channel=MUSIC_CHANNEL_DIALOGUE, fadeout=0.2)
 
     def eden_callback(event, interact=True, **kwargs) -> None:
         if event == "begin":
@@ -28,9 +30,9 @@ init python:
         elif event == "end":
             apply_zoom("eden", idle_zoom)
         if event == "show_done":
-            renpy.music.play("narrator", channel="character", relative_volume=0.3)
+            renpy.music.play("narrator", channel=MUSIC_CHANNEL_DIALOGUE, relative_volume=0.3)
         elif event == "slow_done":
-            renpy.music.stop(channel="character", fadeout=0.2)
+            renpy.music.stop(channel=MUSIC_CHANNEL_DIALOGUE, fadeout=0.2)
 
     def dismiss_callback() -> bool:
         renpy.play("ui/click.ogg")
