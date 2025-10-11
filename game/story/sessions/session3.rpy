@@ -416,7 +416,7 @@ label session3_hypnosis2:
 
     "His voice was a promise of rest,{w=0.1} and I wanted it more than anything."
 
-    ryohei "Breath in,{w=0.1} Eden."
+    ryohei "Breathe in,{w=0.1} Eden."
 
     menu:
         "Breathe":
