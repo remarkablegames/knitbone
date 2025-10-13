@@ -198,7 +198,7 @@ label ending_attack:
     with dissolve
 
     "Without his presence,{w=0.1} the chill in the room hiked up to a horrible cold."
-    "I held his lifeless body against his own,{w=0.1} only realizing the weight of his words when it had been too late."
+    "I held his lifeless body against my own,{w=0.1} only realizing the weight of his words when it had been too late."
 
     "{i}The vessel."
 
