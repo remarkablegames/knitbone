@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.14](https://github.com/remarkablegames/knitbone/compare/v1.0.13...v1.0.14) (2025-10-14)
+
+
+### Bug Fixes
+
+* **main_menu:** improve accessibility of main menu buttons ([058ea73](https://github.com/remarkablegames/knitbone/commit/058ea738e6a3881f8228701e7fe662acd7f047b1))
+
 ## [1.0.13](https://github.com/remarkablegames/knitbone/compare/v1.0.12...v1.0.13) (2025-10-13)
 
 
