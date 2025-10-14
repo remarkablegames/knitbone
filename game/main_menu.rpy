@@ -61,9 +61,9 @@ screen main_menu():
         xalign 0.5
         yalign 0.45
         size 70
-        font "gui/font/pressstart.ttf"
-        color "#FFFFFF"
-        outlines [(2, "#000000")]
+        font "fonts/pressstart.ttf"
+        color "#fff"
+        outlines [(2, "#000")]
 
     hbox:
         spacing 200

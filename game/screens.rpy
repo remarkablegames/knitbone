@@ -158,7 +158,7 @@ style say_label:
     yalign 0.5
 
 style say_dialogue:
-    font "gui/font/chonkybitsbold.otf"
+    font "fonts/chonkybitsbold.otf"
     color "#232323"
 
     xpos gui.dialogue_xpos
@@ -236,7 +236,7 @@ style choice_button is default:
 
 style choice_button_text is default:
     properties gui.text_properties("choice_button")
-    font "gui/font/chonkybitsbold.otf"
+    font "fonts/chonkybitsbold.otf"
     color "#3a3a3a"
 
 
