@@ -70,17 +70,21 @@ screen main_menu():
         xalign 0.5
         yalign 0.75
 
-        textbutton "PLAY":
-            action Start()
-            style "menu_button"
-            activate_sound "ui/click.ogg"
-            hover_sound "ui/mouserelease1.ogg"
+        frame:
+            background Solid((0, 0, 0, 100))
+            textbutton "PLAY":
+                action Start()
+                activate_sound "ui/click.ogg"
+                hover_sound "ui/mouserelease1.ogg"
+                text_hover_color "#aac3b8"
 
-        textbutton "LOAD":
-            action ShowMenu("load")
-            style "menu_button"
-            activate_sound "ui/click.ogg"
-            hover_sound "ui/mouserelease1.ogg"
+        frame:
+            background Solid((0, 0, 0, 100))
+            textbutton "LOAD":
+                action ShowMenu("load")
+                activate_sound "ui/click.ogg"
+                hover_sound "ui/mouserelease1.ogg"
+                text_hover_color "#aac3b8"
 
     # TODO: Settings button in corner
     # imagebutton:
@@ -91,11 +95,3 @@ screen main_menu():
     #     yalign 0.95
     #     xsize 80
     #     ysize 80
-
-style menu_button is default:
-    size 30
-    color "#FFFFFF"
-    hover_color "#000000"
-    xpadding 20
-    ypadding 10
-    background None
