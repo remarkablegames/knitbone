@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.15](https://github.com/remarkablegames/knitbone/compare/v1.0.14...v1.0.15) (2025-10-15)
+
+
+### Bug Fixes
+
+* **screens:** play hover and activate sound for button ([cbf2bd6](https://github.com/remarkablegames/knitbone/commit/cbf2bd635c28062af410bb47ace6ad1893e0c083))
+
 ## [1.0.14](https://github.com/remarkablegames/knitbone/compare/v1.0.13...v1.0.14) (2025-10-14)
 
 
