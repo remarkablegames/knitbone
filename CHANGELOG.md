@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.16](https://github.com/remarkablegames/knitbone/compare/v1.0.15...v1.0.16) (2025-10-16)
+
+
+### Bug Fixes
+
+* **minigames:** set hypnosis slider target to the center ([25950d4](https://github.com/remarkablegames/knitbone/commit/25950d4979ca537673945772c749ccc2deef6058))
+
 ## [1.0.15](https://github.com/remarkablegames/knitbone/compare/v1.0.14...v1.0.15) (2025-10-15)
 
 
