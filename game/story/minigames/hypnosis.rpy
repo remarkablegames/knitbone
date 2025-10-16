@@ -45,7 +45,7 @@ init python:
             width_max = 1000
             self.xsize = width
             self.xsize_max = width_max
-            self.xpos_target = renpy.random.randint(0, width_max - width - self.PADDING)
+            self.xpos_target = (width_max - width - self.PADDING) // 2
             self.speed = speed
             self.xpos_current = 0
             self.direction = 1

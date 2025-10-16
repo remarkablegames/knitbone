@@ -366,7 +366,7 @@ label session3_hypnosis1:
     voice "voice/eden/exhale.ogg"
     ryohei "... and out."
 
-    ryohei "Match my breathing."
+    ryohei "Match my breathing.{w=0.3} And try to hit the target at the center."
 
     $ slider.start(speed=10, win="hypnosis_minigame_win1", lose="hypnosis_minigame_lose")
 
