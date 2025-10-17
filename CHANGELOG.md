@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.17](https://github.com/remarkablegames/knitbone/compare/v1.0.16...v1.0.17) (2025-10-17)
+
+
+### Bug Fixes
+
+* **minigames:** make hypnosis slider target more visible ([67e4a5b](https://github.com/remarkablegames/knitbone/commit/67e4a5bf0fde4988a86b824dbe5ffdf1edbc5173))
+
 ## [1.0.16](https://github.com/remarkablegames/knitbone/compare/v1.0.15...v1.0.16) (2025-10-16)
 
 
