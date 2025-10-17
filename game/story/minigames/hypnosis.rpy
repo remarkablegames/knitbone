@@ -22,6 +22,7 @@ screen hypnosis_minigame():
             ysize 50
 
             bar:
+                right_bar Solid((255, 255, 255, 100))
                 xsize slider.xsize
                 xpos slider.xpos_target
 
