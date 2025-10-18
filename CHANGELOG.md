@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.18](https://github.com/remarkablegames/knitbone/compare/v1.0.17...v1.0.18) (2025-10-18)
+
+
+### Bug Fixes
+
+* **utils:** decrease flash transition brightness ([72b9c1b](https://github.com/remarkablegames/knitbone/commit/72b9c1be3643bef8ed7befd44f06de029a760ee3))
+
 ## [1.0.17](https://github.com/remarkablegames/knitbone/compare/v1.0.16...v1.0.17) (2025-10-17)
 
 
