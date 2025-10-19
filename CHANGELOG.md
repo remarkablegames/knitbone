@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.19](https://github.com/remarkablegames/knitbone/compare/v1.0.18...v1.0.19) (2025-10-19)
+
+
+### Bug Fixes
+
+* **start:** increase brightness of content warning text ([87d8f84](https://github.com/remarkablegames/knitbone/commit/87d8f849832ac8a19567668a59ba9b5c6b08408f))
+
 ## [1.0.18](https://github.com/remarkablegames/knitbone/compare/v1.0.17...v1.0.18) (2025-10-18)
 
 
