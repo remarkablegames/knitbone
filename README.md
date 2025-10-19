@@ -47,6 +47,7 @@ Read the [blog post](https://remarkablegames.org/posts/knitbone/) or watch the [
   - [Glass Breaking Sound Effect](https://pixabay.com/sound-effects/glass-breaking-sound-effect-240679/)
   - [Heartbeat 01 - BRVHRTZ](https://pixabay.com/sound-effects/heartbeat-01-brvhrtz-225058/)
   - [Jump scare sound 2](https://pixabay.com/sound-effects/jump-scare-sound-2-82831/)
+  - [Knife Stab Sound Effect](https://pixabay.com/sound-effects/knife-stab-sound-effect-36354/)
   - [Knock knock knock](https://pixabay.com/sound-effects/knock-knock-knock-40474/)
   - [Lighting a Fire](https://pixabay.com/sound-effects/lighting-a-fire-14421/)
   - [Main Door Opening-Closing](https://pixabay.com/sound-effects/main-door-opening-closing-38280/)
