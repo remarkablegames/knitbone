@@ -25,7 +25,7 @@ Or download:
 - [Mac](https://github.com/remarkablegames/knitbone/releases/latest/download/mac.zip)
 - [Linux](https://github.com/remarkablegames/knitbone/releases/latest/download/pc.zip)
 
-Read the [blog post](https://remarkablegames.org/posts/knitbone/) or watch the [video](https://youtu.be/pr6leS3s8cU).
+Read the [blog post](https://remarkablegames.org/posts/knitbone/) or watch the [YouTube video](https://youtu.be/pr6leS3s8cU).
 
 ## Credits
 
