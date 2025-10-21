@@ -16,13 +16,14 @@
 
 Play the game on:
 
-- [remarkablegames](https://remarkablegames.org/knitbone)
 - [itch.io](https://remarkablegames.itch.io/knitbone)
+- [remarkablegames](https://remarkablegames.org/knitbone)
 
 Or download:
 
+- [Windows](https://github.com/remarkablegames/knitbone/releases/latest/download/win.zip)
 - [Mac](https://github.com/remarkablegames/knitbone/releases/latest/download/mac.zip)
-- [Windows](https://github.com/remarkablegames/knitbone/releases/latest/download/pc.zip)
+- [Linux](https://github.com/remarkablegames/knitbone/releases/latest/download/pc.zip)
 
 Read the [blog post](https://remarkablegames.org/posts/knitbone/) or watch the [video](https://youtu.be/pr6leS3s8cU).
 
