@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.20](https://github.com/remarkablegames/knitbone/compare/v1.0.19...v1.0.20) (2025-10-21)
+
+
+### Build System
+
+* **icon:** add Windows and Macintosh icons ([5149092](https://github.com/remarkablegames/knitbone/commit/5149092cd0a3a7f1f209da9d205073ccaf9a6ab9))
+
 ## [1.0.19](https://github.com/remarkablegames/knitbone/compare/v1.0.18...v1.0.19) (2025-10-19)
 
 
