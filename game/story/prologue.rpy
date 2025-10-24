@@ -22,7 +22,7 @@ label prologue:
 
     pause 0.5
 
-    play sound "sfx/glass.ogg" volume 0.4
+    play sound glass volume 0.4
 
     scene cg prologue 3
     pause 1.5

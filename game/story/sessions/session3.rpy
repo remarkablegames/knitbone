@@ -52,7 +52,7 @@ label session3_start:
     pause 1
     stop music
 
-    play sound "sfx/thud.ogg" volume 0.5
+    play sound thud volume 0.5
 
     show bg studio3 at shake
     with dissolve
@@ -64,7 +64,7 @@ label session3_start:
 
     show eden bitter at slight_shake
 
-    play sound "sfx/tension.ogg"
+    play sound tension
     "My blood ran cold."
 
     pause 1
@@ -72,7 +72,7 @@ label session3_start:
 
     pause 1
 
-    play sound "sfx/thud.ogg" volume 0.3
+    play sound thud volume 0.3
     show bg studio at shake
     with dissolve
 
@@ -163,7 +163,7 @@ label session3_trauma:
 
     stop music fadeout 1.5
 
-    play sound "sfx/thud.ogg" volume 0.4
+    play sound thud volume 0.4
 
     show ryohei serious at slight_shake
 
@@ -202,7 +202,7 @@ label session3_trauma:
     "His voice cracked,{w=0.2} the mask of the calm therapist completely gone,{w=0.2} replaced by a raw,{w=0.1} burning anger."
 
     play music "music/terror.ogg" volume 0.9
-    play sound "sfx/thud.ogg" volume 0.5
+    play sound thud volume 0.5
 
     show ryohei at slight_shake
     show cg ryohei scared at slight_shake
@@ -233,7 +233,7 @@ label session3_trauma:
 
     pause 1
 
-    play sound "sfx/thud.ogg" volume 0.4
+    play sound thud volume 0.4
     show ryohei at slight_shake
 
     voice "voice/eden/inhale.ogg"
@@ -280,7 +280,7 @@ label session3_hypnosis0:
     ryohei laugh "Looks like it’s ready!{w=0.2} So let’s use it."
 
     pause 0.5
-    play sound "sfx/rustle.ogg"
+    play sound rustle
     "He opened a drawer and started rummaging it."
 
     pause 1
@@ -316,7 +316,7 @@ label session3_hypnosis0:
     "Ryohei edged closer behind me,{w=0.1} the heat of his body pressing against mine."
     "Panic surged and I realized I was trapped."
 
-    play sound "sfx/heartbeat.ogg"
+    play sound heartbeat
     "My hands shook violently,{w=0.1} my pulse racing,{w=0.1} and a deep, primal fear screamed at me to turn back."
 
     "But even knowing that,{w=0.1} I couldn’t make myself move away."
@@ -406,7 +406,7 @@ label session3_hypnosis2:
 
     ryohei "{i}Now,{w=0.2} watch."
 
-    play sound "sfx/chime.ogg" volume 0.8
+    play sound chime volume 0.8
     "The world vanished in an instant."
     "Everything else disappeared,{w=0.1} leaving only the pendulum swinging before my eyes."
 
@@ -456,13 +456,13 @@ label session3_entity:
 
     play music "sfx/static.ogg" volume 0.8
 
-    play sound "sfx/thud.ogg" volume 0.7
+    play sound thud volume 0.7
     show entity 2 at center, zoomin
     with vpunch
 
     pause 0.3
 
-    play sound "sfx/bone_snap.ogg"
+    play sound bone_snap
     show entity 3 at center, zoomin
     with vpunch
     pause 0.5
@@ -486,7 +486,7 @@ label session3_entity:
 
 label session3_escape:
 
-    play sound "sfx/heartbeat.ogg"
+    play sound heartbeat
 
     scene bg studio2 at hpunch
     with dissolve
@@ -506,7 +506,7 @@ label session3_escape:
     
     pause 1
 
-    play sound "sfx/thud.ogg" volume 0.7
+    play sound thud volume 0.7
     show cg eden scared at hpunch
     with dissolve
 
@@ -524,7 +524,7 @@ label session3_escape:
 
     "All I wanted at that moment was to get out of this room,{w=0.1} away from his suffocating presence."
 
-    play sound "sfx/footsteps.ogg"
+    play sound footsteps
     "I turned towards the door,{w=0.1} my hand reaching for the handle."
 
     "I have to get out.{w=0.1} {i}Now."
@@ -539,7 +539,7 @@ label session3_escape:
 
     "Panic flashed across Ryohei’s face."
 
-    play sound "sfx/chime.ogg" volume 0.8
+    play sound chime volume 0.8
     "He dropped the pendulum,{w=0.1} the crystal clattering against the table."
 
     #show ryohei panic at center (will add this soon if possible)

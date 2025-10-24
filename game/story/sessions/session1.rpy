@@ -1,5 +1,5 @@
 label session1:
-    play sound "sfx/footsteps.ogg"
+    play sound footsteps
 
     scene bg hallway at zoomin
     with fade
@@ -28,7 +28,7 @@ label session1:
     "As I got ready to knock,{w=0.2} a memory popped into my head..."
     hide cg door with dissolve
 
-    play sound "sfx/flash.ogg" volume 0.7
+    play sound flash volume 0.7
     scene black with flash
     pause 0.5
 
@@ -54,7 +54,7 @@ label session1_prestudio:
     menu:
         "Knock":
             pause 0.5
-            play sound "sfx/knock.ogg"
+            play sound knock
             pause 1
 
             "I finally knocked on the door."
@@ -78,7 +78,7 @@ label session1_prestudio:
 
             jump end
 
-    play sound "sfx/creak.ogg"
+    play sound creak
     hide cg door with dissolve
 
     "The door opened right away."
@@ -97,7 +97,7 @@ label session1_prestudio:
 
     "I hesitated—"
     "But my feet started moving before I could even think about it."
-    play sound "sfx/footsteps.ogg" volume 0.7 fadeout 1
+    play sound footsteps volume 0.7 fadeout 1
 
     jump session1_studio
 
@@ -116,7 +116,7 @@ label session1_studio:
     "My gaze drifted past a collection of arranged objects as Ryohei led me inside the studio."
     "Soft jazz music played in the background."
 
-    play sound "sfx/woosh.ogg" volume 0.5
+    play sound woosh volume 0.5
     show ryohei neutral at left with moveinleft
 
     play sfx "sfx/woosh.ogg" volume 0.5
@@ -260,7 +260,7 @@ label session1_test:
 
             show bg studio4
 
-            play sound "sfx/jumpscare.ogg" volume 0.5
+            play sound jumpscare volume 0.5
 
             show entity 2 at center, scale(1.1), shake
             with hpunch
@@ -278,10 +278,10 @@ label session1_end:
     scene bg studio
     with fade
 
-    play sound "sfx/woosh.ogg" volume 0.5
+    play sound woosh volume 0.5
     show ryohei neutral at left with moveinleft
 
-    play sound "sfx/woosh.ogg" volume 0.5
+    play sound woosh volume 0.5
     show eden neutral at right with moveinright
 
     ryohei "Thank you.{w=0.2} You’ve given me quite a clear impression."

@@ -202,7 +202,7 @@ label personality_test7_jumpscare:
     voice "voice/entity/eden.ogg"
     pause 1
 
-    play sound "sfx/tension.ogg"
+    play sound tension
     show entity 1 at center, opacity(0.8), scale(1.1)
     with moveinbottom
     with vpunch

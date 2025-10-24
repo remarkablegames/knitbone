@@ -48,7 +48,7 @@ label ending_sacrifice:
 
     eden "{cps=15}Like..."
 
-    play sound "sfx/heartbeat.ogg"
+    play sound heartbeat
     "For some reason,{w=0.1} I felt myself sweating,{w=0.1} my heart rattling faster."
 
     eden "Do you even know what you’re asking?"
@@ -105,7 +105,7 @@ label ending_sacrifice:
 
     ryohei "{cps=25}If you won’t carry it...{w=0.5} {cps=15}{i}you’ll feed it."
 
-    play sound "sfx/tension.ogg"
+    play sound tension
     eden "{i}What?"
 
     "I blinked and suddenly we were face to face,{w=0.3} me staring up at his ashy pupils as he towered over me."
@@ -114,7 +114,7 @@ label ending_sacrifice:
 
     scene cg ending struggle at hpunch, zoomin, slight_shake
 
-    play sound "sfx/stab.ogg"
+    play sound stab
 
     pause 1
 
@@ -177,7 +177,7 @@ label ending_sacrifice:
     "As I go limp,{w=0.2} I feel his hands catch me,{w=0.2} setting me gently against the cold floor."
     "Even in my death he treats me kindly."
 
-    play sound "sfx/fire.ogg" fadein 0.5
+    play sound fire fadein 0.5
     "I feel my blood seep into the ritual circle,{w=0.3} as if the curse is hungrily licking up the offering I have provided."
 
     ryohei "{cps=15}{i}I’m sorry,{w=0.2} Eden."
@@ -194,7 +194,7 @@ label ending_sacrifice:
 
     stop music fadeout 1.5
 
-    play sound "sfx/heartbeat.ogg"
+    play sound heartbeat
     "He choked out,{w=0.1} pressing his forehead against my bleeding heart."
 
     ryohei "But I was wrong.{w=0.3} I can’t trust anyone.{w=0.3} I can’t show anybody who I truly am."

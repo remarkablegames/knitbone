@@ -30,7 +30,7 @@ label ending_attack:
     pause 0.5
     scene cg ryohei kneel 2 with dissolve
 
-    play sound "sfx/thud.ogg" volume 0.7
+    play sound thud volume 0.7
     ryohei "{sc}What?"
 
     eden "!!"
@@ -90,7 +90,7 @@ label ending_attack:
 
     "The room trembled beneath his cries."
 
-    play sound "sfx/stab.ogg"
+    play sound stab
 
     scene cg ending struggle at slight_shake
 
@@ -109,7 +109,7 @@ label ending_attack:
 
     scene black
 
-    play sound "sfx/thud.ogg" volume 0.7
+    play sound thud volume 0.7
 
     "He barrelled backwards into the table,{w=0.1} knocking chairs and vases over as he fell with a loud thud."
 
@@ -148,7 +148,7 @@ label ending_attack:
     voice "voice/eden/exhale.ogg"
     ryohei "{cps=5}Shh..."
 
-    play sound "sfx/fire.ogg" fadein 0.5
+    play sound fire fadein 0.5
 
     "Around us,{w=0.1} the candles fell into a dim glow,{w=0.1} until a cold chill snuffed their lights completely."
     "I looked up to see veins of black and red chunks start to pour thinly from the walls,{w=0.1} slithering like snakes towards the floor,{w=0.1} and towards me."

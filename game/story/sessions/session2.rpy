@@ -20,7 +20,7 @@ label session2_start:
     hide ryohei with dissolve
     pause 1
 
-    play sound "sfx/rustle.ogg"
+    play sound rustle
 
     "He stood and began rummaging through the shelves,{w=0.1} his movements smooth and deliberate."
     "Suddenly,{w=0.1} the air went still, lingering thick with every breath."
@@ -54,7 +54,7 @@ label session2_devotion:
     show ryohei seated neutral at center
     with fade
 
-    play sound "sfx/woosh.ogg" volume 0.5
+    play sound woosh volume 0.5
     pause 1
 
     "He moved to the table and sat directly across from me."
@@ -163,7 +163,7 @@ label session2_candle_intro:
 
     play music "music/theme4.ogg" fadein 1.5 volume 0.7
 
-    play sound "sfx/rustle.ogg"
+    play sound rustle
     pause 0.5
 
     "He opened the velvet-lined box."
@@ -172,7 +172,7 @@ label session2_candle_intro:
     ryohei seated smile "Let’s play a game,{w=0.2} Eden."
     ryohei seated neutral "This is a “focusing exercise”."
 
-    play sound "sfx/light.ogg"
+    play sound light
     "He lit the candles and set them on the table in a chaotic line."
     pause 0.5
 
@@ -185,7 +185,7 @@ label session2_candle_intro:
 
     "Without thinking,{w=0.1} I reached for the nearest one."
 
-    play sound "sfx/thud.ogg" volume 0.7
+    play sound thud volume 0.7
     show ryohei seated serious at slight_shake
     "His hand shot out,{w=0.1} not touching mine,{w=0.1} but hovering just above it."
 
@@ -268,7 +268,7 @@ label session2_candle_win2:
 
     "He whispered the word,{w=0.2} savoring it like a fine wine."
 
-    play sound "sfx/thud.ogg" volume 0.5
+    play sound thud volume 0.5
     show bg studio2 at shake
 
     ryohei "I like you,{w=0.2} you’re sharp."
@@ -279,7 +279,7 @@ label session2_candle_win2:
     #----very short-jumpscare, to make players wonder---
     stop music
     scene black
-    play sound "sfx/jumpscare.ogg"
+    play sound jumpscare
     show entity 3 at slight_shake, center
     pause 0.3
     hide entity
@@ -308,7 +308,7 @@ label session2_candle_lose:
     #---very short-jumpscare, to make players wonder---
     stop music
     scene black
-    play sound "sfx/jumpscare.ogg"
+    play sound jumpscare
     show entity 3 at slight_shake, center
     pause 0.3
     hide entity

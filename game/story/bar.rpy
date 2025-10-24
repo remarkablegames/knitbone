@@ -3,7 +3,7 @@ label bar:
     pause 1
 
     eden "{cps=10}Hmm..."
-    play sound "sfx/ice.ogg" volume 0.5
+    play sound ice volume 0.5
     eden "Seems like the ice in my glass had succumbed to the warmth..."
     eden "...looks just like my life."
 
@@ -32,11 +32,11 @@ label bar:
 
     show cg bar at shake
     stop music
-    play sound "sfx/chime.ogg" volume 0.8
+    play sound chime volume 0.8
     "{i}*chimes*"
 
     pause 0.5
-    play sound "sfx/door.ogg" volume 1.1
+    play sound door volume 1.1
     "The door opened, but at first,{w=0.1} I hardly registered it."
 
     scene black with fade
@@ -61,7 +61,7 @@ label bar_ryohei_entrance:
     # scene lounge_door_open with fade
     # Ryohei’s entrance
 
-    play sound "sfx/footsteps.ogg"
+    play sound footsteps
     show ryohei look at zoomout, center
     with dissolve
 
@@ -103,7 +103,7 @@ label bar_ryohei_entrance:
     pause 0.5
     hide eden with fade
 
-    play sound "sfx/footsteps.ogg"
+    play sound footsteps
     "I heard footsteps approaching me slowly."
     pause 0.5
 
@@ -114,7 +114,7 @@ label bar_encounter:
     play sfx "sfx/woosh.ogg" volume 0.5
     show ryohei neutral at left with moveinleft
 
-    play sound "sfx/woosh.ogg" volume 0.5
+    play sound woosh volume 0.5
     show eden neutral at right with moveinright
 
     eden "{i}Why is he standing right here?"

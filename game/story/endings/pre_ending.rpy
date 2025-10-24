@@ -7,7 +7,7 @@ label pre_ending:
 
 label pre_ending_start:
 
-    play sound "sfx/thud.ogg" volume 0.7
+    play sound thud volume 0.7
     show bg studio3 with hpunch
 
     play music "music/terror.ogg" volume 0.9
@@ -21,16 +21,16 @@ label pre_ending_start:
 
     "His voice cut sharp,{w=0.1} cutting through my daze."
 
-    play sound "sfx/rustle.ogg"
+    play sound rustle
     "He grabbed my arm,{w=0.1} his grip surprisingly strong,{w=0.1} almost bruising."
 
-    play sound "sfx/woosh.ogg" volume 0.5
+    play sound woosh volume 0.5
     "I turned back."
 
     hide eden
     hide ryohei with dissolve
 
-    play sound "sfx/jumpscare2.ogg" volume 0.7
+    play sound jumpscare2 volume 0.7
 
     show cg ryohei scared with dissolve
 
@@ -49,7 +49,7 @@ label pre_ending_start:
     "He wasn’t asking me...{w=0.2} he was pleading with me."
     "He guided me back to the couch and pushed me down gently,{w=0.1} a strange,{w=0.1} reverent care in his otherwise forceful actions."
 
-    play sound "sfx/thud.ogg" volume 0.7
+    play sound thud volume 0.7
     show bg studio3 with hpunch
 
     voice "voice/ryohei/hey.ogg"
@@ -59,7 +59,7 @@ label pre_ending_start:
 
     "He ignored my question.{w=0.1} He moved to the table,{w=0.1} and with a click,{w=0.1} lit a match and then lit the candles."
 
-    play sound "sfx/light.ogg"
+    play sound light
     scene bg studio4 with dissolve
     show ryohei glare with dissolve
 
@@ -90,7 +90,7 @@ label pre_ending_start:
     ryohei "I couldn’t let him pass it on.{w=0.2} I couldn’t let him choose another victim."
     ryohei "So...{w=0.4} I took it from him."
 
-    play sound "sfx/fire.ogg" volume 1.2
+    play sound fire volume 1.2
     "The silence in the room was deafening,{w=0.2} broken only by the crackle of the candle wicks."
 
     eden "What...{w=0.3} do you mean?"
@@ -100,7 +100,7 @@ label pre_ending_start:
 
     hide ryohei with dissolve
 
-    play sound "sfx/thud.ogg" volume 0.7
+    play sound thud volume 0.7
     show cg ryohei scared at slight_shake
     with dissolve
 
@@ -152,7 +152,7 @@ label pre_ending_start:
     "He held it out to me on his open palms,{w=0.2} like it was a key."
     "My breath caught in my throat."
 
-    play sound "sfx/heartbeat.ogg"
+    play sound heartbeat
     "My heart was pounding so hard I could feel it in my ears."
 
     "This is insane.{w=0.2} Completely insane."
@@ -176,7 +176,7 @@ label pre_ending_start:
     ryohei "Will you complete the ritual and become the new vessel?"
     ryohei "Will you sacrifice your blood for me?"
 
-    play sound "sfx/fire.ogg"
+    play sound fire
     "The question hung in the air,{w=0.1} suspended between the flames of the seven candles."
 
     play sfx "sfx/heartbeat.ogg"
