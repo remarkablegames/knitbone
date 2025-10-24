@@ -170,7 +170,7 @@ label session2_candle_intro:
     "Inside,{w=0.2} nestled in black satin,{w=0.1} were seven unlit candles of varying heights."
 
     ryohei seated smile "Let’s play a game,{w=0.2} Eden."
-    ryohei seated neutral "This is a “focusing exercise.”"
+    ryohei seated neutral "This is a “focusing exercise”."
 
     play sound "sfx/light.ogg"
     "He lit the candles and set them on the table in a chaotic line."

@@ -187,7 +187,7 @@ label bar_talk:
 
     "And yet,{w=0.1} here he is."
     "Sitting across from me in this nearly empty lounge,{w=0.1} grinning like we were old buddies."
-    "He even did it without asking like it was the most natural thing."
+    "He even did it without asking,{w=0.1} like it was the most natural thing to do."
 
     pause 0.5
 
@@ -208,7 +208,7 @@ label bar_talk:
     ryohei "Looking splendid,{w=0.1} as always!"
 
     "I couldn’t help but smile back."
-    "I’m not sure if I’m most amused by his outlandish teasing,{w=0.2} or by the fact that he remembered my name."
+    "I’m not sure if I’m amused by his outlandish teasing,{w=0.2} or by the fact that he remembered my name."
 
     eden "I don’t think lounging at a jazz club after an exhausting day is much of a splendid look,{w=0.2} but {cps=15}thanks...?"
     eden "You look like...{w=0.3} life’s been treating you well."
@@ -236,11 +236,11 @@ label bar_talk:
     "And for the first time in what felt like forever..."
     "I didn’t feel like a complete failure."
     "We caught up and talked for a while."
-    "Something about his presence...{w=0.2} felt almost too welcoming."
+    "Something about his presence{cps=15}...{/cps}{w=0.3} felt almost too welcoming."
     "Made it easy for me to open up."
-    "It felt safe,{w=0.1} or at least I convinced myself it was."
-    "After all,{w=0.1} he was an old acquaintance,{w=0.1} wasn’t he?"
-    "So, like an idiot,{w=0.1} I spilled everything."
+    "It felt safe,{w=0.2} or at least I convinced myself it was."
+    "After all,{w=0.2} he was an old acquaintance,{w=0.1} wasn’t he?"
+    "So, like an idiot,{w=0.2} I spilled everything."
 
     pause 0.5
     "He listened intently."
@@ -272,10 +272,10 @@ label bar_talk:
     voice "voice/ryohei/oh.ogg"
     eden "{cps=10}Oh."
 
-    "It’ll probably be in vain,{w=0.2} but declining now that he seems so willing to help would make an even more pitiful sight."
-
+    "Since he seems so willing to help,{w=0.2} declining now would make me look even more pitiful."
     pause 0.5
 
+    play sound rustle
     "Before I could react,{w=0.1} he produced a card between his fingers,{w=0.1} like it had been waiting there all along."
     ryohei "Come to my studio whenever you’re ready,{w=0.2} no pressure."
 
