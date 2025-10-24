@@ -254,7 +254,7 @@ label session1_test:
             ryohei "Eden."
             ryohei smirk "{cps=100}Refusing only reveals what you’re afraid of.{w=0.2} It shows me exactly what you’re afraid of."
 
-            stop character fadeout 0.2
+            stop dialogue fadeout 0.2
             hide ryohei
             hide eden
 

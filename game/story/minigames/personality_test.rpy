@@ -193,7 +193,7 @@ label personality_test7:
 
 label personality_test7_jumpscare:
 
-    stop character fadeout 0.2
+    stop dialogue fadeout 0.2
     stop music
 
     scene bg studio4
