@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.22](https://github.com/remarkablegames/knitbone/compare/v1.0.21...v1.0.22) (2025-10-24)
+
+
+### Bug Fixes
+
+* **story:** fix channel 'character' is not defined ([04cd6e9](https://github.com/remarkablegames/knitbone/commit/04cd6e9ac983e321cf027f6d17ad87778716564e))
+* **story:** fix voices ([b2815ae](https://github.com/remarkablegames/knitbone/commit/b2815aefb1ca7ed7152a9d8d4c44a928092c104d))
+
 ## [1.0.21](https://github.com/remarkablegames/knitbone/compare/v1.0.20...v1.0.21) (2025-10-24)
 
 
