@@ -88,7 +88,7 @@ label session1_prestudio:
 
     show ryohei neutral with dissolve
 
-    play sound "voice/ryohei/hey.ogg" volume 0.7
+    voice "voice/ryohei/hey.ogg"
     ryohei "Eden!"
 
     "He had a warm practiced smile,{w=0.1} and said my name like he knew I would come."

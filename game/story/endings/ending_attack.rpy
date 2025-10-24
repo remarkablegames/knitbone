@@ -2,7 +2,7 @@ label ending_attack:
 
     play music "music/oasis/intro1.ogg" fadein 0.5 volume 0.5
 
-    play sound "voice/ryohei/uh.ogg"
+    voice "voice/ryohei/uh.ogg"
     eden "{i}What?"
 
     play music "music/oasis/intro2.ogg" volume 0.5
