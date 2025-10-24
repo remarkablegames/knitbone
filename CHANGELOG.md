@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.21](https://github.com/remarkablegames/knitbone/compare/v1.0.20...v1.0.21) (2025-10-24)
+
+
+### Bug Fixes
+
+* **story:** fix grammar in bar ([43e1216](https://github.com/remarkablegames/knitbone/commit/43e1216d9906d591ead191e3bfeeaca3fa9e6222))
+
 ## [1.0.20](https://github.com/remarkablegames/knitbone/compare/v1.0.19...v1.0.20) (2025-10-21)
 
 
