@@ -14,7 +14,7 @@
 >
 > That sounds suspiciously more like what he also calls it ... a “guided ritual.”
 
-Play the game on:
+Play the game:
 
 - [itch.io](https://remarkablegames.itch.io/knitbone)
 - [remarkablegames](https://remarkablegames.org/knitbone)
