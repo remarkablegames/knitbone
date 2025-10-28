@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.23](https://github.com/remarkablegames/knitbone/compare/v1.0.22...v1.0.23) (2025-10-28)
+
+
+### Bug Fixes
+
+* **endings:** update music in ending_sacrifice and fix grammar ([38fee0f](https://github.com/remarkablegames/knitbone/commit/38fee0faa05ea3d695a7cbdf3675607e1efa3e06))
+
 ## [1.0.22](https://github.com/remarkablegames/knitbone/compare/v1.0.21...v1.0.22) (2025-10-24)
 
 
