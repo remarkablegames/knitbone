@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.24](https://github.com/remarkablegames/knitbone/compare/v1.0.23...v1.0.24) (2025-10-28)
+
+
+### Bug Fixes
+
+* **endings:** improve grammar in ending_attack ([6897388](https://github.com/remarkablegames/knitbone/commit/6897388d84ef8e54391d874ba9081f42ea438dcf))
+
 ## [1.0.23](https://github.com/remarkablegames/knitbone/compare/v1.0.22...v1.0.23) (2025-10-28)
 
 
