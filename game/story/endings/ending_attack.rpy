@@ -99,7 +99,7 @@ label ending_attack:
     "I gasped,{w=0.1} clawing to release myself from his grip — before driving a knee into his stomach."
     "He’s caught off guard quick enough to drop me — {w=0.2}but the knife was still in his hands."
 
-    "As I tried to step sidewards,{w=0.1} he lurched me back by my wrist,{w=0.1} gripping tight enough to snap bone."
+    "As I tried to step sideways,{w=0.1} he lurched me back by my wrist,{w=0.1} gripping tight enough to snap bone."
 
     voice "voice/entity/eden.ogg"
     ryohei "{sc}EDEN!"
@@ -138,7 +138,7 @@ label ending_attack:
     scene cg ending ryohei death at zoomout
     with dissolve
 
-    "As if on instinct I slid to the floor to hold his body up."
+    "As if on instinct,{w=0.1} I slid to the floor to hold his body up."
 
     play sfx "sfx/heartbeat.ogg"
     "His head tilted limply against my own hammering heartbeat,{w=0.1} as his own heart started to crawl to a stop."
