@@ -110,7 +110,7 @@ label ending_sacrifice:
 
     "I blinked and suddenly we were face to face,{w=0.3} me staring up at his ashy pupils as he towered over me."
 
-    play music "music/prologue/verse1.ogg"
+    play music "music/prologue/verse1.ogg" volume 0.8
 
     scene cg ending struggle at hpunch, zoomin, slight_shake
 
@@ -193,6 +193,7 @@ label ending_sacrifice:
     ryohei "That you could...{w=0.5} accept it."
 
     stop music fadeout 1.5
+    play music "music/oasis/intro1.ogg" fadein 0.5 volume 0.5
 
     play sound heartbeat
     "He choked out,{w=0.1} pressing his forehead against my bleeding heart."
@@ -212,7 +213,7 @@ label ending_sacrifice:
     ryohei "{sc}No one else."
     stop sound
 
-    "Ryohei is left kneeling over my corpse,{w=0.2} as shadowing veins crawl and dance throughout the room,{w=0.2} rejoicing in Ryohei’s inevitable surrender."
+    "Ryohei is left kneeling over my corpse,{w=0.2} as shadowy veins crawl and dance throughout the room,{w=0.2} rejoicing in Ryohei’s inevitable surrender."
 
     play sound "<from 0 to 2>voice/entity/entity.ogg"
     ryohei "{cps=10}{sc}No one else can be..."
