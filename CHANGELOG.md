@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.25](https://github.com/remarkablegames/knitbone/compare/v1.0.24...v1.0.25) (2025-10-29)
+
+
+### Bug Fixes
+
+* **sessions:** hide and show ryohei in session3_hypnosis0 ([1020cb7](https://github.com/remarkablegames/knitbone/commit/1020cb742d6efa31044b47f49e012e4a5ed5ee25))
+
 ## [1.0.24](https://github.com/remarkablegames/knitbone/compare/v1.0.23...v1.0.24) (2025-10-28)
 
 
