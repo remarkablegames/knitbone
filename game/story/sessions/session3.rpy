@@ -279,10 +279,10 @@ label session3_hypnosis0:
     ryohei look2 "All of that was just an attempt to open your mind."
     ryohei laugh "Looks like it’s ready!{w=0.2} So let’s use it."
 
-    pause 0.5
     play sound rustle
     "He opened a drawer and started rummaging it."
 
+    hide ryohei with dissolve
     pause 1
 
     "I just stood there,{w=0.1} frozen..."
@@ -293,6 +293,8 @@ label session3_hypnosis0:
     eden bitter "{i}What if this isn’t therapy?{w=0.3} He’s not even trying to fix my insomnia... "
     eden bitter "{i}Instead,{w=0.1} he’s trying to do something else,{w=0.2} with me as his test subject...?"
 
+    play sound woosh volume 0.5
+    show ryohei neutral at left with moveinleft
     pause 0.5
 
     voice "voice/ryohei/oh.ogg"
