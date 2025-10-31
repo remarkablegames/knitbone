@@ -12,7 +12,7 @@
 
 > You play as Eden Cross, who suffers from chronic insomnia, feeling disconnected from your life. One day, an old college acquaintance – Ryohei shows up pitching a miracle cure for your insomnia: an “experimental therapy.”
 >
-> That sounds suspiciously more like what he also calls it ... a “guided ritual.”
+> But that sounds suspiciously more like ... a “guided ritual.”
 
 Play the game:
 
