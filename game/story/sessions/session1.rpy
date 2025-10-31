@@ -307,7 +307,7 @@ label session1_end:
             ryohei "Yes?"
             eden "{cps=20}Did you happen to see...{w=0.2} {i}that?"
             ryohei "See what?"
-            eden "...Nevermind."
+            eden "{cps=5}...{/cps}{w=0.2} Nevermind."
 
         "Remain silent":
             eden "{cps=5}..."
