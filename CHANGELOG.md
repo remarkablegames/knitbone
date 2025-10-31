@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.26](https://github.com/remarkablegames/knitbone/compare/v1.0.25...v1.0.26) (2025-10-31)
+
+
+### Bug Fixes
+
+* **sessions:** adjust text speed for "Bring it up" dialogue in session1 ([83e266c](https://github.com/remarkablegames/knitbone/commit/83e266c4f542bc1b8e1c5711ddd2e7cfb3f5c7ca))
+* **sessions:** slow down cps in "Bring it up" dialogue in session1 ([015f005](https://github.com/remarkablegames/knitbone/commit/015f00582804d2fa0145f549b414ff316e80581e))
+
 ## [1.0.25](https://github.com/remarkablegames/knitbone/compare/v1.0.24...v1.0.25) (2025-10-29)
 
 
