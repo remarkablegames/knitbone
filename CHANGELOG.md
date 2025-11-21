@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.27](https://github.com/remarkablegames/knitbone/compare/v1.0.26...v1.0.27) (2025-11-21)
+
+
+### Bug Fixes
+
+* **sessions:** don't hide ryohei and eden during cg comfrey dissolve ([20957d1](https://github.com/remarkablegames/knitbone/commit/20957d1d50258d252a27d9cadcf52b3ebc2a1453))
+
 ## [1.0.26](https://github.com/remarkablegames/knitbone/compare/v1.0.25...v1.0.26) (2025-10-31)
 
 
