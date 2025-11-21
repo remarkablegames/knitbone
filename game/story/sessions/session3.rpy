@@ -99,12 +99,11 @@ label session3_start:
 label session3_comfrey:
 
     play music "music/theme4_nopiano.ogg" fadein 1.5 volume 0.7
-    hide ryohei
-    hide eden
 
-    show cg comfrey with dissolve
     show ryohei neutral at left
     show eden neutral at right
+
+    show cg comfrey with dissolve
 
     "He then pointed to a small,{w=0.1} potted herb on his desk."
     "It was the only living thing in the room."
