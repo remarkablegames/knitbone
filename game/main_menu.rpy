@@ -57,7 +57,7 @@ screen main_menu():
     add TrackCursor(Transform("gui/vignette.png", zoom=1.1), move_range=20)
 
     # Title
-    text "KNITBONE":
+    text _("KNITBONE"):
         xalign 0.5
         yalign 0.45
         size 70
@@ -72,7 +72,7 @@ screen main_menu():
 
         frame:
             background Solid((0, 0, 0, 100))
-            textbutton "PLAY":
+            textbutton _("PLAY"):
                 action Start()
                 activate_sound "ui/click.ogg"
                 hover_sound "ui/mouserelease1.ogg"
@@ -80,11 +80,20 @@ screen main_menu():
 
         frame:
             background Solid((0, 0, 0, 100))
-            textbutton "LOAD":
+            textbutton _("LOAD"):
                 action ShowMenu("load")
                 activate_sound "ui/click.ogg"
                 hover_sound "ui/mouserelease1.ogg"
                 text_hover_color "#aac3b8"
+
+    textbutton _("LANGUAGES"):
+        align (0.98, 0.98)
+        action ShowMenu("language_menu")
+        activate_sound "ui/click.ogg"
+        hover_sound "ui/mouserelease1.ogg"
+        text_color "#ffffff40"
+        text_hover_color "#aac3b8"
+        text_size 26
 
     # TODO: Settings button in corner
     # imagebutton:

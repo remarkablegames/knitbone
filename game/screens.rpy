@@ -169,6 +169,9 @@ style say_dialogue:
 
     adjust_spacing False
 
+translate russian style say_dialogue:
+    font "fonts/Puzzle-Tale-Pixel-Regular.ttf"
+
 ## Input screen ################################################################
 ##
 ## This screen is used to display renpy.input. The prompt parameter is used to
@@ -240,6 +243,9 @@ style choice_button_text is default:
     properties gui.text_properties("choice_button")
     font "fonts/chonkybitsbold.otf"
     color "#3a3a3a"
+
+translate russian style say_dialogue:
+    font "fonts/Puzzle-Tale-Pixel-Regular.ttf"
 
 
 ## Quick Menu screen ###########################################################
@@ -715,6 +721,12 @@ screen preferences():
                     textbutton _("Unseen Text") action Preference("skip", "toggle")
                     textbutton _("After Choices") action Preference("after choices", "toggle")
                     textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
+
+                vbox:
+                    style_prefix "radio"
+                    label _("Languages")
+                    textbutton _("English") action Language(None)
+                    textbutton _("Russian") action Language("russian")
 
                 ## Additional vboxes of type "radio_pref" or "check_pref" can be
                 ## added here, to add additional creator-defined preferences.
@@ -1573,3 +1585,28 @@ style slider_vbox:
 style slider_slider:
     variant "small"
     xsize 900
+
+screen language_menu():
+
+    tag menu
+
+    add Solid((0, 0, 0, 150))
+
+    frame:
+        xalign 0.5
+        yalign 0.5
+        padding (40, 40)
+
+        vbox:
+            spacing 20
+
+            text _("Choose Language:") size 40
+
+            textbutton _("English"):
+                action [Language(None), Return()]
+
+            textbutton _("Russian"):
+                action [Language("russian"), Return()]
+
+            textbutton _("Back"):
+                action Return()
