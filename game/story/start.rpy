@@ -7,7 +7,6 @@ init python:
 
 label splashscreen:
 
-    return
     scene bg splashscreen with Dissolve(1)
     pause 2
 
