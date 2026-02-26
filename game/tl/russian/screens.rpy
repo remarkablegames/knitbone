@@ -38,25 +38,33 @@ translate russian strings:
     old "Start"
     new "Начать"
 
-    # game/screens.rpy:321
+    # game/screens.rpy:325
     old "Load"
     new "Загрузить"
 
-    # game/screens.rpy:325
+    # game/screens.rpy:331
     old "End Replay"
     new "Закончить Повтор"
 
-    # game/screens.rpy:331
+    # game/screens.rpy:335
     old "Main Menu"
     new "Главное Меню"
 
-    # game/screens.rpy:333
+    # game/screens.rpy:337
     old "About"
     new "Информация"
 
-    # game/screens.rpy:337
+    # game/screens.rpy:342
     old "Help"
     new "Помощь"
+
+    # game/screens.rpy:348
+    old "Quit"
+    new "Выйти"
+
+    # game/screens.rpy:445
+    old "Return"
+    new "Вернуться"
 
     # game/screens.rpy:529
     old "Version [config.version!t]\n"
@@ -133,6 +141,18 @@ translate russian strings:
     # game/screens.rpy:723
     old "Transitions"
     new "Переходы"
+
+    # game/screens.rpy:727
+    old "Languages"
+    new "ЯЗЫКИ"
+
+    # game/screens.rpy:728
+    old "English"
+    new "Английский"
+
+    # game/screens.rpy:729
+    old "Russian"
+    new "Русский"
 
     # game/screens.rpy:742
     old "Text Speed"
@@ -322,27 +342,6 @@ translate russian strings:
     old "Menu"
     new "Меню"
 
-# TODO: Translation updated at 2026-02-18 18:38
-
-translate russian strings:
-
     # game/screens.rpy:1603
     old "Choose Language:"
     new "Выберите язык:"
-
-    # game/screens.rpy:1608
-    old "English"
-    new "Английский"
-
-    # game/screens.rpy:1608
-    old "Russian"
-    new "Русский"
-
-# TODO: Translation updated at 2026-02-26 00:40
-
-translate russian strings:
-
-    # game/screens.rpy:727
-    old "Languages"
-    new "ЯЗЫКИ"
-
