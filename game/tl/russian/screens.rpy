@@ -59,12 +59,12 @@ translate russian strings:
     new "Помощь"
 
     # game/screens.rpy:348
-    old "Quit"
-    new "Выйти"
+    # old "Quit"
+    # new "Выйти"
 
     # game/screens.rpy:445
-    old "Return"
-    new "Вернуться"
+    # old "Return"
+    # new "Вернуться"
 
     # game/screens.rpy:529
     old "Version [config.version!t]\n"
