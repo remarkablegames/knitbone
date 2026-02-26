@@ -8,7 +8,7 @@
 [![build](https://github.com/remarkablegames/knitbone/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablegames/knitbone/actions/workflows/build.yml)
 [![lint](https://github.com/remarkablegames/knitbone/actions/workflows/lint.yml/badge.svg)](https://github.com/remarkablegames/knitbone/actions/workflows/lint.yml)
 
-🦴 **KnitBone** is a story-driven psychological horror visual novel, where the therapist is more traumatized than the patient.
+🦴 **KnitBone** is a story-driven **psychological horror visual novel**, where the _therapist is more traumatized than the patient_.
 
 > You play as Eden Cross, who suffers from chronic insomnia, feeling disconnected from your life. One day, an old college acquaintance – Ryohei shows up pitching a miracle cure for your insomnia: an “experimental therapy.”
 >
@@ -46,6 +46,10 @@ Read the [blog post](https://remarkablegames.org/posts/knitbone/) or watch the [
 ### Music
 
 - [seamus](https://seemvevo.itch.io/)
+
+### Translations
+
+- Russian: [WAGDIRE](https://t.me/wagdire) / [\*sternellita\*](https://rpgmakerunion.ru/id/sternellita)
 
 ### Sounds
 

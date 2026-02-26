@@ -30,13 +30,21 @@ define config.version = "1.0.27" # x-release-please-version
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
-{color=#efefef}Credits{/color}\n
-• {a=https://aespipu.itch.io}aespipu{/a} – Project Lead / Artist\n
-• {a=https://github.com/remarkablemark}remarkablemark{/a} – Developer / Programmer\n
-• {a=https://github.com/mizphawu}Myka Valerio{/a} – Co-Writer / Proofreader\n
-• {a=https://a-villarroel.itch.io}A. Villarroel{/a} – Co-Writer / Proofreader\n
-• {a=https://seemvevo.itch.io}seamus{/a} – Composer\n
+{color=#efefef}Credits{/color}
+
+• {a=https://aespipu.itch.io}aespipu{/a} – Project Lead / Artist
+
+• {a=https://github.com/remarkablemark}remarkablemark{/a} – Developer / Programmer
+
+• {a=https://github.com/mizphawu}Myka Valerio{/a} – Co-Writer / Proofreader
+
+• {a=https://a-villarroel.itch.io}A. Villarroel{/a} – Co-Writer / Proofreader
+
+• {a=https://seemvevo.itch.io}seamus{/a} – Composer
+
 • OST Jazz Lounge Scene by Chad1702
+
+• {a=https://t.me/wagdire}WAGDIRE{/a} / {a=https://rpgmakerunion.ru/id/sternellita}sternellita{/a} – Russian Translator
 """)
 
 

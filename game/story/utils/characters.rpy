@@ -42,5 +42,5 @@ init python:
 
 
 define narrator = Character(None, callback=narrator_callback)
-define eden = Character("Eden", callback=eden_callback, image="eden", what_color="#293728", who_color="#eceeea", who_outlines=[(3, "#949b8f", 0, 0)])
-define ryohei = Character("Ryohei", callback=ryohei_callback, image="ryohei", what_color="#272e3f", who_color="#6b7c95", who_outlines=[(3, "#303133", 0, 0)])
+define eden = Character(_("Eden"), callback=eden_callback, image="eden", what_color="#293728", who_color="#eceeea", who_outlines=[(3, "#949b8f", 0, 0)])
+define ryohei = Character(_("Ryohei"), callback=ryohei_callback, image="ryohei", what_color="#272e3f", who_color="#6b7c95", who_outlines=[(3, "#303133", 0, 0)])
