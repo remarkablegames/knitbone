@@ -244,7 +244,7 @@ style choice_button_text is default:
     font "fonts/chonkybitsbold.otf"
     color "#3a3a3a"
 
-translate russian style say_dialogue:
+translate russian style choice_button_text:
     font "fonts/Puzzle-Tale-Pixel-Regular.ttf"
 
 
