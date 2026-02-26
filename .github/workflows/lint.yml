@@ -13,6 +13,8 @@ jobs:
 
       - name: Setup Ren'Py
         uses: remarkablegames/setup-renpy@v2
+        with:
+          cli-version: 8.4.1
 
       - name: Lint script
         run: renpy-cli game lint --error-code
