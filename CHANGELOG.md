@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.1.0](https://github.com/remarkablegames/knitbone/compare/v1.0.27...v1.1.0) (2026-03-01)
+
+
+### Features
+
+* **tl:** add russian translation ([#37](https://github.com/remarkablegames/knitbone/issues/37)) ([de37977](https://github.com/remarkablegames/knitbone/commit/de37977e510eb11d91151d7fc10f3e0b69a2c06c))
+
+
+### Bug Fixes
+
+* **voice:** normalize russian audio ([bcd673a](https://github.com/remarkablegames/knitbone/commit/bcd673a87b472e80dc4882c05ffbf130109ebb66))
+* **voice:** normalize russian entity voices ([b46fd09](https://github.com/remarkablegames/knitbone/commit/b46fd0939209879323506d34caf677773a9de619))
+
 ## [1.0.27](https://github.com/remarkablegames/knitbone/compare/v1.0.26...v1.0.27) (2025-11-21)
 
 
