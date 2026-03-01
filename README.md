@@ -18,7 +18,7 @@ Play the game:
 
 - [itch.io](https://remarkablegames.itch.io/knitbone)
 - [newgrounds](https://www.newgrounds.com/portal/view/1003853)
-- [remarkablegames](https://remarkablegames.org/knitbone)
+- [remarkablegames](https://remarkablegames.org/knitbone/)
 
 Or download:
 
