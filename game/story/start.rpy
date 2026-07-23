@@ -7,7 +7,16 @@ init python:
 
 label splashscreen:
 
-    scene bg splashscreen with Dissolve(1)
+    if build.variant == "demo":
+        scene bg splashscreen with Dissolve(1)
+    else:
+        scene black
+        show logo:
+            xalign 0.5
+            yalign 0.4
+        show text "{color=#ddd}remarkablegames":
+            yalign 0.7
+        with Dissolve(1)
     pause 2
 
     scene black with fade

@@ -223,3 +223,8 @@ init python:
 ## by a slash.
 
 define build.itch_project = "remarkablegames/knitbone"
+
+
+# Build variant identifier ("demo", "full").
+# Set at build time to customize behavior for different packaged releases.
+define build.variant = "demo"
