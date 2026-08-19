@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/remarkablegames/knitbone/compare/v1.1.0...v1.1.1) (2026-08-19)
+
+
+### Bug Fixes
+
+* **build:** add missing knitbone.sh to linux build ([2aff67c](https://github.com/remarkablegames/knitbone/commit/2aff67caf57e2c53a04ccd16f8f0f2a9e5f2f9cc))
+
 ## [1.1.0](https://github.com/remarkablegames/knitbone/compare/v1.0.27...v1.1.0) (2026-03-01)
 
 
