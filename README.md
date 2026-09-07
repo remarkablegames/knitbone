@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> Wishlist now on [Steam](https://store.steampowered.com/app/5008480/KnitBone/)!
+
 <p align="center">
   <img src="web-presplash.webp" width="600" alt="KnitBone">
 </p>
