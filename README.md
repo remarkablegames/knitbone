@@ -17,14 +17,14 @@
 >
 > But that sounds suspiciously more like ... a “guided ritual.”
 
-Play in browser:
+Play in your browser:
 
 - [itch.io](https://remarkablegames.itch.io/knitbone)
 - [Wavedash](https://wavedash.com/games/knitbone)
 - [Newgrounds](https://www.newgrounds.com/portal/view/1003853)
 - [remarkablegames](https://remarkablegames.org/knitbone/)
 
-Or download:
+Or download for desktop:
 
 - [Windows](https://github.com/remarkablegames/knitbone/releases/latest/download/win.zip)
 - [Mac](https://github.com/remarkablegames/knitbone/releases/latest/download/mac.zip)
